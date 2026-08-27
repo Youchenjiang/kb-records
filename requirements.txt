@@ -1,0 +1,2 @@
+# Optional: automatically provides a bundled FFmpeg executable if not installed in system PATH
+imageio-ffmpeg>=0.4.9
