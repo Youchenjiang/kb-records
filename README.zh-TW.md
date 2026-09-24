@@ -50,50 +50,50 @@
 
 ---
 
-## 🗂️ 20260924-Microsoft-Day-2026
+## 🗂️ 20260922-DevDaysAsia-2026 (DevDays Asia 2026)
 
-### 5. [AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準](./5-Master/20260924-Microsoft-Day-2026/AI評測與UL315治理-summary.md)
+### 5. [AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md)
 * **講者**：微軟架構團隊、Fend (微軟負責任 AI 團隊)、先 / Sean (新說資訊)
 * **關鍵技術**：Azure AI Evaluation、PyRIT 自動化紅隊演練、SAG Control Specification、UL 315 AI 產品安全評估標準（12 項原則與 3 大核心問答）、Clearview AI 案例分析、非二元判定機制（證據不足）。
 * **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260924-Microsoft-Day-2026/AI評測與UL315治理-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260924-Microsoft-Day-2026/AI評測與UL315治理-summary.md)
+  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-proofread.md)
+  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md)
 
 ---
 
-### 6. [Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry](./5-Master/20260924-Microsoft-Day-2026/Tokenomics與Foundry成本優化-summary.md)
+### 6. [Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md)
 * **講者**：Ash (微軟 Commercial / GTM 策略主管)
 * **關鍵技術**：Context Layer (Microsoft IQ / M365 Profiler)、三層 Caching 快取體系 (Prompt / Semantic / Tool Cache)、Foundry Agent Optimizer、Agent Traces、Spend Telemetry、AT&T 實戰案例（月處理 7,000 億 Tokens，以 Phi-4 取代大型模型年省破千萬美元）。
 * **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260924-Microsoft-Day-2026/Tokenomics與Foundry成本優化-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260924-Microsoft-Day-2026/Tokenomics與Foundry成本優化-summary.md)
+  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-proofread.md)
+  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md)
 
 ---
 
-### 7. [GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理](./5-Master/20260924-Microsoft-Day-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
+### 7. [GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
 * **講者**：周祈和 (微軟 AI 解決方案工程師)
 * **關鍵技術**：GHAS (Secret Scanning 語意與 Push Protection、Dependency Scanning、CodeQL Copilot Autofix)、Defender for Cloud 雲地串聯、Security Campaign、MAGENTA 100+ Agent 漏洞挖掘與 PoC 自動生成、MCP Security 邊界、AI Gateway (Azure APIM) 流量與 Token 治理、Defender XDR 智慧訂房助理調查閉環。
 * **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260924-Microsoft-Day-2026/GHAS聯防與MAGENTA多Agent審計-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260924-Microsoft-Day-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
+  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-proofread.md)
+  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
 
 ---
 
-### 8. [Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談](./5-Master/20260924-Microsoft-Day-2026/Agentic-SOC與資安研究計畫交流-summary.md)
+### 8. [Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md)
 * **講者 / 對談者**：微軟雲端安全架構師、Youchen (資安三年研究計畫研究員)、現場資深資安架構前輩
 * **關鍵技術**：Security Copilot (Assistive vs. Autonomous)、Threat Hunting Agent (自然語言轉譯 KQL)、Sentinel MCP Server 官方工具鏈、Project Perception (常態化自主紅藍綠對抗)、資安三年研究計畫定位診斷（打破紅藍綠單打獨鬥孤島，建立向上回報架構師改寫安全約束規格的生態系閉環）。
 * **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260924-Microsoft-Day-2026/Agentic-SOC與資安研究計畫交流-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260924-Microsoft-Day-2026/Agentic-SOC與資安研究計畫交流-summary.md)
+  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-proofread.md)
+  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md)
 
 ---
 
-### 9. [AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊](./5-Master/20260924-Microsoft-Day-2026/AI時代工程師定位與軟體民主化-summary.md)
+### 9. [AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md)
 * **主持 / 講者**：Justin (主持人)、Jun (Anthropic Japan)、Ash (Microsoft GTM)、Amanda (Anthropic 舊金山總部)
 * **關鍵技術**：軟體民主化 (Democratization of Software / Everyone Can Build)、職涯抉擇 (破除管理職迷思，深耕高階 IC 創造力)、企業 ROI 審慎視角與 Anthropic Safety 核心護城河、時間審計每週省 13-17 小時、Claude 3.5 Sonnet + MCP 於 Microsoft Foundry 打造 Sparkles 杯子蛋糕點餐 Agent 實戰工作坊。
 * **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260924-Microsoft-Day-2026/AI時代工程師定位與軟體民主化-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260924-Microsoft-Day-2026/AI時代工程師定位與軟體民主化-summary.md)
+  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-proofread.md)
+  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md)
 
 ---
 

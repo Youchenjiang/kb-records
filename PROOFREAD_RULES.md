@@ -51,7 +51,7 @@ record-list/
 | 活動 | 檔案 |
 |------|------|
 | `5-Master/20260821-HITCON-2026/` | 4 個主題共 8 個檔案（4 proofread + 4 summary） |
-| `5-Master/20260924-Microsoft-Day-2026/` | 5 個主題共 10 個檔案（5 proofread + 5 summary） |
+| `5-Master/20260922-DevDaysAsia-2026/` | 5 個主題共 10 個檔案（5 proofread + 5 summary） |
 
 ### 新增活動時的步驟
 
