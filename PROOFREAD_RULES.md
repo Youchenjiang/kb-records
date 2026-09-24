@@ -62,8 +62,11 @@ record-list/
    - `.aac`（錄音檔）→ 用 `scripts/aac_to_mp3.py` 轉 mp3，再用 `scripts/format_transcript.py` 生成 proofread
    - `-raw.txt`（ASR 原始稿）→ 用 `scripts/run_deep_correction.py` 生成 proofread
    - `-formatted.md`（格式化版）→ 直接當 proofread 基礎，做語句級修正
-5. 最終產出：`{ID}-{ShortTitle}-proofread.md`
-6. 從 proofread 提煉：`{ID}-{ShortTitle}-summary.md`
+5. 最終產出：`{ShortTitle}-proofread.md`（純 Markdown 交付物）
+6. 從 proofread 提煉：`{ShortTitle}-summary.md`（純 Markdown 交付物）
+7. **檔案生命週期與 Git 規範**：
+   - 根目錄下的 raw txt、音訊檔皆為「一次性暫存輸入（Scratch Inputs）」，由 `.gitignore` 排除，**絕對不納入 Git 版本控制**。
+   - 進入版本控制的只有 `5-Master/...` 底下的交付 Markdown、處理器工具鏈、測試以及說明文件。
 
 ### ShortTitle 命名範例
 
