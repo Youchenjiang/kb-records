@@ -1,6 +1,6 @@
 ---
 title: "AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊"
-event: "Microsoft Day 2026"
+event: "DevDays Asia 2026"
 talk_id: "125"
 speakers: ["Justin (主持人)", "Jun (Anthropic Japan)", "Ash (Microsoft GTM)", "Amanda (Anthropic SF)"]
 type: "verbatim-narrative-transcript"

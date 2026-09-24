@@ -1,6 +1,6 @@
 ---
 title: "AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準"
-event: "Microsoft Day 2026"
+event: "DevDays Asia 2026"
 talk_id: "121"
 speakers: ["微軟架構師", "Fend (微軟負責任 AI 團隊)", "先 / Sean (新說資訊)"]
 type: "verbatim-narrative-transcript"
