@@ -13,8 +13,9 @@
 record-list/
 ├── {Category}/                          ← 分類（如 5-Master）
 │   └── {YYYYMMDD}-{EventName}/          ← 活動（如 20260821-HITCON-2026）
-│       ├── {ID}-{ShortTitle}-proofread.md   ← 校對版逐字稿
-│       └── {ID}-{ShortTitle}-summary.md     ← 重點整理版
+│       ├── {ShortTitle}-proofread.md    ← 校對版逐字稿
+│       └── {ShortTitle}-summary.md      ← 重點整理版
+├── transcript_processor/                ← 核心處理器套件
 ├── scripts/                             ← 工具腳本
 ├── PROOFREAD_RULES.md
 ├── README.md
@@ -37,20 +38,20 @@ record-list/
 #### 檔案命名
 
 ```
-{ID}-{ShortTitle}-{type}.md
+{ShortTitle}-{type}.md
 ```
 
 | 欄位 | 說明 | 範例 |
 |------|------|------|
-| `ID` | 錄音編號 | `91`, `92` |
-| `ShortTitle` | 演講主題簡稱，2-4 個關鍵詞用 `-` 連接，不超過 30 字 | `Pixel8A-GPU漏洞挖掘` |
+| `ShortTitle` | 演講主題簡稱，2-4 個關鍵詞用 `-` 連接，不超過 30 字 | `Pixel8A-GPU漏洞挖掘`、`AI評測與UL315治理` |
 | `type` | `proofread`（校對版）或 `summary`（重點整理版） | |
 
 ### 當前檔案清單
 
 | 活動 | 檔案 |
 |------|------|
-| `5-Master/20260821-HITCON-2026/` | 91~94 共 8 個檔案（4 proofread + 4 summary） |
+| `5-Master/20260821-HITCON-2026/` | 4 個主題共 8 個檔案（4 proofread + 4 summary） |
+| `5-Master/20260924-Microsoft-Day-2026/` | 5 個主題共 10 個檔案（5 proofread + 5 summary） |
 
 ### 新增活動時的步驟
 

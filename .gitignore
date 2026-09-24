@@ -1,0 +1,19 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Scratch & Raw ASR Inputs (Temporary local inputs)
+/*.txt
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
