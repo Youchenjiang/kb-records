@@ -97,6 +97,38 @@
 
 ---
 
+## 🗂️ 20260714-MasterDefense-DRAVILaMA (碩士學位論文口試)
+
+### 10. [基於大語言模型與視覺指令微調之行車記錄器風險預測架構 (DRAVILaMA)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md)
+* **發表人**：沈柏寧（指導教授：陳奕明博士）
+* **關鍵技術**：DRAVILaMA 多模態行車風險預測、LLaVA 視覺指令微調、時序行為子圖（Behavior Subgraph）、時間因果注意機制（Temporal Causal Attention）、消融實驗驗證、混淆矩陣公式辯證。
+* **文件**：
+  * [📄 完整簡報原話逐字稿 (proofread.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-proofread.md)
+  * [📑 簡報技術精華筆記 (summary.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md)
+  * [📄 審查質詢 Part 1 逐字稿 (proofread.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-proofread.md)
+  * [📑 審查質詢 Part 1 攻防重點 (summary.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-summary.md)
+  * [📄 審查質詢 Part 2 逐字稿 (proofread.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-proofread.md)
+  * [📑 審查質詢 Part 2 評定決議 (summary.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-summary.md)
+
+---
+
+## 🗂️ 20260327-AcademicConference (學術研討會 Session G & Session I)
+
+### 11. [學術研討會多場次論文發表與專題演講全輯](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
+* **涵蓋場次與發表人**：
+  1. 🧠 **Session G 論文一 (戴文芳)**：整合語言學指標與語意嵌入之 aMCI 語篇命題結構與主題偏移研究（指導教授：曾小平教授、蘇國良博士）。
+  2. 🤖 **Session G 論文二與商用實踐 (鍾國、張子龍)**：生成式 AI 焦慮量化規測、語音偽造特徵解釋模型與商業展示平臺。
+  3. 🎙️ **Session I 專題特邀與學生發表 (歐陽長龍教授、沈柏寧、林玉慧、許紫薇)**：學術論文發表、圖結構神經網路於多模態應用與研究問答（指導教授：蔡志豐博士等）。
+* **文件**：
+  * [📄 Session G 戴文芳 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-proofread.md)
+  * [📑 Session G 戴文芳 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
+  * [📄 Session G AI焦慮與語音偽造 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-proofread.md)
+  * [📑 Session G AI焦慮與語音偽造 精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-summary.md)
+  * [📄 Session I 特邀專題與學生論文 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-proofread.md)
+  * [📑 Session I 特邀專題與學生論文 精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-summary.md)
+
+---
+
 ## 🛠️ 核心處理器與工具庫 (`transcript_processor/` & `scripts/`)
 
 本專案將逐字稿處理流程模組化封裝為通用工具包 `transcript_processor`，支援依需求獨立或組合調用：
