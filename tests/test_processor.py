@@ -53,6 +53,17 @@ class TestTranscriptProcessor(unittest.TestCase):
         res = engine.correct("這是一個舊測試名的字串", domains=["custom"])
         self.assertEqual(res, "這是一個新測試名的字串")
 
+    def test_academic_domain_rule(self):
+        engine = CorrectionEngine()
+        raw = "進行了消除實驗與注意機制分析，並在 AMCI 與 draw llama 上測量混小矩陣"
+        corrected = engine.correct(raw, domains=["academic"])
+        self.assertIn("消融實驗", corrected)
+        self.assertIn("注意力機制", corrected)
+        self.assertIn("aMCI", corrected)
+        self.assertIn("DRAVILaMA", corrected)
+        self.assertIn("混淆矩陣", corrected)
+
+
     def test_proofread_builder(self):
         builder = ProofreadBuilder(
             title="測試演講",

@@ -109,6 +109,39 @@ MICROSOFT_CLOUD_AI_TERMS: DomainDict = [
 ]
 
 
+ACADEMIC_DEFENSE_TERMS: DomainDict = [
+    # Master Defense & Deep Learning
+    ("消除實驗", "消融實驗"),
+    ("銷融實驗", "消融實驗"),
+    ("注意機制", "注意力機制"),
+    ("注意力機質", "注意力機制"),
+    ("行爲子圖", "行為子圖"),
+    ("行為直圖", "行為子圖"),
+    ("實踐因果", "時間因果"),
+    ("時間應果", "時間因果"),
+    ("混小矩陣", "混淆矩陣"),
+    ("昏淆矩陣", "混淆矩陣"),
+    ("正陽性率", "真陽性率"),
+    ("加陽性率", "假陽性率"),
+    ("特意度", "特異度"),
+    ("draw llama", "DRAVILaMA"),
+    ("Dravi Lama", "DRAVILaMA"),
+    ("dravilama", "DRAVILaMA"),
+    ("拉瓦", "LLaVA"),
+    # Conference & Medical NLP
+    ("AMCI", "aMCI"),
+    ("amci", "aMCI"),
+    ("雨偏結構", "語篇結構"),
+    ("語片結構", "語篇結構"),
+    ("明題密度", "命題密度"),
+    ("主體偏移", "主題偏移"),
+    ("與弦相似度", "餘弦相似度"),
+    ("語音微造", "語音偽造"),
+    ("語音圍造", "語音偽造"),
+    ("特正解釋", "特徵解釋"),
+]
+
+
 class CorrectionEngine:
     """
     Manages domain-specific vocabulary and ASR error corrections.
@@ -119,7 +152,9 @@ class CorrectionEngine:
             "common": list(COMMON_ASR_ERRORS),
             "hitcon": list(HITCON_SECURITY_TERMS),
             "microsoft": list(MICROSOFT_CLOUD_AI_TERMS),
+            "academic": list(ACADEMIC_DEFENSE_TERMS),
         }
+
 
     def register_rule(self, domain: str, error_term: str, target_term: str):
         if domain not in self.domains:
