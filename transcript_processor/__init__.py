@@ -9,6 +9,7 @@ from .corrector import CorrectionEngine, DomainDict
 from .structurer import ProofreadBuilder, format_verbatim_document
 from .summarizer import SummaryBuilder, MermaidDiagram
 from .pipeline import TranscriptPipeline
+from .entity_guard import EntityGuard, EntityCandidate
 
 __all__ = [
     "clean_cjk_spaces",
@@ -21,4 +22,7 @@ __all__ = [
     "SummaryBuilder",
     "MermaidDiagram",
     "TranscriptPipeline",
+    "EntityGuard",
+    "EntityCandidate",
 ]
+
