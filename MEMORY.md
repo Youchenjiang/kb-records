@@ -23,16 +23,19 @@
 - **Rules Reference**: `PROOFREAD_RULES.md`
 - **Modular Toolkit (`transcript_processor/` & `scripts/`)**:
   - `cleaner.py`: CJK 空白清洗與全半形標點規範化。
-  - `corrector.py`: 領域字典與錯字修正引擎（內建 common/hitcon/microsoft 規則）。
-  - `structurer.py`: 100% Verbatim Proofread 生成器（YAML frontmatter 與段落排版）。
+  - `corrector.py`: 領域字典與錯字修正引擎（內建 common/hitcon/microsoft/academic 規則）。
+  - `entity_guard.py`: 專有名詞與人名核對閘門（候選提取、角色提示、互動核對報告）。
+  - `asr.py`: GPU 顯存防護（0.60 鎖定）與滑動窗口/重疊時間切片計算。
+  - `structurer.py`: 100% Verbatim Proofread 生成器（YAML frontmatter 與選填 talk_id 段落排版）。
   - `summarizer.py`: Executive Summary 與 Mermaid 流程圖生成器。
   - `pipeline.py`: 端到端自動化處理管線。
-  - `cli.py`: CLI 工具介面（`python -m transcript_processor [clean|correct|info]`）。
+  - `cli.py`: CLI 工具介面（`python -m transcript_processor [clean|correct|entity-check|vram-info|info]`）。
   - `scripts/batch_transcribe_qwen.py`: 本地端 GPU Qwen3-ASR-1.7B 滑動窗口轉錄器。
   - `scripts/build_perfect_proofreads.py`: 100% 全文原話校對生成與段落切分流水線。
   - `scripts/update_confirmed_names.py`: 使用者確認之專有名詞全局替換與角色標註工具。
-- **Tests**: `tests/test_processor.py` 單元測試全綠通過。
+- **Tests**: `tests/test_processor.py`, `tests/test_entity_guard.py`, `tests/test_asr.py` 共 19 個單元測試全數通過（0.17s）。
 - **Structure**: `{Category}/{YYYYMMDD}-{EventName}/{ShortTitle}-{proofread|summary}.md`（遵循 Option C，無 ID 前綴）
+
 
 ---
 

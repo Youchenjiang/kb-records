@@ -139,16 +139,23 @@
    - `normalize_punctuation()`：標準化全半形標點符號轉換。
    - `clean_transcript()`：一鍵清洗原始 ASR 文本。
 2. **`corrector.py`（領域字典與錯字修正模組）**：
-   - `CorrectionEngine`：支援依領域加載替換規則，已內建 `common`、`hitcon`（核心/漏洞/逆向）、`microsoft`（雲端/AI/治理）詞庫，支援動態擴充與 JSON 字典載入。
-3. **`structurer.py`（逐字稿結構化模組）**：
-   - `ProofreadBuilder`：嚴格遵循 `PROOFREAD_RULES.md` 自動組裝 YAML Frontmatter、原話保留聲明、段落章節標籤，產出 100% Verbatim 之 `proofread.md`。
-4. **`summarizer.py`（精華整理生成模組）**：
+   - `CorrectionEngine`：支援依領域加載替換規則，已內建 `common`、`hitcon`（核心/漏洞/逆向）、`microsoft`（雲端/AI/治理）、`academic`（論文口試/深度學習/醫學NLP）詞庫，支援動態擴充與 JSON 字典載入。
+3. **`entity_guard.py`（專有名詞與人名核對閘門模組）**：
+   - `EntityGuard`：依據中文學術/會議角色特徵自動提取候選人名、教授職稱與特定代稱，進行跨比對與出現頻次分析，產生供使用者確認之 Markdown 核對表格，杜絕未經確認之人名寫入交付文件。
+4. **`asr.py`（硬體防護與安全轉錄排程模組）**：
+   - `SafeASREngine`：強制限制 GPU 顯存比例（預設 `0.60`），預留顯存防止 Windows DWM TDR 重置引發遠端桌面斷線；提供滑動窗口與重疊（Overlap）時間切片計算及記憶體主動回收。
+5. **`structurer.py`（逐字稿結構化模組）**：
+   - `ProofreadBuilder`：嚴格遵循 `PROOFREAD_RULES.md` 自動組裝 YAML Frontmatter、原話保留聲明、段落章節標籤，產出 100% Verbatim 之 `proofread.md`（支援選填 talk_id 無綴詞模式）。
+6. **`summarizer.py`（精華整理生成模組）**：
    - `SummaryBuilder`：結構化組裝演講 Metadata、**Mermaid 架構流程圖**、技術深度剖析段落與關鍵 Takeaways，產出高技術密度之 `summary.md`。
-5. **`pipeline.py`（整合管線）**：
+7. **`pipeline.py`（整合管線）**：
    - `TranscriptPipeline`：串聯清洗、校正、逐字稿導出與摘要生成之端到端流程。
-6. **`cli.py`（CLI 命令列工具）**：
-   - 支援 `python -m transcript_processor [clean|correct|info]` 獨立命令列調用。
+8. **`cli.py`（CLI 命令列工具）**：
+   - 支援 `python -m transcript_processor [clean|correct|entity-check|vram-info|info]` 獨立命令列調用。
 
 ### 📜 常用輔助腳本 (`scripts/`)
+* `batch_transcribe_qwen.py`：本機 GPU 顯存安全受控的 Qwen3-ASR-1.7B 滑動窗口轉錄器。
+* `build_perfect_proofreads.py`：全文原話排版校對與說話者角色標註生成工具。
+* `update_confirmed_names.py`：使用者確認之正名批量全局替換工具。
 * `aac_to_mp3.py`：AAC / M4A 高效轉 MP3 工具（支援多執行緒並行、320kbps CBR、自動 FFmpeg 偵測）。
-* `format_transcript.py`：早期待過渡之逐字稿排版工具。
+

@@ -5,6 +5,9 @@ Follow the mandatory rules and engineering constraints outlined below.
 
 ## 🎙️ Transcript Proofreading Domain Rules
 - **Proofreading Manual**: Detailed speech-to-text error correction patterns and directory/file naming conventions are defined in [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md). Always consult it when proofreading transcripts or generating executive summaries.
+- **Entity Verification Gate**: Proper nouns and person names (speakers, professors, advisors) MUST be verified with the user before writing final proofread documents. Never assume or write unverified ASR homophones directly.
+- **Hardware & VRAM Safety**: Local ASR scripts MUST clamp CUDA memory allocation fraction (<= 0.60) to avoid GPU TDR resets and remote desktop disconnections.
+
 
 
 
