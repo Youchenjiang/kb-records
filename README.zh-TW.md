@@ -112,20 +112,37 @@
 
 ---
 
-## 🗂️ 20260327-AcademicConference (學術研討會 Session G & Session I)
+## 🗂️ 20260327-AcademicConference (學術研討會 Session G, Session H & Session I)
 
 ### 11. [學術研討會多場次論文發表與專題演講全輯](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
-* **涵蓋場次與發表人**：
-  1. 🧠 **Session G 論文一 (戴文芳)**：整合語言學指標與語意嵌入之 aMCI 語篇命題結構與主題偏移研究（指導教授：曾小平教授、蘇國良博士）。
-  2. 🤖 **Session G 論文二與商用實踐 (鍾國、張子龍)**：生成式 AI 焦慮量化規測、語音偽造特徵解釋模型與商業展示平臺。
-  3. 🎙️ **Session I 專題特邀與學生發表 (歐陽長龍教授、沈柏寧、林玉慧、許紫薇)**：學術論文發表、圖結構神經網路於多模態應用與研究問答（指導教授：蔡志豐博士等）。
+* **涵蓋場次與論文發表**：
+  1. 🧠 **Session G (國立中央大學 NCU 語言學與多模態 AI)**：
+     - **論文一 (戴文芳)**：整合語言學指標與語意嵌入之 aMCI 語篇命題結構與主題偏移研究（指導教授：曾小平教授、蘇國良博士）。
+     - **論文二 (林之璇)**：整合用戶行為意圖與多興趣表徵之序列推薦演算法（指導教授：何國瑞教授）。
+     - **論文三 (陳玉偉)**：企業導入人工智慧人才能力模型之建構。
+     - **論文四 (彭博勝)**：基於節點行為引導圖對比學習之跨領域影像分類 (NBGCL)（指導教授：王建興教授）。
+     - **評審與閉幕**：評審講評與 Q&A 交流、NCU 論文發表合影與頒獎。
+  2. 🤖 **Session H (社群輿情、多模態音訊與前瞻策略)**：
+     - **論文一 (匿名講者)**：社群媒體輿情探勘與公眾生成式 AI 焦慮量化規測 (Reddit / Pushshift / PRAW / LIWC / BERTopic)。
+     - **論文二 (高一婷)**：結合注意力機制之短影音多模態特徵融合與序列推薦模型 (ImageBind 多模態特徵提取)。
+     - **論文三 (徐志成教授實驗室學生)**：宣告式回測語法與事件驅動量化交易策略框架 (Financial Description Language, FDL)。
+     - **論文四 (鍾國)**：結合頻譜特徵與可解釋性人工智慧之端對端語音偽造特徵解釋模型 (Deepfake Audio XAI)。
+     - **論文五 (張子龍)**：基於動態檢索增強生成 (RAG) 之商業展示與互動諮詢平臺架構。
+     - **評審與閉幕**：評審委員深度講評、Session H 閉幕與全體師生合影。
+  3. 🎙️ **Session I (特邀專題演講與前瞻圖機器學習)**：
+     - **特邀專題 (沈柏寧)**：DRAVILaMA：基於大語言模型與視覺指令微調之行車記錄器風險預測架構（指導教授：陳奕明博士）。
+     - **論文一 (張玉瑤)**：基於智能合約之綠電交易匹配機制研究。
+     - **論文二 (林玉慧)**：資料前處理與資料品質對於機器學習分類模型之敏感度分析。
+     - **論文三 (蔡志豐博士指導學生)**：基於半監督特徵選取與多標籤卷積神經網路之高光譜醫學影像標註架構。
+     - **論文四 (許紫薇)**：基於時序圖注意力網路 (Sequential TAG) 與事件驅動之台股市場多因子因果關係預測。
+     - **專題講評**：歐陽長龍教授深度 Q&A 探討與致贈感謝狀。
 * **文件**：
-  * [📄 Session G 戴文芳 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-proofread.md)
-  * [📑 Session G 戴文芳 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
-  * [📄 Session G AI焦慮與語音偽造 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-proofread.md)
-  * [📑 Session G AI焦慮與語音偽造 精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-summary.md)
-  * [📄 Session I 特邀專題與學生論文 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-proofread.md)
-  * [📑 Session I 特邀專題與學生論文 精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-summary.md)
+  * [📄 Session G 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-proofread.md)
+  * [📑 Session G 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
+  * [📄 Session H 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-proofread.md)
+  * [📑 Session H 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-summary.md)
+  * [📄 Session I 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-proofread.md)
+  * [📑 Session I 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-summary.md)
 
 ---
 
@@ -144,8 +161,10 @@
    - `EntityGuard`：依據中文學術/會議角色特徵自動提取候選人名、教授職稱與特定代稱，進行跨比對與出現頻次分析，產生供使用者確認之 Markdown 核對表格，杜絕未經確認之人名寫入交付文件。
 4. **`asr.py`（硬體防護與安全轉錄排程模組）**：
    - `SafeASREngine`：強制限制 GPU 顯存比例（預設 `0.60`），預留顯存防止 Windows DWM TDR 重置引發遠端桌面斷線；提供滑動窗口與重疊（Overlap）時間切片計算及記憶體主動回收。
-5. **`structurer.py`（逐字稿結構化模組）**：
-   - `ProofreadBuilder`：嚴格遵循 `PROOFREAD_RULES.md` 自動組裝 YAML Frontmatter、原話保留聲明、段落章節標籤，產出 100% Verbatim 之 `proofread.md`（支援選填 talk_id 無綴詞模式）。
+5. **`structurer.py`（逐字稿結構化與場景適配模組）**：
+   - `ScenarioType`：支援 4 種場景特化標準（`single-talk` 技術演講單講者、`multi-paper` 學術研討會多論文樹狀分拆、`thesis-defense` 碩士學位口試緊密問答、`lightning-talks` 多講者閃電秀合輯）。
+   - `ProofreadBuilder`：嚴格遵循 `PROOFREAD_RULES.md` 自動組裝 YAML Frontmatter、場景特化引用宣告、段落章節標籤，產出 100% Verbatim 之 `proofread.md`。
+   - `validate_transcript_structure()`：針對產出的逐字稿實施場景規範結構校驗（檢查 YAML Frontmatter、標準聲明、章節層級、禁止字串如「摘要/刪節」）。
 6. **`summarizer.py`（精華整理生成模組）**：
    - `SummaryBuilder`：結構化組裝演講 Metadata、**Mermaid 架構流程圖**、技術深度剖析段落與關鍵 Takeaways，產出高技術密度之 `summary.md`。
 7. **`pipeline.py`（整合管線）**：
@@ -158,4 +177,8 @@
 * `build_perfect_proofreads.py`：全文原話排版校對與說話者角色標註生成工具。
 * `update_confirmed_names.py`：使用者確認之正名批量全局替換工具。
 * `aac_to_mp3.py`：AAC / M4A 高效轉 MP3 工具（支援多執行緒並行、320kbps CBR、自動 FFmpeg 偵測）。
+
+### 🧪 單元測試覆蓋 (`tests/`)
+* 完整覆蓋文字清洗、標點規範化、領域修正引擎、人名實體識別閘門、安全顯存算力排程、以及 4 種場景結構適配校驗器。
+* 執行 `python -m pytest tests/`：全數通過（25 passed）。
 
