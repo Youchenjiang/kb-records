@@ -1,7 +1,10 @@
 ---
 title: "Google Pixel 8A Mali GPU Driver 漏洞挖掘與提權實戰 (PK)"
+event: "20260821-HITCON-2026"
+speakers: ["PK"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "single-talk"
 ---
 
 # 🎙️ Google Pixel 8A Mali GPU Driver 漏洞挖掘與提權實戰 (PK)

@@ -5,6 +5,7 @@ talk_id: "239"
 speakers: ["大會司儀", "特邀評審 歐陽長龍教授 (南洋大學/NTU)", "發表者 沈柏寧 (DRAVILaMA)", "發表者 張玉瑤 (指導：葉偉陽)", "發表者 林玉慧 (指導：蔡志豐)", "發表者 (指導：蔡志豐)", "發表者 許紫薇 (Sequential TAG)"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "multi-paper"
 ---
 
 # 🎙️ 研討會 Session I 全程記錄：DRAVILaMA、區塊鏈電力交易、多策略資料前處理、半監督多標籤影像與 Sequential TAG 股市預測

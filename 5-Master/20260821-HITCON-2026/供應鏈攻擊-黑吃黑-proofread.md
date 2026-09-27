@@ -1,7 +1,10 @@
 ---
 title: "黑吃黑：瞄準資安研究員與紅隊的供應鏈攻擊 (Jason & Sam)"
+event: "20260821-HITCON-2026"
+speakers: ["Jason", "Sam"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "single-talk"
 ---
 
 # 🎙️ 黑吃黑：瞄準資安研究員與紅隊的供應鏈攻擊 (Jason & Sam)

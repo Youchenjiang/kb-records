@@ -1,7 +1,10 @@
 ---
 title: "POS 刷卡機魔改 ADB 與 AI 輔助挖 0-Day 實戰"
+event: "20260821-HITCON-2026"
+speakers: ["資安研究員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "single-talk"
 ---
 
 # 🎙️ POS 刷卡機魔改 ADB 與 AI 輔助挖 0-Day 實戰

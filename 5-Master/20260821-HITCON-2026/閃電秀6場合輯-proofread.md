@@ -1,7 +1,10 @@
 ---
 title: "HITCON 2026 閃電秀全集（6 場短講合輯）"
+event: "20260821-HITCON-2026"
+speakers: ["Henry", "克雷", "Ray", "年會活動組", "阿斯卡", "S & 艾子"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "lightning-talks"
 ---
 
 # 🎙️ HITCON 2026 閃電秀全集（6 場短講合輯）

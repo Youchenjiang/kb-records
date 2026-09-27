@@ -4,6 +4,7 @@ event: "國立臺灣科技大學資訊工程系 碩士學位論文口試"
 speakers: ["口試委員 (召集人)", "口試委員", "研究生 沈柏寧", "指導教授 陳奕明博士"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "thesis-defense"
 ---
 
 # 🎙️ 碩士論文口試審查攻防 Part 2：Attention 機制辯論、子圖層數與口試通過決議 (沈柏寧)

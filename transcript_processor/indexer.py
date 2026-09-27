@@ -142,7 +142,7 @@ class CatalogIndexer:
                         data["category"] = val
                     elif key == "scenario":
                         data["scenario"] = val
-                    elif key == "speakers":
+                    elif key in ("speakers", "speaker"):
                         # Support [A, B] or single
                         if val.startswith("[") and val.endswith("]"):
                             raw_speakers = val[1:-1].split(",")
@@ -150,13 +150,25 @@ class CatalogIndexer:
                         elif val:
                             data["speakers"] = [val]
 
-        # Fallback for title
+        # Fallback for title and speaker
+        h1_line_match = re.search(r"^#\s+(.*)$", content, re.MULTILINE)
+        if h1_line_match:
+            full_h1 = h1_line_match.group(1).strip()
+            # Check for parenthesized speaker at the end
+            paren_match = re.search(r"\(([^)]+)\)\s*$", full_h1)
+            if paren_match and (not data["speakers"] or data["speakers"] == ["講者"]):
+                spk_cand = paren_match.group(1).strip()
+                if not any(spk_cand.startswith(p) for p in ["指導", "中央", "錄音"]):
+                    data["speakers"] = [spk_cand]
+
+            if not data["title"]:
+                # Clean title
+                clean_title = re.sub(r"^(?:🎙️|🔬|🛡️|📑|\d+)\s*", "", full_h1)
+                clean_title = re.sub(r"\([^)]+\)\s*$", "", clean_title).strip()
+                data["title"] = clean_title or full_h1
+
         if not data["title"]:
-            h1_match = re.search(r"^#\s+(?:[^\n\r]*?)\s*(?:🎙️|🔬|🛡️|📑)?\s*([^\n\r(]+)", content, re.MULTILINE)
-            if h1_match:
-                data["title"] = h1_match.group(1).strip()
-            else:
-                data["title"] = path.stem.replace("-proofread", "")
+            data["title"] = path.stem.replace("-proofread", "")
 
         # Fallback date from event or path
         if not data["date"]:
@@ -168,7 +180,21 @@ class CatalogIndexer:
                 else:
                     data["date"] = raw_d
 
+        # Fallback scenario inference if not explicitly provided in frontmatter
+        fm_has_scenario = fm_match and ("scenario:" in fm_match.group(1))
+        if not fm_has_scenario:
+            search_str = f"{rel_path} {data['title']} {data['event']}"
+            if any(k in search_str for k in ["MasterDefense", "口試", "碩士學位", "審查質詢", "thesis-defense"]):
+                data["scenario"] = "thesis-defense"
+            elif any(k in search_str for k in ["AcademicConference", "研討會", "Session G", "Session H", "Session I", "multi-paper"]):
+                data["scenario"] = "multi-paper"
+            elif any(k in search_str for k in ["閃電秀", "lightning"]):
+                data["scenario"] = "lightning-talks"
+            else:
+                data["scenario"] = "single-talk"
+
         return data
+
 
     def generate_markdown(self, items: List[CatalogItem], lang: str = "zh-TW") -> str:
         """

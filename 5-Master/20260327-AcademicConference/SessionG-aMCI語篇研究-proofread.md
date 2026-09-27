@@ -5,6 +5,7 @@ talk_id: "237"
 speakers: ["大會司儀", "評審委員 (中央資管校友)", "發表者 戴文芳 (指導：曾小平/蘇國良)", "發表者 林之璇 (指導：陳彥良)", "發表者 陳玉偉 (指導：胡雅涵)", "發表者 彭博勝 (指導：陳以真/邱淑瑜)"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "multi-paper"
 ---
 
 # 🎙️ 研討會 Session G 全程記錄：aMCI 語篇命題、條件感知推薦、AI 人力投入框架與半監督影像分類

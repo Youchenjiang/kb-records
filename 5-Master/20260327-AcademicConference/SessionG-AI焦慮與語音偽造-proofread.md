@@ -5,6 +5,7 @@ talk_id: "238"
 speakers: ["大會司儀", "評審委員 (黃教授 / 李駿平教授 / 謝教授)", "發表者 (AI 焦慮研究)", "發表者 高一婷 (指導：陳任良/陳彥良)", "發表者 (指導：徐志成)", "發表者 鍾國 (指導教授群)", "發表者 張子龍 (指導教授群)"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "multi-paper"
 ---
 
 # 🎙️ 研討會 Session H 全程記錄：AI 焦慮社群分析、短影音推薦、量化回測、語音偽造 XAI 與動態 RAG 經營模式
