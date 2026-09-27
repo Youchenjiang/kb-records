@@ -5,6 +5,7 @@ Follow the mandatory rules and engineering constraints outlined below.
 
 ## 🎙️ Transcript Proofreading Domain Rules
 - **Proofreading Manual**: Detailed speech-to-text error correction patterns and directory/file naming conventions are defined in [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md). Always consult it when proofreading transcripts or generating executive summaries.
+- **Proofread Benchmark Standards**: All `*-proofread.md` deliverables must strictly adhere to the Verbatim Benchmark Formatting Standards defined in Section 6 of [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md), including YAML Frontmatter, the standardized Blockquote statement, zero hallucination/injection, multi-paper sectioning, and explicit speaker attribution.
 - **Entity Verification Gate**: Proper nouns and person names (speakers, professors, advisors) MUST be verified with the user before writing final proofread documents. Never assume or write unverified ASR homophones directly.
 - **Hardware & VRAM Safety**: Local ASR scripts MUST clamp CUDA memory allocation fraction (<= 0.60) to avoid GPU TDR resets and remote desktop disconnections.
 

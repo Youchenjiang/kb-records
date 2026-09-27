@@ -50,3 +50,4 @@
 - **GPU 顯存與遠端穩定性**：RTX 4060 Laptop (8GB VRAM) 必須強制設定 `torch.cuda.set_per_process_memory_fraction(0.65)` 以避免 Windows DWM 逾時重置導致遠端桌面斷線。
 - 嚴格遵守 `PROOFREAD_RULES.md`：proofread 100% 保持原話不刪減，summary 包含完整 Mermaid 架構圖與技術細節。
 - 確立 Scratch Files 生命週期：根目錄下暫存 raw txt、音訊檔與 `transcribe_outputs/` 嚴禁入庫，由 `.gitignore` 排除。
+- **Proofread 標竿格式標準制度化**：在 `PROOFREAD_RULES.md` 第六節正式確立「Proofread 格式化設計規範」，涵蓋標準 YAML frontmatter、說明引用宣告、零虛構注入原則、多論文場次（Multi-Paper Session）獨立分拆架構、對話發言角色標註與專門術語保真度，並同步寫入 `AGENTS.md`。
