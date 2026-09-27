@@ -50,9 +50,18 @@
 
 ---
 
+### 5. [Introduction to OSINT & Cyber Threat Intelligence (CTI) 實務分享會](./1-Security/20260927-Intro-to-OSINT-CTI/summary.md)
+* **講者**：Tunku Irfan（OSINT 研究員）、foxy（CTI 威脅情資研究員）
+* **關鍵技術**：OSINT 被動偵蒐、Truecaller / DuitNow 轉帳預覽查法定全名、SSM 公司委員會反查商業負責人、Google Dorking 進階語法（`intext:`, `intitle:`, `site:`, `inurl:`, `filetype:`）、Sherlock 跨平台帳號枚舉、社群平台永久數值 UID 追蹤、QR Code 釣魚活動拆解、帳號劫持（Account Takeover）擴散鏈、證據保全截圖、公眾名譽毀損（Defamation）法律防範、MyCERT 國家級通報、即時聊天室技術互動（SAPS 漏洞、車牌查驗、以圖搜圖）。
+* **文件**：
+  * [📄 雙語完整原話逐字稿與聊天室記錄 (proofread.md)](./1-Security/20260927-Intro-to-OSINT-CTI/proofread.md)
+  * [📑 技術精華筆記與 Mermaid 架構圖 (summary.md)](./1-Security/20260927-Intro-to-OSINT-CTI/summary.md)
+
+---
+
 ## 🗂️ 20260922-DevDaysAsia-2026 (DevDays Asia 2026)
 
-### 5. [AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md)
+### 6. [AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md)
 * **講者**：微軟架構團隊、Fend (微軟負責任 AI 團隊)、先 / Sean (新說資訊)
 * **關鍵技術**：Azure AI Evaluation、PyRIT 自動化紅隊演練、SAG Control Specification、UL 315 AI 產品安全評估標準（12 項原則與 3 大核心問答）、Clearview AI 案例分析、非二元判定機制（證據不足）。
 * **文件**：
@@ -61,7 +70,7 @@
 
 ---
 
-### 6. [Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md)
+### 7. [Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md)
 * **講者**：Ash (微軟 Commercial / GTM 策略主管)
 * **關鍵技術**：Context Layer (Microsoft IQ / M365 Profiler)、三層 Caching 快取體系 (Prompt / Semantic / Tool Cache)、Foundry Agent Optimizer、Agent Traces、Spend Telemetry、AT&T 實戰案例（月處理 7,000 億 Tokens，以 Phi-4 取代大型模型年省破千萬美元）。
 * **文件**：
@@ -70,7 +79,7 @@
 
 ---
 
-### 7. [GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
+### 8. [GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
 * **講者**：周祈和 (微軟 AI 解決方案工程師)
 * **關鍵技術**：GHAS (Secret Scanning 語意與 Push Protection、Dependency Scanning、CodeQL Copilot Autofix)、Defender for Cloud 雲地串聯、Security Campaign、MAGENTA 100+ Agent 漏洞挖掘與 PoC 自動生成、MCP Security 邊界、AI Gateway (Azure APIM) 流量與 Token 治理、Defender XDR 智慧訂房助理調查閉環。
 * **文件**：
@@ -79,7 +88,7 @@
 
 ---
 
-### 8. [Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md)
+### 9. [Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md)
 * **講者 / 對談者**：微軟雲端安全架構師、Youchen (資安三年研究計畫研究員)、現場資深資安架構前輩
 * **關鍵技術**：Security Copilot (Assistive vs. Autonomous)、Threat Hunting Agent (自然語言轉譯 KQL)、Sentinel MCP Server 官方工具鏈、Project Perception (常態化自主紅藍綠對抗)、資安三年研究計畫定位診斷（打破紅藍綠單打獨鬥孤島，建立向上回報架構師改寫安全約束規格的生態系閉環）。
 * **文件**：
@@ -88,7 +97,7 @@
 
 ---
 
-### 9. [AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md)
+### 10. [AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md)
 * **主持 / 講者**：Justin (主持人)、Jun (Anthropic Japan)、Ash (Microsoft GTM)、Amanda (Anthropic 舊金山總部)
 * **關鍵技術**：軟體民主化 (Democratization of Software / Everyone Can Build)、職涯抉擇 (破除管理職迷思，深耕高階 IC 創造力)、企業 ROI 審慎視角與 Anthropic Safety 核心護城河、時間審計每週省 13-17 小時、Claude 3.5 Sonnet + MCP 於 Microsoft Foundry 打造 Sparkles 杯子蛋糕點餐 Agent 實戰工作坊。
 * **文件**：
@@ -99,7 +108,7 @@
 
 ## 🗂️ 20260714-MasterDefense-DRAVILaMA (碩士學位論文口試)
 
-### 10. [基於大語言模型與視覺指令微調之行車記錄器風險預測架構 (DRAVILaMA)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md)
+### 11. [基於大語言模型與視覺指令微調之行車記錄器風險預測架構 (DRAVILaMA)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md)
 * **發表人**：沈柏寧（指導教授：陳奕明博士）
 * **關鍵技術**：DRAVILaMA 多模態行車風險預測、LLaVA 視覺指令微調、時序行為子圖（Behavior Subgraph）、時間因果注意機制（Temporal Causal Attention）、消融實驗驗證、混淆矩陣公式辯證。
 * **文件**：
@@ -114,7 +123,7 @@
 
 ## 🗂️ 20260327-AcademicConference (學術研討會 Session G, Session H & Session I)
 
-### 11. [學術研討會多場次論文發表與專題演講全輯](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
+### 12. [學術研討會多場次論文發表與專題演講全輯](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
 * **涵蓋場次與論文發表**：
   1. 🧠 **Session G (國立中央大學 NCU 語言學與多模態 AI)**：
      - **論文一 (戴文芳)**：整合語言學指標與語意嵌入之 aMCI 語篇命題結構與主題偏移研究（指導教授：曾小平教授、蘇國良博士）。

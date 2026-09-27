@@ -14,7 +14,7 @@
 ## 📋 Current Active Tasks
 - 已完成 20260714 碩士學位論文口試（會議錄音 60、61、62）全量雙版本產出與歸檔（3 proofread.md + 3 summary.md）。
 - 已完成 20260327 學術研討會 Session G, Session H & Session I（會議錄音 237、238、239）深度重構與真實多論文全量雙版本產出與歸檔（3 proofread.md + 3 summary.md）。
-- 已完成格式化規則標準化三步走優化（規則庫制度化、程式模組適配與校驗器、說明文件與索引全景同步）。
+- 已完成 20260927-Intro-to-OSINT-CTI 線上技術研討會全量雙版本產出與歸檔（專業英文逐字稿 + 段落繁中翻譯 + 會議即時文字聊天室雙語收錄之 proofread.md，以及高技術密度繁中架構 summary.md）。
 - 嚴格遵循原子化提交（Atomic Commits）與 Conventional Commits 規則進行本地提交。
 
 ---

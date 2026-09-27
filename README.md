@@ -41,6 +41,10 @@ To avoid "one-size-fits-all" formatting issues across diverse audio sources, tra
 * **[94 - HITCON 2026 Lightning Talks (6 Talks Collection)](./1-Security/20260821-HITCON-2026/94-閃電秀6場合輯/summary.md)**
   * Topics: Community lightning talks including firmware security, web exploits, AI hacking, bug bounty experiences, and CTF recaps.
   * Links: [📄 Verbatim Transcript](./1-Security/20260821-HITCON-2026/94-閃電秀6場合輯/proofread.md) | [📑 Technical Summary](./1-Security/20260821-HITCON-2026/94-閃電秀6場合輯/summary.md)
+* **[Introduction to OSINT & Cyber Threat Intelligence (CTI) Sharing Session](./1-Security/20260927-Intro-to-OSINT-CTI/summary.md)**
+  * Speakers: Tunku Irfan (OSINT Researcher) & foxy (Cyber Threat Intelligence Researcher)
+  * Topics: Passive reconnaissance pivot chain (Truecaller -> DuitNow -> SSM), Google Dorking, Sherlock username enumeration, permanent social media UIDs, QR phishing active infrastructure breakdown, evidence screenshot preservation, defamation legal risks, MyCERT vulnerability reporting, and in-meeting live chat log.
+  * Links: [📄 Bilingual Verbatim Transcript (proofread.md)](./1-Security/20260927-Intro-to-OSINT-CTI/proofread.md) | [📑 Technical Summary (summary.md)](./1-Security/20260927-Intro-to-OSINT-CTI/summary.md)
 
 ---
 
