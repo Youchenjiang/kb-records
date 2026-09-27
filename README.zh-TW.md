@@ -1,193 +1,97 @@
-# 🎙️ HITCON 資安演講錄音整理與逐字稿知識庫
+# 🎙️ 技術年會、資安攻防與學術論文錄音逐字稿知識庫
 
-本專案收錄 HITCON 資安技術演講之高品質逐字稿校對與精華整理筆記。每個主題均提供雙版本對照存放：
-1. **📄 逐字原話校對版 (`proofread.md`)**：100% 保留講者原話發言、語意轉折、現場互動與冷笑話，地毯式修訂語音辨識錯字並完成舒適段落劃分。
-2. **📑 精華結構整理版 (`summary.md`)**：提煉核心技術架構、漏洞成因（Root Cause）、Exploit 攻擊鏈圖解、防禦機制與關鍵結論。
+本專案收錄資安技術研討會（**HITCON**、**OSINT & CTI**）、企業前瞻峰會（**Microsoft DevDays Asia**）、**碩士學位論文口試**與**學術研討會**之高品質逐字稿校對與精華整理筆記。
 
----
-
-## 🗂️ 演講專題目錄
-
-### 1. [Pixel 8A GPU 漏洞挖掘與提權實戰](./5-Master/20260821-HITCON-2026/Pixel8A-GPU漏洞挖掘-summary.md)
-* **講者**：PK
-* **關鍵技術**：ARM Mali GPU Driver (`kbase`)、CVE-2025-8045 Double Free、CVE-2025-6349 Queue UAF (0-Day)、繞過 Clang Forward-Edge CFI、PTE Access Permission 覆寫奪取 Full Root。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260821-HITCON-2026/Pixel8A-GPU漏洞挖掘-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260821-HITCON-2026/Pixel8A-GPU漏洞挖掘-summary.md)
+每個主題均標準化提供雙版本對照存放：
+1. **📄 逐字原話校對版 (`proofread.md`)**：100% 完整保留講者原話發言、語意轉折、現場互動與冷笑話，地毯式修訂語音辨識錯字，並遵循場景適配規範完成舒適流暢的段落劃分。
+2. **📑 精華結構整理版 (`summary.md`)**：結構化提煉核心技術架構、漏洞成因（Root Cause）、**Mermaid 流程圖解**、攻防攻防答辯攻防與關鍵 Takeaways。
 
 ---
 
-### 2. [POS 刷卡機魔改 ADB 與 AI 輔助挖 0-Day 實戰](./5-Master/20260821-HITCON-2026/POS-ADB-0Day-AI輔助-summary.md)
-* **講者**：資安研究員
-* **關鍵技術**：魔改 ADB 服務 (`xcbd`)、Claude + OpenClaw 微壓榨自動化逆向框架、3 個 0-Day 漏洞（API 側錄 PIN、繞過 RSA-2048 簽章、Zip-Slip 覆寫 Root RCE）、硬體改裝（俄羅斯方塊、1-bit Bad Apple、AK4951 驅動 Rickroll）。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260821-HITCON-2026/POS-ADB-0Day-AI輔助-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260821-HITCON-2026/POS-ADB-0Day-AI輔助-summary.md)
+## 📖 全局目錄索引 (Master Catalog)
+
+本專案已全面導入**「職責解耦」**與**「自動化索引」**架構。README 專注於專案規範與工具架構說明；詳細的演講條目、講者、場景與雙版本連結統一由獨立目錄文件收錄，並支援透過 CLI 一鍵自動更新：
+
+* 🇹🇼 **[中文全局目錄索引 (CATALOG.zh-TW.md)](./CATALOG.zh-TW.md)**：包含完整序號、演講/論文題目、講者陣容、場景標籤與對照連結。
+* 🌐 **[English Master Catalog (CATALOG.md)](./CATALOG.md)**：英文版全局目錄與分類對照表。
 
 ---
 
-### 3. [黑吃黑：瞄準資安研究員與紅隊的供應鏈攻擊](./5-Master/20260821-HITCON-2026/供應鏈攻擊-黑吃黑-summary.md)
-* **講者**：Jason & Sam (Vulnerability Intelligence Research Team)
-* **關鍵技術**：微軟 WSUS / React-to-Shell 假 PoC 釣魚、PyPI 74 萬套件 ZIP 檔尾極速分析、Execution Context Keying 動態檔名解密金鑰、`sitecustomize.py` 全域常駐、UTC+8 / 春節停工 APT 威脅情資。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260821-HITCON-2026/供應鏈攻擊-黑吃黑-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260821-HITCON-2026/供應鏈攻擊-黑吃黑-summary.md)
+## 🗂️ 核心領域分類導航
+
+| 分類資料夾 | 涵蓋事件與主題範疇 | 核心技術領域 |
+| :--- | :--- | :--- |
+| **`1-Security/`** | **HITCON 2026**<br/>**OSINT & CTI 線上研討會** | Android Kernel GPU 驅動提權、POS 魔改 ADB 挖 0-Day、紅隊供應鏈攻擊、開源情報反查鏈、QR Code 釣魚活動拆解與 MyCERT 通報。 |
+| **`2-Cloud-AI/`** | **Microsoft DevDays Asia 2026** | Azure OpenAI 企業 Agent、GitHub Copilot Workspace、Tokenomics 成本優化、雲原生微服務、Fabric 統一數據治理、責任 AI (UL 315) 治理。 |
+| **`5-Master/`** | **碩士論文口試 (DRAVILaMA)**<br/>**20260327 學術研討會** | 多模態行車風險預測、LLaVA 視覺指令微調、時序因果注意機制、aMCI 語篇命題分析、短影音序列推薦、Deepfake 語音偽造特徵解釋。 |
+
+> 💡 **瀏覽提示**：若欲查閱任何主題之詳細原話與摘要，請直接前往 [CATALOG.zh-TW.md](./CATALOG.zh-TW.md) 點選對應連結，或直接探索上述資料夾。
 
 ---
 
-### 4. [HITCON 2026 閃電秀 6 場短講合輯](./5-Master/20260821-HITCON-2026/閃電秀6場合輯-summary.md)
-* **講者群**：Henry、克雷、Ray、活動組、阿斯卡、S & 艾子
-* **涵蓋主題**：
-  1. ⚡ **Henry**：DEFCON Goon 現場維安人員招募與亞洲組織 A49
-  2. ⚡ **克雷**：讓 HITCON 成為你的知識庫——HITCON KB 2.0 (HITCON Wiki)
-  3. ⚡ **Ray**：極致 Cyberpunk C2 框架 Mina（100% Prompt Engineering 生成、烏克蘭實測）
-  4. ⚡ **活動組**：年會幕後除障記（甜筒護唇膏修印卡機、釣魚 -700 萬分打掛後端）
-  5. ⚡ **阿斯卡**：PowerShell TypeData 屬性覆寫與隱蔽執行（`ls` 觸發、無 ScriptBlock Log）
-  6. ⚡ **S & 艾子**：來自超自然的震動——智慧成人連網玩具漏洞挖掘（Session ID 偽造與硬體過熱）
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260821-HITCON-2026/閃電秀6場合輯-proofread.md)
-  * [📑 6 場短講精華整理 (summary.md)](./5-Master/20260821-HITCON-2026/閃電秀6場合輯-summary.md)
+## 📐 4 大場景適配矩陣 (`PROOFREAD_RULES.md`)
+
+為杜絕傳統 ASR 格式「一體適用（One-size-fits-all）」引發之排版失真，全庫嚴格遵循**通用底層協議 + 4 大場景特化標準**：
+
+| 場景識別碼 (`scenario`) | 適用場景 | 排版與結構化規範 |
+| :--- | :--- | :--- |
+| **`single-talk`** | 標準技術年會單講者演講 | 內文保持流暢敘事風格，**正文不加發言人標籤**；僅在結尾問答（Q&A）切換對話標記。 |
+| **`multi-paper`** | 學術研討會多論文發表場次 | **樹狀雙層架構**：`## 論文 X: [題目]` 搭配 `## 🔬 論文 X 評審講評與 Q&A`。全篇明確標註發表人與評審，完整收錄開場宣讀與閉幕頒獎。 |
+| **`thesis-defense`** | 碩士 / 博士學位口試審查 | 論文簡報發表段落接續緊密的委員會質詢對話，嚴格標註發言角色（`召集人`、`口試委員`、`指導教授`、`研究生`）。 |
+| **`lightning-talks`** | 多講者快速短講合輯 | 目錄化管理各講者短講，具備獨立講題 Banner 與發表人介紹。 |
 
 ---
 
-### 5. [Introduction to OSINT & Cyber Threat Intelligence (CTI) 實務分享會](./1-Security/20260927-Intro-to-OSINT-CTI/summary.md)
-* **講者**：Tunku Irfan（OSINT 研究員）、foxy（CTI 威脅情資研究員）
-* **關鍵技術**：OSINT 被動偵蒐、Truecaller / DuitNow 轉帳預覽查法定全名、SSM 公司委員會反查商業負責人、Google Dorking 進階語法（`intext:`, `intitle:`, `site:`, `inurl:`, `filetype:`）、Sherlock 跨平台帳號枚舉、社群平台永久數值 UID 追蹤、QR Code 釣魚活動拆解、帳號劫持（Account Takeover）擴散鏈、證據保全截圖、公眾名譽毀損（Defamation）法律防範、MyCERT 國家級通報、即時聊天室技術互動（SAPS 漏洞、車牌查驗、以圖搜圖）。
-* **文件**：
-  * [📄 雙語完整原話逐字稿與聊天室記錄 (proofread.md)](./1-Security/20260927-Intro-to-OSINT-CTI/proofread.md)
-  * [📑 技術精華筆記與 Mermaid 架構圖 (summary.md)](./1-Security/20260927-Intro-to-OSINT-CTI/summary.md)
+## 🛠️ 核心處理器與工具庫 (`transcript_processor/`)
+
+本專案提供端到端之語音轉錄處理與目錄自動化工具包 `transcript_processor`：
+
+```text
+transcript_processor/
+├── cleaner.py          # CJK 字元異常空格清洗、全半形標點規範化
+├── corrector.py        # 領域字典與錯字修正引擎（內建 common/hitcon/microsoft/academic）
+├── entity_guard.py     # 專有名詞與人名核對閘門（候選提取、角色提示、互動核對報告）
+├── asr.py              # GPU 顯存防護（0.60 鎖定）與滑動窗口/重疊時間切片計算
+├── structurer.py       # 100% Verbatim Proofread 生成器與場景結構驗證器 (validate_transcript_structure)
+├── summarizer.py       # Executive Summary 與 Mermaid 流程圖生成器
+├── indexer.py          # 全自動目錄掃描器：動態生成 CATALOG.md 與 CATALOG.zh-TW.md
+├── pipeline.py         # 端到端自動化處理管線
+└── cli.py              # CLI 命令列工具
+```
+
+### 💻 常用 CLI 指令
+
+```bash
+# 1. 一鍵自動掃描並更新全局目錄索引（CATALOG.md & CATALOG.zh-TW.md）
+python -m transcript_processor index
+
+# 2. 文字清洗與 CJK 空格規範化
+python -m transcript_processor clean raw_transcript.txt -o cleaned.txt
+
+# 3. 領域字典修正
+python -m transcript_processor correct cleaned.txt -d common hitcon academic -o corrected.txt
+
+# 4. 人名與專有名詞核對閘門
+python -m transcript_processor entity-check corrected.txt -o entity_report.md
+
+# 5. 查看當前硬體 GPU / VRAM 安全分配參數
+python -m transcript_processor vram-info
+```
 
 ---
 
-## 🗂️ 20260922-DevDaysAsia-2026 (DevDays Asia 2026)
+## 🧪 單元測試覆蓋 (`tests/`)
 
-### 6. [AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md)
-* **講者**：微軟架構團隊、Fend (微軟負責任 AI 團隊)、先 / Sean (新說資訊)
-* **關鍵技術**：Azure AI Evaluation、PyRIT 自動化紅隊演練、SAG Control Specification、UL 315 AI 產品安全評估標準（12 項原則與 3 大核心問答）、Clearview AI 案例分析、非二元判定機制（證據不足）。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md)
+全專案具備完善的自動化單元測試，執行以下指令驗證：
 
----
+```bash
+python -m pytest tests/
+```
 
-### 7. [Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md)
-* **講者**：Ash (微軟 Commercial / GTM 策略主管)
-* **關鍵技術**：Context Layer (Microsoft IQ / M365 Profiler)、三層 Caching 快取體系 (Prompt / Semantic / Tool Cache)、Foundry Agent Optimizer、Agent Traces、Spend Telemetry、AT&T 實戰案例（月處理 7,000 億 Tokens，以 Phi-4 取代大型模型年省破千萬美元）。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md)
-
----
-
-### 8. [GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
-* **講者**：周祈和 (微軟 AI 解決方案工程師)
-* **關鍵技術**：GHAS (Secret Scanning 語意與 Push Protection、Dependency Scanning、CodeQL Copilot Autofix)、Defender for Cloud 雲地串聯、Security Campaign、MAGENTA 100+ Agent 漏洞挖掘與 PoC 自動生成、MCP Security 邊界、AI Gateway (Azure APIM) 流量與 Token 治理、Defender XDR 智慧訂房助理調查閉環。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md)
-
----
-
-### 9. [Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md)
-* **講者 / 對談者**：微軟雲端安全架構師、Youchen (資安三年研究計畫研究員)、現場資深資安架構前輩
-* **關鍵技術**：Security Copilot (Assistive vs. Autonomous)、Threat Hunting Agent (自然語言轉譯 KQL)、Sentinel MCP Server 官方工具鏈、Project Perception (常態化自主紅藍綠對抗)、資安三年研究計畫定位診斷（打破紅藍綠單打獨鬥孤島，建立向上回報架構師改寫安全約束規格的生態系閉環）。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md)
-
----
-
-### 10. [AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md)
-* **主持 / 講者**：Justin (主持人)、Jun (Anthropic Japan)、Ash (Microsoft GTM)、Amanda (Anthropic 舊金山總部)
-* **關鍵技術**：軟體民主化 (Democratization of Software / Everyone Can Build)、職涯抉擇 (破除管理職迷思，深耕高階 IC 創造力)、企業 ROI 審慎視角與 Anthropic Safety 核心護城河、時間審計每週省 13-17 小時、Claude 3.5 Sonnet + MCP 於 Microsoft Foundry 打造 Sparkles 杯子蛋糕點餐 Agent 實戰工作坊。
-* **文件**：
-  * [📄 完整原話逐字稿 (proofread.md)](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-proofread.md)
-  * [📑 核心技術精華筆記 (summary.md)](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md)
-
----
-
-## 🗂️ 20260714-MasterDefense-DRAVILaMA (碩士學位論文口試)
-
-### 11. [基於大語言模型與視覺指令微調之行車記錄器風險預測架構 (DRAVILaMA)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md)
-* **發表人**：沈柏寧（指導教授：陳奕明博士）
-* **關鍵技術**：DRAVILaMA 多模態行車風險預測、LLaVA 視覺指令微調、時序行為子圖（Behavior Subgraph）、時間因果注意機制（Temporal Causal Attention）、消融實驗驗證、混淆矩陣公式辯證。
-* **文件**：
-  * [📄 完整簡報原話逐字稿 (proofread.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-proofread.md)
-  * [📑 簡報技術精華筆記 (summary.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md)
-  * [📄 審查質詢 Part 1 逐字稿 (proofread.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-proofread.md)
-  * [📑 審查質詢 Part 1 攻防重點 (summary.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-summary.md)
-  * [📄 審查質詢 Part 2 逐字稿 (proofread.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-proofread.md)
-  * [📑 審查質詢 Part 2 評定決議 (summary.md)](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-summary.md)
-
----
-
-## 🗂️ 20260327-AcademicConference (學術研討會 Session G, Session H & Session I)
-
-### 12. [學術研討會多場次論文發表與專題演講全輯](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
-* **涵蓋場次與論文發表**：
-  1. 🧠 **Session G (國立中央大學 NCU 語言學與多模態 AI)**：
-     - **論文一 (戴文芳)**：整合語言學指標與語意嵌入之 aMCI 語篇命題結構與主題偏移研究（指導教授：曾小平教授、蘇國良博士）。
-     - **論文二 (林之璇)**：整合用戶行為意圖與多興趣表徵之序列推薦演算法（指導教授：何國瑞教授）。
-     - **論文三 (陳玉偉)**：企業導入人工智慧人才能力模型之建構。
-     - **論文四 (彭博勝)**：基於節點行為引導圖對比學習之跨領域影像分類 (NBGCL)（指導教授：王建興教授）。
-     - **評審與閉幕**：評審講評與 Q&A 交流、NCU 論文發表合影與頒獎。
-  2. 🤖 **Session H (社群輿情、多模態音訊與前瞻策略)**：
-     - **論文一 (匿名講者)**：社群媒體輿情探勘與公眾生成式 AI 焦慮量化規測 (Reddit / Pushshift / PRAW / LIWC / BERTopic)。
-     - **論文二 (高一婷)**：結合注意力機制之短影音多模態特徵融合與序列推薦模型 (ImageBind 多模態特徵提取)。
-     - **論文三 (徐志成教授實驗室學生)**：宣告式回測語法與事件驅動量化交易策略框架 (Financial Description Language, FDL)。
-     - **論文四 (鍾國)**：結合頻譜特徵與可解釋性人工智慧之端對端語音偽造特徵解釋模型 (Deepfake Audio XAI)。
-     - **論文五 (張子龍)**：基於動態檢索增強生成 (RAG) 之商業展示與互動諮詢平臺架構。
-     - **評審與閉幕**：評審委員深度講評、Session H 閉幕與全體師生合影。
-  3. 🎙️ **Session I (特邀專題演講與前瞻圖機器學習)**：
-     - **特邀專題 (沈柏寧)**：DRAVILaMA：基於大語言模型與視覺指令微調之行車記錄器風險預測架構（指導教授：陳奕明博士）。
-     - **論文一 (張玉瑤)**：基於智能合約之綠電交易匹配機制研究。
-     - **論文二 (林玉慧)**：資料前處理與資料品質對於機器學習分類模型之敏感度分析。
-     - **論文三 (蔡志豐博士指導學生)**：基於半監督特徵選取與多標籤卷積神經網路之高光譜醫學影像標註架構。
-     - **論文四 (許紫薇)**：基於時序圖注意力網路 (Sequential TAG) 與事件驅動之台股市場多因子因果關係預測。
-     - **專題講評**：歐陽長龍教授深度 Q&A 探討與致贈感謝狀。
-* **文件**：
-  * [📄 Session G 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-proofread.md)
-  * [📑 Session G 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md)
-  * [📄 Session H 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-proofread.md)
-  * [📑 Session H 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-summary.md)
-  * [📄 Session I 完整原話逐字稿 (proofread.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-proofread.md)
-  * [📑 Session I 技術精華筆記 (summary.md)](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-summary.md)
-
----
-
-## 🛠️ 核心處理器與工具庫 (`transcript_processor/` & `scripts/`)
-
-本專案將逐字稿處理流程模組化封裝為通用工具包 `transcript_processor`，支援依需求獨立或組合調用：
-
-### 📦 通用模組架構 (`transcript_processor/`)
-1. **`cleaner.py`（文字清洗模組）**：
-   - `clean_cjk_spaces()`：清除 CJK 字元間、符號間異常空格，精確保留英文單詞與數字間隔。
-   - `normalize_punctuation()`：標準化全半形標點符號轉換。
-   - `clean_transcript()`：一鍵清洗原始 ASR 文本。
-2. **`corrector.py`（領域字典與錯字修正模組）**：
-   - `CorrectionEngine`：支援依領域加載替換規則，已內建 `common`、`hitcon`（核心/漏洞/逆向）、`microsoft`（雲端/AI/治理）、`academic`（論文口試/深度學習/醫學NLP）詞庫，支援動態擴充與 JSON 字典載入。
-3. **`entity_guard.py`（專有名詞與人名核對閘門模組）**：
-   - `EntityGuard`：依據中文學術/會議角色特徵自動提取候選人名、教授職稱與特定代稱，進行跨比對與出現頻次分析，產生供使用者確認之 Markdown 核對表格，杜絕未經確認之人名寫入交付文件。
-4. **`asr.py`（硬體防護與安全轉錄排程模組）**：
-   - `SafeASREngine`：強制限制 GPU 顯存比例（預設 `0.60`），預留顯存防止 Windows DWM TDR 重置引發遠端桌面斷線；提供滑動窗口與重疊（Overlap）時間切片計算及記憶體主動回收。
-5. **`structurer.py`（逐字稿結構化與場景適配模組）**：
-   - `ScenarioType`：支援 4 種場景特化標準（`single-talk` 技術演講單講者、`multi-paper` 學術研討會多論文樹狀分拆、`thesis-defense` 碩士學位口試緊密問答、`lightning-talks` 多講者閃電秀合輯）。
-   - `ProofreadBuilder`：嚴格遵循 `PROOFREAD_RULES.md` 自動組裝 YAML Frontmatter、場景特化引用宣告、段落章節標籤，產出 100% Verbatim 之 `proofread.md`。
-   - `validate_transcript_structure()`：針對產出的逐字稿實施場景規範結構校驗（檢查 YAML Frontmatter、標準聲明、章節層級、禁止字串如「摘要/刪節」）。
-6. **`summarizer.py`（精華整理生成模組）**：
-   - `SummaryBuilder`：結構化組裝演講 Metadata、**Mermaid 架構流程圖**、技術深度剖析段落與關鍵 Takeaways，產出高技術密度之 `summary.md`。
-7. **`pipeline.py`（整合管線）**：
-   - `TranscriptPipeline`：串聯清洗、校正、逐字稿導出與摘要生成之端到端流程。
-8. **`cli.py`（CLI 命令列工具）**：
-   - 支援 `python -m transcript_processor [clean|correct|entity-check|vram-info|info]` 獨立命令列調用。
-
-### 📜 常用輔助腳本 (`scripts/`)
-* `batch_transcribe_qwen.py`：本機 GPU 顯存安全受控的 Qwen3-ASR-1.7B 滑動窗口轉錄器。
-* `build_perfect_proofreads.py`：全文原話排版校對與說話者角色標註生成工具。
-* `update_confirmed_names.py`：使用者確認之正名批量全局替換工具。
-* `aac_to_mp3.py`：AAC / M4A 高效轉 MP3 工具（支援多執行緒並行、320kbps CBR、自動 FFmpeg 偵測）。
-
-### 🧪 單元測試覆蓋 (`tests/`)
-* 完整覆蓋文字清洗、標點規範化、領域修正引擎、人名實體識別閘門、安全顯存算力排程、以及 4 種場景結構適配校驗器。
-* 執行 `python -m pytest tests/`：全數通過（25 passed）。
-
+* **測試範圍**：
+  * 文字清洗模組（`test_processor.py`）
+  * 專有名詞閘門（`test_entity_guard.py`）
+  * GPU 顯存安全分配（`test_asr.py`）
+  * 4 大場景結構校驗器（`test_scenarios.py`）
+  * 全自動目錄掃描與產生器（`test_indexer.py`）
+* **測試狀態**：30 項單元測試全數通過（`30 passed in 0.29s`）。

@@ -34,12 +34,13 @@
   - `asr.py`: GPU 顯存防護（0.60 鎖定）與滑動窗口/重疊時間切片計算。
   - `structurer.py`: 100% Verbatim Proofread 生成器（`ScenarioType` 支援、場景特化聲明、`validate_transcript_structure` 校驗器）。
   - `summarizer.py`: Executive Summary 與 Mermaid 流程圖生成器。
+  - `indexer.py`: 自動化目錄掃描器（支援 `python -m transcript_processor index`，全自動生成 `CATALOG.md` 與 `CATALOG.zh-TW.md`）。
   - `pipeline.py`: 端到端自動化處理管線。
-  - `cli.py`: CLI 工具介面（`python -m transcript_processor [clean|correct|entity-check|vram-info|info]`）。
+  - `cli.py`: CLI 工具介面（`python -m transcript_processor [clean|correct|entity-check|vram-info|info|index]`）。
   - `scripts/batch_transcribe_qwen.py`: 本地端 GPU Qwen3-ASR-1.7B 滑動窗口轉錄器。
   - `scripts/build_perfect_proofreads.py`: 100% 全文原話校對生成與段落切分流水線。
   - `scripts/update_confirmed_names.py`: 使用者確認之專有名詞全局替換與角色標註工具。
-- **Tests**: `tests/test_processor.py`, `tests/test_entity_guard.py`, `tests/test_asr.py`, `tests/test_scenarios.py` 共 25 個單元測試全數通過（0.21s）。
+- **Tests**: `tests/test_processor.py`, `tests/test_entity_guard.py`, `tests/test_asr.py`, `tests/test_scenarios.py`, `tests/test_indexer.py` 共 30 個單元測試全數通過（0.29s）。
 - **Structure**: `{Category}/{YYYYMMDD}-{EventName}/{ShortTitle}-{proofread|summary}.md`（遵循 Option C，無 ID 前綴）
 
 ---
@@ -50,10 +51,8 @@
 - 完成 20260821-HITCON-2026（91~94）共 8 份文件產出。
 - 完成 20260922-DevDaysAsia-2026（121~125）共 10 份文件產出。
 - 完成 20260714-MasterDefense-DRAVILaMA（60~62）共 6 份文件產出（沈柏寧碩士論文口試）。
-- 完成 20260327-AcademicConference（237~239）深度重構：
-  - Session G: 戴文芳 (aMCI), 林之璇 (序列推薦), 陳玉偉 (企業AI人力), 彭博勝 (NBGCL 影像分類)。
-  - Session H: AI 焦慮 (Reddit/Pushshift/PRAW/LIWC/BERTopic), 高一婷 (短影音推薦), 徐志成學生 (FDL 回測), 鍾國 (Deepfake Audio XAI), 張子龍 (動態 RAG)。
-  - Session I: 沈柏寧 (DRAVILaMA 特邀), 張玉瑤 (區塊鏈綠電), 林玉慧 (資料品質), 蔡志豐學生 (半監督多標籤影像), 許紫薇 (Sequential TAG 股市因果)。
+- 完成 20260327-AcademicConference（237~239）深度重構（Session G, H, I 共 6 份文件）。
+- 完成 20260927-Intro-to-OSINT-CTI（Tunku Irfan & foxy，雙語對照 proofread + 會議文字聊天室記錄 + summary）。
 - **專有名詞確認原則**：語音辨識之姓名、指導教授等專有名詞不可自行臆測，必須與使用者核對。本次核對正名：沈柏寧、陳奕明博士、蔡志豐博士。
 - **GPU 顯存與遠端穩定性**：RTX 4060 Laptop (8GB VRAM) 必須強制設定 `torch.cuda.set_per_process_memory_fraction(0.65)` 以避免 Windows DWM 逾時重置導致遠端桌面斷線。
 - 嚴格遵守 `PROOFREAD_RULES.md`：proofread 100% 保持原話不刪減，summary 包含完整 Mermaid 架構圖與技術細節。
@@ -61,5 +60,9 @@
 - **Proofread 標竿格式標準制度化與場景適配矩陣**：
   - 在 `PROOFREAD_RULES.md` 與 `AGENTS.md` 確立「通用底層協議 + 4 大場景適配矩陣」（`single-talk`, `multi-paper`, `thesis-defense`, `lightning-talks`）。
   - 在 `transcript_processor/structurer.py` 實作 `ScenarioType` 與 `validate_transcript_structure()` 結構檢驗器。
-  - 編寫 `tests/test_scenarios.py` 涵蓋各場景適配與實體驗證，25 項測試全數通過。
-  - 同步更新中英文 `README.md` 與目錄索引。
+  - 編寫 `tests/test_scenarios.py` 涵蓋各場景適配與實體驗證。
+- **「職責解耦 + 獨立目錄 + 自動化生成」三合一架構全面上線**：
+  - README 徹底解耦：不再手動維護條目序號與雙語同步，專注專案架構、場景矩陣與工具規格。
+  - 獨立目錄檔案：全面改由 `CATALOG.md` 與 `CATALOG.zh-TW.md` 承擔全量檢索與條目導航。
+  - 全自動化掃描：在 `transcript_processor/indexer.py` 實作自動解析 Frontmatter 與路徑，透過 `python -m transcript_processor index` 一鍵掃描重構全站目錄。
+  - 全套測試增至 30 個單元測試，100% 綠燈通過。
