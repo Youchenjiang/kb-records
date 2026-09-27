@@ -11,6 +11,7 @@ from .summarizer import SummaryBuilder, MermaidDiagram
 from .pipeline import TranscriptPipeline
 from .entity_guard import EntityGuard, EntityCandidate
 from .asr import SafeASREngine
+from .indexer import CatalogIndexer, CatalogItem
 
 __all__ = [
     "clean_cjk_spaces",
@@ -28,6 +29,9 @@ __all__ = [
     "EntityGuard",
     "EntityCandidate",
     "SafeASREngine",
+    "CatalogIndexer",
+    "CatalogItem",
 ]
+
 
 

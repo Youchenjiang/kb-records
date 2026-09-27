@@ -13,6 +13,7 @@ from .cleaner import clean_transcript
 from .corrector import CorrectionEngine
 from .entity_guard import EntityGuard
 from .asr import SafeASREngine
+from .indexer import CatalogIndexer
 from .pipeline import TranscriptPipeline
 
 
@@ -21,6 +22,12 @@ def main():
         description="Transcript Processor Toolkit: Modular ASR Cleaning, Correction & Summarization"
     )
     subparsers = parser.add_subparsers(dest="command", help="Sub-commands")
+
+    # Command: index
+    index_parser = subparsers.add_parser("index", help="Automatically scan and regenerate CATALOG.md and CATALOG.zh-TW.md")
+    index_parser.add_argument("--root", type=str, default=".", help="Root directory to scan (default: current directory)")
+    index_parser.add_argument("--out-en", type=str, default="CATALOG.md", help="English catalog output path (default: CATALOG.md)")
+    index_parser.add_argument("--out-zh", type=str, default="CATALOG.zh-TW.md", help="Chinese catalog output path (default: CATALOG.zh-TW.md)")
 
     # Command: clean
     clean_parser = subparsers.add_parser("clean", help="Normalize CJK spacing and punctuation")
@@ -54,6 +61,17 @@ def main():
 
     if not args.command:
         parser.print_help()
+        sys.exit(0)
+
+    if args.command == "index":
+        indexer = CatalogIndexer(root_dir=Path(args.root))
+        count, en_path, zh_path = indexer.update_catalog_files(
+            output_en=Path(args.out_en),
+            output_zh=Path(args.out_zh),
+        )
+        print(f"✅ Catalog successfully generated: {count} sessions indexed.")
+        print(f"   - English Catalog: {en_path}")
+        print(f"   - Chinese Catalog: {zh_path}")
         sys.exit(0)
 
     if args.command == "info":
