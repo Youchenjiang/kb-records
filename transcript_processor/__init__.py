@@ -10,6 +10,7 @@ from .structurer import ProofreadBuilder, format_verbatim_document
 from .summarizer import SummaryBuilder, MermaidDiagram
 from .pipeline import TranscriptPipeline
 from .entity_guard import EntityGuard, EntityCandidate
+from .asr import SafeASREngine
 
 __all__ = [
     "clean_cjk_spaces",
@@ -24,5 +25,7 @@ __all__ = [
     "TranscriptPipeline",
     "EntityGuard",
     "EntityCandidate",
+    "SafeASREngine",
 ]
+
 
