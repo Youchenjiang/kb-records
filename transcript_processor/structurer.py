@@ -18,13 +18,13 @@ class ProofreadBuilder:
         self,
         title: str,
         event: str,
-        talk_id: str,
-        speakers: Union[str, List[str]],
+        talk_id: Optional[str] = None,
+        speakers: Union[str, List[str]] = "講者",
         emoji: str = "🎙️",
     ):
         self.title = title
         self.event = event
-        self.talk_id = talk_id
+        self.talk_id = talk_id or ""
         if isinstance(speakers, str):
             self.speakers = [speakers]
         else:
@@ -46,18 +46,25 @@ class ProofreadBuilder:
         """
         speakers_str = ", ".join([f'"{s}"' for s in self.speakers])
         speaker_display = " / ".join(self.speakers)
+        header_title = f"{self.talk_id} {self.title}".strip()
 
-        lines = [
+        frontmatter_lines = [
             "---",
             f'title: "{self.title}"',
             f'event: "{self.event}"',
-            f'talk_id: "{self.talk_id}"',
+        ]
+        if self.talk_id:
+            frontmatter_lines.append(f'talk_id: "{self.talk_id}"')
+        frontmatter_lines.extend([
             f"speakers: [{speakers_str}]",
             'type: "verbatim-narrative-transcript"',
             "verbatim: true",
             "---",
+        ])
+
+        lines = frontmatter_lines + [
             "",
-            f"# {self.emoji} {self.talk_id} {self.title} ({speaker_display})",
+            f"# {self.emoji} {header_title} ({speaker_display})",
             "",
             "> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。"
             "保留講者所有原話發言、語意轉折、現場互動對話、幕後故事與問答，**未做任何刪減或摘要縮寫**；"

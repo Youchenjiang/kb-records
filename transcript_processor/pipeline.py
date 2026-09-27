@@ -42,16 +42,16 @@ class TranscriptPipeline:
     def export_proofread(
         self,
         output_dir: Path,
-        talk_id: str,
         short_title: str,
         title: str,
         event: str,
         speakers: Union[str, List[str]],
         sections: List[Tuple[str, str]],
+        talk_id: Optional[str] = None,
         emoji: str = "🎙️",
     ) -> Path:
         """
-        Generate and save {ID}-{ShortTitle}-proofread.md
+        Generate and save [{ID}-]{ShortTitle}-proofread.md
         """
         builder = ProofreadBuilder(
             title=title,
@@ -64,21 +64,24 @@ class TranscriptPipeline:
             builder.add_section(heading, body)
 
         content = builder.render()
-        file_path = output_dir / f"{talk_id}-{short_title}-proofread.md"
+        file_name = f"{talk_id}-{short_title}-proofread.md" if talk_id else f"{short_title}-proofread.md"
+        file_path = output_dir / file_name
         file_path.write_text(content, encoding="utf-8")
         return file_path
 
     def export_summary(
         self,
         output_dir: Path,
-        talk_id: str,
         short_title: str,
         summary_builder: SummaryBuilder,
+        talk_id: Optional[str] = None,
     ) -> Path:
         """
-        Generate and save {ID}-{ShortTitle}-summary.md
+        Generate and save [{ID}-]{ShortTitle}-summary.md
         """
         content = summary_builder.render()
-        file_path = output_dir / f"{talk_id}-{short_title}-summary.md"
+        file_name = f"{talk_id}-{short_title}-summary.md" if talk_id else f"{short_title}-summary.md"
+        file_path = output_dir / file_name
         file_path.write_text(content, encoding="utf-8")
         return file_path
+

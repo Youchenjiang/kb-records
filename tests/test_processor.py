@@ -64,8 +64,22 @@ class TestTranscriptProcessor(unittest.TestCase):
         rendered = builder.render()
         self.assertIn('title: "測試演講"', rendered)
         self.assertIn('talk_id: "99"', rendered)
+        self.assertIn("# 🎙️ 99 測試演講 (講者A / 講者B)", rendered)
         self.assertIn("## 開場", rendered)
         self.assertIn("這是測試段落一。", rendered)
+
+    def test_proofread_builder_without_talk_id(self):
+        builder = ProofreadBuilder(
+            title="論文簡報",
+            event="20260714-MasterDefense-DRAVILaMA",
+            speakers="沈柏寧",
+        )
+        builder.add_section("摘要", "這是簡報內容。")
+        rendered = builder.render()
+        self.assertIn('title: "論文簡報"', rendered)
+        self.assertNotIn("talk_id:", rendered)
+        self.assertIn("# 🎙️ 論文簡報 (沈柏寧)", rendered)
+
 
     def test_summary_builder(self):
         builder = SummaryBuilder(
