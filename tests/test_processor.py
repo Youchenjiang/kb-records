@@ -112,6 +112,17 @@ class TestTranscriptProcessor(unittest.TestCase):
         self.assertIn("A[輸入] --> B[輸出]", rendered)
         self.assertIn("1. 核心要點一。", rendered)
 
+    def test_cli_entity_check_integration(self):
+        from transcript_processor.entity_guard import EntityGuard
+        guard = EntityGuard()
+        sample = "我是沈國立同學，由指導教授陳一鳴博士指導。"
+        candidates = guard.extract_candidates(sample)
+        report = guard.generate_verification_report(candidates)
+        self.assertIn("專有名詞與人名候選清單", report)
+        self.assertIn("陳一鳴", report)
+        self.assertIn("沈國立", report)
+
 
 if __name__ == "__main__":
     unittest.main()
+
