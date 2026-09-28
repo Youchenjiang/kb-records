@@ -9,16 +9,22 @@ venv/
 .venv/
 env/
 
-# Scratch & Raw ASR Inputs (Temporary local inputs)
+# Audio media files (directory structure preserved via .gitkeep / README.md, binaries ignored)
+*.aac
+*.mp3
+*.m4a
+*.wav
+*.flac
+*.ogg
+*.opus
+*.wma
+*.mp4
+*.mkv
+
+# Temporary text transcripts & raw inputs
 /*.txt
-/*.aac
-/*.mp3
-/*.m4a
-/*.wav
-/*.flac
 /Meeting Transcription.md
 transcribe_outputs/
-
 
 # OS / Editor files
 .DS_Store

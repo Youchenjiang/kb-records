@@ -15,6 +15,7 @@ from .entity_guard import EntityGuard
 from .asr import SafeASREngine
 from .indexer import CatalogIndexer
 from .pipeline import TranscriptPipeline
+from .audio_manager import AudioManager
 
 
 def main():
@@ -22,6 +23,25 @@ def main():
         description="Transcript Processor Toolkit: Modular ASR Cleaning, Correction & Summarization"
     )
     subparsers = parser.add_subparsers(dest="command", help="Sub-commands")
+
+    # Command: audio
+    audio_parser = subparsers.add_parser("audio", help="Manage audio staging lifecycle (pending/processed)")
+    audio_subparsers = audio_parser.add_subparsers(dest="audio_action", help="Audio actions")
+
+    # audio status
+    audio_subparsers.add_parser("status", help="Show audio files and disk usage in pending & processed")
+
+    # audio finish <file_pattern>
+    finish_parser = audio_subparsers.add_parser("finish", help="Move audio file(s) from pending to processed")
+    finish_parser.add_argument("target", type=str, help="Filename or glob pattern to move to processed")
+
+    # audio import <source_file>
+    import_parser = audio_subparsers.add_parser("import", help="Import audio file into audio/pending/")
+    import_parser.add_argument("source", type=str, help="Source audio file to stage into pending")
+
+    # audio clean [--yes]
+    clean_audio_parser = audio_subparsers.add_parser("clean", help="Clean up (delete) all audio files in audio/processed/ to free disk space")
+    clean_audio_parser.add_argument("--yes", "-y", action="store_true", help="Confirm deletion without prompting")
 
     # Command: index
     index_parser = subparsers.add_parser("index", help="Automatically scan and regenerate CATALOG.md and CATALOG.zh-TW.md")
@@ -87,7 +107,53 @@ def main():
         print("=== ASR Hardware & VRAM Safety Info ===")
         for k, v in info.items():
             print(f"{k}: {v}")
-        sys.exit(0)
+    if args.command == "audio":
+        manager = AudioManager()
+        if not args.audio_action or args.audio_action == "status":
+            status = manager.get_status()
+            print("=== 🎙️ Audio Lifecycle Status ===")
+            print(f"📥 Pending (待處理): {status['pending']['count']} files ({status['pending']['total_mb']} MB)")
+            for f in status['pending']['files']:
+                print(f"   - {f['name']} ({f['size_mb']} MB)")
+            print(f"📦 Processed (已交付/可刪除): {status['processed']['count']} files ({status['processed']['total_mb']} MB)")
+            for f in status['processed']['files']:
+                print(f"   - {f['name']} ({f['size_mb']} MB)")
+            sys.exit(0)
+
+        elif args.audio_action == "finish":
+            moved = manager.mark_as_processed(args.target)
+            if moved:
+                print(f"✅ Moved {len(moved)} file(s) to audio/processed/:")
+                for m in moved:
+                    print(f"   - {m.name}")
+            else:
+                print(f"⚠️ No matching audio files found for: {args.target}")
+            sys.exit(0)
+
+        elif args.audio_action == "import":
+            try:
+                dest = manager.import_to_pending(args.source)
+                print(f"✅ Imported audio to pending: {dest.name}")
+            except Exception as e:
+                print(f"❌ Error: {e}", file=sys.stderr)
+                sys.exit(1)
+            sys.exit(0)
+
+        elif args.audio_action == "clean":
+            status = manager.get_status()
+            count = status['processed']['count']
+            mb = status['processed']['total_mb']
+            if count == 0:
+                print("ℹ️ audio/processed/ is already empty.")
+                sys.exit(0)
+            if not args.yes:
+                confirm = input(f"⚠️ Are you sure you want to delete {count} files in audio/processed/ freeing {mb} MB? [y/N]: ")
+                if confirm.lower() != "y":
+                    print("Aborted.")
+                    sys.exit(0)
+            c, freed = manager.clean_processed(dry_run=False)
+            print(f"🧹 Successfully cleaned {c} files, freed {freed} MB.")
+            sys.exit(0)
 
     input_path = Path(args.input_file)
     if not input_path.exists():

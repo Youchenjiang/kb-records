@@ -55,6 +55,7 @@ transcript_processor/
 ├── structurer.py       # 100% Verbatim Proofread 生成器與場景結構驗證器 (validate_transcript_structure)
 ├── summarizer.py       # Executive Summary 與 Mermaid 流程圖生成器
 ├── indexer.py          # 全自動目錄掃描器：動態生成 CATALOG.md 與 CATALOG.zh-TW.md
+├── audio_manager.py    # 音訊生命週期管理：pending / processed 暫存狀態切換與清理
 ├── pipeline.py         # 端到端自動化處理管線
 └── cli.py              # CLI 命令列工具
 ```
@@ -65,16 +66,25 @@ transcript_processor/
 # 1. 一鍵自動掃描並更新全局目錄索引（CATALOG.md & CATALOG.zh-TW.md）
 python -m transcript_processor index
 
-# 2. 文字清洗與 CJK 空格規範化
+# 2. 檢視本機音訊工作區狀態（audio/pending 與 audio/processed 檔案與磁碟用量）
+python -m transcript_processor audio status
+
+# 3. 轉移已完成交付之音檔至已處理區（可刪除）
+python -m transcript_processor audio finish "會議錄音 60.aac"
+
+# 4. 安全清空已處理音檔以釋放磁碟空間
+python -m transcript_processor audio clean --yes
+
+# 5. 文字清洗與 CJK 空格規範化
 python -m transcript_processor clean raw_transcript.txt -o cleaned.txt
 
-# 3. 領域字典修正
+# 6. 領域字典修正
 python -m transcript_processor correct cleaned.txt -d common hitcon academic -o corrected.txt
 
-# 4. 人名與專有名詞核對閘門
+# 7. 人名與專有名詞核對閘門
 python -m transcript_processor entity-check corrected.txt -o entity_report.md
 
-# 5. 查看當前硬體 GPU / VRAM 安全分配參數
+# 8. 查看當前硬體 GPU / VRAM 安全分配參數
 python -m transcript_processor vram-info
 ```
 
@@ -94,4 +104,5 @@ python -m pytest tests/
   * GPU 顯存安全分配（`test_asr.py`）
   * 4 大場景結構校驗器（`test_scenarios.py`）
   * 全自動目錄掃描與產生器（`test_indexer.py`）
-* **測試狀態**：30 項單元測試全數通過（`30 passed in 0.29s`）。
+  * 音訊生命週期與防誤刪（`test_audio_manager.py`）
+* **測試狀態**：33 項單元測試全數通過（`33 passed in 0.44s`）。

@@ -56,6 +56,7 @@ transcript_processor/
 ├── structurer.py       # Verbatim transcript generator & ScenarioType validator (validate_transcript_structure)
 ├── summarizer.py       # High-density technical summary & Mermaid diagram generator
 ├── indexer.py          # Automated repository scanner: regenerates CATALOG.md and CATALOG.zh-TW.md
+├── audio_manager.py    # Audio lifecycle manager: pending / processed staging and disk cleanup
 ├── pipeline.py         # End-to-end processing pipeline orchestrator
 └── cli.py              # Command-line interface
 ```
@@ -66,16 +67,25 @@ transcript_processor/
 # 1. Automatically scan repository and regenerate both CATALOG.md and CATALOG.zh-TW.md
 python -m transcript_processor index
 
-# 2. Clean raw transcript and normalize CJK spacing
+# 2. Inspect audio workspace status (audio/pending and audio/processed counts & disk usage)
+python -m transcript_processor audio status
+
+# 3. Move delivered audio file to processed (safe to delete)
+python -m transcript_processor audio finish "錄音檔名.aac"
+
+# 4. Safely clean up processed audio files to free disk space
+python -m transcript_processor audio clean --yes
+
+# 5. Clean raw transcript and normalize CJK spacing
 python -m transcript_processor clean raw_transcript.txt -o cleaned.txt
 
-# 3. Apply domain vocabulary corrections
+# 6. Apply domain vocabulary corrections
 python -m transcript_processor correct cleaned.txt -d common hitcon academic -o corrected.txt
 
-# 4. Generate entity verification report for proper nouns and names
+# 7. Generate entity verification report for proper nouns and names
 python -m transcript_processor entity-check corrected.txt -o entity_report.md
 
-# 5. Display GPU VRAM safety limits
+# 8. Display GPU VRAM safety limits
 python -m transcript_processor vram-info
 ```
 
@@ -87,5 +97,5 @@ Run the test suite with:
 ```bash
 python -m pytest tests/
 ```
-* **Coverage**: Complete verification across text cleaners, punctuation normalizers, domain correction engines, entity guard candidate extraction, safe VRAM allocation scheduling, 4 scenario structure validators, and the automated catalog indexer.
-* **Status**: 30 unit tests passing (`30 passed in 0.29s`).
+* **Coverage**: Complete verification across text cleaners, punctuation normalizers, domain correction engines, entity guard candidate extraction, safe VRAM allocation scheduling, 4 scenario structure validators, the automated catalog indexer, and the audio lifecycle manager.
+* **Status**: 33 unit tests passing (`33 passed in 0.44s`).

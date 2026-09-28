@@ -12,6 +12,7 @@ from .pipeline import TranscriptPipeline
 from .entity_guard import EntityGuard, EntityCandidate
 from .asr import SafeASREngine
 from .indexer import CatalogIndexer, CatalogItem
+from .audio_manager import AudioManager
 
 __all__ = [
     "clean_cjk_spaces",
@@ -31,6 +32,7 @@ __all__ = [
     "SafeASREngine",
     "CatalogIndexer",
     "CatalogItem",
+    "AudioManager",
 ]
 
 
