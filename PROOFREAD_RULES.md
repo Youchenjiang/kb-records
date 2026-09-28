@@ -171,12 +171,44 @@ record-list/
 
 ---
 
-## 三、校對流程
+## 三、轉錄到交付之標準四階段作業流程（Standard 4-Stage Pipeline）
 
-1. **詞級替換**：腳本批量修已知單詞錯誤
-2. **語句級替換**：腳本批量修上下文相關句子
-3. **人工掃描**：檢查每段前兩句、英文夾雜段落、數字段落
-4. **比對原始稿**：不確定的地方去原始逐字稿比對
+為確保最終產出具備一致的高規格品質與可讀性，所有轉錄校對工作**必須嚴格分步執行，嚴禁省略或將多步混淆跳過**：
+
+### 階段一：語音辨識與原始轉錄（Raw ASR & CJK Normalization）
+1. 透過本地 ASR（Qwen3-ASR 1.7B / Whisper）對音訊切片推論。
+2. 產出 `transcribe_outputs/{folder}/raw_transcript.txt` 與初步繁中 `transcript_zh_tw.txt`。
+3. **原則**：此階段為機器辨識之未加工語料（Scratch Material），不可直接交付。
+
+### 階段二：逐字稿深層格式整理與校對（Proofread Formatting & Deep Correction）
+1. **標點與空白正規化（CJK Normalization）**：
+   - 消除中文字元間異常產生的空格（如 `一 些 一 些` $\to$ `一些一些`）。
+   - 將英文標點自動正規化為全形標點（`,` $\to$ `，`、`.` $\to$ `。`、`:` $\to$ `：`、`?` $\to$ `？`）。
+   - 保留中英交界處之標準單一空格（如 `在 Android 系統中`）。
+2. **詞級與語句級聲學深度校對（Acoustic & Technical Correction）**：
+   - 批次修正技術領域專有名詞（如 Cisco、CompTIA、Pearson VUE、OnVUE、SSO、ACL、TCP/UDP、IPv6、PKI、SIEM 等）。
+   - 修復 ASR 斷詞錯誤與同音字（如「這口」$\to$「Cisco」、「西西那」$\to$「CCNA」）。
+3. **自然語意邏輯段落重構（Semantic Paragraph Reconstruction）**：
+   - **嚴禁機械式按固定句數硬切**。
+   - 必須依據講者的語意轉折、論述邏輯與話題切換，聚合為 150～300 字左右之自然閱讀段落。
+4. **主題章節劃分與導航標題（Thematic Heading Structure）**：
+   - 依據授課演進大綱插入具辨識度的 H2（`##`）與 H3（`###`）標題，並搭配主題 emoji（如 🎯、🔬、⚙️、💥、🛡️）。
+5. **元資料與出處溯源門禁（Provenance Verification Gate）**：
+   - 補齊完整 YAML Frontmatter（title, event, date, talk_id, speakers, type, verbatim, scenario, category, tags）。
+   - 緊接 H1 下方插入標準排版聲明 Blockquote。
+   - 通過 `EntityGuard.verify_metadata_provenance()` 出處溯源檢查，嚴禁未經佐證之機構掛名。
+6. **最終產出**：`{ShortTitle}-proofread.md`。
+
+### 階段三：技術精華架構提煉（Executive Summary & Architecture Extraction）
+1. **提煉核心脈絡**：濃縮演講/課程之核心概念、攻擊情境或學習目標。
+2. **視覺化圖表**：使用 Mermaid 繪製系統架構圖、攻擊流轉鏈或協定時序圖。
+3. **技術精華深化**：整理核心技術細節、CLI 指令語法、對比表格與考點整理。
+4. **關鍵總結與考試應對**：列出 3～5 點核心重點與避坑守則。
+5. **最終產出**：`{ShortTitle}-summary.md`。
+
+### 階段四：全局目錄索引與品質迴歸（Catalog Indexing & Quality Audit）
+1. 執行 `python -m transcript_processor index`，自動掃描並更新 `CATALOG.md` 與 `CATALOG.zh-TW.md`。
+2. 執行全套單元測試與防退化測試（`unittest discover tests`），確保 100% 通過。
 
 ---
 
