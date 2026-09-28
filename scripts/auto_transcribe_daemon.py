@@ -106,7 +106,7 @@ def decode_audio_full(file_path: Path, target_sr: int = 16000) -> Tuple[np.ndarr
             for frame in packet.decode():
                 for rf in resampler.resample(frame):
                     samples.append(rf.to_ndarray().flatten())
-        except (av.error.InvalidDataError, av.error.FFmpegError, av.error.ValueError) as e:
+        except (av.error.FFmpegError, ValueError, Exception) as e:
             bad_packets += 1
             continue
     container.close()
