@@ -363,7 +363,7 @@ def process_m60() -> str:
     body = split_into_readable_paragraphs(t)
     return build_frontmatter(
         "碩士論文口試簡報：DRAVILaMA 惡意程式抗混淆偵測 (沈柏寧)",
-        "國立臺灣科技大學資訊工程系 碩士學位論文口試",
+        "碩士學位論文口試審查會",
         ["研究生 沈柏寧", "指導教授 陳奕明博士", "口試委員"],
         body
     )
@@ -421,7 +421,7 @@ def process_m61() -> str:
     body = split_into_readable_paragraphs(t)
     return build_frontmatter(
         "碩士論文口試審查攻防 Part 1：消融因果、Attention 權重轉移與指標辯論 (沈柏寧)",
-        "國立臺灣科技大學資訊工程系 碩士學位論文口試",
+        "碩士學位論文口試審查會",
         ["口試委員", "研究生 沈柏寧", "指導教授 陳奕明博士"],
         body
     )
@@ -456,7 +456,7 @@ def process_m62() -> str:
     body = split_into_readable_paragraphs(t)
     return build_frontmatter(
         "碩士論文口試審查攻防 Part 2：Attention 機制辯論、子圖層數與口試通過決議 (沈柏寧)",
-        "國立臺灣科技大學資訊工程系 碩士學位論文口試",
+        "碩士學位論文口試審查會",
         ["口試委員 (召集人)", "口試委員", "研究生 沈柏寧", "指導教授 陳奕明博士"],
         body
     )

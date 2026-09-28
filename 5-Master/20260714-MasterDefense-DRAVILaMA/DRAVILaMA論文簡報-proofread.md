@@ -1,6 +1,6 @@
 ---
 title: "碩士論文口試簡報：DRAVILaMA 惡意程式抗混淆偵測 (沈柏寧)"
-event: "國立臺灣科技大學資訊工程系 碩士學位論文口試"
+event: "碩士學位論文口試審查會"
 speakers: ["研究生 沈柏寧", "指導教授 陳奕明博士", "口試委員"]
 type: "verbatim-narrative-transcript"
 verbatim: true

@@ -6,7 +6,7 @@ speakers: ["Tunku Irfan", "foxy"]
 type: "verbatim-narrative-transcript"
 verbatim: true
 scenario: "single-talk"
-category: "1-Security"
+category: "5-Master"
 tags:
   - "OSINT"
   - "Cyber Threat Intelligence"

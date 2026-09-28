@@ -193,6 +193,10 @@ class CatalogIndexer:
             else:
                 data["scenario"] = "single-talk"
 
+        # Entity Provenance Sanity Check
+        from .entity_guard import EntityGuard
+        data = EntityGuard.sanitize_metadata(data, content)
+
         return data
 
 

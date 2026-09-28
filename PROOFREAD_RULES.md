@@ -54,6 +54,7 @@ record-list/
 | `5-Master/20260922-DevDaysAsia-2026/` | 5 個主題共 10 個檔案（5 proofread + 5 summary） |
 | `5-Master/20260714-MasterDefense-DRAVILaMA/` | 3 個主題共 6 個檔案（3 proofread + 3 summary） |
 | `5-Master/20260327-AcademicConference/` | 3 個主題共 6 個檔案（3 proofread + 3 summary） |
+| `5-Master/20260927-Intro-to-OSINT-CTI/` | 1 個主題共 2 個檔案（1 proofread + 1 summary） |
 
 
 ### 新增活動時的步驟
@@ -89,6 +90,8 @@ record-list/
 3. **語境優先**：同一個縮寫在不同段落可能代表不同東西，必須看上下文決定
 4. **先查原始稿**：遇到不確定的，先去看原始逐字稿比對
 5. **專有名詞與人名確認閘門（Entity Verification Gate）**：語音辨識之人名、教授姓名、指導教授、特定發表題目等專有名詞，嚴禁自行揣測或直接寫入未經確認之同音錯字。產出交付文件前，**必須使用 `EntityGuard` 抽取候選人名清單並向使用者提請確認**，取得確認映射後始得注入校對管線。
+6. **機構與活動出處溯源門禁（Institutional Provenance & Zero Hallucination）**：Frontmatter 元資料中之 `event`、`title`、`speakers` 若包含具體學校校名、系所、企業或單位組織（如「國立臺灣科技大學資訊工程系」、「中央大學資管系」），**其主體或關鍵詞必須在逐字稿本文或原始錄音語料中有字面可考的出處（Provenance）**。若錄音中未提及具體學校或系所，**一律嚴格使用客觀中性稱謂**（如 `event: "碩士學位論文口試審查會"`、`event: "技術學術研討會"`），嚴格禁止因其他場次講者之學校而跨場次腦補、推測或擅自掛名。
+7. **跨場次名詞隔離原則（Cross-Session Entity Isolation）**：嚴格禁止將 A 演講場次中出現的背景資訊（例如 HITCON 閃電秀講者自稱就讀台科大）套用或遷移至 B 場次（例如學位論文口試）。每個錄音檔的實體皆具備獨立封閉的上下文空間，未經多方交叉驗證絕不互相污染。
 
 
 ---

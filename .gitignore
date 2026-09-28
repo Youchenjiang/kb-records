@@ -31,3 +31,6 @@ transcribe_outputs/
 Thumbs.db
 .vscode/
 .idea/
+
+# Logs
+*.log

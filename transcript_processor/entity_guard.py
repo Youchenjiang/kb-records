@@ -25,6 +25,10 @@ TITLE_KEYWORDS = [
 
 TITLE_AFFIX_CHARS = "教授博士老師同學學長學姊委員主席司儀"
 
+INSTITUTION_PATTERNS = [
+    r"[\u4e00-\u9fa5]{2,12}(?:大學|科技大學|技術學院|專科學校|研究所|學系|資訊工程系|資管系|電機系|研究中心|實驗室)",
+]
+
 
 class EntityCandidate:
     """
@@ -181,3 +185,84 @@ class EntityGuard:
         """
         all_candidates = self.extract_candidates(text)
         return [c for c in all_candidates if c.raw_term not in self.confirmed_map]
+
+    @staticmethod
+    def extract_institutional_entities(text: str) -> List[str]:
+        """
+        Extract institutional / departmental entities from text.
+        """
+        entities = set()
+        for pat in INSTITUTION_PATTERNS:
+            for match in re.finditer(pat, text):
+                ent = match.group(0).strip()
+                if len(ent) >= 4 and ent not in {"學術研討會", "論文研討會"}:
+                    entities.add(ent)
+        return sorted(list(entities))
+
+    @staticmethod
+    def verify_metadata_provenance(metadata: Dict, content_text: str) -> Tuple[bool, List[str]]:
+        """
+        Verify that all institutional and organizational entities claimed in metadata
+        (event, title, speakers) have direct provenance in the transcript content text.
+        Returns (is_valid, violations).
+        """
+        violations = []
+        fields_to_check = [
+            ("event", metadata.get("event", "")),
+            ("title", metadata.get("title", "")),
+        ]
+        speakers = metadata.get("speakers", [])
+        if isinstance(speakers, list):
+            for spk in speakers:
+                fields_to_check.append(("speaker", spk))
+        elif isinstance(speakers, str):
+            fields_to_check.append(("speakers", speakers))
+
+        for field_name, field_val in fields_to_check:
+            if not field_val or not isinstance(field_val, str):
+                continue
+            institutions = EntityGuard.extract_institutional_entities(field_val)
+            for inst in institutions:
+                aliases = [inst]
+                if inst.startswith(("國立", "市立", "私立")):
+                    aliases.append(inst[2:])
+                if "臺灣科技大學" in inst or "台灣科技大學" in inst:
+                    aliases.extend(["台科大", "台科", "NTUST"])
+                elif "中央大學" in inst:
+                    aliases.extend(["中央資管", "中央", "NCU"])
+                elif "臺灣大學" in inst or "台灣大學" in inst:
+                    aliases.extend(["台大", "NTU"])
+                elif "清華大學" in inst:
+                    aliases.extend(["清大", "NTHU"])
+                elif "成功大學" in inst:
+                    aliases.extend(["成大", "NCKU"])
+                elif "交通大學" in inst or "陽明交通大學" in inst:
+                    aliases.extend(["交大", "陽明交大", "NYCU"])
+                elif "南洋大學" in inst or "南洋理工" in inst:
+                    aliases.extend(["NTU", "南洋"])
+
+                found = any(alias.lower() in content_text.lower() for alias in aliases)
+                if not found:
+                    violations.append(
+                        f"Provenance violation in metadata['{field_name}']: '{inst}' has no mention in transcript text."
+                    )
+
+        return len(violations) == 0, violations
+
+    @staticmethod
+    def sanitize_metadata(metadata: Dict, content_text: str) -> Dict:
+        """
+        Sanitize metadata by replacing uncorroborated institutional entities with neutral terms.
+        """
+        sanitized = dict(metadata)
+        is_valid, violations = EntityGuard.verify_metadata_provenance(sanitized, content_text)
+        if not is_valid:
+            event = str(sanitized.get("event", ""))
+            for inst in EntityGuard.extract_institutional_entities(event):
+                aliases = [inst, inst.replace("國立", "")]
+                if not any(alias.lower() in content_text.lower() for alias in aliases):
+                    if "碩士" in event and "口試" in event:
+                        sanitized["event"] = "碩士學位論文口試審查會"
+                    else:
+                        sanitized["event"] = event.replace(inst, "").strip()
+        return sanitized
