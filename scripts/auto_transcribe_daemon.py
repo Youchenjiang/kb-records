@@ -92,7 +92,7 @@ def get_pending_queue() -> List[Path]:
 
 
 def decode_audio_full(file_path: Path, target_sr: int = 16000) -> Tuple[np.ndarray, int]:
-    """Decode audio file to 16kHz mono float32 array via PyAV."""
+    """Decode audio file to 16kHz mono float32 array via PyAV packet-level demux with glitch tolerance."""
     logger.info(f"Decoding audio: {file_path.name}...")
     t0 = time.time()
     container = av.open(str(file_path))
@@ -100,14 +100,23 @@ def decode_audio_full(file_path: Path, target_sr: int = 16000) -> Tuple[np.ndarr
     resampler = av.AudioResampler(format="s16", layout="mono", rate=target_sr)
 
     samples = []
-    for frame in container.decode(stream):
-        for rf in resampler.resample(frame):
-            samples.append(rf.to_ndarray().flatten())
+    bad_packets = 0
+    for packet in container.demux(stream):
+        try:
+            for frame in packet.decode():
+                for rf in resampler.resample(frame):
+                    samples.append(rf.to_ndarray().flatten())
+        except (av.error.InvalidDataError, av.error.FFmpegError, av.error.ValueError) as e:
+            bad_packets += 1
+            continue
     container.close()
+
+    if not samples:
+        raise RuntimeError(f"Failed to decode any valid audio frames from {file_path.name}")
 
     audio = np.concatenate(samples).astype(np.float32) / 32768.0
     dur = len(audio) / target_sr
-    logger.info(f"Decoded {dur:.1f}s ({dur/60.0:.2f} min) in {time.time()-t0:.2f}s")
+    logger.info(f"Decoded {dur:.1f}s ({dur/60.0:.2f} min) in {time.time()-t0:.2f}s (skipped {bad_packets} bad packets)")
     return audio, target_sr
 
 
