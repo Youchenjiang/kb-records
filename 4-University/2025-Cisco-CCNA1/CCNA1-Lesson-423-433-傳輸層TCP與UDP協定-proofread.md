@@ -3,30 +3,21 @@ title: "Cisco CCNA 1 Lesson 頁423~433：傳輸層 TCP 與 UDP 協定、三次�
 event: "Cisco CCNA 1 認證培訓課程"
 date: "2025-01-09"
 talk_id: "CCNA-423-433"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "Cisco"
-  - "CCNA"
-  - "TCP"
-  - "UDP"
-  - "傳輸層"
-  - "三次交握"
-  - "Port"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ Cisco CCNA 1 Lesson 頁423~433：傳輸層 TCP 與 UDP 協定、三次交握與流量控制 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、Three-way Handshake、SYN、ACK、FIN、RST、Sliding Window、DoS、TFTP、SSH、Kerberos、DNS Recursive Lookup、TLD 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、傳輸層在 TCP/IP 模型之定位與 TCP/UDP 核心差異
+## 🎯 傳輸層在 TCP/IP 模型之定位與 TCP/UDP 核心差異
 
-我們深入來了解 TCP/IP。畢竟在前面我們已經都講完子網路由（Routing），那現在已經到了傳輸層（Transport Layer）以上。網路層（Network Layer）這邊主要就是 IP 地址規劃設計還有路由，靜態路由、動態路由都講過，所以繼續往上的話就是傳輸層跟應用層。
+**【授課講師】**：我們深入來了解 TCP/IP。畢竟在前面我們已經都講完子網路由（Routing），那現在已經到了傳輸層（Transport Layer）以上。網路層（Network Layer）這邊主要就是 IP 地址規劃設計還有路由，靜態路由、動態路由都講過，所以繼續往上的話就是傳輸層跟應用層。
 
 傳輸層這邊主要就是兩個協議，也就是 TCP 跟 UDP。上層所開發的各種應用，基本上都是基於 TCP 或 UDP 開發出來的。TCP 跟 UDP 這兩個各有它的強項，各有它的訴求點。
 
@@ -56,9 +47,9 @@ Telnet 做遠端管理是 Port 23，因為完全沒有加密，傳輸帳號密�
 
 ---
 
-## 🚪 二、連接埠（Port Number）架構：Source Port vs. Destination Port 與多工分流
+## 🚪 連接埠（Port Number）架構：Source Port vs. Destination Port 與多工分流
 
-當使用者同時連線到伺服器，封包有走 TCP 的、也有走 UDP 的。封包內會帶有 Port 號碼，例如 Destination Port 是 80 或 443，而後面隨機產生的則是 Source Port（來源連接埠）。
+**【授課講師】**：當使用者同時連線到伺服器，封包有走 TCP 的、也有走 UDP 的。封包內會帶有 Port 號碼，例如 Destination Port 是 80 或 443，而後面隨機產生的則是 Source Port（來源連接埠）。
 
 Source Port 通常是一個比較大的數字，必定是 1024 以後、甚至是好幾萬（三萬以後）的動態連接埠。Port 的欄位長度為 16 個 bit，所以最大範圍是 $2^{16} = 65536$（0 到 65535）。Source Port 一般使用數字較大的動態 Port；至於 Destination Port 通常是數字較小、早已定義好的知名連接埠（1024 以前）。
 
@@ -72,9 +63,9 @@ TCP 表頭包含：Source Port、Destination Port、Sequence Number（序號）�
 
 ---
 
-## 🤝 三、TCP 雙掛號 vs. UDP 平信比喻與連線交握機制
+## 🤝 TCP 雙掛號 vs. UDP 平信比喻與連線交握機制
 
-TCP 表頭中的 Window Size 是用來做流量控制（Flow Control）。Window Size 告訴傳送端「我目前一次最多可以接收多少資料量」，由接收端根據自身 Buffer（緩衝區）的承受能力動態告知傳送端。如果接收端緩衝區充足，Window Size 就開大，一次可以傳多一點，減少往返次數以提升傳輸效率；如果接收端負擔吃緊，Window Size 就調小，傳送端就必須降低發送量，避免接收端緩衝區溢位（Buffer Overflow）而爆掉。
+**【授課講師】**：TCP 表頭中的 Window Size 是用來做流量控制（Flow Control）。Window Size 告訴傳送端「我目前一次最多可以接收多少資料量」，由接收端根據自身 Buffer（緩衝區）的承受能力動態告知傳送端。如果接收端緩衝區充足，Window Size 就開大，一次可以傳多一點，減少往返次數以提升傳輸效率；如果接收端負擔吃緊，Window Size 就調小，傳送端就必須降低發送量，避免接收端緩衝區溢位（Buffer Overflow）而爆掉。
 
 TCP 共有 11 個欄位，表頭負擔非常重。因此像語音、影像等求快的 Real-time 應用絕不適合用 TCP，因為語音小封包如果光 Header 就吃掉 20 Bytes，表頭甚至比資料本體還大，效率極差。因此求控制與可靠性的用 TCP，求快的用 UDP。
 
@@ -101,9 +92,9 @@ Window Size 採用 **滑動視窗（Sliding Window）** 機制，它是動態伸
 
 ---
 
-## 🔄 四、雙向通訊 Port 號翻轉與防火牆/ACL 進出規則匹配實務
+## 🔄 雙向通訊 Port 號翻轉與防火牆/ACL 進出規則匹配實務
 
-當封包從 Client 發往 Server 時，Source Port 是動態 Port，Destination Port 是服務 Port（如 80）；當 Server 回傳封包時，兩者會完全對調翻轉，原本的 Destination Port 變成 Source Port，原本的 Source Port 變成 Destination Port。
+**【授課講師】**：當封包從 Client 發往 Server 時，Source Port 是動態 Port，Destination Port 是服務 Port（如 80）；當 Server 回傳封包時，兩者會完全對調翻轉，原本的 Destination Port 變成 Source Port，原本的 Source Port 變成 Destination Port。
 
 這個原理在設定防火牆與 ACL（存取控制清單）進出規則時至關重要：
 - 如果是在介面套用 **Inbound（進入）** 規則，檢查的是封包的目的地 Port；

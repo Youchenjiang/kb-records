@@ -3,31 +3,21 @@ title: "Cisco CCNA 1 Fastlab 08 Part 2：網路效能監控、RTT 延遲統計�
 event: "Cisco CCNA 1 認證培訓課程"
 date: "2025-01-09"
 talk_id: "CCNA-FAST-08B"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "Cisco"
-  - "CCNA"
-  - "IP SLA"
-  - "RTT"
-  - "Jitter"
-  - "SLA Responder"
-  - "電信專線"
-  - "效能評估"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ Cisco CCNA 1 Fastlab 08 Part 2：網路效能監控、RTT 延遲統計與電信專線 SLA 實務驗證 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、IP SLA、Summary、Statistics、Configuration、Round-Trip Time / RTT、Jitter、SLA Responder、QoS 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、Cisco IP SLA 統計資料（Statistics）檢視與電信專線合約驗收
+## 🎯 Cisco IP SLA 統計資料（Statistics）檢視與電信專線合約驗收
 
-我們來看 IP SLA 的統計資料。除了 `show ip sla summary` 檢視概況外，將指令換成 `show ip sla statistics`，就可以看到非常詳細的量測統計數據：包含發送測試總次數、成功次數、失敗次數，以及來回往返時間（Round-Trip Time, RTT）的平均值、最大值與最小值。
+**【授課講師】**：我們來看 IP SLA 的統計資料。除了 `show ip sla summary` 檢視概況外，將指令換成 `show ip sla statistics`，就可以看到非常詳細的量測統計數據：包含發送測試總次數、成功次數、失敗次數，以及來回往返時間（Round-Trip Time, RTT）的平均值、最大值與最小值。
 
 這在業界實務維運上極為實用！例如企業向電信業者（如中華電信）租賃專線或 MPLS VPN，合約通常載明 SLA（服務層級協定）保證延遲上限在多少毫秒以內。網管工程師利用 Cisco 設備內建的 IP SLA 工具，長週期持續量測總公司到各分公司的專線線路，若長期統計平均值嚴重超出合約規範，就能提出客觀數據要求電信商排錯改善、賠償或降價。電信業者遇到懂得用 IP SLA 實測調證的網管人員都會特別謹慎。
 
@@ -42,9 +32,9 @@ Cisco IP SLA 的巨大優勢在於：**企業完全不需額外斥資購買昂�
 
 ---
 
-## ⏱️ 二、Jitter（抖動）測試原理與 SLA Responder（回應者）角色配置
+## ⏱️ Jitter（抖動）測試原理與 SLA Responder（回應者）角色配置
 
-進行一般 ICMP Echo、TCP 連線或 DNS 查詢測試時，目標端只需要是一個具備 IP 位址的普通網路節點，**完全不需要目的設備具備 Cisco 系統**。
+**【授課講師】**：進行一般 ICMP Echo、TCP 連線或 DNS 查詢測試時，目標端只需要是一個具備 IP 位址的普通網路節點，**完全不需要目的設備具備 Cisco 系統**。
 
 但若要精確量測即時多媒體通訊所需的 QoS 關鍵指標——**Jitter（抖動，封包到達間隔的變異度）**、單向延遲與精確掉包率時，目的地端就必須是一台支援 Cisco IOS 的設備，並在該設備上配置啟用 **`ip sla responder`（SLA 回應者）**！
 
@@ -55,9 +45,9 @@ Cisco IP SLA 的巨大優勢在於：**企業完全不需額外斥資購買昂�
 
 ---
 
-## ⚡ 三、網路效能測試流量生成法與 Cisco 舊設備廢品再利用
+## ⚡ 網路效能測試流量生成法與 Cisco 舊設備廢品再利用
 
-在路由器配置模式下輸入 `ip sla <編號>`，打問號 `?` 可以看到琳瑯滿目的測試類型：支援 ICMP Echo、UDP Echo、UDP Jitter、TCP Connect、DNS、HTTP、FTP、VoIP 等豐富通訊協定。
+**【授課講師】**：在路由器配置模式下輸入 `ip sla <編號>`，打問號 `?` 可以看到琳瑯滿目的測試類型：支援 ICMP Echo、UDP Echo、UDP Jitter、TCP Connect、DNS、HTTP、FTP、VoIP 等豐富通訊協定。
 
 這使 Cisco 設備成為現成的流量產生利器。在實務企業環境中，即使是倉庫中報廢淘汰的舊款路由器或第二層/第三層交換機，只要支援 IP SLA 功能，都可以廢物利用拿來當作專屬的「效能探針與流量產生器」，隨插即用進行鏈路壓測。
 

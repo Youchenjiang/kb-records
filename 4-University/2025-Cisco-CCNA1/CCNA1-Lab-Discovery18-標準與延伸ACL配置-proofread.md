@@ -3,30 +3,21 @@ title: "Cisco CCNA 1 Lab Discovery 18：標準 ACL vs 延伸 ACL 實機配置、
 event: "Cisco CCNA 1 認證培訓課程"
 date: "2025-01-09"
 talk_id: "CCNA-DISC-18"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "Cisco"
-  - "CCNA"
-  - "ACL"
-  - "Packet Tracer"
-  - "實驗操作"
-  - "存取控制"
-  - "Named ACL"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ Cisco CCNA 1 Lab Discovery 18：標準 ACL vs 延伸 ACL 實機配置、命名清單與介面套用 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、Standard ACL、Extended ACL、Named ACL、Wildcard Mask、Ethernet 0/0 / 0/1 / 0/3、PC1、Server1/2、Switch1/2、Deny/Permit、Timeout、ARP Request/Cache、Sequence Number、Telnet Port 23/80 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、實驗拓撲導覽：R1 存取清單規劃與 PC/Device 流量過濾目標
+## 🎯 實驗拓撲導覽：R1 存取清單規劃與 PC/Device 流量過濾目標
 
-我們將實際來練習並測試驗證 ACL（Access Control List，存取控制清單），包括標準型 ACL（Standard ACL）與延伸型 ACL（Extended ACL），同時也會練習具名清單（Named ACL），大家可以看到 Cisco IOS 向下相容的實作方式。
+**【授課講師】**：我們將實際來練習並測試驗證 ACL（Access Control List，存取控制清單），包括標準型 ACL（Standard ACL）與延伸型 ACL（Extended ACL），同時也會練習具名清單（Named ACL），大家可以看到 Cisco IOS 向下相容的實作方式。
 
 先看實驗架構拓撲：我們預計在核心路由器 R1 上設定並套用 ACL 規則，達成精準的流量過濾效果。包含從 PC1 所在網段出發，到達右側的 Server 2 與 Server 1。R1 上有三個介面：Ethernet 0/0（E0/0）、Ethernet 0/1（E0/1）以及 Ethernet 0/3（E0/3）。我們必須依據存取控制策略目標，選擇正確的介面與適當的進出方向（Inbound / Outbound）來套用規則。
 
@@ -51,9 +42,9 @@ R1(config-if)# ip access-group 10 out
 
 ---
 
-## 🛡️ 二、標準 ACL 驗證：Ping 測試、Match 計數器與 Unreachable 判定
+## 🛡️ 標準 ACL 驗證：Ping 測試、Match 計數器與 Unreachable 判定
 
-接下來進行流量驗證：
+**【授課講師】**：接下來進行流量驗證：
 1. **PC1 Ping Server 2**：封包穿過 R1，成功匹配第一行允許規則！查看 `show access-lists`，第一行精準出現 `(5 matches)`。
    - 同學會注意到發送 5 個 Ping 封包時，成功率為 80%（第一個封包出現 `.` 逾時 Timeout）。
    - **為什麼第一次 Ping 會 Timeout？** 因為這是跨網段通訊，PC1 第一次要將 ICMP 封包送往預設閘道時，本地 ARP 快取中尚無 Gateway 的 MAC Address！PC1 必須先暫停 ICMP 傳送，在網段廣播發送 ARP Request 詢問；等待 Gateway 回應 ARP Reply 並寫入 ARP Cache 的過程耗時超過 2 秒，導致第一個 ICMP 封包逾時。後續一旦建立 ARP 快取，Ping 就會全數直通。
@@ -76,9 +67,9 @@ R1(config-std-nacl)# no 60
 
 ---
 
-## 📝 三、命名型 ACL（Named ACL）優勢：插入序號（Sequence Numbers）與線上編修
+## 📝 命名型 ACL（Named ACL）優勢：插入序號（Sequence Numbers）與線上編修
 
-利用具名 ACL 模式，我們可以在現有規則之間彈性插入新語句：
+**【授課講師】**：利用具名 ACL 模式，我們可以在現有規則之間彈性插入新語句：
 ```text
 R1(config)# ip access-list standard 10
 R1(config-std-nacl)# 24 permit host 10.2.0.20
@@ -88,9 +79,9 @@ R1(config-std-nacl)# 27 deny 10.2.0.0 0.0.255.255
 
 ---
 
-## ⚔️ 四、延伸 ACL 協定過濾驗證：UDP 53 (DNS) 攔截與 IP 直連對比
+## ⚔️ 延伸 ACL 協定過濾驗證：UDP 53 (DNS) 攔截與 IP 直連對比
 
-完成標準 ACL 練習後，我們移除舊規則，進入延伸型 ACL（Extended ACL）實戰。
+**【授課講師】**：完成標準 ACL 練習後，我們移除舊規則，進入延伸型 ACL（Extended ACL）實戰。
 目標情境：我們要管制 PC1 對外連線，**封鎖所有 UDP 53（DNS 域名解析）請求，僅允許 TCP 23（Telnet）與 ICMP（Ping 直連），其餘 TCP 服務一律拒絕**。
 
 建立具名延伸 ACL：

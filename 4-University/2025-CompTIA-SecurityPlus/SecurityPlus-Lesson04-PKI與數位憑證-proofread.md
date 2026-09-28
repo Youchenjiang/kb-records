@@ -3,32 +3,21 @@ title: "CompTIA Security+ Lesson 04：身分驗證、MFA、存取控制模型（
 event: "CompTIA Security+ 認證培訓課程"
 date: "2025-01-15"
 talk_id: "SEC-04"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "CompTIA"
-  - "Security+"
-  - "身分驗證"
-  - "MFA"
-  - "OTP"
-  - "DAC"
-  - "MAC"
-  - "RBAC"
-  - "ABAC"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ CompTIA Security+ Lesson 04：身分驗證、MFA、存取控制模型（DAC/MAC/RBAC/ABAC） (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（CompTIA、Security+、自然人憑證、OTP、MFA、FIDO/U2F、AWS Key Pair、SSH、DAC、MAC、RBAC、ABAC、ACL、Wine 模擬器、AWS/Azure 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、身分驗證基石：憑證私鑰、OTP 一次性密碼與社交工程防禦
+## 🎯 身分驗證基石：憑證私鑰、OTP 一次性密碼與社交工程防禦
 
-自然人憑證就像你個人的數位私章。政府機關或戶政單位手上絕不會保有你的私鑰（私章），因此一旦自然人憑證遺失了該怎麼辦？唯一做法就是立即申請掛失廢止，並重新產製一組全新的金鑰對與憑證。
+**【授課講師】**：自然人憑證就像你個人的數位私章。政府機關或戶政單位手上絕不會保有你的私鑰（私章），因此一旦自然人憑證遺失了該怎麼辦？唯一做法就是立即申請掛失廢止，並重新產製一組全新的金鑰對與憑證。
 
 第二種常見的身分驗證機制是 **OTP（One-Time Password，一次性密碼）**。當使用者忘記密碼時，系統會動態生成一組具有時效限制的暫時性密碼發送至信箱，要求使用者登入後立即強制變更密碼。
 
@@ -45,9 +34,9 @@ tags:
 
 ---
 
-## 🧬 二、多因子身份驗證（MFA）與生物特徵識別（Biometrics）
+## 🧬 多因子身份驗證（MFA）與生物特徵識別（Biometrics）
 
-在進階雲端環境中，已逐步邁向 **無密碼身分驗證（Passwordless Authentication）** 架構。傳統靜態密碼極易因人為疏忽、撞庫攻擊或記憶混淆而外洩。
+**【授課講師】**：在進階雲端環境中，已逐步邁向 **無密碼身分驗證（Passwordless Authentication）** 架構。傳統靜態密碼極易因人為疏忽、撞庫攻擊或記憶混淆而外洩。
 
 例如在 Amazon AWS 雲端維運中，管理員登入 EC2 Linux 主機時，預設完全不使用帳號密碼，而是使用非對稱加密產生的 **金鑰對（Key Pair，`.pem` 檔案）**。管理員在本地端 SSH 軟體中載入私鑰，與雲端實例上的公開金鑰完成公鑰基礎設施（PKI）非對稱交握驗證，直接建立安全 SSH 加密通道。這從根本上消除了弱密碼與字典暴力破解的安全隱憂。
 
@@ -60,9 +49,9 @@ tags:
 
 ---
 
-## 🛡️ 三、存取控制模型剖析：DAC、MAC、RBAC 與 ABAC
+## 🛡️ 存取控制模型剖析：DAC、MAC、RBAC 與 ABAC
 
-接下來探討作業系統與雲端資源的存取控制模型（Access Control Models）：
+**【授課講師】**：接下來探討作業系統與雲端資源的存取控制模型（Access Control Models）：
 
 當我們使用 Windows、Linux 或 macOS 等主流作業系統時，底層的帳號權限管理機制主要涵蓋以下典範：
 

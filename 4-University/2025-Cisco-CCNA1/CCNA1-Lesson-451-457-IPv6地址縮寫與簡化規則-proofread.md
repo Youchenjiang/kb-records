@@ -3,34 +3,21 @@ title: "Cisco CCNA 1 Lesson 頁451~457：IPv6 地址縮寫簡化兩大黃金規�
 event: "Cisco CCNA 1 認證培訓課程"
 date: "2025-01-10"
 talk_id: "CCNA-451-457"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "Cisco"
-  - "CCNA"
-  - "IPv6"
-  - "地址縮寫"
-  - "雙冒號規則"
-  - "前導零省略"
-  - "Link-Local"
-  - "EUI-64"
-  - "Multicast"
-  - "Anycast"
-  - "SLAAC"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ Cisco CCNA 1 Lesson 頁451~457：IPv6 地址縮寫簡化兩大黃金規則與實務練習 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、Leading Zeros、Successive Zeros、Link-Local、FE80、OSPFv3、Prefix /64、Secondary IP、Multicast、Unicast、Anycast、Default Gateway、Global Unicast 2000::/3、Unique Local FC00::/7、Loopback ::1、EUI-64、FFFE 插入、第 7 位元 Invert/Flip、Subnet ID、Plug and Play / SLAAC、NDP 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、IPv6 地址簡化兩大黃金規則與試題練習
+## 🎯 IPv6 地址簡化兩大黃金規則與試題練習
 
-我已經把練習題分享在學員群組，大家可以參考對照。我們很快來逐題討論：
+**【授課講師】**：我已經把練習題分享在學員群組，大家可以參考對照。我們很快來逐題討論：
 
 根據剛剛介紹的 IPv6 位址簡化兩大核心原則：
 1. **前導零省略（Leading Zeros Omission）**：冒號與冒號之間的 4 碼十六進位中，只要是「前面的零」都可以省略；但「後面的零」絕對不能省略。
@@ -57,9 +44,9 @@ Link-Local 位址在 IPv6 中地位無可替代：
 
 ---
 
-## 📡 二、廢除廣播機制與 Multicast（群播）替代方案
+## 📡 廢除廣播機制與 Multicast（群播）替代方案
 
-IPv6 的另一項革命性架構改變，就是**徹底廢除了 Broadcast（廣播）機制**！廣播在 IPv4 中會對全網段所有主機無差別打擾，極度浪費頻寬與主機 CPU 處理能力。
+**【授課講師】**：IPv6 的另一項革命性架構改變，就是**徹底廢除了 Broadcast（廣播）機制**！廣播在 IPv4 中會對全網段所有主機無差別打擾，極度浪費頻寬與主機 CPU 處理能力。
 
 在 IPv6 中，若需要達成一對多的傳播需求，全面改採 **Multicast（群播）** 與 **Anycast（任播）**：
 - **Unicast（單播）**：一對一通訊；
@@ -79,9 +66,9 @@ Anycast 的設計精髓在於：**在多台不同網路裝置的多個介面上�
 
 ---
 
-## 🌐 三、Global Unicast vs. Unique Local：IPv6 定址哲學
+## 🌐 Global Unicast vs. Unique Local：IPv6 定址哲學
 
-IPv6 定址架構主要分為三大範疇：
+**【授課講師】**：IPv6 定址架構主要分為三大範疇：
 1. **Link-Local Address（連結本地位址）**：固定為 `FE80::/10` 開頭，由系統自動產生，僅限本地鏈路通訊，不可跨路由器路由。
 2. **Global Unicast Address（全域單播位址，GUA）**：相當於 IPv4 的公有 IP。目前 IANA 僅開放 **`2000::/3`** 這個前綴區段（佔全體位址空間的八分之一）供全球各機構申請發放，其餘龐大空間仍全數保留。光是 `2000::/3` 這八分之一的位址量，就已徹底滿足全球所有行動裝置與物聯網裝置的永久需求。
 3. **Unique Local Address（唯一本地位址，ULA）**：固定為 **`FC00::/7`**（實務上為 `FD00::/8`）開頭。這是為滿足傳統企業內部網路（Intranet）私有網段隔離需求而保留，相當於 IPv4 的 RFC 1918 私有位址（Private IP），僅限企業內部互通，禁止路由至公共網際網路。
@@ -93,9 +80,9 @@ IPv6 定址架構主要分為三大範疇：
 
 ---
 
-## 🔗 四、Link-Local 位址生成與 EUI-64（FFFE 插入與位元翻轉）實務
+## 🔗 Link-Local 位址生成與 EUI-64（FFFE 插入與位元翻轉）實務
 
-在生成 Link-Local 位址的 Interface ID（後 64 位元）時，主要有兩種機制：
+**【授課講師】**：在生成 Link-Local 位址的 Interface ID（後 64 位元）時，主要有兩種機制：
 1. **隨機生成（Randomized Generation）**：例如 Windows 用戶端作業系統預設採用隨機演算法生成後 64 位元，以維護隱私安全；
 2. **EUI-64（Extended Unique Identifier 64）標準規則**：思科網路設備與許多 Linux 系統預設採用此規則，直接由介面的 48-bit MAC Address 轉換生成。
 

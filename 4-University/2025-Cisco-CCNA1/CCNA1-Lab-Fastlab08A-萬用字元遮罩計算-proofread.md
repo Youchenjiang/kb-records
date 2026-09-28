@@ -3,31 +3,21 @@ title: "Cisco CCNA 1 Fastlab 08 Part 1：萬用字元遮罩（Wildcard Mask）�
 event: "Cisco CCNA 1 認證培訓課程"
 date: "2025-01-09"
 talk_id: "CCNA-FAST-08A"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "Cisco"
-  - "CCNA"
-  - "Wildcard Mask"
-  - "萬用字元遮罩"
-  - "ACL"
-  - "子網計算"
-  - "Supernet"
-  - "IP SLA"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ Cisco CCNA 1 Fastlab 08 Part 1：萬用字元遮罩（Wildcard Mask）心算推導與 ACL 範圍匹配 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、Wildcard Mask、Common Bits、Supernet / CIDR、Proof of Concept / POC-1/2/3、Ethernet 0/0 / 0/1、Loopback、IP SLA、Traceroute 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、萬用字元遮罩（Wildcard Mask）心算法則與 172.16.16.0/20 範圍匹配實練
+## 🎯 萬用字元遮罩（Wildcard Mask）心算法則與 172.16.16.0/20 範圍匹配實練
 
-大家先心算一下，什麼樣的 Wildcard Mask（萬用字元遮罩）才能精準匹配特定連續網段？
+**【授課講師】**：大家先心算一下，什麼樣的 Wildcard Mask（萬用字元遮罩）才能精準匹配特定連續網段？
 
 我們來做個經典練習：假設今天要在 ACL 中匹配連續的 16 個 Class C 子網：
 從 `172.16.16.0` 一路涵蓋到 `172.16.31.0`（即 `172.16.16.0/20`）。
@@ -56,9 +46,9 @@ Router(config)# access-list 1 permit 172.16.16.0 0.0.15.255
 
 ---
 
-## 🧪 二、實驗拓撲解析：三套 ACL 規則與 POC-2 核心路由器設定
+## 🧪 實驗拓撲解析：三套 ACL 規則與 POC-2 核心路由器設定
 
-觀念確立後，我們進入挑戰性極高的 **Fastlab 08** 實機實驗。
+**【授課講師】**：觀念確立後，我們進入挑戰性極高的 **Fastlab 08** 實機實驗。
 
 實驗架構採用典型的 **POC（Proof of Concept，概念驗證）拓撲**：
 拓撲包含三台路由器：左側 **POC-1**、中央核心 **POC-2**、右側 **POC-3**。
@@ -85,9 +75,9 @@ POC-2 上需要配置三套獨立的 ACL 規則：
 
 ---
 
-## 🧭 三、介面套用方位（In vs. Out）與靠近目的地原則實作
+## 🧭 介面套用方位（In vs. Out）與靠近目的地原則實作
 
-在 POC-2 核心路由器上落實各項配置：
+**【授課講師】**：在 POC-2 核心路由器上落實各項配置：
 ```text
 ! 第一套規則：標準 ACL 1
 POC-2(config)# access-list 1 deny host 192.168.1.1

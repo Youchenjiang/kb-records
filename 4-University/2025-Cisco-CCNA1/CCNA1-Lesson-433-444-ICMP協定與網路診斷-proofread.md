@@ -3,30 +3,21 @@ title: "Cisco CCNA 1 Lesson 頁433~444：ICMP 協定運作、Ping、Traceroute �
 event: "Cisco CCNA 1 認證培訓課程"
 date: "2025-01-09"
 talk_id: "CCNA-433-444"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "Cisco"
-  - "CCNA"
-  - "ICMP"
-  - "Ping"
-  - "Traceroute"
-  - "網路排錯"
-  - "ACL"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ Cisco CCNA 1 Lesson 頁433~444：ICMP 協定運作、Ping、Traceroute 與網路診斷 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、ICMP Type/Code、TTL、Destination Unreachable、Extended ACL、Wildcard Mask、Implicit Deny、Permit/Deny、Named ACL 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、ICMP 錯誤回報機制與 Destination Unreachable 類型解析
+## 🎯 ICMP 錯誤回報機制與 Destination Unreachable 類型解析
 
-各種網路診斷訊息，像 Traceroute 回應訊息，或者封包被規則攔截打掉時要回送什麼訊息，都是透過 ICMP（Internet Control Message Protocol）來回報。ICMP 利用 Type（型態）與 Code（代碼）來定義所代表的特定訊息與工作。
+**【授課講師】**：各種網路診斷訊息，像 Traceroute 回應訊息，或者封包被規則攔截打掉時要回送什麼訊息，都是透過 ICMP（Internet Control Message Protocol）來回報。ICMP 利用 Type（型態）與 Code（代碼）來定義所代表的特定訊息與工作。
 
 例如剛剛提到的各種 Destination Unreachable（目的地無法送達）：像 Network Unreachable、Host Unreachable、Protocol Unreachable、Port Unreachable 等各種錯誤訊息，都是透過不同的 Type 與 Code 組合來呈現。ICMP 表頭包含 Type、Code 以及 Checksum，後面帶有具體的原始封包摘要，表頭總共是 8 個 Bytes。
 
@@ -44,9 +35,9 @@ tags:
 
 ---
 
-## 🛡️ 二、封包過濾策略：集中式套用 vs. 分散式邊界部署與 WAN 頻寬節省
+## 🛡️ 封包過濾策略：集中式套用 vs. 分散式邊界部署與 WAN 頻寬節省
 
-在封包過濾部署架構中，如果只集中在單一設備（例如核心路由器的 G0/0 介面 Outbound 方向）套用規則，這是集中式做法，優點是管理維護相對省事；但缺點是所有分公司的無效流量都會先跨越 WAN 廣域網路鏈路到達核心，白白耗盡寶貴的 WAN 頻寬。
+**【授課講師】**：在封包過濾部署架構中，如果只集中在單一設備（例如核心路由器的 G0/0 介面 Outbound 方向）套用規則，這是集中式做法，優點是管理維護相對省事；但缺點是所有分公司的無效流量都會先跨越 WAN 廣域網路鏈路到達核心，白白耗盡寶貴的 WAN 頻寬。
 
 如果改採分散式邊界部署，將延伸型 ACL 複製分散套用到各分公司路由器最靠近工作站的 Inbound 入口介面上，在流量踏入 WAN 之前第一時間直接丟棄，就能徹底避免 WAN 鏈路的無謂負擔與壅塞。雖然兩者最終達成「過濾不合規封包」的結果相同，但在網路效能與頻寬經濟性上，分散式邊界防護的效益遠高於單點集中過濾。
 
@@ -73,9 +64,9 @@ tags:
 
 ---
 
-## ⚙️ 三、延伸 ACL 介面套用方位（Inbound vs. Outbound）實戰
+## ⚙️ 延伸 ACL 介面套用方位（Inbound vs. Outbound）實戰
 
-將編寫完成的延伸 ACL 100 套用至介面：
+**【授課講師】**：將編寫完成的延伸 ACL 100 套用至介面：
 ```text
 Router(config)# interface FastEthernet 0/1
 Router(config-if)# ip access-group 100 out
@@ -96,9 +87,9 @@ Router(config-if)# ip access-group 100 out
 
 ---
 
-## 🔒 四、關鍵伺服器（財務部門）存取控制與 Implicit Deny（隱含拒絕）防坑
+## 🔒 關鍵伺服器（財務部門）存取控制與 Implicit Deny（隱含拒絕）防坑
 
-在企業實務網路環境中，核心業務伺服器（例如財務部門 Finance Server）往往存放高度機密資產，絕對禁止非授權主機任意存取。通常會將對外公共伺服器（Public Server）與內部關鍵伺服器劃分在不同網段，並設定冗餘備援與負載分擔（High Availability / Load Balancing）。
+**【授課講師】**：在企業實務網路環境中，核心業務伺服器（例如財務部門 Finance Server）往往存放高度機密資產，絕對禁止非授權主機任意存取。通常會將對外公共伺服器（Public Server）與內部關鍵伺服器劃分在不同網段，並設定冗餘備援與負載分擔（High Availability / Load Balancing）。
 
 當安全政策採取「黑名單策略」時：
 - 我們先針對特定未授權主機進行 `deny`；

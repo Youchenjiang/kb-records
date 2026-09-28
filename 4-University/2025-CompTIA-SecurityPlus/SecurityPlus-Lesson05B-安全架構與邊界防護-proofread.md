@@ -3,36 +3,21 @@ title: "CompTIA Security+ Lesson 05 Part 2：安全架構設計、實體與邏�
 event: "CompTIA Security+ 認證培訓課程"
 date: "2025-01-17"
 talk_id: "SEC-05B"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "CompTIA"
-  - "Security+"
-  - "網路邊界"
-  - "Network TAP"
-  - "SPAN"
-  - "Fail-Open"
-  - "Fail-Closed"
-  - "OPNsense"
-  - "Stateful Inspection"
-  - "Three-way Handshake"
-  - "Drop vs Reject"
-  - "Proxy"
-  - "Forward/Reverse Proxy"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ CompTIA Security+ Lesson 05 Part 2：安全架構設計、實體與邏輯網路邊界防護 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、Dijkstra 最短路徑、Network TAP、SPAN 鏡像、Fail-Open/Fail-Closed、OPNsense、第一至四代防火牆、Three-way Handshake、Four-way Handshake FIN、Drop vs. Reject、SNAT、Established、Forward/Reverse Proxy、Transparent Proxy 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、路由器最佳路徑選擇與封包傳遞原理比喻
+## 🎯 路由器最佳路徑選擇與封包傳遞原理比喻
 
-大家早！這幾天屏東到高雄路途車流量很大，開車花了比較多時間。這正好考驗大家對「最佳路徑計算」的理解。
+**【授課講師】**：大家早！這幾天屏東到高雄路途車流量很大，開車花了比較多時間。這正好考驗大家對「最佳路徑計算」的理解。
 
 不要以為只有路由器會計算最佳路徑，其實每個人每天通勤上下班都在計算最佳路徑：
 路由器演算法選擇最佳路徑依據的是什麼？
@@ -49,9 +34,9 @@ tags:
 
 ---
 
-## 📡 二、網路流量分流器（Network TAP）與 IDS/IPS 監控機制
+## 📡 網路流量分流器（Network TAP）與 IDS/IPS 監控機制
 
-在監控設備中，硬體主要區分為主動式與被動式控制：
+**【授課講師】**：在監控設備中，硬體主要區分為主動式與被動式控制：
 - **被動式監控（Passive Network TAP）**：
   - 企業若未採購昂貴的高階核心交換機，可在交換機對外連接防火牆的主幹鏈路上串接一個硬體 **Network TAP（網路分流器）**。
   - TAP 的功能是 100% 物理複製路過的所有進出封包（In-band），將複本旁路引流至後端的入侵偵測系統（IDS）進行深層威脅統計與行為分析，完全不消耗交換機 CPU 資源，亦不對網路轉發造成任何延遲。
@@ -70,9 +55,9 @@ tags:
 
 ---
 
-## 🔥 三、實體安全防護、機房火災高溫防護與災害應變（DRP）
+## 🔥 實體安全防護、機房火災高溫防護與災害應變（DRP）
 
-在機房實體安全防護上，必須配置氣體滅火系統（如 FM-200 / Novec 1230）與極早期煙霧偵測（VESDA），避免水損與電氣火災引發設備毀滅性碳化。
+**【授課講師】**：在機房實體安全防護上，必須配置氣體滅火系統（如 FM-200 / Novec 1230）與極早期煙霧偵測（VESDA），避免水損與電氣火災引發設備毀滅性碳化。
 
 回到邏輯防護層面，以知名開源防火牆 **OPNsense**（或 pfSense）為例，現代防火牆的演進經歷了四個世代：
 1. **第一代防火牆（封包過濾，Packet Filtering）**：
@@ -95,9 +80,9 @@ tags:
 
 ---
 
-## 🛡️ 四、狀態檢查防火牆（Stateful Inspection, OPNsense）與三次交握連線追蹤
+## 🛡️ 狀態檢查防火牆（Stateful Inspection, OPNsense）與三次交握連線追蹤
 
-深入探討狀態檢查防火牆（Stateful Firewall）的連線追蹤核心原理：
+**【授課講師】**：深入探討狀態檢查防火牆（Stateful Firewall）的連線追蹤核心原理：
 
 當內部主機連線網際網路時，通常透過 **SNAT（Source NAT）** 進行位址轉譯。內部主機主動發起對外連線，發送 TCP SYN 請求；回程封包帶有 SYN-ACK；當三次交握完成後，防火牆狀態表中的該筆連線狀態變更為 **`Established`（已建立）**。
 

@@ -3,34 +3,21 @@ title: "CompTIA Security+ Lesson 08：雲端應用程式安全、攻擊防禦、
 event: "CompTIA Security+ 認證培訓課程"
 date: "2025-01-22"
 talk_id: "SEC-08"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "CompTIA"
-  - "Security+"
-  - "雲端安全"
-  - "CASB"
-  - "SBOM"
-  - "OpenVAS"
-  - "Greenbone"
-  - "Tenable Nessus"
-  - "威脅情資"
-  - "Dark Web"
-  - "滲透測試"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ CompTIA Security+ Lesson 08：雲端應用程式安全、攻擊防禦、弱點掃描與威脅情資 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、PHP/.NET/C#、CSP、CASB、軟體供應鏈安全、SBOM、OpenVAS / Greenbone、Tenable Nessus、Credentialed Scan、Check Point / Kaspersky Threat Map、IBM X-Force、Recorded Future、abuse.ch、ISAC、Dark Web / AlphaBay、Tor/Freenet/I2P、滲透測試 黑箱/白箱/灰箱等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、雲端應用程式威脅模型與兩大攻擊向量（雲端伺服端 vs. 使用者端）
+## 🎯 雲端應用程式威脅模型與兩大攻擊向量（雲端伺服端 vs. 使用者端）
 
-雲端應用程式的威脅模型主要區分為兩大攻擊面向：
+**【授課講師】**：雲端應用程式的威脅模型主要區分為兩大攻擊面向：
 1. **伺服端應用程式本體漏洞**：
    - 攻擊者鎖定目標主機所運行的 Web 框架與原始碼進行漏洞探測。例如檢測系統是採用 PHP、C# 還是特定版本的 .NET Core，針對已知 CVE 未修補漏洞或邏輯缺陷（如忘記密碼身分繞過、越權存取等）進行滲透。
 2. **雲端基礎架構與 CSP 平台弱點**：
@@ -45,9 +32,9 @@ SBOM 詳實記錄了軟體內部所引用的所有開源函式庫（Libraries）
 
 ---
 
-## 📦 二、軟體供應鏈安全、SBOM（軟體物料清單）與弱點掃描排程
+## 📦 軟體供應鏈安全、SBOM（軟體物料清單）與弱點掃描排程
 
-弱點掃描（Vulnerability Scanning，簡稱弱掃）是資安健診的基本常態作業。大型企業通常每季執行一次（Q1 至 Q4），中小型企業至少每年執行兩次。
+**【授課講師】**：弱點掃描（Vulnerability Scanning，簡稱弱掃）是資安健診的基本常態作業。大型企業通常每季執行一次（Q1 至 Q4），中小型企業至少每年執行兩次。
 
 弱點掃描的核心精神在於：**先於駭客之前，主動全面清查全網公開資產與內部網路的安全缺陷**，評估風險等級（Critical、High、Medium、Low），做為防火牆設定校正與修補更新的依據。
 
@@ -60,9 +47,9 @@ SBOM 詳實記錄了軟體內部所引用的所有開源函式庫（Libraries）
 
 ---
 
-## 🔍 三、弱點掃描實戰：憑證掃描（Credentialed） vs. 無憑證非侵入式掃描
+## 🔍 弱點掃描實戰：憑證掃描（Credentialed） vs. 無憑證非侵入式掃描
 
-在弱點掃描實務中，主要區分為兩種掃描模式：
+**【授課講師】**：在弱點掃描實務中，主要區分為兩種掃描模式：
 - **無憑證掃描（Non-credentialed Scan，外部黑箱式）**：
   - 不提供掃描器任何主機登入帳號密碼，模擬外部陌生駭客視角，從網路層進行連接埠探測與外部服務 Banner 抓取，誤報率較高。
 - **具憑證掃描（Credentialed Scan，內部白箱授權式）**：
@@ -79,9 +66,9 @@ SBOM 詳實記錄了軟體內部所引用的所有開源函式庫（Libraries）
 
 ---
 
-## 🌐 四、威脅情資共享架構（ISAC）與暗網情資探索
+## 🌐 威脅情資共享架構（ISAC）與暗網情資探索
 
-若要持續強化企業防禦，資安團隊必須積極介接外部威脅情資（Threat Intelligence）：
+**【授課講師】**：若要持續強化企業防禦，資安團隊必須積極介接外部威脅情資（Threat Intelligence）：
 - **IBM X-Force Exchange**：國際級威脅情資社群平台，支援 STIX/TAXII 標準格式進行 IOC（侵害指標）交換；
 - **Recorded Future**、**Mandiant Threat Intelligence**；
 - **abuse.ch（URLhaus, MalwareBazaar, ThreatFox）**：瑞士著名的非營利惡意軟體黑名單平台，提供最新惡意網址與 C2 伺服器 IP 黑名單；

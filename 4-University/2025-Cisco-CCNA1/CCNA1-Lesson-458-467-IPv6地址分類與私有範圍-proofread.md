@@ -3,32 +3,21 @@ title: "Cisco CCNA 1 Lesson 頁458~467：IPv6 地址類型分類、Unique Local 
 event: "Cisco CCNA 1 認證培訓課程"
 date: "2025-01-10"
 talk_id: "CCNA-458-467"
-speakers: ['授課講師']
+speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
 verbatim: true
-scenario: "single-talk"
-category: "4-University"
-tags:
-  - "Cisco"
-  - "CCNA"
-  - "IPv6"
-  - "Global Unicast"
-  - "Link-Local"
-  - "Unique Local"
-  - "NDP"
-  - "SLAAC"
-  - "DHCPv6"
+scenario: "classroom-lecture"
 ---
 
 # 🎙️ Cisco CCNA 1 Lesson 頁458~467：IPv6 地址類型分類、Unique Local (FC00::/7) 與鏈路本地位址 (授課講師)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語（Cisco、CompTIA、Unique Local FC00::/7、FD00::/8、NDP、Neighbor Solicitation/Advertisement、Solicited-Node Multicast FF02::1:FFxx:xxxx、Multicast FF02::1/2/5/6/9/A、Anycast、SLAAC、EUI-64、DAD、Stateless DHCPv6 Lite、Stateful DHCPv6 等）與標點符號，並依授課脈絡劃分流暢之章節段落。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
 ---
 
-## 🎯 一、Unique Local Address (FC00::/7) 私有空間與內網規劃
+## 🎯 Unique Local Address (FC00::/7) 私有空間與內網規劃
 
-IPv6 的 **Unique Local Address（唯一本地位址，ULA）** 規範前綴為 **`FC00::/7`**，實務上目前多使用 `FD00::/8` 區段。這個位址區段專門保留給企業內部私有網路規劃使用。
+**【授課講師】**：IPv6 的 **Unique Local Address（唯一本地位址，ULA）** 規範前綴為 **`FC00::/7`**，實務上目前多使用 `FD00::/8` 區段。這個位址區段專門保留給企業內部私有網路規劃使用。
 
 Unique Local 的核心特性在於：**該位址嚴格禁止路由至公共 Internet 網際網路**。它的定位完全等同於 IPv4 中的 RFC 1918 私有位址（如 `10.0.0.0/8`、`192.168.0.0/16`）。如果企業內部希望維持與外部網路實體隔離、內外有別的安全架構，即可選擇以 `FD` 開頭的 Unique Local 位址進行內部各子網的規劃與配置。
 
@@ -55,9 +44,9 @@ NDP 主要透過兩種訊息來建立鄰居關係：
 
 ---
 
-## 🔀 二、任播（Anycast）特性：相同 IP 負載平衡與多路徑容錯機制
+## 🔀 任播（Anycast）特性：相同 IP 負載平衡與多路徑容錯機制
 
-接下來深入說明 **Anycast（任播）** 位址。
+**【授課講師】**：接下來深入說明 **Anycast（任播）** 位址。
 在 Cisco IOS 設定中，管理員可以在多台不同設備的多個介面上配置完全相同的 IP 位址，並在結尾加上關鍵字 `anycast` 進行宣告。
 
 若未加上 `anycast` 關鍵字，系統在進行重複位址檢測時會判定衝突報錯；加上 `anycast` 宣告後，路由器便知曉該位址專門用於任播負載平衡。
@@ -84,9 +73,9 @@ Router(config)# ipv6 route 2001:DB8:ACAD:2::/64 <Next-Hop-IPv6-Address>
 
 ---
 
-## 🗺️ 三、IPv6 靜態路由（::/0 Default Route）與路由表結構解析
+## 🗺️ IPv6 靜態路由（::/0 Default Route）與路由表結構解析
 
-檢視介面狀態使用 `show ipv6 interface <介面名稱>` 指令。在輸出中可清楚看到：
+**【授課講師】**：檢視介面狀態使用 `show ipv6 interface <介面名稱>` 指令。在輸出中可清楚看到：
 - 由管理員手動配置的 Global Unicast 位址；
 - 系統依據 **EUI-64 規則自動生成的 Link-Local 位址（`FE80::`，中間固定夾帶 `FFFE`）**；
 - 該介面所加入的群播群組（如 `FF02::1`、`FF02::2` 等）。
@@ -99,9 +88,9 @@ Router(config)# ipv6 route 2001:DB8:ACAD:2::/64 <Next-Hop-IPv6-Address>
 
 ---
 
-## 🔍 四、ICMPv6 鄰居發現（NDP）與自動設定：NS/NA 與 RS/RA 訊息類型
+## 🔍 ICMPv6 鄰居發現（NDP）與自動設定：NS/NA 與 RS/RA 訊息類型
 
-在 IPv6 隨插即用架構中，預設的核心配置機制稱為 **SLAAC（Stateless Address Autoconfiguration，無狀態位址自動配置）**。
+**【授課講師】**：在 IPv6 隨插即用架構中，預設的核心配置機制稱為 **SLAAC（Stateless Address Autoconfiguration，無狀態位址自動配置）**。
 
 SLAAC 的「無狀態（Stateless）」意義在於：**路由器完全不記錄、不維護各主機取得的具體 IP 位址租約**。這與傳統 DHCP 伺服器記錄每一筆 IP 與 MAC 對應表（Stateful，有狀態）形成鮮明對比。
 

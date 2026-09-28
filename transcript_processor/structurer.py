@@ -16,6 +16,7 @@ class ScenarioType(str, Enum):
     """
     Standard Scenario Profiles defined in PROOFREAD_RULES.md
     """
+    CLASSROOM_LECTURE = "classroom-lecture"
     SINGLE_TALK = "single-talk"
     MULTI_PAPER = "multi-paper"
     THESIS_DEFENSE = "thesis-defense"
@@ -65,7 +66,14 @@ class ProofreadBuilder:
         """
         Return the standardized disclaimer blockquote adapted to the scenario profile.
         """
-        if self.scenario == ScenarioType.MULTI_PAPER:
+        if self.scenario == ScenarioType.CLASSROOM_LECTURE:
+            return (
+                "> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。"
+                "完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；"
+                "已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，"
+                "明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。"
+            )
+        elif self.scenario == ScenarioType.MULTI_PAPER:
             return (
                 "> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。"
                 "完整收錄現場所有講者原話發言、語意轉折、現場互動、提問質詢、答辯攻防與評定決議，**未做任何刪減、摘要或人工造假注入**；"
@@ -105,6 +113,7 @@ class ProofreadBuilder:
             f"speakers: [{speakers_str}]",
             'type: "verbatim-narrative-transcript"',
             "verbatim: true",
+            f'scenario: "{self.scenario.value if isinstance(self.scenario, ScenarioType) else self.scenario}"',
             "---",
         ])
 
@@ -198,7 +207,17 @@ def validate_transcript_structure(
     # 4. Scenario-Specific Structure Checks
     headings = re.findall(r"^##\s+(.+)$", markdown_text, flags=re.MULTILINE)
 
-    if scenario_enum == ScenarioType.MULTI_PAPER:
+    # Check for artificial numbering in headings (e.g., "## 🎯 一、...")
+    for h in headings:
+        if re.search(r"^[^\w\s]*\s*[一二三四五六七八九十百]+[、\.]", h):
+            errors.append(f"Heading contains artificial numeric prefix: '{h}'")
+
+    if scenario_enum == ScenarioType.CLASSROOM_LECTURE:
+        # Classroom lecture requires speaker attribution (授課講師)
+        if not re.search(r"\*\*【授課講師】\*\*：", markdown_text):
+            errors.append("classroom-lecture scenario requires mandatory '**【授課講師】**：' speaker attribution")
+
+    elif scenario_enum == ScenarioType.MULTI_PAPER:
         # Check for multiple paper sections
         paper_headings = [h for h in headings if "論文" in h]
         if len(paper_headings) < 2:
