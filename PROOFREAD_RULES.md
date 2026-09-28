@@ -50,6 +50,8 @@ record-list/
 
 | 活動 | 檔案 |
 |------|------|
+| `4-University/2025-Cisco-CCNA1/` | 9 個主題共 18 個檔案（9 proofread + 9 summary） |
+| `4-University/2025-CompTIA-SecurityPlus/` | 8 個主題共 16 個檔案（8 proofread + 8 summary） |
 | `5-Master/20260821-HITCON-2026/` | 4 個主題共 8 個檔案（4 proofread + 4 summary） |
 | `5-Master/20260922-DevDaysAsia-2026/` | 5 個主題共 10 個檔案（5 proofread + 5 summary） |
 | `5-Master/20260714-MasterDefense-DRAVILaMA/` | 3 個主題共 6 個檔案（3 proofread + 3 summary） |
