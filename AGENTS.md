@@ -5,28 +5,34 @@ Follow the mandatory rules and engineering constraints outlined below.
 
 ## 🎙️ Transcript Proofreading Domain Rules & Mandatory Multi-Step Pipeline
 
-Every transcript processing task MUST strictly follow this **4-Stage Execution Pipeline**:
+Every transcript processing task MUST strictly follow this **5-Stage Execution Pipeline**:
 
-### 步驟一：語音辨識與原始轉錄（Raw ASR & CJK Normalization）
+### 步驟一：語音辨識與原始轉錄（Raw ASR & Initial CJK Conversion）
 - 透過本地 ASR（Qwen3-ASR / Whisper）將音訊推論為逐句原始文本。
 - 輸出至 `transcribe_outputs/{folder}/`（包含 `raw_transcript.txt` 與 `transcript_zh_tw.txt`）。
 - **嚴格注意**：此階段產出僅為**初稿語料素材**，絕對不能直接當作最終交付物！
 
-### 步驟二：深層格式整理與逐字校對（Proofread Formatting & Deep Correction）
+### 步驟二：標點規範與基底詞庫替換（Automated Pre-processing & Dictionary Normalization）
 - **標點與空白正規化**：執行 `clean_spaces_and_punct`，消除 CJK 間異常空白、統一半形全形標點符號。
-- **聲學與技術術語深度修正**：依據已知同音詞庫修正原廠名詞、協定縮寫、指令語法（如 Cisco、CompTIA、Pearson VUE、OnVUE、SSO、ACL、TCP/UDP、IPv6、PKI、SIEM 等）。
-- **自然語意邏輯段落重構**：將短碎語句依講者思維脈絡聚合為通順、自然的閱讀段落（**嚴禁機械式每 N 句硬切**）。
-- **主題章節劃分**：依據演講/授課演進大綱插入具辨識度的 H2 / H3 標題與重點 emoji。
+- **語氣停頓斷句修復**：消除純附屬助詞前的誤加標點（`[。！？]\s*([的得地著之])`）。
+- **全域確定性詞庫初步替換**：執行基礎字典層之機構名稱與品牌替換（Cisco、CompTIA、Pearson VUE、OnVUE、巨匠、恆逸、聯成）。
+- **嚴格注意**：此步驟僅為自動化前處理腳本，**絕不可替代步驟三之深層語意校對**！
+
+### 步驟三：逐字稿深度語意校對與高可讀性排版（Deep Verbatim LLM Proofreading & Formatting）
+- **100% 全篇原話保真**：完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動，**嚴禁任何刪減、摘要或文言縮寫**。
+- **深度語意聽錯校正**：通讀上下文地毯式修正語音辨識荒謬同音字與專有名詞（如 `Proctored/unproctored`、`IPv6 世界`、`www.cisco.com`、`permit ip any any`、`deny`、`現在是一萬`、`巨匠多少錢？兩萬。`、`Webcam 可以看到` 等）。
+- **自然語流排版**：消除破碎單句與突兀行尾，按 150～300 字組織為流暢閱讀段落，並消除孤立無意義狀聲詞。
+- **結構化主題標題**：依授課脈絡插入 H2/H3 標題與語意 emoji。
 - **元資料與防偽門禁**：補齊完整 YAML Frontmatter 與標準 Blockquote 宣告，並通過 `EntityGuard` 出處溯源檢查。
 - 產出最終高品質純 Markdown：`{ShortTitle}-proofread.md`。
 
-### 步驟三：技術精華架構提煉（Executive Summary & Architecture Extraction）
+### 步驟四：技術精華架構提煉（Executive Summary & Architecture Extraction）
 - 從完成之 `proofread.md` 提煉關鍵脈絡與心智模型。
 - 繪製 Mermaid 概念圖、攻擊鏈或流程架構圖。
 - 整理核心技術細節、代碼指令、重要表格與考試/實戰避坑重點。
 - 產出結構化精華筆記：`{ShortTitle}-summary.md`。
 
-### 步驟四：全局目錄索引與品質迴歸（Catalog Indexing & Quality Audit）
+### 步驟五：全局目錄索引與品質迴歸（Catalog Indexing & Quality Audit）
 - 執行 `python -m transcript_processor index` 更新 `CATALOG.md` 與 `CATALOG.zh-TW.md`。
 - 執行全套單元測試（`unittest discover tests`）確認零迴歸、零幻覺。
 

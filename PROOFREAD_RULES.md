@@ -171,7 +171,7 @@ record-list/
 
 ---
 
-## 三、轉錄到交付之標準四階段作業流程（Standard 4-Stage Pipeline）
+## 三、轉錄到交付之標準五階段作業流程（Standard 5-Stage Pipeline）
 
 為確保最終產出具備一致的高規格品質與可讀性，所有轉錄校對工作**必須嚴格分步執行，嚴禁省略或將多步混淆跳過**：
 
@@ -180,33 +180,48 @@ record-list/
 2. 產出 `transcribe_outputs/{folder}/raw_transcript.txt` 與初步繁中 `transcript_zh_tw.txt`。
 3. **原則**：此階段為機器辨識之未加工語料（Scratch Material），不可直接交付。
 
-### 階段二：逐字稿深層格式整理與校對（Proofread Formatting & Deep Correction）
+### 階段二：標點規範與基底詞庫替換（Automated Pre-processing & Dictionary Normalization）
 1. **標點與空白正規化（CJK Normalization）**：
    - 消除中文字元間異常產生的空格（如 `一 些 一 些` $\to$ `一些一些`）。
    - 將英文標點自動正規化為全形標點（`,` $\to$ `，`、`.` $\to$ `。`、`:` $\to$ `：`、`?` $\to$ `？`）。
    - 保留中英交界處之標準單一空格（如 `在 Android 系統中`）。
-2. **詞級與語句級聲學深度校對（Acoustic & Technical Correction）**：
-   - 批次修正技術領域專有名詞（如 Cisco、CompTIA、Pearson VUE、OnVUE、SSO、ACL、TCP/UDP、IPv6、PKI、SIEM 等）。
-   - 修復 ASR 斷詞錯誤與同音字（如「這口」$\to$「Cisco」、「西西那」$\to$「CCNA」）。
-3. **自然語意邏輯段落重構（Semantic Paragraph Reconstruction）**：
-   - **嚴禁機械式按固定句數硬切**。
-   - 必須依據講者的語意轉折、論述邏輯與話題切換，聚合為 150～300 字左右之自然閱讀段落。
-4. **主題章節劃分與導航標題（Thematic Heading Structure）**：
-   - 依據授課演進大綱插入具辨識度的 H2（`##`）與 H3（`###`）標題，並搭配主題 emoji（如 🎯、🔬、⚙️、💥、🛡️）。
+2. **語氣停頓斷句修復**：
+   - 消除純附屬助詞前的誤加標點：`re.sub(r"[。！？，、；：]\s*([的得地著之])", r"\1", text)`。
+3. **全域確定性詞庫初步替換**：
+   - 對已明確之機構名稱、品牌進行初步替換（如 Cisco、CompTIA、Pearson VUE、OnVUE、巨匠、恆逸、聯成）。
+4. **原則**：此階段為自動化腳本前處理，**絕不等同於校對排版完成**。
+
+### 階段三：逐字稿深度語意校對與高可讀性排版（Deep Verbatim LLM Proofreading & Formatting）
+1. **100% 全篇原話保真（Verbatim Fidelity）**：
+   - 完整保留現場講者原話講義解說、觀念剖析、實機操作與師生互動，**未做任何刪減或摘要縮寫**。
+   - 講者的語意轉折、思考停頓、口語真實感完全保留，嚴禁擅自改寫為文言或書面簡述。
+2. **深度語意聽錯校正（Contextual Semantic Recovery）**：
+   - 必須由模型通讀上下文，地毯式修復 ASR 因音近造成的嚴重語意扭曲，例如：
+     - `Practice / unpracticed` $\to$ `Proctored / unproctored`（Pearson VUE 監考/非監考測驗）
+     - `第二世界` $\to$ `IPv6 世界`、`B六` $\to$ `IPv6`
+     - `這波單位點四十個點看` $\to$ `www.cisco.com`
+     - `本地IPN` $\to$ `permit ip any any`、`抵耐` $\to$ `deny`
+     - `四一萬` $\to$ `現在是一萬`、`巨一下多錢？二十。` $\to$ `巨匠多少錢？兩萬。`
+     - `微。看可以看到` $\to$ `Webcam 可以看到`
+3. **自然閱讀段落重構（Discourse Paragraphing）**：
+   - 消除單句成段與突兀斷裂，依論述主題聚合為 150～300 字之流暢段落。
+   - 徹底消除結尾或開頭殘留之孤立狀聲詞（如單獨一行「好。」「嗯。」）。
+4. **結構化主題標題導航（Thematic Headings with Emojis）**：
+   - 依授課脈絡劃分具代表性之 H2/H3 章節標題，並搭配主題 emoji（🎯、🔑、📊、🖥️、📜、📝、🔄、💡）。
 5. **元資料與出處溯源門禁（Provenance Verification Gate）**：
-   - 補齊完整 YAML Frontmatter（title, event, date, talk_id, speakers, type, verbatim, scenario, category, tags）。
-   - 緊接 H1 下方插入標準排版聲明 Blockquote。
-   - 通過 `EntityGuard.verify_metadata_provenance()` 出處溯源檢查，嚴禁未經佐證之機構掛名。
+   - 補齊完整 YAML Frontmatter（含 title, event, date, talk_id, speakers, type: "verbatim-narrative-transcript", verbatim: true, scenario, category, tags）。
+   - 緊接 H1 下方插入標準排版說明 Blockquote。
+   - 通過 `EntityGuard.verify_metadata_provenance()` 出處溯源檢查。
 6. **最終產出**：`{ShortTitle}-proofread.md`。
 
-### 階段三：技術精華架構提煉（Executive Summary & Architecture Extraction）
+### 階段四：技術精華架構提煉（Executive Summary & Architecture Extraction）
 1. **提煉核心脈絡**：濃縮演講/課程之核心概念、攻擊情境或學習目標。
 2. **視覺化圖表**：使用 Mermaid 繪製系統架構圖、攻擊流轉鏈或協定時序圖。
 3. **技術精華深化**：整理核心技術細節、CLI 指令語法、對比表格與考點整理。
 4. **關鍵總結與考試應對**：列出 3～5 點核心重點與避坑守則。
 5. **最終產出**：`{ShortTitle}-summary.md`。
 
-### 階段四：全局目錄索引與品質迴歸（Catalog Indexing & Quality Audit）
+### 階段五：全局目錄索引與品質迴歸（Catalog Indexing & Quality Audit）
 1. 執行 `python -m transcript_processor index`，自動掃描並更新 `CATALOG.md` 與 `CATALOG.zh-TW.md`。
 2. 執行全套單元測試與防退化測試（`unittest discover tests`），確保 100% 通過。
 
