@@ -22,7 +22,7 @@
 | 分類資料夾 | 架構層級與涵蓋範疇 | 核心主題與科目 |
 | :--- | :--- | :--- |
 | **`4-University/`** | **大學部課程與活動**<br/>・`1-Studies/`（大一）<br/>・`2-Curriculum/`（大二）<br/>・`3-Specialization/`（大三）<br/>・`4-Capstone/`（大四）<br/>每學年細分 `Fall-Semester`、`Spring-Semester` 與 `Holiday` | 基礎數學、普通物理、生物實驗、職涯發展、電腦網路、MIS、雲端運算、物聯網安全、專案管理、Cisco CCNA 1、CompTIA Security+。 |
-| **`5-Master/`** | **碩士班學術與產業前瞻**<br/>・`1-First-Year/`（碩一：兩學期與活動）<br/>・`2-Second-Year/`（碩二：兩學期與活動）<br/>・`Laboratory/`（實驗室專屬：Degree-Defense, Project-Meeting, Seminar, Thesis-Progress） | 軟體工程、DevOps、電腦網路實驗、機器學習、人機互動 (HCI/UX)、CTF 資安實務、進階 AI 最佳化、研究方法論、資料庫安全、AI 全英文專題發表、中大資管學術研討會、HITCON 2026、DevDays Asia 2026、OSINT & CTI、Deloitte 生成式 AI 資安演講、UIC 可解釋 AI 講座、DRAVILaMA 碩士學位口試、整合型計畫會議、APR 論文報告、GNN 惡意程式檢測進度。 |
+| **`5-Master/`** | **碩士班學術與產業前瞻**<br/>・`1-First-Year/`（碩一：兩學期與活動）<br/>・`2-Second-Year/`（碩二：兩學期與活動）<br/>・`Laboratory/`（實驗室專屬：Degree-Defense, Project-Meeting, Security-News, Seminar, Thesis-Progress） | 軟體工程、DevOps、電腦網路實驗、機器學習、人機互動 (HCI/UX)、CTF 資安實務、進階 AI 最佳化、研究方法論、AI 全英文專題發表、中大資管學術研討會、HITCON 2026、DevDays Asia 2026、OSINT & CTI、Deloitte 生成式 AI 資安演講、UIC 可解釋 AI 講座、DRAVILaMA 碩士學位口試、整合型計畫會議、資安新聞研討 (PostgreSQL 漏洞)、APR 論文報告、GNN 惡意程式檢測進度。 |
 
 > 💡 **瀏覽提示**：若欲查閱任何主題之詳細原話與摘要，請直接前往 [CATALOG.zh-TW.md](./CATALOG.zh-TW.md) 點選對應連結，或直接探索上述資料夾。
 

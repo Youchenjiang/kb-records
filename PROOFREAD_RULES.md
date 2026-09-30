@@ -35,12 +35,13 @@ record-list/
 │   │   ├── Spring-Semester/             ← 碩一下（課程：MachineLearning, HCI-UX, CTF-Security, AdvancedAI-Optimization, ResearchMethodology；活動：20260318-EnglishAI-Presentation, 20260327-NCU-IM-AcademicConference）
 │   │   └── Holiday/                     ← 碩一暑假（活動：20260821-HITCON-2026）
 │   ├── 2-Second-Year/                   ← 碩二（專題研討、資安深度選修、產業大會、學位研究）
-│   │   ├── Fall-Semester/               ← 碩二上（課程：DatabaseSecurity；活動：20260922-DevDaysAsia-2026, 20260927-Intro-to-OSINT-CTI）
+│   │   ├── Fall-Semester/               ← 碩二上（活動：20260922-DevDaysAsia-2026, 20260927-Intro-to-OSINT-CTI）
 │   │   ├── Spring-Semester/             ← 碩二下
 │   │   └── Holiday/
 │   └── Laboratory/                      ← 實驗室專屬核心目錄
 │       ├── Degree-Defense/              ← 碩士學位口試（如 20260714 DRAVILaMA 論文簡報與審查質詢）
 │       ├── Project-Meeting/             ← 整合型/產學研究專案會議（如 20251003 研究計畫與平台規劃）
+│       ├── Security-News/               ← 資安與漏洞新聞研討（如 20260914 PostgreSQL 複寫協議提權漏洞）
 │       ├── Seminar/                     ← 專題討論（如 20260914 自動化漏洞修復 APR 報告）
 │       └── Thesis-Progress/             ← 碩士論文研究進度研討（如 20260226 Android 惡意程式行為子圖檢測）
 ├── transcript_processor/                ← 核心處理器套件（Indexer, Linter, Structurer, Guard）
@@ -57,9 +58,9 @@ record-list/
   * 碩士班：`1-First-Year`、`2-Second-Year`。
 * **學期目錄**：`Fall-Semester`、`Spring-Semester`，以及存放寒暑假或特殊活動的 `Holiday`。
 * **內層課程/活動目錄**：
-  * **課程目錄**：直接寫「純課程名稱」，不重複年份或學期（例如 `BasicMathematics/`、`MachineLearning/`、`SoftwareEngineering/`、`ProjectManagement/`、`DatabaseSecurity/`）。
+  * **課程目錄**：直接寫「純課程名稱」，不重複年份或學期（例如 `BasicMathematics/`、`MachineLearning/`、`SoftwareEngineering/`、`ProjectManagement/`）。
   * **活動目錄**：一律以「活動第一天日期 + 活動名稱」命名（例如 `20250106-Cisco-CCNA1/`、`20250113-CompTIA-SecurityPlus/`、`20260318-EnglishAI-Presentation/`、`20260821-HITCON-2026/`）。
-* **實驗室目錄**：統一收整在 `5-Master/Laboratory/` 底下，依目的區分為 `Degree-Defense/`、`Project-Meeting/`、`Seminar/`、`Thesis-Progress/` 四大子目錄。
+* **實驗室目錄**：統一收整在 `5-Master/Laboratory/` 底下，依目的區分為 `Degree-Defense/`、`Project-Meeting/`、`Security-News/`、`Seminar/`、`Thesis-Progress/` 五大子目錄。
 
 ### 3. 檔案命名規範（方案 3-A 主從架構）
 
