@@ -46,6 +46,7 @@ AUDIO_EXTENSIONS = {".aac", ".mp3", ".m4a", ".wav", ".flac", ".ogg", ".opus", ".
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PENDING_DIR = REPO_ROOT / "audio" / "pending"
 PROCESSED_DIR = REPO_ROOT / "audio" / "processed"
+PRESERVED_DIR = REPO_ROOT / "audio" / "preserved"
 OUTPUT_BASE_DIR = REPO_ROOT / "transcribe_outputs"
 
 
@@ -214,6 +215,29 @@ def transcribe_single_audio(
 """
     proofread_path.write_text(md_content, encoding="utf-8")
     logger.info(f"[{file_name}] Successfully completed: {proofread_path}")
+
+    # Check for non-speech or music content
+    clean_chars = "".join(ch for ch in tw_full if ch not in " \n\r\t，。、！？；：")
+    is_non_speech = False
+    if len(clean_chars) < 15:
+        is_non_speech = True
+    elif set(clean_chars).issubset(set("嗯啊哦喔唉")):
+        is_non_speech = True
+
+    if is_non_speech:
+        logger.warning(
+            f"[{file_name}] Detected as non-speech/music (text length: {len(clean_chars)}, content: '{tw_full.strip()}'). Quarantining to preserved/."
+        )
+        dest = PRESERVED_DIR / audio_path.name
+        shutil.move(str(audio_path), str(dest))
+        manifest = PRESERVED_DIR / "MANIFEST.md"
+        import datetime
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        entry = f"- `{audio_path.name}`: 轉錄判定為非人聲/純音樂或空白音訊（辨識字數: {len(clean_chars)} 字） (隔離時間: {now})\n"
+        with manifest.open("a", encoding="utf-8") as f:
+            f.write(entry)
+        torch.cuda.empty_cache()
+        return True
 
     # Move finished audio to processed/
     dest = PROCESSED_DIR / audio_path.name
