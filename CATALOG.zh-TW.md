@@ -15,6 +15,8 @@
   - [大學部普通物理核心課程](#大學部普通物理核心課程)
   - [大學部普通生物學核心課程](#大學部普通生物學核心課程)
   - [大學部機器學習與深度學習課程](#大學部機器學習與深度學習課程)
+  - [大學部物聯網與網路安全實務課程](#大學部物聯網與網路安全實務課程)
+  - [大學部管理資訊系統（MIS）課程](#大學部管理資訊系統（mis）課程)
   - [大學部系統維運與自動化實務課程](#大學部系統維運與自動化實務課程)
   - [大學部職涯發展與求職就業輔導工作坊](#大學部職涯發展與求職就業輔導工作坊)
   - [大學部資訊安全專題研究課程](#大學部資訊安全專題研究課程)
@@ -36,6 +38,7 @@
   - [技術學術研討會 Session I (錄音 239)](#技術學術研討會 session i (錄音 239))
   - [碩士學位論文口試審查會](#碩士學位論文口試審查會)
   - [第十七屆國立中央大學資訊管理學系學術論文暨專題發表會](#第十七屆國立中央大學資訊管理學系學術論文暨專題發表會)
+  - [資安與軟體工程碩士班專題研討](#資安與軟體工程碩士班專題研討)
   - [資訊管理研究所研究方法論課程](#資訊管理研究所研究方法論課程)
   - [進階人工智慧與最佳化研究所課程](#進階人工智慧與最佳化研究所課程)
 
@@ -197,56 +200,70 @@
 | 103 | **機器學習實務 Lesson 02：單純貝氏分類器 Naive Bayes 與支援向量機 SVM 原理** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/機器學習-02-貝氏分類器與支援向量機SVM原理-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/機器學習-02-貝氏分類器與支援向量機SVM原理-summary.md) |
 | 104 | **機器學習實務 Lesson 03：深度學習導論、多層感知機 MLP 與神經網路架構設計** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/機器學習-03-深度學習導論與多層感知機類神經網路-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/機器學習-03-深度學習導論與多層感知機類神經網路-summary.md) |
 | 105 | **機器學習實務 Lesson 04：特徵萃取、損失函數與梯度下降法模型最佳化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/機器學習-04-特徵萃取與梯度下降損失函數最佳化-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/機器學習-04-特徵萃取與梯度下降損失函數最佳化-summary.md) |
+| 106 | **機器學習實務 Lesson 05：貝氏信念網路、支援向量機 SVM 最大間距超平面與軟邊界最佳化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/機器學習-05-支援向量機SVM最大間距超平面與軟邊界最佳化-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/機器學習-05-支援向量機SVM最大間距超平面與軟邊界最佳化-summary.md) |
+
+### 📅 大學部物聯網與網路安全實務課程
+
+| 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
+| :--- | :--- | :--- | :--- | :--- |
+| 107 | **物聯網資安實務 Lesson 01：去周邊化集體防禦、零信任持續身分驗證與 TPM 硬體信任根** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/物聯網資安-01-去周邊化集體防禦與零信任TPM硬體信任根-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/物聯網資安-01-去周邊化集體防禦與零信任TPM硬體信任根-summary.md) |
+
+### 📅 大學部管理資訊系統（MIS）課程
+
+| 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
+| :--- | :--- | :--- | :--- | :--- |
+| 108 | **管理資訊系統 Lesson 01：期中重點總複習、雲端運算架構、大數據挑戰與平台經濟顛覆模型** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/管理資訊系統-01-期中重點總複習雲端運算平台經濟與AI架構-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/管理資訊系統-01-期中重點總複習雲端運算平台經濟與AI架構-summary.md) |
+| 109 | **管理資訊系統 Lesson 02：期末重點總複習、車聯網 V2X 通訊、金融科技區塊鏈與資源基礎觀點 RBV** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/管理資訊系統-02-期末重點總複習車聯網金融科技與資源基礎觀點-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/管理資訊系統-02-期末重點總複習車聯網金融科技與資源基礎觀點-summary.md) |
 
 ### 📅 大學部系統維運與自動化實務課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 106 | **DevOps 自動化維運實務 Lesson 01：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/DevOps自動化維運-01-Ansible無代理架構與Playbook宣告式部署-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/DevOps自動化維運-01-Ansible無代理架構與Playbook宣告式部署-summary.md) |
+| 110 | **DevOps 自動化維運實務 Lesson 01：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/DevOps自動化維運-01-Ansible無代理架構與Playbook宣告式部署-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/DevOps自動化維運-01-Ansible無代理架構與Playbook宣告式部署-summary.md) |
 
 ### 📅 大學部職涯發展與求職就業輔導工作坊
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 107 | **職涯發展與就業輔導 Lesson 01：求職自我優勢定位、人脈推薦與海外求職防詐實務** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/職涯發展-01-求職自我定位人脈媒合與海外求職防詐實務-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/職涯發展-01-求職自我定位人脈媒合與海外求職防詐實務-summary.md) |
-| 108 | **職涯發展與就業輔導 Lesson 02：人資篩選心理學、履歷投遞時機與版面視覺優化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/職涯發展-02-人資篩選心理學履歷投遞時機與版面視覺優化-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/職涯發展-02-人資篩選心理學履歷投遞時機與版面視覺優化-summary.md) |
-| 109 | **職涯發展與就業輔導 Lesson 03：學經歷倒敘法撰寫規範與面試應對實戰技巧** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/職涯發展-03-學經歷倒敘法撰寫規範與面試應對實戰技巧-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/職涯發展-03-學經歷倒敘法撰寫規範與面試應對實戰技巧-summary.md) |
+| 111 | **職涯發展與就業輔導 Lesson 01：求職自我優勢定位、人脈推薦與海外求職防詐實務** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/職涯發展-01-求職自我定位人脈媒合與海外求職防詐實務-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/職涯發展-01-求職自我定位人脈媒合與海外求職防詐實務-summary.md) |
+| 112 | **職涯發展與就業輔導 Lesson 02：人資篩選心理學、履歷投遞時機與版面視覺優化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/職涯發展-02-人資篩選心理學履歷投遞時機與版面視覺優化-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/職涯發展-02-人資篩選心理學履歷投遞時機與版面視覺優化-summary.md) |
+| 113 | **職涯發展與就業輔導 Lesson 03：學經歷倒敘法撰寫規範與面試應對實戰技巧** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/職涯發展-03-學經歷倒敘法撰寫規範與面試應對實戰技巧-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/職涯發展-03-學經歷倒敘法撰寫規範與面試應對實戰技巧-summary.md) |
 
 ### 📅 大學部資訊安全專題研究課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 110 | **資料庫資安實務 Lesson 01：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/資料庫資安-01-PostgreSQL抄寫協議認證繞過與特權提升漏洞解析-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/資料庫資安-01-PostgreSQL抄寫協議認證繞過與特權提升漏洞解析-summary.md) |
+| 114 | **資料庫資安實務 Lesson 01：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/資料庫資安-01-PostgreSQL抄寫協議認證繞過與特權提升漏洞解析-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/資料庫資安-01-PostgreSQL抄寫協議認證繞過與特權提升漏洞解析-summary.md) |
 
 ### 📅 大學部資訊安全競賽培訓課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 111 | **資安實戰 Lesson 01：CTF 圖片隱寫術分析、十六進位結構竄改與 OSINT 地理定位解題實務** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/資安實戰-01-CTF圖片隱寫術分析與OSINT地理定位解題實務-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/資安實戰-01-CTF圖片隱寫術分析與OSINT地理定位解題實務-summary.md) |
+| 115 | **資安實戰 Lesson 01：CTF 圖片隱寫術分析、十六進位結構竄改與 OSINT 地理定位解題實務** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/資安實戰-01-CTF圖片隱寫術分析與OSINT地理定位解題實務-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/資安實戰-01-CTF圖片隱寫術分析與OSINT地理定位解題實務-summary.md) |
 
 ### 📅 大學部雲端運算架構課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 112 | **雲端運算導論 Lesson 01：雲端本質剖析、伺服器虛擬化與現代資料中心集中運算** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/雲端運算-01-虛擬化架構與資料中心運算基礎-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/雲端運算-01-虛擬化架構與資料中心運算基礎-summary.md) |
+| 116 | **雲端運算導論 Lesson 01：雲端本質剖析、伺服器虛擬化與現代資料中心集中運算** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/雲端運算-01-虛擬化架構與資料中心運算基礎-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/雲端運算-01-虛擬化架構與資料中心運算基礎-summary.md) |
 
 ### 📅 大學部電腦網路實驗課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 113 | **電腦網路實習 Lesson 01：UTP 雙絞線製作、T568A/B 跳線標準與傳輸衰減量測** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/電腦網路實驗-01-UTP雙絞線跳線製作與衰減標準-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/電腦網路實驗-01-UTP雙絞線跳線製作與衰減標準-summary.md) |
+| 117 | **電腦網路實習 Lesson 01：UTP 雙絞線製作、T568A/B 跳線標準與傳輸衰減量測** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-UndergraduateCourses/電腦網路實驗-01-UTP雙絞線跳線製作與衰減標準-proofread.md) · [📑 Summary](./4-University/2024-UndergraduateCourses/電腦網路實驗-01-UTP雙絞線跳線製作與衰減標準-summary.md) |
 
 ### 📅 大學部電腦網路核心課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 114 | **電腦網路期末總複習：IPv4 分類編址、子網路遮罩切割運算與網路安全加解密** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-Fall-SemesterCourses/電腦網路-期末總複習-IPv4分類編址子網路切割與網路安全實務-proofread.md) · [📑 Summary](./4-University/2024-Fall-SemesterCourses/電腦網路-期末總複習-IPv4分類編址子網路切割與網路安全實務-summary.md) |
+| 118 | **電腦網路期末總複習：IPv4 分類編址、子網路遮罩切割運算與網路安全加解密** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./4-University/2024-Fall-SemesterCourses/電腦網路-期末總複習-IPv4分類編址子網路切割與網路安全實務-proofread.md) · [📑 Summary](./4-University/2024-Fall-SemesterCourses/電腦網路-期末總複習-IPv4分類編址子網路切割與網路安全實務-summary.md) |
 
 ### 📅 軟體工程課程期末專題發表審查會
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 115 | **軟體工程期末專案發表與評審審查會：Vue/TS 前端、Python 後端、高並發壓力測試與 AI 模組整合** | 授課講師, 學員 (專案報告團隊) | `classroom-lecture` | [📄 Proofread](./4-University/2025-SoftwareEngineering/軟工期末-系統架構循序圖與高並發壓力測試-proofread.md) · [📑 Summary](./4-University/2025-SoftwareEngineering/軟工期末-系統架構循序圖與高並發壓力測試-summary.md) |
+| 119 | **軟體工程期末專案發表與評審審查會：Vue/TS 前端、Python 後端、高並發壓力測試與 AI 模組整合** | 授課講師, 學員 (專案報告團隊) | `classroom-lecture` | [📄 Proofread](./4-University/2025-SoftwareEngineering/軟工期末-系統架構循序圖與高並發壓力測試-proofread.md) · [📑 Summary](./4-University/2025-SoftwareEngineering/軟工期末-系統架構循序圖與高並發壓力測試-summary.md) |
 
 ---
 
@@ -256,98 +273,104 @@
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 116 | **Google Pixel 8A Mali GPU Driver 漏洞挖掘與提權實戰 (PK)** | PK | `single-talk` | [📄 Proofread](./5-Master/20260821-HITCON-2026/Pixel8A-GPU漏洞挖掘-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/Pixel8A-GPU漏洞挖掘-summary.md) |
-| 117 | **HITCON 2026 閃電秀全集（6 場短講合輯）** | Henry, 克雷, Ray, 年會活動組, 阿斯卡, S & 艾子 | `lightning-talks` | [📄 Proofread](./5-Master/20260821-HITCON-2026/閃電秀6場合輯-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/閃電秀6場合輯-summary.md) |
-| 118 | **POS 刷卡機魔改 ADB 與 AI 輔助挖 0-Day 實戰** | 資安研究員 | `single-talk` | [📄 Proofread](./5-Master/20260821-HITCON-2026/POS-ADB-0Day-AI輔助-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/POS-ADB-0Day-AI輔助-summary.md) |
-| 119 | **黑吃黑：瞄準資安研究員與紅隊的供應鏈攻擊 (Jason & Sam)** | Jason, Sam | `single-talk` | [📄 Proofread](./5-Master/20260821-HITCON-2026/供應鏈攻擊-黑吃黑-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/供應鏈攻擊-黑吃黑-summary.md) |
+| 120 | **Google Pixel 8A Mali GPU Driver 漏洞挖掘與提權實戰 (PK)** | PK | `single-talk` | [📄 Proofread](./5-Master/20260821-HITCON-2026/Pixel8A-GPU漏洞挖掘-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/Pixel8A-GPU漏洞挖掘-summary.md) |
+| 121 | **HITCON 2026 閃電秀全集（6 場短講合輯）** | Henry, 克雷, Ray, 年會活動組, 阿斯卡, S & 艾子 | `lightning-talks` | [📄 Proofread](./5-Master/20260821-HITCON-2026/閃電秀6場合輯-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/閃電秀6場合輯-summary.md) |
+| 122 | **POS 刷卡機魔改 ADB 與 AI 輔助挖 0-Day 實戰** | 資安研究員 | `single-talk` | [📄 Proofread](./5-Master/20260821-HITCON-2026/POS-ADB-0Day-AI輔助-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/POS-ADB-0Day-AI輔助-summary.md) |
+| 123 | **黑吃黑：瞄準資安研究員與紅隊的供應鏈攻擊 (Jason & Sam)** | Jason, Sam | `single-talk` | [📄 Proofread](./5-Master/20260821-HITCON-2026/供應鏈攻擊-黑吃黑-proofread.md) · [📑 Summary](./5-Master/20260821-HITCON-2026/供應鏈攻擊-黑吃黑-summary.md) |
 
 ### 📅 20260927-Intro-to-OSINT-CTI
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 120 | **Introduction to OSINT & Cyber Threat Intelligence (CTI) Sharing Session** | Tunku Irfan, foxy | `single-talk` | [📄 Proofread](./5-Master/20260927-Intro-to-OSINT-CTI/proofread.md) · [📑 Summary](./5-Master/20260927-Intro-to-OSINT-CTI/summary.md) |
+| 124 | **Introduction to OSINT & Cyber Threat Intelligence (CTI) Sharing Session** | Tunku Irfan, foxy | `single-talk` | [📄 Proofread](./5-Master/20260927-Intro-to-OSINT-CTI/proofread.md) · [📑 Summary](./5-Master/20260927-Intro-to-OSINT-CTI/summary.md) |
 
 ### 📅 DevDays Asia 2026
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 121 | **AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊** | Justin (主持人), Jun (Anthropic Japan), Ash (Microsoft GTM), Amanda (Anthropic SF) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md) |
-| 122 | **AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準** | 微軟架構師, Fend (微軟負責任 AI 團隊), 先 / Sean (新說資訊) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md) |
-| 123 | **Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談** | 微軟雲端安全架構師, Youchen (資安研究員), 現場資安前輩 | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md) |
-| 124 | **GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理** | 周祈和 (微軟 AI 解決方案工程師) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md) |
-| 125 | **Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry** | Ash (Microsoft Commercial & GTM Strategy) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md) |
+| 125 | **AI 時代下的軟體民主化、工程師定位對談與 Claude MCP 實戰工作坊** | Justin (主持人), Jun (Anthropic Japan), Ash (Microsoft GTM), Amanda (Anthropic SF) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/AI時代工程師定位與軟體民主化-summary.md) |
+| 126 | **AI 系統生命週期評測、紅隊演練與 UL 315 責任 AI 治理標準** | 微軟架構師, Fend (微軟負責任 AI 團隊), 先 / Sean (新說資訊) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/AI評測與UL315治理-summary.md) |
+| 127 | **Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談** | 微軟雲端安全架構師, Youchen (資安研究員), 現場資安前輩 | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/Agentic-SOC與資安研究計畫交流-summary.md) |
+| 128 | **GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理** | 周祈和 (微軟 AI 解決方案工程師) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/GHAS聯防與MAGENTA多Agent審計-summary.md) |
+| 129 | **Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry** | Ash (Microsoft Commercial & GTM Strategy) | `single-talk` | [📄 Proofread](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-proofread.md) · [📑 Summary](./5-Master/20260922-DevDaysAsia-2026/Tokenomics與Foundry成本優化-summary.md) |
 
 ### 📅 中央資管實驗室專題研究進度研討會
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 126 | **碩士研究進度報告：基於敏感 API 行為子圖與 GNN/LLM 之 Android 抗混淆惡意程式檢測** | 發表研究生 (Youchen), 指導教授, 陳教授 / 共同指導 | `single-talk` | [📄 Proofread](./5-Master/2026-MasterResearch-AndroidMalware/碩士研究專題-Android惡意程式行為子圖與抗混淆GNN檢測-proofread.md) · [📑 Summary](./5-Master/2026-MasterResearch-AndroidMalware/碩士研究專題-Android惡意程式行為子圖與抗混淆GNN檢測-summary.md) |
+| 130 | **碩士研究進度報告：基於敏感 API 行為子圖與 GNN/LLM 之 Android 抗混淆惡意程式檢測** | 發表研究生 (Youchen), 指導教授, 陳教授 / 共同指導 | `single-talk` | [📄 Proofread](./5-Master/2026-MasterResearch-AndroidMalware/碩士研究專題-Android惡意程式行為子圖與抗混淆GNN檢測-proofread.md) · [📑 Summary](./5-Master/2026-MasterResearch-AndroidMalware/碩士研究專題-Android惡意程式行為子圖與抗混淆GNN檢測-summary.md) |
 
 ### 📅 中央資管實驗室新年度整合型計畫研討會
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 127 | **實驗室專案會議：新年度整合型產學研究計畫提案、容錯平台架構與資安模組整合** | 計畫主持人 / 指導教授, 陳教授 / 共同主持, 研究團隊各組成員 | `single-talk` | [📄 Proofread](./5-Master/2026-MasterResearch-AndroidMalware/實驗室專案會議-新年度整合型研究計畫與平台架構規劃-proofread.md) · [📑 Summary](./5-Master/2026-MasterResearch-AndroidMalware/實驗室專案會議-新年度整合型研究計畫與平台架構規劃-summary.md) |
+| 131 | **實驗室專案會議：新年度整合型產學研究計畫提案、容錯平台架構與資安模組整合** | 計畫主持人 / 指導教授, 陳教授 / 共同主持, 研究團隊各組成員 | `single-talk` | [📄 Proofread](./5-Master/2026-MasterResearch-AndroidMalware/實驗室專案會議-新年度整合型研究計畫與平台架構規劃-proofread.md) · [📑 Summary](./5-Master/2026-MasterResearch-AndroidMalware/實驗室專案會議-新年度整合型研究計畫與平台架構規劃-summary.md) |
 
 ### 📅 中央資管碩士班產業前瞻專題演講
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 128 | **產學大師講座：生成式 AI 產業浪潮、企業資安治理與職場數位競爭力** | 勤業眾信資安執行副總, 主持教授, 現場學員 | `single-talk` | [📄 Proofread](./5-Master/2026-IndustryKeynote-GenAI-Cybersecurity/勤業眾信副總-生成式AI浪潮與企業資安治理-proofread.md) · [📑 Summary](./5-Master/2026-IndustryKeynote-GenAI-Cybersecurity/勤業眾信副總-生成式AI浪潮與企業資安治理-summary.md) |
+| 132 | **產學大師講座：生成式 AI 產業浪潮、企業資安治理與職場數位競爭力** | 勤業眾信資安執行副總, 主持教授, 現場學員 | `single-talk` | [📄 Proofread](./5-Master/2026-IndustryKeynote-GenAI-Cybersecurity/勤業眾信副總-生成式AI浪潮與企業資安治理-proofread.md) · [📑 Summary](./5-Master/2026-IndustryKeynote-GenAI-Cybersecurity/勤業眾信副總-生成式AI浪潮與企業資安治理-summary.md) |
 
 ### 📅 國際資訊管理與計算科學特聘學者專題講座
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 129 | **國際頂尖學者講座：可解釋人工智慧 XAI、因果推論與反事實決策模型** | Prof. Ali (UIC), 主持人 | `single-talk` | [📄 Proofread](./5-Master/2025-InternationalKeynote-ExplainableAI/國際專題講座-可解釋AI因果推論與反事實決策模型-proofread.md) · [📑 Summary](./5-Master/2025-InternationalKeynote-ExplainableAI/國際專題講座-可解釋AI因果推論與反事實決策模型-summary.md) |
+| 133 | **國際頂尖學者講座：可解釋人工智慧 XAI、因果推論與反事實決策模型** | Prof. Ali (UIC), 主持人 | `single-talk` | [📄 Proofread](./5-Master/2025-InternationalKeynote-ExplainableAI/國際專題講座-可解釋AI因果推論與反事實決策模型-proofread.md) · [📑 Summary](./5-Master/2025-InternationalKeynote-ExplainableAI/國際專題講座-可解釋AI因果推論與反事實決策模型-summary.md) |
 
 ### 📅 技術學術研討會 Session G
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 130 | **研討會 Session G 全程記錄：aMCI 語篇命題、條件感知推薦、AI 人力投入框架與半監督影像分類** | 大會司儀, 評審委員 (中央資管校友), 發表者 戴文芳 (指導：曾小平/蘇國良), 發表者 林之璇 (指導：陳彥良), 發表者 陳玉偉 (指導：胡雅涵), 發表者 彭博勝 (指導：陳以真/邱淑瑜) | `multi-paper` | [📄 Proofread](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-proofread.md) · [📑 Summary](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md) |
+| 134 | **研討會 Session G 全程記錄：aMCI 語篇命題、條件感知推薦、AI 人力投入框架與半監督影像分類** | 大會司儀, 評審委員 (中央資管校友), 發表者 戴文芳 (指導：曾小平/蘇國良), 發表者 林之璇 (指導：陳彥良), 發表者 陳玉偉 (指導：胡雅涵), 發表者 彭博勝 (指導：陳以真/邱淑瑜) | `multi-paper` | [📄 Proofread](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-proofread.md) · [📑 Summary](./5-Master/20260327-AcademicConference/SessionG-aMCI語篇研究-summary.md) |
 
 ### 📅 技術學術研討會 Session H (錄音 238)
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 131 | **研討會 Session H 全程記錄：AI 焦慮社群分析、短影音推薦、量化回測、語音偽造 XAI 與動態 RAG 經營模式** | 大會司儀, 評審委員 (黃教授 / 李駿平教授 / 謝教授), 發表者 (AI 焦慮研究), 發表者 高一婷 (指導：陳任良/陳彥良), 發表者 (指導：徐志成), 發表者 鍾國 (指導教授群), 發表者 張子龍 (指導教授群) | `multi-paper` | [📄 Proofread](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-proofread.md) · [📑 Summary](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-summary.md) |
+| 135 | **研討會 Session H 全程記錄：AI 焦慮社群分析、短影音推薦、量化回測、語音偽造 XAI 與動態 RAG 經營模式** | 大會司儀, 評審委員 (黃教授 / 李駿平教授 / 謝教授), 發表者 (AI 焦慮研究), 發表者 高一婷 (指導：陳任良/陳彥良), 發表者 (指導：徐志成), 發表者 鍾國 (指導教授群), 發表者 張子龍 (指導教授群) | `multi-paper` | [📄 Proofread](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-proofread.md) · [📑 Summary](./5-Master/20260327-AcademicConference/SessionG-AI焦慮與語音偽造-summary.md) |
 
 ### 📅 技術學術研討會 Session I (錄音 239)
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 132 | **研討會 Session I 全程記錄：DRAVILaMA、區塊鏈電力交易、多策略資料前處理、半監督多標籤影像與 Sequential TAG 股市預測** | 大會司儀, 特邀評審 歐陽長龍教授 (南洋大學/NTU), 發表者 沈柏寧 (DRAVILaMA), 發表者 張玉瑤 (指導：葉偉陽), 發表者 林玉慧 (指導：蔡志豐), 發表者 (指導：蔡志豐), 發表者 許紫薇 (Sequential TAG) | `multi-paper` | [📄 Proofread](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-proofread.md) · [📑 Summary](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-summary.md) |
+| 136 | **研討會 Session I 全程記錄：DRAVILaMA、區塊鏈電力交易、多策略資料前處理、半監督多標籤影像與 Sequential TAG 股市預測** | 大會司儀, 特邀評審 歐陽長龍教授 (南洋大學/NTU), 發表者 沈柏寧 (DRAVILaMA), 發表者 張玉瑤 (指導：葉偉陽), 發表者 林玉慧 (指導：蔡志豐), 發表者 (指導：蔡志豐), 發表者 許紫薇 (Sequential TAG) | `multi-paper` | [📄 Proofread](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-proofread.md) · [📑 Summary](./5-Master/20260327-AcademicConference/SessionI-特邀專題與學生論文-summary.md) |
 
 ### 📅 碩士學位論文口試審查會
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 133 | **碩士論文口試審查攻防 Part 1：消融因果、Attention 權重轉移與指標辯論 (沈柏寧)** | 口試委員, 研究生 沈柏寧, 指導教授 陳奕明博士 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-summary.md) |
-| 134 | **碩士論文口試審查攻防 Part 2：Attention 機制辯論、子圖層數與口試通過決議 (沈柏寧)** | 口試委員 (召集人), 口試委員, 研究生 沈柏寧, 指導教授 陳奕明博士 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-summary.md) |
-| 135 | **碩士論文口試簡報：DRAVILaMA 惡意程式抗混淆偵測 (沈柏寧)** | 研究生 沈柏寧, 指導教授 陳奕明博士, 口試委員 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md) |
+| 137 | **碩士論文口試審查攻防 Part 1：消融因果、Attention 權重轉移與指標辯論 (沈柏寧)** | 口試委員, 研究生 沈柏寧, 指導教授 陳奕明博士 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-summary.md) |
+| 138 | **碩士論文口試審查攻防 Part 2：Attention 機制辯論、子圖層數與口試通過決議 (沈柏寧)** | 口試委員 (召集人), 口試委員, 研究生 沈柏寧, 指導教授 陳奕明博士 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-summary.md) |
+| 139 | **碩士論文口試簡報：DRAVILaMA 惡意程式抗混淆偵測 (沈柏寧)** | 研究生 沈柏寧, 指導教授 陳奕明博士, 口試委員 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md) |
 
 ### 📅 第十七屆國立中央大學資訊管理學系學術論文暨專題發表會
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 136 | **學術論文發表 Session A：智慧醫療——老年失智症多模態神經與認知特徵預測模型** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-01-智慧醫療-老年失智症多模態神經與認知特徵預測模型-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-01-智慧醫療-老年失智症多模態神經與認知特徵預測模型-summary.md) |
-| 137 | **學術論文發表 Session H：智慧金融——量化投資多因子選股與動態本益比進出場策略** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-02-智慧金融-量化投資多因子選股與動態本益比進出場策略-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-02-智慧金融-量化投資多因子選股與動態本益比進出場策略-summary.md) |
-| 138 | **學術論文發表 Session I：機器學習——特徵精簡與實例樣本選取雙向管線效能優化** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-03-機器學習-特徵精簡與實例樣本選取雙向管線效能優化-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-03-機器學習-特徵精簡與實例樣本選取雙向管線效能優化-summary.md) |
+| 140 | **學術論文發表 Session A：智慧醫療——老年失智症多模態神經與認知特徵預測模型** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-01-智慧醫療-老年失智症多模態神經與認知特徵預測模型-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-01-智慧醫療-老年失智症多模態神經與認知特徵預測模型-summary.md) |
+| 141 | **學術論文發表 Session H：智慧金融——量化投資多因子選股與動態本益比進出場策略** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-02-智慧金融-量化投資多因子選股與動態本益比進出場策略-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-02-智慧金融-量化投資多因子選股與動態本益比進出場策略-summary.md) |
+| 142 | **學術論文發表 Session I：機器學習——特徵精簡與實例樣本選取雙向管線效能優化** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-03-機器學習-特徵精簡與實例樣本選取雙向管線效能優化-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-03-機器學習-特徵精簡與實例樣本選取雙向管線效能優化-summary.md) |
+
+### 📅 資安與軟體工程碩士班專題研討
+
+| 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
+| :--- | :--- | :--- | :--- | :--- |
+| 143 | **碩士專題討論：自動化程式漏洞修復（APR）之兩階段根因分析與修補有效性驗證** | 發表研究生, 指導教授, 與會學者 | `single-talk` | [📄 Proofread](./5-Master/2026-MasterSeminar-SoftwareSecurity/碩士專題討論-01-自動化漏洞修復APR根因分析與兩階段修補驗證-proofread.md) · [📑 Summary](./5-Master/2026-MasterSeminar-SoftwareSecurity/碩士專題討論-01-自動化漏洞修復APR根因分析與兩階段修補驗證-summary.md) |
 
 ### 📅 資訊管理研究所研究方法論課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 139 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-summary.md) |
-| 140 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-summary.md) |
+| 144 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-summary.md) |
+| 145 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-summary.md) |
 
 ### 📅 進階人工智慧與最佳化研究所課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 141 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-summary.md) |
-| 142 | **進階人工智慧與最佳化 Lesson 02：感測器資料模型、對抗性機器學習（Adversarial ML）與蒙特卡羅貝葉斯最佳化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-summary.md) |
-| 143 | **進階人工智慧與最佳化 Lesson 03：感測器能源模型與 Apache Benchmark 高並發效能評測** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-summary.md) |
+| 146 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-summary.md) |
+| 147 | **進階人工智慧與最佳化 Lesson 02：感測器資料模型、對抗性機器學習（Adversarial ML）與蒙特卡羅貝葉斯最佳化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-summary.md) |
+| 148 | **進階人工智慧與最佳化 Lesson 03：感測器能源模型與 Apache Benchmark 高並發效能評測** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-summary.md) |
 
 ---
