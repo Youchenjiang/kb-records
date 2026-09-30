@@ -431,3 +431,53 @@ record-list/
    python -m unittest discover tests
    ```
    自動將新拆分之研討紀錄登錄至 `CATALOG.md` 與 `CATALOG.zh-TW.md`，並確保全套測試通過。
+
+---
+
+## 九、非人聲／純音樂音檔隔離與保留規範（Non-Speech & Music Audio Preservation Protocol）
+
+在錄音歸檔與語音轉錄過程中，若發現輸入之音訊檔案為非課堂、非學術演講、純音樂（如鋼琴曲、背景音樂）、或使用者私人音樂錄音，**絕對禁止視為常規交付音檔隨處理流程刪除**，必須遵循本規範進行嚴格隔離與保留。
+
+### 1. 識別判準（Identification Criteria）
+
+符合以下任一特徵者，強制歸類為「非人聲／純音樂隔離對象」：
+1. **純音樂與樂器演奏**：檔名或內容為歌曲、鋼琴演奏（如《夜的鋼琴曲》、《給愛機會》等純樂曲演奏或流行歌曲片段）。
+2. **無學術或會議實質口語發言**：轉錄結果為重複歌詞、狀聲詞或無意義之噪音標記，缺乏任何教學、研討、問答對話。
+3. **個人生活音訊需遷移行程**：使用者意在將其歸入個人音樂媒體庫而非研究專案紀錄者。
+
+---
+
+### 2. 生命週期隔離防禦機制（Strict Lifecycle Quarantine）
+
+為確保使用者重要音樂資產不因批次清理作業而遺失，系統建立了物理隔離防護：
+
+1. **嚴禁流向 `audio/processed/`**：
+   - 非學術音訊**絕對嚴禁**標記為 `finish` 或移入 `audio/processed/`。因 `audio/processed/` 內的所有檔案均會被 `python -m transcript_processor audio clean` 定期清除。
+2. **專屬保留隔離區 `audio/preserved/`**：
+   - 所有非人聲／音樂檔案**一律強制**移轉至 `audio/preserved/` 存放。
+   - `audio clean` 指令在底層架構上**完全排除** `audio/preserved/`，確保保留區檔案受到絕對保護。
+3. **自動生成清冊（Quarantine Manifest）**：
+   - 每次隔離操作，系統會自動在 [`audio/preserved/MANIFEST.md`](./audio/preserved/MANIFEST.md) 記載檔案名稱、隔離時間戳記與隔離原因。
+
+---
+
+### 3. 操作指引與遷移標準作業程序（SOP）
+
+1. **執行音訊隔離保留**：
+   ```bash
+   python -m transcript_processor audio preserve <檔案名稱或萬用字元> --reason "非人聲純鋼琴曲/待遷移"
+   ```
+   *範例：*
+   ```bash
+   python -m transcript_processor audio preserve "夜的鋼琴曲*.mp3" --reason "私人鋼琴音訊"
+   ```
+2. **檢視音訊生命週期狀態**：
+   ```bash
+   python -m transcript_processor audio status
+   ```
+   狀態輸出將明確區分：
+   - 📥 **Pending（待處理）**
+   - 📦 **Processed（已交付/可刪除）**
+   - 🛡️ **Preserved（非語音/音樂/待遷移保留區 - 安全不刪除）**
+3. **使用者安全遷移**：
+   使用者可隨時至 `audio/preserved/` 將整批音訊檔案安全複製或遷移至外部儲存裝置，確認離線備份完畢後再視個人需求整理。
