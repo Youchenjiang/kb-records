@@ -27,6 +27,7 @@
   - [技術學術研討會 Session H (錄音 238)](#技術學術研討會 session h (錄音 238))
   - [技術學術研討會 Session I (錄音 239)](#技術學術研討會 session i (錄音 239))
   - [碩士學位論文口試審查會](#碩士學位論文口試審查會)
+  - [第十七屆國立中央大學資訊管理學系學術論文暨專題發表會](#第十七屆國立中央大學資訊管理學系學術論文暨專題發表會)
   - [資訊管理研究所研究方法論課程](#資訊管理研究所研究方法論課程)
   - [進階人工智慧與最佳化研究所課程](#進階人工智慧與最佳化研究所課程)
 
@@ -260,19 +261,27 @@
 | 116 | **碩士論文口試審查攻防 Part 2：Attention 機制辯論、子圖層數與口試通過決議 (沈柏寧)** | 口試委員 (召集人), 口試委員, 研究生 沈柏寧, 指導教授 陳奕明博士 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-summary.md) |
 | 117 | **碩士論文口試簡報：DRAVILaMA 惡意程式抗混淆偵測 (沈柏寧)** | 研究生 沈柏寧, 指導教授 陳奕明博士, 口試委員 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md) |
 
+### 📅 第十七屆國立中央大學資訊管理學系學術論文暨專題發表會
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 118 | **學術論文發表 Session A：智慧醫療——老年失智症多模態神經與認知特徵預測模型** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-01-智慧醫療-老年失智症多模態神經與認知特徵預測模型-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-01-智慧醫療-老年失智症多模態神經與認知特徵預測模型-summary.md) |
+| 119 | **學術論文發表 Session H：智慧金融——量化投資多因子選股與動態本益比進出場策略** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-02-智慧金融-量化投資多因子選股與動態本益比進出場策略-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-02-智慧金融-量化投資多因子選股與動態本益比進出場策略-summary.md) |
+| 120 | **學術論文發表 Session I：機器學習——特徵精簡與實例樣本選取雙向管線效能優化** | 發表人, 評審委員, 主持人 | `single-talk` | [📄 Proofread](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-03-機器學習-特徵精簡與實例樣本選取雙向管線效能優化-proofread.md) · [📑 Summary](./5-Master/2026-AcademicConference-NCU-IM/NCU-IM-03-機器學習-特徵精簡與實例樣本選取雙向管線效能優化-summary.md) |
+
 ### 📅 資訊管理研究所研究方法論課程
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 118 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-summary.md) |
-| 119 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-summary.md) |
+| 121 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-summary.md) |
+| 122 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-summary.md) |
 
 ### 📅 進階人工智慧與最佳化研究所課程
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 120 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-summary.md) |
-| 121 | **進階人工智慧與最佳化 Lesson 02：感測器資料模型、對抗性機器學習（Adversarial ML）與蒙特卡羅貝葉斯最佳化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-summary.md) |
-| 122 | **進階人工智慧與最佳化 Lesson 03：感測器能源模型與 Apache Benchmark 高並發效能評測** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-summary.md) |
+| 123 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-summary.md) |
+| 124 | **進階人工智慧與最佳化 Lesson 02：感測器資料模型、對抗性機器學習（Adversarial ML）與蒙特卡羅貝葉斯最佳化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-summary.md) |
+| 125 | **進階人工智慧與最佳化 Lesson 03：感測器能源模型與 Apache Benchmark 高並發效能評測** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-summary.md) |
 
 ---
