@@ -24,20 +24,20 @@ Every transcript processing task MUST strictly follow this **5-Stage Execution P
 - **自然語流排版**：消除破碎單句與突兀行尾，按 150～300 字組織為流暢閱讀段落，並消除孤立無意義狀聲詞。
 - **結構化主題標題**：依授課脈絡插入 H2/H3 標題與語意 emoji。
 - **元資料與防偽門禁**：補齊完整 YAML Frontmatter 與標準 Blockquote 宣告，並通過 `EntityGuard` 出處溯源檢查。
-- 產出最終高品質純 Markdown：`{ShortTitle}-proofread.md`。
+- 產出最終高品質純 Markdown 逐字稿備查檔：`{YYYYMMDD}[-{Seq}]-{Topic}.full.md`。
 
 ### 步驟四：技術精華架構提煉（Executive Summary & Architecture Extraction）
-- 從完成之 `proofread.md` 提煉關鍵脈絡與心智模型。
+- 從完成之 `.full.md` 提煉關鍵脈絡與心智模型。
 - 繪製 Mermaid 概念圖、攻擊鏈或流程架構圖。
 - 整理核心技術細節、代碼指令、重要表格與考試/實戰避坑重點。
-- 產出結構化精華筆記：`{ShortTitle}-summary.md`。
+- 產出結構化精華筆記主檔：`{YYYYMMDD}[-{Seq}]-{Topic}.md`。
 
 ### 步驟五：全局目錄索引與品質迴歸（Catalog Indexing & Quality Audit）
 - 執行 `python -m transcript_processor index` 更新 `CATALOG.md` 與 `CATALOG.zh-TW.md`。
 - 執行全套單元測試（`unittest discover tests`）確認零迴歸、零幻覺。
 
 - **Proofreading Manual**: Detailed speech-to-text error correction patterns and directory/file naming conventions are defined in [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md). Always consult it when proofreading transcripts or generating executive summaries.
-- **Proofread Benchmark Standards**: All `*-proofread.md` deliverables must strictly adhere to the Verbatim Benchmark Formatting Standards defined in Section 6 of [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md), including YAML Frontmatter, the standardized Blockquote statement, zero hallucination/injection, multi-paper sectioning, and explicit speaker attribution.
+- **Proofread Benchmark Standards**: All `*.full.md` deliverables must strictly adhere to the Verbatim Benchmark Formatting Standards defined in Section 6 of [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md), including YAML Frontmatter, the standardized Blockquote statement, zero hallucination/injection, multi-paper sectioning, and explicit speaker attribution.
 - **Scenario Profile First**: Agent must identify scenario profile (`classroom-lecture`, `single-talk`, `multi-paper`, `thesis-defense`, `lightning-talks`) before drafting proofread documents. For classroom lectures, mandatory `**【授課講師】**：` and `**【學員】**：` speaker attributions must be enforced across sections and interactions; never treat lectures or multi-paper sessions as monolithic single-talks.
 - **Entity Verification Gate**: Proper nouns and person names (speakers, professors, advisors) MUST be verified with the user before writing final proofread documents. Never assume or write unverified ASR homophones directly.
 - **Hardware & VRAM Safety**: Local ASR scripts MUST clamp CUDA memory allocation fraction (<= 0.60) to avoid GPU TDR resets and remote desktop disconnections.

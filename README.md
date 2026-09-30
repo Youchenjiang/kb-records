@@ -1,11 +1,11 @@
-# 🎙️ Technical Conferences, Security & Academic Transcripts Repository
+# 🎙️ Technical Conferences, Security, Academic & University Transcripts Repository
 
-This repository maintains high-fidelity, verified speech-to-text transcripts, domain-corrected texts, and structured executive summaries across cybersecurity conferences (**HITCON**, **OSINT & CTI**), enterprise developer summits (**Microsoft DevDays Asia**), **Master's Thesis Defenses**, and **Academic Conferences**.
+This repository maintains high-fidelity, verified speech-to-text transcripts, domain-corrected texts, and structured executive summaries across undergraduate & graduate courses, certifications, cybersecurity conferences (**HITCON**, **OSINT & CTI**), enterprise developer summits (**Microsoft DevDays Asia**), **Master's Thesis Defenses**, and **Academic Conferences**.
 
-Each conference topic or session provides two complementary, production-grade deliverables:
+Each topic provides two complementary, production-grade deliverables (**Option 3-A Primary/Companion Structure**):
 
-1. **📄 `proofread.md` (100% Verbatim Full Transcript)**: Sentence-by-sentence proofread transcript retaining all spoken words, colloquial nuances, live interactions, and Q&A. Domain jargon is strictly validated against custom dictionaries, and text is organized into clean, reader-friendly paragraphs with standardized YAML frontmatter.
-2. **📑 `summary.md` (Executive Summary & Technical Digest)**: High-density structured breakdown including core methodologies, exploit/system architectures, **Mermaid sequence & flow diagrams**, ablation analyses, defense/implementation takeaways, and committee evaluations.
+1. **📑 `{YYYYMMDD}-{Topic}.md` (Core Notes & Executive Summary)**: Primary document for rapid review. High-density structured breakdown including core methodologies, exploit/system architectures, **Mermaid sequence & flow diagrams**, ablation analyses, and key takeaways.
+2. **📄 `{YYYYMMDD}-{Topic}.full.md` (100% Verbatim Full Transcript)**: Companion document for complete reference. Sentence-by-sentence proofread transcript retaining all spoken words, colloquial nuances, live classroom/defense interactions, and Q&A.
 
 ---
 
@@ -20,22 +20,22 @@ This repository adheres to a **decoupled architecture with automated catalog ind
 
 ## 🗂️ Core Knowledge Domains
 
-| Directory | Scope & Events | Core Technical Topics |
+| Directory | Structure & Scope | Core Technical Topics |
 | :--- | :--- | :--- |
-| **`1-Security/`** | **HITCON 2026**<br/>**OSINT & CTI Sharing Session** | Android kernel & Mali GPU driver LPE, smart POS firmware dumping & 0-Day, red-team supply chain attacks, OSINT identity pivot chains, QR phishing infrastructure & MyCERT coordination. |
-| **`2-Cloud-AI/`** | **Microsoft DevDays Asia 2026** | Azure OpenAI enterprise multi-agent systems, GitHub Copilot Workspace, Tokenomics cost optimization, cloud-native resiliency, Fabric unified data governance, Responsible AI (UL 315). |
-| **`5-Master/`** | **Master's Thesis Defense (DRAVILaMA)**<br/>**Academic Conferences (Session G, H, I)** | Multimodal driving risk prediction, LLaVA visual instruction tuning, temporal causal attention mechanisms, aMCI discourse structure analysis, short-video recommendation, deepfake audio XAI. |
+| **`4-University/`** | **Undergraduate Programs**<br/>・`1-Studies/` (Year 1: Freshman)<br/>・`2-Curriculum/` (Year 2: Sophomore)<br/>・`3-Specialization/` (Year 3: Junior)<br/>・`4-Capstone/` (Year 4: Senior)<br/>Subdivided by `Fall-Semester`, `Spring-Semester`, and `Holiday` | Basic Math, General Physics, Biology Lab, Career Development, Computer Networks, MIS, Cloud Computing, IoT Security, Project Management, Cisco CCNA 1, CompTIA Security+. |
+| **`5-Master/`** | **Graduate & Research Programs**<br/>・`1-First-Year/` (M1: Courses & Activities)<br/>・`2-Second-Year/` (M2: Courses & Activities)<br/>・`Laboratory/` (Dedicated: Degree-Defense, Project-Meeting, Seminar, Thesis-Progress) | Software Engineering, DevOps, Computer Network Lab, Machine Learning, HCI/UX, CTF Security, Advanced AI Optimization, Research Methodology, Database Security, English AI Presentation, NCU IM Academic Conference, HITCON 2026, DevDays Asia 2026, OSINT & CTI, Deloitte GenAI Keynote, UIC Explainable AI, DRAVILaMA Thesis Defense, APR Bug Repair, Project Meeting, Android Malware GNN. |
 
 > 💡 **Navigation Tip**: To explore any specific transcript or summary, browse [CATALOG.md](./CATALOG.md) or navigate the directory paths above.
 
 ---
 
-## 📐 4 Scenario Adapters Matrix (`PROOFREAD_RULES.md`)
+## 📐 5 Scenario Adapters Matrix (`PROOFREAD_RULES.md`)
 
-To avoid "one-size-fits-all" formatting issues across diverse audio sources, all transcripts follow the **Universal Core Protocol + 4 Scenario Adapters**:
+To avoid "one-size-fits-all" formatting issues across diverse audio sources, all transcripts follow the **Universal Core Protocol + 5 Scenario Adapters**:
 
 | Scenario ID | Use Case | Structure & Formatting Rules |
 | :--- | :--- | :--- |
+| **`classroom-lecture`** | University & Graduate Courses | Explicit speaker attribution for instructors (`**【授課講師】**：`) and students (`**【學員】**：`), capturing whiteboard derivations and classroom Q&A. |
 | **`single-talk`** | Standard Keynote / Tech Talk | Narrative technical flow. **NO speaker tags** in body paragraphs; explicit speaker tags enabled **only** during audience Q&A sessions. |
 | **`multi-paper`** | Academic Conference Sessions | Dual-level tree structure: `## 論文 X: [題目]` followed by `## 🔬 論文 X 評審講評與 Q&A`. Full speaker attribution throughout; captures opening announcements and closing award ceremonies. |
 | **`thesis-defense`** | Master's / Ph.D. Oral Defense | Technical presentation followed by dense, structured defense dialogue with strict committee role markers (`召集人`, `口試委員`, `指導教授`, `研究生`). |

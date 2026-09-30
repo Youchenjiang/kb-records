@@ -7,81 +7,92 @@
 
 ## 零、目錄結構與命名規則
 
-### 目錄結構
+### 1. 全域組織架構
 
-```
+```text
 record-list/
-├── {Category}/                          ← 分類（如 5-Master）
-│   └── {YYYYMMDD}-{EventName}/          ← 活動（如 20260821-HITCON-2026）
-│       ├── {ShortTitle}-proofread.md    ← 校對版逐字稿
-│       └── {ShortTitle}-summary.md      ← 重點整理版
-├── transcript_processor/                ← 核心處理器套件
-├── scripts/                             ← 工具腳本
-├── PROOFREAD_RULES.md
-├── README.md
-└── requirements.txt
+├── 4-University/                        ← 大學部核心領域（大一～大四，2025 年 6 月以前畢業）
+│   ├── 1-Studies/                       ← 大一（基礎學科、通識先修、職涯發展）
+│   │   ├── Fall-Semester/               ← 上學期（如 BasicMathematics, GeneralPhysics, GeneralBiologyLab, CareerDevelopment）
+│   │   ├── Spring-Semester/             ← 下學期課程
+│   │   └── Holiday/                     ← 寒暑假特殊活動/營隊
+│   ├── 2-Curriculum/                    ← 大二（系定核心必修與實驗）
+│   │   ├── Fall-Semester/               ← 上學期（如 CloudComputing, ComputerNetworks）
+│   │   ├── Spring-Semester/             ← 下學期（如 ManagementInformationSystems）
+│   │   └── Holiday/
+│   ├── 3-Specialization/                ← 大三（專業領域選修、進階與認證培訓）
+│   │   ├── Fall-Semester/               ← 上學期（如 IoTSecurity）
+│   │   ├── Spring-Semester/             ← 下學期課程
+│   │   └── Holiday/                     ← 寒暑假特殊培訓/活動（如 20250106-Cisco-CCNA1, 20250113-CompTIA-SecurityPlus）
+│   └── 4-Capstone/                      ← 大四（畢業專題、專案管理、成果發表）
+│       ├── Fall-Semester/               ← 上學期（如 ProjectManagement）
+│       ├── Spring-Semester/             ← 下學期
+│       └── Holiday/
+│
+├── 5-Master/                            ← 碩士班核心領域（2025 年 9 月入學，114 學年度起算）
+│   ├── 1-First-Year/                    ← 碩一（課程必選修、專案會議、學術發表、暑假研討）
+│   │   ├── Fall-Semester/               ← 碩一上（課程：SoftwareEngineering, DevOps, ComputerNetworkLab；活動：20251205-Deloitte-GenAI-Cybersecurity-Keynote, 20251208-UIC-XAI-Keynote）
+│   │   ├── Spring-Semester/             ← 碩一下（課程：MachineLearning, HCI-UX, CTF-Security, AdvancedAI-Optimization, ResearchMethodology；活動：20260318-EnglishAI-Presentation, 20260327-NCU-IM-AcademicConference）
+│   │   └── Holiday/                     ← 碩一暑假（活動：20260821-HITCON-2026）
+│   ├── 2-Second-Year/                   ← 碩二（專題研討、資安深度選修、產業大會、學位研究）
+│   │   ├── Fall-Semester/               ← 碩二上（課程：DatabaseSecurity；活動：20260922-DevDaysAsia-2026, 20260927-Intro-to-OSINT-CTI）
+│   │   ├── Spring-Semester/             ← 碩二下
+│   │   └── Holiday/
+│   └── Laboratory/                      ← 實驗室專屬核心目錄
+│       ├── Degree-Defense/              ← 碩士學位口試（如 20260714 DRAVILaMA 論文簡報與審查質詢）
+│       ├── Project-Meeting/             ← 整合型/產學研究專案會議（如 20251003 研究計畫與平台規劃）
+│       ├── Seminar/                     ← 專題討論（如 20260914 自動化漏洞修復 APR 報告）
+│       └── Thesis-Progress/             ← 碩士論文研究進度研討（如 20260226 Android 惡意程式行為子圖檢測）
+├── transcript_processor/                ← 核心處理器套件（Indexer, Linter, Structurer, Guard）
+├── tests/                               ← 單元測試與回歸驗證套件
+├── CATALOG.md / CATALOG.zh-TW.md        ← 全局自動化雙語目錄索引
+├── PROOFREAD_RULES.md                   ← 本手冊（校對規範、命名手冊與字彙對照）
+└── README.md / README.zh-TW.md          ← 專案總體說明文件
 ```
 
-### 命名規則
+### 2. 目錄命名規則
 
-#### 活動目錄
+* **年級目錄**：全採連號（連字號）
+  * 大學部：`1-Studies`、`2-Curriculum`、`3-Specialization`、`4-Capstone`。
+  * 碩士班：`1-First-Year`、`2-Second-Year`。
+* **學期目錄**：`Fall-Semester`、`Spring-Semester`，以及存放寒暑假或特殊活動的 `Holiday`。
+* **內層課程/活動目錄**：
+  * **課程目錄**：直接寫「純課程名稱」，不重複年份或學期（例如 `BasicMathematics/`、`MachineLearning/`、`SoftwareEngineering/`、`ProjectManagement/`、`DatabaseSecurity/`）。
+  * **活動目錄**：一律以「活動第一天日期 + 活動名稱」命名（例如 `20250106-Cisco-CCNA1/`、`20250113-CompTIA-SecurityPlus/`、`20260318-EnglishAI-Presentation/`、`20260821-HITCON-2026/`）。
+* **實驗室目錄**：統一收整在 `5-Master/Laboratory/` 底下，依目的區分為 `Degree-Defense/`、`Project-Meeting/`、`Seminar/`、`Thesis-Progress/` 四大子目錄。
 
-```
-{YYYYMMDD}-{EventName}/
-```
+### 3. 檔案命名規範（方案 3-A 主從架構）
 
-| 欄位 | 說明 | 範例 |
-|------|------|------|
-| `YYYYMMDD` | 活動日期 | `20260821` |
-| `EventName` | 活動名稱，英文簡寫 | `HITCON-2026` |
+每個錄音場次標準化產出兩份純 Markdown 交付物，以「核心筆記為主體、原話逐字稿為備查」：
 
-#### 檔案命名
+* **核心筆記/摘要（主檔，主力查閱）**：
+  ```text
+  {YYYYMMDD}[-{Seq}]-{Topic}.md
+  ```
+* **完整原話逐字稿（全文備查，100% 原話對照）**：
+  ```text
+  {YYYYMMDD}[-{Seq}]-{Topic}.full.md
+  ```
 
-```
-{ShortTitle}-{type}.md
-```
+| 欄位 | 說明與規則 | 範例 |
+| :--- | :--- | :--- |
+| `YYYYMMDD` | 錄音與課次具體日期。**一律採用 8 碼純數字，嚴禁使用 dash 分割年月日**。 | `20260302`, `20241015`, `20250106` |
+| `Seq` | **時序序號**。若同一個目錄在同一天包含多個課次，加入 `01`, `02` 序號以確保檔案管理器依時序排列；若當天僅單一場次則省略。 | `01`, `02` |
+| `Topic` | 該節具體核心主軸（2~6 個關鍵詞）。**徹底杜絕內部代號與雜湊殘留**（嚴禁 `NCU-IM-01`、`Lesson-293-300`、`Lab-Discovery12`、`勤業眾信副總` 等雜湊字眼）。 | `決策樹與ID3演算法`, `智慧醫療失智症預測`, `Pixel8A-GPU漏洞挖掘` |
+| 副檔名 | 核心筆記主檔為 `.md`；完整逐字備查稿為 `.full.md`。 | `20260302-01-決策樹與ID3演算法.md`<br/>`20260302-01-決策樹與ID3演算法.full.md` |
 
-| 欄位 | 說明 | 範例 |
-|------|------|------|
-| `ShortTitle` | 演講主題簡稱，2-4 個關鍵詞用 `-` 連接，不超過 30 字 | `Pixel8A-GPU漏洞挖掘`、`AI評測與UL315治理` |
-| `type` | `proofread`（校對版）或 `summary`（重點整理版） | |
+### 4. 命名範例對照
 
-### 當前檔案清單
-
-| 活動 | 檔案 |
-|------|------|
-| `4-University/2025-Cisco-CCNA1/` | 9 個主題共 18 個檔案（9 proofread + 9 summary） |
-| `4-University/2025-CompTIA-SecurityPlus/` | 8 個主題共 16 個檔案（8 proofread + 8 summary） |
-| `5-Master/20260821-HITCON-2026/` | 4 個主題共 8 個檔案（4 proofread + 4 summary） |
-| `5-Master/20260922-DevDaysAsia-2026/` | 5 個主題共 10 個檔案（5 proofread + 5 summary） |
-| `5-Master/20260714-MasterDefense-DRAVILaMA/` | 3 個主題共 6 個檔案（3 proofread + 3 summary） |
-| `5-Master/20260327-AcademicConference/` | 3 個主題共 6 個檔案（3 proofread + 3 summary） |
-| `5-Master/20260927-Intro-to-OSINT-CTI/` | 1 個主題共 2 個檔案（1 proofread + 1 summary） |
-
-
-### 新增活動時的步驟
-
-1. 決定 `Category`：放在哪個分類下
-2. 決定 `YYYYMMDD` 和 `EventName`
-3. 建立目錄：`{Category}/{YYYYMMDD}-{EventName}/`
-4. 新檔案可能是以下格式之一：
-   - `.aac`（錄音檔）→ 用 `scripts/aac_to_mp3.py` 轉 mp3，再用 `scripts/format_transcript.py` 生成 proofread
-   - `-raw.txt`（ASR 原始稿）→ 用 `scripts/run_deep_correction.py` 生成 proofread
-   - `-formatted.md`（格式化版）→ 直接當 proofread 基礎，做語句級修正
-5. 最終產出：`{ShortTitle}-proofread.md`（純 Markdown 交付物）
-6. 從 proofread 提煉：`{ShortTitle}-summary.md`（純 Markdown 交付物）
-7. **檔案生命週期與 Git 規範**：
-   - 根目錄下的 raw txt、音訊檔皆為「一次性暫存輸入（Scratch Inputs）」，由 `.gitignore` 排除，**絕對不納入 Git 版本控制**。
-   - 進入版本控制的只有 `5-Master/...` 底下的交付 Markdown、處理器工具鏈、測試以及說明文件。
-
-### ShortTitle 命名範例
-
-| 原始標題 | ShortTitle |
-|---------|------------|
-| Google Pixel 8A Mali GPU Driver 漏洞挖掘與提權實戰 | `Pixel8A-GPU漏洞挖掘` |
-| POS 刷卡機魔改 ADB 與 AI 輔助挖 0-Day 實戰 | `POS-ADB-0Day-AI輔助` |
-| 黑吃黑：瞄準資安研究員與紅隊的供應鏈攻擊 | `供應鏈攻擊-黑吃黑` |
-| HITCON 2026 閃電秀全集（6 場短講合輯） | `閃電秀6場合輯` |
+| 類別與路徑 | 核心筆記（主檔 `.md`） | 完整原話逐字稿（備查 `.full.md`） |
+| :--- | :--- | :--- |
+| **大一上基礎數學**<br/>`4-University/1-Studies/Fall-Semester/BasicMathematics/` | `20241019-多項式變數代換與試題檢討.md` | `20241019-多項式變數代換與試題檢討.full.md` |
+| **大三寒假 CCNA 認證**<br/>`4-University/3-Specialization/Holiday/20250106-Cisco-CCNA1/` | `20250106-01-靜態路由實作與主線備援切換.md`<br/>`20250106-02-VLSM子網切割與路由表運作原理.md` | `20250106-01-靜態路由實作與主線備援切換.full.md`<br/>`20250106-02-VLSM子網切割與路由表運作原理.full.md` |
+| **碩一下機器學習**<br/>`5-Master/1-First-Year/Spring-Semester/MachineLearning/` | `20260302-01-決策樹與ID3演算法.md`<br/>`20260302-02-單純貝氏與SVM原理.md` | `20260302-01-決策樹與ID3演算法.full.md`<br/>`20260302-02-單純貝氏與SVM原理.full.md` |
+| **碩一下英文專題發表**<br/>`5-Master/1-First-Year/Spring-Semester/20260318-EnglishAI-Presentation/` | `20260318-AI教育表現特徵工程與過濾法預測.md` | `20260318-AI教育表現特徵工程與過濾法預測.full.md` |
+| **碩一暑期年會活動**<br/>`5-Master/1-First-Year/Holiday/20260821-HITCON-2026/` | `20260821-Pixel8A-GPU漏洞挖掘.md` | `20260821-Pixel8A-GPU漏洞挖掘.full.md` |
+| **碩一學位口試審查**<br/>`5-Master/Laboratory/Degree-Defense/` | `20260714-DRAVILaMA論文簡報.md`<br/>`20260714-DRAVILaMA審查質詢-Part1.md` | `20260714-DRAVILaMA論文簡報.full.md`<br/>`20260714-DRAVILaMA審查質詢-Part1.full.md` |
+| **碩二上資料庫安全**<br/>`5-Master/2-Second-Year/Fall-Semester/DatabaseSecurity/` | `20260914-PostgreSQL複寫協議提權漏洞.md` | `20260914-PostgreSQL複寫協議提權漏洞.full.md` |
+| **碩二上微軟技術大會**<br/>`5-Master/2-Second-Year/Fall-Semester/20260922-DevDaysAsia-2026/` | `20260922-AI評測與UL315治理.md` | `20260922-AI評測與UL315治理.full.md` |
 
 ---
 
