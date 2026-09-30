@@ -26,10 +26,12 @@ class AudioManager:
         self.audio_dir = self.root_dir / "audio"
         self.pending_dir = self.audio_dir / "pending"
         self.processed_dir = self.audio_dir / "processed"
+        self.preserved_dir = self.audio_dir / "preserved"
 
         # Ensure directories exist
         self.pending_dir.mkdir(parents=True, exist_ok=True)
         self.processed_dir.mkdir(parents=True, exist_ok=True)
+        self.preserved_dir.mkdir(parents=True, exist_ok=True)
 
     def _get_audio_files(self, target_dir: Path) -> List[Path]:
         """List all media files with recognized extensions in the directory."""
@@ -44,11 +46,12 @@ class AudioManager:
 
     def get_status(self) -> Dict:
         """
-        Inspect pending and processed audio directories.
+        Inspect pending, processed, and preserved audio directories.
         Returns details of file counts and disk usage.
         """
         pending_files = self._get_audio_files(self.pending_dir)
         processed_files = self._get_audio_files(self.processed_dir)
+        preserved_files = self._get_audio_files(self.preserved_dir)
 
         def _stats(files: List[Path]):
             total_bytes = sum(f.stat().st_size for f in files)
@@ -65,6 +68,7 @@ class AudioManager:
         return {
             "pending": _stats(pending_files),
             "processed": _stats(processed_files),
+            "preserved": _stats(preserved_files),
         }
 
     def import_to_pending(self, source_path: Union[str, Path]) -> Optional[Path]:
@@ -87,42 +91,87 @@ class AudioManager:
 
     def mark_as_processed(self, filename_or_pattern: str) -> List[Path]:
         """
-        Move audio file(s) from pending (or root) to audio/processed/.
+        Move audio file(s) from pending (or m/ or root) to audio/processed/.
         """
         moved = []
         target_name = Path(filename_or_pattern).name
+        search_dirs = [
+            self.pending_dir,
+            self.root_dir / "m",
+            self.root_dir,
+        ]
 
-        # Check pending dir first
-        cand_in_pending = self.pending_dir / target_name
-        if cand_in_pending.exists():
-            dest = self.processed_dir / target_name
-            shutil.move(str(cand_in_pending), str(dest))
-            moved.append(dest)
-            return moved
+        # Exact match
+        for sdir in search_dirs:
+            if sdir.exists():
+                cand = sdir / target_name
+                if cand.is_file() and cand.suffix.lower() in AUDIO_EXTENSIONS:
+                    dest = self.processed_dir / target_name
+                    shutil.move(str(cand), str(dest))
+                    moved.append(dest)
+                    return moved
 
-        # Check root dir fallback
-        cand_in_root = self.root_dir / target_name
-        if cand_in_root.exists():
-            dest = self.processed_dir / target_name
-            shutil.move(str(cand_in_root), str(dest))
-            moved.append(dest)
-            return moved
-
-        # Glob search in pending
-        for match in self.pending_dir.glob(filename_or_pattern):
-            if match.is_file() and match.suffix.lower() in AUDIO_EXTENSIONS:
-                dest = self.processed_dir / match.name
-                shutil.move(str(match), str(dest))
-                moved.append(dest)
-
-        # Glob search in root
-        for match in self.root_dir.glob(filename_or_pattern):
-            if match.is_file() and match.suffix.lower() in AUDIO_EXTENSIONS:
-                dest = self.processed_dir / match.name
-                shutil.move(str(match), str(dest))
-                moved.append(dest)
+        # Glob match
+        for sdir in search_dirs:
+            if sdir.exists():
+                for match in sdir.glob(filename_or_pattern):
+                    if match.is_file() and match.suffix.lower() in AUDIO_EXTENSIONS:
+                        dest = self.processed_dir / match.name
+                        shutil.move(str(match), str(dest))
+                        moved.append(dest)
 
         return moved
+
+    def preserve_audio(self, filename_or_pattern: str, reason: Optional[str] = None) -> List[Path]:
+        """
+        Move non-speech, music, or quarantined audio file(s) into audio/preserved/.
+        Files in preserved/ are strictly protected from clean operations and staged
+        for user migration.
+        """
+        moved = []
+        target_name = Path(filename_or_pattern).name
+        search_dirs = [
+            self.pending_dir,
+            self.root_dir / "m",
+            self.processed_dir,
+            self.root_dir,
+        ]
+
+        # Exact match
+        for sdir in search_dirs:
+            if sdir.exists():
+                cand = sdir / target_name
+                if cand.is_file() and cand.suffix.lower() in AUDIO_EXTENSIONS:
+                    dest = self.preserved_dir / target_name
+                    shutil.move(str(cand), str(dest))
+                    moved.append(dest)
+                    self._record_preserved_manifest(target_name, reason)
+                    return moved
+
+        # Glob match
+        for sdir in search_dirs:
+            if sdir.exists():
+                for match in sdir.glob(filename_or_pattern):
+                    if match.is_file() and match.suffix.lower() in AUDIO_EXTENSIONS:
+                        dest = self.preserved_dir / match.name
+                        shutil.move(str(match), str(dest))
+                        moved.append(dest)
+                        self._record_preserved_manifest(match.name, reason)
+
+        return moved
+
+    def _record_preserved_manifest(self, filename: str, reason: Optional[str] = None):
+        """Append preserved file entry to audio/preserved/MANIFEST.md"""
+        manifest = self.preserved_dir / "MANIFEST.md"
+        reason_str = reason or "非人聲／純音樂或待遷移之音訊 (Non-speech / Music quarantine)"
+        import datetime
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        entry = f"- `{filename}`: {reason_str} (隔離時間: {now})\n"
+        if not manifest.exists():
+            manifest.write_text("# 🛡️ Preserved Audio Manifest (保留音訊隔離清冊)\n\n" + entry, encoding="utf-8")
+        else:
+            with manifest.open("a", encoding="utf-8") as f:
+                f.write(entry)
 
     def clean_processed(self, dry_run: bool = False) -> Tuple[int, float]:
         """

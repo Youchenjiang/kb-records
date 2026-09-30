@@ -41,6 +41,11 @@ def main():
     import_parser = audio_subparsers.add_parser("import", help="Import audio file into audio/pending/")
     import_parser.add_argument("source", type=str, help="Source audio file to stage into pending")
 
+    # audio preserve <file_pattern> [--reason <reason>]
+    preserve_parser = audio_subparsers.add_parser("preserve", help="Move non-speech/music audio to audio/preserved/ for migration")
+    preserve_parser.add_argument("target", type=str, help="Filename or glob pattern to quarantine in preserved/")
+    preserve_parser.add_argument("--reason", "-r", type=str, default=None, help="Reason for preserving (e.g., non-speech, music, piano)")
+
     # audio clean [--yes]
     clean_audio_parser = audio_subparsers.add_parser("clean", help="Clean up (delete) all audio files in audio/processed/ to free disk space")
     clean_audio_parser.add_argument("--yes", "-y", action="store_true", help="Confirm deletion without prompting")
@@ -132,12 +137,25 @@ def main():
             print(f"📦 Processed (已交付/可刪除): {status['processed']['count']} files ({status['processed']['total_mb']} MB)")
             for f in status['processed']['files']:
                 print(f"   - {f['name']} ({f['size_mb']} MB)")
+            print(f"🛡️ Preserved (非語音/音樂/待遷移保留區): {status['preserved']['count']} files ({status['preserved']['total_mb']} MB)")
+            for f in status['preserved']['files']:
+                print(f"   - {f['name']} ({f['size_mb']} MB)")
             sys.exit(0)
 
         elif args.audio_action == "finish":
             moved = manager.mark_as_processed(args.target)
             if moved:
                 print(f"✅ Moved {len(moved)} file(s) to audio/processed/:")
+                for m in moved:
+                    print(f"   - {m.name}")
+            else:
+                print(f"⚠️ No matching audio files found for: {args.target}")
+            sys.exit(0)
+
+        elif args.audio_action == "preserve":
+            moved = manager.preserve_audio(args.target, reason=args.reason)
+            if moved:
+                print(f"🛡️ Quarantined {len(moved)} non-speech file(s) to audio/preserved/:")
                 for m in moved:
                     print(f"   - {m.name}")
             else:
