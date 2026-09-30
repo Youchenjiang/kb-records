@@ -19,6 +19,7 @@
   - [技術學術研討會 Session H (錄音 238)](#技術學術研討會 session h (錄音 238))
   - [技術學術研討會 Session I (錄音 239)](#技術學術研討會 session i (錄音 239))
   - [碩士學位論文口試審查會](#碩士學位論文口試審查會)
+  - [資訊管理研究所研究方法論課程](#資訊管理研究所研究方法論課程)
 
 ---
 
@@ -185,5 +186,12 @@
 | 91 | **碩士論文口試審查攻防 Part 1：消融因果、Attention 權重轉移與指標辯論 (沈柏寧)** | 口試委員, 研究生 沈柏寧, 指導教授 陳奕明博士 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part1-summary.md) |
 | 92 | **碩士論文口試審查攻防 Part 2：Attention 機制辯論、子圖層數與口試通過決議 (沈柏寧)** | 口試委員 (召集人), 口試委員, 研究生 沈柏寧, 指導教授 陳奕明博士 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA審查質詢-Part2-summary.md) |
 | 93 | **碩士論文口試簡報：DRAVILaMA 惡意程式抗混淆偵測 (沈柏寧)** | 研究生 沈柏寧, 指導教授 陳奕明博士, 口試委員 | `thesis-defense` | [📄 Proofread](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-proofread.md) · [📑 Summary](./5-Master/20260714-MasterDefense-DRAVILaMA/DRAVILaMA論文簡報-summary.md) |
+
+### 📅 資訊管理研究所研究方法論課程
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 94 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-summary.md) |
+| 95 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-summary.md) |
 
 ---
