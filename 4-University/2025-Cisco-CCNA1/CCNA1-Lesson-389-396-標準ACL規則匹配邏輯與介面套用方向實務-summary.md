@@ -1,0 +1,49 @@
+# 🛡️ CCNA-389-396 Cisco CCNA 1 Lesson 頁389~396：標準ACL規則匹配邏輯與介面套用方向實務
+
+> **課程主題**：標準 ACL 規則撰寫、介面方向套用（ip access-group in/out）與部署黃金準則  
+> **授課講師**：授課講師（資安與網路認證原廠認證講師）  
+> **核心模組**：Cisco CCNA 1 Chapter 10: Standard ACL Implementation  
+> **學習目標**：精熟標準 ACL 語法、掌握 inbound/outbound 判定及「標準 ACL 放置於靠近目的端」之原則  
+> **關聯文件**：[📄 完整原話逐字稿 (CCNA1-Lesson-389-396-標準ACL規則匹配邏輯與介面套用方向實務-proofread.md)](./CCNA1-Lesson-389-396-標準ACL規則匹配邏輯與介面套用方向實務-proofread.md)
+
+---
+
+## 🏛️ 核心架構與概念流轉圖
+
+```mermaid
+flowchart LR
+    SourceHost["來源端主機 (10.1.1.10)"] --> Router1["路由器 R1 (來源端)"]
+    Router1 <-->|"WAN 專線 (10.0.0.0/30)"| Router2["路由器 R2 (目的端)"]
+    Router2 --> TargetServer["目標伺服器 (10.3.1.100)"]
+
+    Note over Router2: 標準 ACL 部署黃金法則：<br/>因僅檢查來源 IP，必須配置於靠近目的端 (R2 出介面)<br/>避免誤封殺來源端前往其他正常節點之流量！
+```
+
+---
+
+## 🔬 技術精華與核心考點解析
+
+### 1. 標準 ACL 配置與介面套用語法
+```cisco
+! 1. 建立標準 ACL (1-99)
+access-list 10 deny host 10.1.1.10
+access-list 10 permit 10.1.1.0 0.0.0.255
+access-list 10 deny any
+
+! 2. 進入介面套用方向 (in 或 out)
+interface GigabitEthernet0/0
+ ip access-group 10 out
+```
+- **Inbound (入向)**：封包剛進入介面、尚未進行路由查表前即執行過濾，節省 CPU 查表開銷。
+- **Outbound (出向)**：封包已完成路由查表、準備從該介面送入鏈路時執行過濾。
+
+### 2. ACL 最佳部署位置（Placement）準則
+- **標準 ACL**：**盡量放置在靠近目的端（Near the Destination）**。因為標準 ACL 只能過濾來源 IP，若放置在靠近來源端，會導致該主機前往其他所有合法伺服器的連線全數被阻斷。
+- **延伸 ACL**：**盡量放置在靠近來源端（Near the Source）**。在源頭儘早阻絕非法流量，避免無效封包白白浪費 WAN 頻寬。
+
+---
+
+## 💡 關鍵總結與考試應對重點
+
+1. **考試必考題：標準 ACL 應放在何處？答案：靠近目的端（As close to the destination as possible）。**
+2. **介面限制：一個介面在同一個方向（inbound 或 outbound）且同一個協定（如 IPv4），只能套用「單一一個 ACL」！**
