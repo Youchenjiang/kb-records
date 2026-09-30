@@ -105,12 +105,13 @@ class TestScenarioValidation(unittest.TestCase):
         self.assertTrue(any("Found banned hallucinated artifact phrase" in e for e in errors))
 
     def test_validate_real_conference_deliverables(self):
-        base_dir = Path(__file__).parent.parent / "5-Master" / "20260327-AcademicConference"
+        base_dir = Path(__file__).parent.parent / "5-Master" / "1-First-Year" / "Spring-Semester" / "20260327-NCU-IM-AcademicConference"
+        all_candidates = list(base_dir.glob("*.full.md")) + list(base_dir.glob("*Session*-proofread.md"))
         session_files = [
-            base_dir / "SessionG-aMCI語篇研究-proofread.md",
-            base_dir / "SessionG-AI焦慮與語音偽造-proofread.md",
-            base_dir / "SessionI-特邀專題與學生論文-proofread.md",
+            f for f in all_candidates
+            if 'scenario: "multi-paper"' in f.read_text(encoding="utf-8") or "multi-paper" in f.read_text(encoding="utf-8")
         ]
+        self.assertGreaterEqual(len(session_files), 3)
 
         for s_file in session_files:
             self.assertTrue(s_file.exists(), f"File does not exist: {s_file}")

@@ -105,8 +105,8 @@ class TestEntityGuard(unittest.TestCase):
         import re
         total_checked = 0
         violations_all = []
-
-        for p_file in master_dir.glob("**/*proofread*.md"):
+        master_files = list(master_dir.glob("**/*.full.md")) + list(master_dir.glob("**/*proofread*.md"))
+        for p_file in master_files:
             content = p_file.read_text(encoding="utf-8")
             fm_match = re.match(r"^---\s*\n(.*?)\n---\s*\n", content, re.DOTALL)
             if not fm_match:

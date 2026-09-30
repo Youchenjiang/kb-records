@@ -84,7 +84,7 @@ class TestProofreadLinter(unittest.TestCase):
         self.assertFalse(is_valid)
     def test_all_university_proofread_files(self):
         """Test that all university proofread deliverables pass structure validation."""
-        univ_files = list((REPO_ROOT / "4-University").glob("**/*-proofread.md"))
+        univ_files = list((REPO_ROOT / "4-University").glob("**/*.full.md")) + list((REPO_ROOT / "4-University").glob("**/*-proofread.md"))
         self.assertGreaterEqual(len(univ_files), 17, f"Expected at least 17 university proofread files, found {len(univ_files)}")
         for f in univ_files:
             content = f.read_text(encoding="utf-8")
