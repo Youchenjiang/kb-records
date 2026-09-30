@@ -1,11 +1,11 @@
-# 🛡️ DB-SEC-01-POSTGRES-PRIVILEGE-ESCALATION 資料庫資安實務 Lesson 01：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析
+# 🛡️ LAB-NEWS-20260914 實驗室資安新聞研討：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析
 
 
-> **課程主題**：PostgreSQL 歷史漏洞成因剖析、Replication 複寫協議認證缺陷、C Interface 權限檢查缺失與提權利用鏈  
-> **授課教授**：授課講師（資訊安全專題教授）  
+> **研討主題**：PostgreSQL 歷史漏洞成因剖析、Replication 複寫協議認證缺陷、C Interface 權限檢查缺失與提權利用鏈  
+> **報告成員**：報告學員、指導教授與實驗室全體成員  
 > **核心模組**：PostgreSQL Replication, pg_authid, Privilege Escalation, C Interface Security, Persistence  
-> **學習目標**：理解資料庫複寫協議之底層實作盲點，掌握提權攻擊者如何竄改系統型錄維持 Superuser 特權並提出防範方案  
-> **關聯文件**：[📄 完整原話逐字稿 (2026-09-14-01-PostgreSQL複寫協議提權漏洞-proofread.md)](./2026-09-14-01-PostgreSQL複寫協議提權漏洞-proofread.md)
+> **研討目標**：理解資料庫複寫協議之底層實作盲點，掌握提權攻擊者如何竄改系統型錄維持 Superuser 特權並提出防範方案  
+> **關聯文件**：[📄 完整原話逐字稿 (20260914-PostgreSQL複寫協議提權漏洞.full.md)](./20260914-PostgreSQL複寫協議提權漏洞.full.md)
 
 ---
 
