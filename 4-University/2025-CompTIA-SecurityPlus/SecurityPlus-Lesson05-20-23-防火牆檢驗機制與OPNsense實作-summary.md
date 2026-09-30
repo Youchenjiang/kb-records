@@ -1,0 +1,28 @@
+# 🛡️ SECPLUS-05-20-23 CompTIA Security+ Lesson 05 頁20~23：次世代防火牆狀態檢驗、NAT 與 OPNsense 實作
+
+> **課程主題**：防火牆狀態檢查核心、NAT 轉譯與開源 OPNsense 防火牆操作  
+> **授課講師**：授課講師（資安與網路認證原廠認證講師）  
+> **核心模組**：CompTIA Security+ Topic 5: Firewalls & OPNsense Hands-on  
+> **學習目標**：理解 TCP 連線狀態追蹤表、掌握 NAT/PAT 配置與 OPNsense 防火牆實機維運  
+> **關聯文件**：[📄 完整原話逐字稿 (SecurityPlus-Lesson05-20-23-防火牆檢驗機制與OPNsense實作-proofread.md)](./SecurityPlus-Lesson05-20-23-防火牆檢驗機制與OPNsense實作-proofread.md)
+
+---
+
+## 🏛️ 核心架構與概念流轉圖
+
+```mermaid
+flowchart TD
+    Client["內部用戶端"] -->|TCP SYN (建立連線)| FW["狀態檢驗防火牆 (Stateful Firewall)"]
+    FW -->|記錄連線進入狀態表 (State Table)| Server["外部網站伺服器"]
+    Server -->|TCP SYN-ACK (回應封包)| FW
+    FW -->|檢查符合狀態表已核准連線| Client
+    Attacker["外部未經允許偽造連線"] -->|TCP ACK (無先前請求)| FW
+    FW -->|狀態表查無紀錄：直接阻斷 (Drop / Reject)| Drop["丟棄封包"]
+```
+
+---
+
+## 🔑 重點提要 (Key Takeaways)
+
+1. **狀態檢驗（Stateful）優勢**：防火牆動態維護連線狀態表，只要內部發起的連線，其返回之對應流量自動放行，無需對外開放所有 Port。
+2. **次世代防火牆（NGFW）**：延伸至應用程式層（L7 DPI）與入侵防禦系統（IPS），能辨識深度封包內容而非僅看 IP 與連接埠。

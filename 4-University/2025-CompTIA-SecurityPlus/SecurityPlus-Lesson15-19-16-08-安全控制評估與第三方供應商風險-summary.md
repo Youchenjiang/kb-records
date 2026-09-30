@@ -1,0 +1,29 @@
+# 🛡️ SECPLUS-15-19-16-08 CompTIA Security+ Lesson 15/16：安全控制成效評估、內外部資源比例與供應鏈風險管理
+
+> **課程主題**：安全控制評估策略、內外部資源配置與供應鏈第三方風險管理  
+> **授課講師**：授課講師（資安與網路認證原廠認證講師）  
+> **核心模組**：CompTIA Security+ Topic 15/16: Vendor Risk & Security Assessments  
+> **學習目標**：評估企業內建 vs. 委外資安效益、建立第三方合約防護網並管控供應鏈風險  
+> **關聯文件**：[📄 完整原話逐字稿 (SecurityPlus-Lesson15-19-16-08-安全控制評估與第三方供應商風險-proofread.md)](./SecurityPlus-Lesson15-19-16-08-安全控制評估與第三方供應商風險-proofread.md)
+
+---
+
+## 🏛️ 核心架構與概念流轉圖
+
+```mermaid
+flowchart TD
+    Enterprise["企業核心業務"] --> Vendor["第三方軟硬體與雲端供應商 (Vendors / Suppliers)"]
+    Vendor --> Risk{"供應鏈潛在破口 (如 SolarWinds 事件)"}
+    Enterprise --> Defense["供應鏈風險管理防線"]
+    Defense --> D1["資安合約協定 (SLA, NDA, SOW 載明資安義務)"]
+    Defense --> D2["定期外部資安審查與第三方 SOC 2 報告調閱"]
+    Defense --> D3["軟體物料清單 (SBOM) 盤點開源套件依賴"]
+    Defense --> D4["最小權限委外遠端維護通道"]
+```
+
+---
+
+## 🔑 重點提要 (Key Takeaways)
+
+1. **軟體供應鏈風險防不勝防**：攻擊者不再直攻大企業，而是攻陷具備信任連線的下游廠商。必須落實嚴格的 Vendor Assessment。
+2. **合約是最後一道防線**：在委外契約中必須明確載明資安事件之通報時效、賠償上限與稽核權利（Right to Audit）。

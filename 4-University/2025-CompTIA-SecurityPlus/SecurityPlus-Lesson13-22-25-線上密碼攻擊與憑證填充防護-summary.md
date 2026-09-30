@@ -1,0 +1,33 @@
+# 🛡️ SECPLUS-13-22-25 CompTIA Security+ Lesson 13 頁22~25：線上密碼破解手法、密碼噴灑（Spraying）與憑證填充防護
+
+> **課程主題**：線上密碼攻擊手法、密碼噴灑技術與防範外洩憑證填充  
+> **授課講師**：授課講師（資安與網路認證原廠認證講師）  
+> **核心模組**：CompTIA Security+ Topic 13: Password Attacks & Credential Stuffing  
+> **學習目標**：理解密碼噴灑如何繞過「連續錯三次鎖定」、部署 MFA 與行為驗證遏止攻擊  
+> **關聯文件**：[📄 完整原話逐字稿 (SecurityPlus-Lesson13-22-25-線上密碼攻擊與憑證填充防護-proofread.md)](./SecurityPlus-Lesson13-22-25-線上密碼攻擊與憑證填充防護-proofread.md)
+
+---
+
+## 🏛️ 核心架構與概念流轉圖
+
+```mermaid
+flowchart TD
+    subgraph Spraying ["密碼噴灑 (Password Spraying)"]
+        Pwd["單一常見弱密碼 (如 Summer2025!)"] --> U1["嘗試使用者 A (第 1 次)"]
+        Pwd --> U2["嘗試使用者 B (第 1 次)"]
+        Pwd --> U3["嘗試使用者 C (第 1 次)"]
+        Note["每個帳號皆只嘗試一次：完全不會觸發鎖定閾值！"]
+    end
+    subgraph Defense ["有效反制策略"]
+        D1["強制全面啟用 MFA"]
+        D2["基於風險的情境驗證 (異地登入阻斷)"]
+        D3["比對外洩密碼庫 (Have I Been Pwned 阻斷常見弱密碼)"]
+    end
+```
+
+---
+
+## 🔑 重點提要 (Key Takeaways)
+
+1. **密碼噴灑巧妙處**：傳統暴力破解是對「單一帳號嘗試千百種密碼」（立即鎖定）；密碼噴灑則是對「千百個帳號嘗試同一組常見密碼」，完美隱藏在正常登入雜訊中。
+2. **憑證填充根源**：利用大眾「跨站使用同一組帳密」之壞習慣，拿暗網外洩的帳密庫自動化撞庫。
