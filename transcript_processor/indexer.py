@@ -54,17 +54,23 @@ class CatalogIndexer:
 
     def scan(self) -> List[CatalogItem]:
         """
-        Scan repository directory tree for all proofread.md files and match summaries.
+        Scan repository directory tree for all .full.md and proofread.md files and match summaries.
         """
         items: List[CatalogItem] = []
 
-        for p_file in self.root_dir.glob("**/*proofread*.md"):
+        all_candidates = list(self.root_dir.glob("**/*.full.md")) + list(self.root_dir.glob("**/*proofread*.md"))
+        seen_paths = set()
+
+        for p_file in all_candidates:
             # Check exclusions
             parts = p_file.parts
             if any(excluded in parts for excluded in self.EXCLUDED_DIRS):
                 continue
             if p_file.name == "PROOFREAD_RULES.md":
                 continue
+            if p_file.resolve() in seen_paths:
+                continue
+            seen_paths.add(p_file.resolve())
 
             rel_p = p_file.relative_to(self.root_dir)
             content = p_file.read_text(encoding="utf-8")
@@ -72,7 +78,12 @@ class CatalogIndexer:
 
             # Match summary
             summary_path = None
-            if p_file.name == "proofread.md":
+            if p_file.name.endswith(".full.md"):
+                prefix = p_file.name[:-len(".full.md")]
+                cand = p_file.parent / f"{prefix}.md"
+                if cand.exists():
+                    summary_path = cand.relative_to(self.root_dir)
+            elif p_file.name == "proofread.md":
                 cand = p_file.parent / "summary.md"
                 if cand.exists():
                     summary_path = cand.relative_to(self.root_dir)
@@ -270,13 +281,19 @@ class CatalogIndexer:
                 for it in ev_items:
                     speakers_str = ", ".join(it.speakers)
                     proofread_rel = str(it.proofread_path).replace("\\", "/")
-                    proof_link = f"[📄 Proofread](./{proofread_rel})"
-                    summary_link = ""
+                    if is_zh:
+                        proof_lbl = "📄 全文" if ".full.md" in proofread_rel else "📄 Proofread"
+                        sum_lbl = "📑 筆記" if it.summary_path and not str(it.summary_path).endswith("-summary.md") else "📑 摘要"
+                    else:
+                        proof_lbl = "📄 Full" if ".full.md" in proofread_rel else "📄 Proofread"
+                        sum_lbl = "📑 Notes" if it.summary_path and not str(it.summary_path).endswith("-summary.md") else "📑 Summary"
+
                     if it.summary_path:
                         sum_rel = str(it.summary_path).replace("\\", "/")
-                        summary_link = f" · [📑 Summary](./{sum_rel})"
+                        links_col = f"[{sum_lbl}](./{sum_rel}) · [{proof_lbl}](./{proofread_rel})"
+                    else:
+                        links_col = f"[{proof_lbl}](./{proofread_rel})"
 
-                    links_col = f"{proof_link}{summary_link}"
                     lines.append(f"| {global_idx} | **{it.title}** | {speakers_str} | `{it.scenario}` | {links_col} |")
                     global_idx += 1
 
