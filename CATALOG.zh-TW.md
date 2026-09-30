@@ -20,6 +20,7 @@
   - [技術學術研討會 Session I (錄音 239)](#技術學術研討會 session i (錄音 239))
   - [碩士學位論文口試審查會](#碩士學位論文口試審查會)
   - [資訊管理研究所研究方法論課程](#資訊管理研究所研究方法論課程)
+  - [進階人工智慧與最佳化研究所課程](#進階人工智慧與最佳化研究所課程)
 
 ---
 
@@ -199,5 +200,13 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 100 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-01-概念層次操作化與變數定義-summary.md) |
 | 101 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-proofread.md) · [📑 Summary](./5-Master/2025-ResearchMethodology/研究方法-02-假說建立與理論框架實證檢驗-summary.md) |
+
+### 📅 進階人工智慧與最佳化研究所課程
+
+| 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
+| :--- | :--- | :--- | :--- | :--- |
+| 102 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-01-課程導論與學術倫理規範-summary.md) |
+| 103 | **進階人工智慧與最佳化 Lesson 02：感測器資料模型、對抗性機器學習（Adversarial ML）與蒙特卡羅貝葉斯最佳化** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-02-對抗性機器學習與蒙特卡羅最佳化-summary.md) |
+| 104 | **進階人工智慧與最佳化 Lesson 03：感測器能源模型與 Apache Benchmark 高並發效能評測** | 授課講師, 學員 | `classroom-lecture` | [📄 Proofread](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-proofread.md) · [📑 Summary](./5-Master/2025-AdvancedAI-Optimization/AI-Optimization-03-感測器能源模型與高並發基準測試-summary.md) |
 
 ---
