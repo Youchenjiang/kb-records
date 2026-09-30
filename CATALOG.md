@@ -29,9 +29,9 @@
   - [大學部人機互動與使用者經驗設計課程](#大學部人機互動與使用者經驗設計課程)
   - [大學部機器學習與深度學習課程](#大學部機器學習與深度學習課程)
   - [大學部系統維運與自動化實務課程](#大學部系統維運與自動化實務課程)
-  - [大學部資訊安全專題研究課程](#大學部資訊安全專題研究課程)
   - [大學部資訊安全競賽培訓課程](#大學部資訊安全競賽培訓課程)
   - [大學部電腦網路實驗課程](#大學部電腦網路實驗課程)
+  - [實驗室資安新聞研討](#實驗室資安新聞研討)
   - [技術學術研討會 Session G](#技術學術研討會 session g)
   - [技術學術研討會 Session H (錄音 238)](#技術學術研討會 session h (錄音 238))
   - [技術學術研討會 Session I (錄音 239)](#技術學術研討會 session i (錄音 239))
@@ -294,23 +294,23 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 129 | **DevOps 自動化維運實務 Lesson 01：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Fall-Semester/DevOps/20251209-Ansible無代理架構與Playbook部署.md) · [📄 Full](./5-Master/1-First-Year/Fall-Semester/DevOps/20251209-Ansible無代理架構與Playbook部署.full.md) |
 
-### 📅 大學部資訊安全專題研究課程
-
-| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
-| :--- | :--- | :--- | :--- | :--- |
-| 130 | **資料庫資安實務 Lesson 01：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/DatabaseSecurity/20260914-PostgreSQL複寫協議提權漏洞.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/DatabaseSecurity/20260914-PostgreSQL複寫協議提權漏洞.full.md) |
-
 ### 📅 大學部資訊安全競賽培訓課程
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 131 | **資安實戰 Lesson 01：CTF 圖片隱寫術分析、十六進位結構竄改與 OSINT 地理定位解題實務** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.full.md) |
+| 130 | **資安實戰 Lesson 01：CTF 圖片隱寫術分析、十六進位結構竄改與 OSINT 地理定位解題實務** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.full.md) |
 
 ### 📅 大學部電腦網路實驗課程
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 132 | **電腦網路實習 Lesson 01：UTP 雙絞線製作、T568A/B 跳線標準與傳輸衰減量測** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Fall-Semester/ComputerNetworkLab/20251209-UTP雙絞線製作與衰減標準.md) · [📄 Full](./5-Master/1-First-Year/Fall-Semester/ComputerNetworkLab/20251209-UTP雙絞線製作與衰減標準.full.md) |
+| 131 | **電腦網路實習 Lesson 01：UTP 雙絞線製作、T568A/B 跳線標準與傳輸衰減量測** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Fall-Semester/ComputerNetworkLab/20251209-UTP雙絞線製作與衰減標準.md) · [📄 Full](./5-Master/1-First-Year/Fall-Semester/ComputerNetworkLab/20251209-UTP雙絞線製作與衰減標準.full.md) |
+
+### 📅 實驗室資安新聞研討
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 132 | **實驗室資安新聞研討：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析** | 報告學員, 指導教授 | `lab-meeting` | [📑 Notes](./5-Master/Laboratory/Security-News/20260914-PostgreSQL複寫協議提權漏洞.md) · [📄 Full](./5-Master/Laboratory/Security-News/20260914-PostgreSQL複寫協議提權漏洞.full.md) |
 
 ### 📅 技術學術研討會 Session G
 
