@@ -1,0 +1,59 @@
+# 🛡️ PM-07-CROSS-GEN-COLLABORATION 專案管理實務 Lesson 07：跨世代研發團隊協作、專家整合與溝通領導實務
+
+
+> **課程主題**：專案團隊建立（Team Building）、跨世代協作、孤鳥型技術專家管理與雙軌主副責任制  
+> **授課教授**：授課講師（專案管理授課教授）  
+> **核心模組**：Team Dynamics, Cross-Generation Collaboration, Technical Lone Wolves, Pairing System  
+> **學習目標**：掌握多樣化團隊動態管理心法，妥善調處技術天才與團隊溝通落差，並建立主副雙軌備援制確保專案永續交付  
+> **關聯文件**：[📄 完整原話逐字稿 (專案管理-07-跨世代研發團隊協作與領導溝通實務-proofread.md)](./專案管理-07-跨世代研發團隊協作與領導溝通實務-proofread.md)
+
+---
+
+## 🏛️ 專案團隊協作雙軌制 (Primary-Secondary Pairing Model)
+
+```mermaid
+flowchart TD
+    Task["關鍵專案模組任務"]
+    
+    subgraph Pairing["主副雙軌責任制 (Pairing Setup)"]
+        Primary["主負責人 (Primary / 核心技術專家)<br/>負責核心演算法與架構突破"]
+        Secondary["副手 / 協同者 (Secondary / 團隊橋樑)<br/>負責代碼審查、文件記錄與跨組協調"]
+    end
+
+    Task --> Primary
+    Task --> Secondary
+    Primary <--> Secondary
+    Secondary -- "對外同步與跨部門交流" --> External["專案經理 (PM) 與其他模組"]
+```
+
+---
+
+## ⚡ 「孤鳥型」技術天才之整合策略
+
+```mermaid
+flowchart LR
+    subgraph Challenge["孤鳥型成員特質"]
+        C1["個人技術能力極其頂尖"]
+        C2["不屑或不善與團隊社交互動"]
+        C3["容易成為專案單點故障 (SPOF)"]
+    end
+
+    subgraph Solution["PM 管理介入解方"]
+        S1["不強求其承擔行政溝通，保留純粹技術戰場"]
+        S2["指派高同理心副手進行緩衝式對接"]
+        S3["定期要求輸出架構文檔或程式碼留痕"]
+    end
+
+    Challenge --> Solution
+```
+
+---
+
+## 🎯 核心重點整理 (Key Takeaways)
+
+### 1. 團隊協作重於個人英雄主義
+- **孤鳥成員的專案風險**：部分技術能力頂尖的工程師習慣單打獨鬥、拒絕溝通，在專案管理中這類「孤鳥」若無良好機制包裝，將導致模組黑盒子化，一旦其離職或生病，整個專案將陷入停擺。
+- **主副責任制（Primary-Secondary Setup）**：重要工作包指派一名主負責人與一名副手。主負責人主攻技術攻堅，副手協助溝通協調與知識備份，兼顧效率與專案風險分散。
+
+### 2. 跨世代團隊的領導新思維
+- **手遊與新創團隊生態**：以 30 歲以下年輕工程師為主體的研發團隊，思維跳躍、追求酷炫與自主性。傳統威權由上而下的命令式管理不再奏效，專案領導者需轉型為「教練與僕人式領導（Servant Leadership）」，營造彈性自主的氛圍以激發其創造力。
