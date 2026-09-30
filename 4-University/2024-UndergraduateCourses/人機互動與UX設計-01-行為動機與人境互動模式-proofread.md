@@ -1,7 +1,7 @@
 ---
 title: "人機互動與 UX 設計 Lesson 01：行為動機模型、人境互動模式與使用者心智模型"
 event: "大學部人機互動與使用者經驗設計課程"
-date: "2024-11-12"
+date: "2026-03-03"
 talk_id: "HCI-01-MOTIVATION-ENVIRONMENT"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

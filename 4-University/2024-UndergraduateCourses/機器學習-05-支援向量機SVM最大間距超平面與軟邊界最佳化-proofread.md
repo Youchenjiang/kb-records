@@ -1,7 +1,7 @@
 ---
 title: "機器學習實務 Lesson 05：貝氏信念網路、支援向量機 SVM 最大間距超平面與軟邊界最佳化"
 event: "大學部機器學習與深度學習課程"
-date: "2024-11-04"
+date: "2026-03-09"
 talk_id: "ML-05-SVM-HYPERPLANE-SOFT-MARGIN"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

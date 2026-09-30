@@ -1,7 +1,7 @@
 ---
 title: "英語專題發表：人工智慧教育表現預測、特徵工程與低成本過濾法模型"
 event: "大學部人工智慧專題全英文發表會"
-date: "2024-12-18"
+date: "2026-03-18"
 talk_id: "AI-EDU-ENGLISH-PRESENTATION"
 speakers: ["授課講師", "學員", "Youchen"]
 type: "verbatim-narrative-transcript"

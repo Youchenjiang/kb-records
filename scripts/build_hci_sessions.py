@@ -68,7 +68,7 @@ def build_hci_01():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部人機互動與使用者經驗設計課程"',
-        'event: "大學部人機互動與使用者經驗設計課程"\ndate: "2024-11-12"'
+        'event: "大學部人機互動與使用者經驗設計課程"\ndate: "2026-03-03"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -171,7 +171,7 @@ def build_hci_02():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部人機互動與使用者經驗設計課程"',
-        'event: "大學部人機互動與使用者經驗設計課程"\ndate: "2024-11-12"'
+        'event: "大學部人機互動與使用者經驗設計課程"\ndate: "2026-03-03"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

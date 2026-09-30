@@ -1,7 +1,7 @@
 ---
 title: "資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化"
 event: "資訊管理研究所研究方法論課程"
-date: "2025-03-12"
+date: "2026-03-04"
 talk_id: "RES-METH-01"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

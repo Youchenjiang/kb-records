@@ -168,7 +168,7 @@ def build_ml_05():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部機器學習與深度學習課程"',
-        'event: "大學部機器學習與深度學習課程"\ndate: "2024-11-04"'
+        'event: "大學部機器學習與深度學習課程"\ndate: "2026-09-14"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -666,7 +666,7 @@ def build_master_apr():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "資安與軟體工程碩士班專題研討"',
-        'event: "資安與軟體工程碩士班專題研討"\ndate: "2026-03-09"'
+        'event: "資安與軟體工程碩士班專題研討"\ndate: "2026-09-14"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="single-talk")

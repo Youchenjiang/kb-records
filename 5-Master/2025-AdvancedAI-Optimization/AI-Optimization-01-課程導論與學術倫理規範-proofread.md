@@ -1,7 +1,7 @@
 ---
 title: "進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範"
 event: "進階人工智慧與最佳化研究所課程"
-date: "2025-02-20"
+date: "2026-02-26"
 talk_id: "AI-OPT-01"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

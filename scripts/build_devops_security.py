@@ -82,7 +82,7 @@ def build_devops_01():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部系統維運與自動化實務課程"',
-        'event: "大學部系統維運與自動化實務課程"\ndate: "2024-11-05"'
+        'event: "大學部系統維運與自動化實務課程"\ndate: "2025-12-09"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -187,7 +187,7 @@ def build_db_sec_01():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部資訊安全專題研究課程"',
-        'event: "大學部資訊安全專題研究課程"\ndate: "2024-11-04"'
+        'event: "大學部資訊安全專題研究課程"\ndate: "2026-09-14"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -292,7 +292,7 @@ def build_ctf_01():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部資訊安全競賽培訓課程"',
-        'event: "大學部資訊安全競賽培訓課程"\ndate: "2024-11-06"'
+        'event: "大學部資訊安全競賽培訓課程"\ndate: "2026-04-08"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

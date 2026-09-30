@@ -1,7 +1,7 @@
 ---
 title: "軟體工程期末專案發表與評審審查會：Vue/TS 前端、Python 後端、高並發壓力測試與 AI 模組整合"
 event: "軟體工程課程期末專題發表審查會"
-date: "2025-06-18"
+date: "2025-12-17"
 talk_id: "SE-FINAL-PROJECT"
 speakers: ["授課講師", "學員 (專案報告團隊)"]
 type: "verbatim-narrative-transcript"

@@ -1,7 +1,7 @@
 ---
 title: "碩士專題討論：自動化程式漏洞修復（APR）之兩階段根因分析與修補有效性驗證"
 event: "資安與軟體工程碩士班專題研討"
-date: "2026-03-09"
+date: "2026-09-14"
 talk_id: "MASTER-APR-01-VULN-REPAIR"
 speakers: ["發表研究生", "指導教授", "與會學者"]
 type: "verbatim-narrative-transcript"

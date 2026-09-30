@@ -1,7 +1,7 @@
 ---
 title: "產學大師講座：生成式 AI 產業浪潮、企業資安治理與職場數位競爭力"
 event: "中央資管碩士班產業前瞻專題演講"
-date: "2026-05-15"
+date: "2025-12-05"
 talk_id: "KEYNOTE-GENAI-SEC"
 speakers: ["勤業眾信資安執行副總", "主持教授", "現場學員"]
 type: "verbatim-narrative-transcript"

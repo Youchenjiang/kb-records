@@ -1,7 +1,7 @@
 ---
 title: "進階人工智慧與最佳化 Lesson 03：感測器能源模型與 Apache Benchmark 高並發效能評測"
 event: "進階人工智慧與最佳化研究所課程"
-date: "2025-02-20"
+date: "2026-04-30"
 talk_id: "AI-OPT-03"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

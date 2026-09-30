@@ -1,7 +1,7 @@
 ---
 title: "機器學習實務 Lesson 02：單純貝氏分類器 Naive Bayes 與支援向量機 SVM 原理"
 event: "大學部機器學習與深度學習課程"
-date: "2024-10-28"
+date: "2026-03-02"
 talk_id: "ML-02-NAIVE-BAYES-SVM"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

@@ -1,7 +1,7 @@
 ---
 title: "學術論文發表 Session A：智慧醫療——老年失智症多模態神經與認知特徵預測模型"
 event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"
-date: "2026-01-09"
+date: "2026-03-27"
 talk_id: "NCU-IM-01-SMART-HEALTHCARE-DEMENTIA"
 speakers: ["發表人", "評審委員", "主持人"]
 type: "verbatim-narrative-transcript"

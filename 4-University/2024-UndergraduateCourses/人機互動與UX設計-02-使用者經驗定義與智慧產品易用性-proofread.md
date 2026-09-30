@@ -1,7 +1,7 @@
 ---
 title: "人機互動與 UX 設計 Lesson 02：使用者經驗完整定義、智慧產品易用性與美學平衡"
 event: "大學部人機互動與使用者經驗設計課程"
-date: "2024-11-12"
+date: "2026-03-03"
 talk_id: "HCI-02-UX-DEFINITION-USABILITY"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

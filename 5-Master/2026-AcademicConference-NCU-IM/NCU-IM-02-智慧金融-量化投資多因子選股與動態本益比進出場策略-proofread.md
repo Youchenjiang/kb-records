@@ -1,7 +1,7 @@
 ---
 title: "學術論文發表 Session H：智慧金融——量化投資多因子選股與動態本益比進出場策略"
 event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"
-date: "2026-01-09"
+date: "2026-03-27"
 talk_id: "NCU-IM-02-FINTECH-QUANT-INVESTING"
 speakers: ["發表人", "評審委員", "主持人"]
 type: "verbatim-narrative-transcript"

@@ -1,7 +1,7 @@
 ---
 title: "機器學習實務 Lesson 03：深度學習導論、多層感知機 MLP 與神經網路架構設計"
 event: "大學部機器學習與深度學習課程"
-date: "2024-10-28"
+date: "2026-03-09"
 talk_id: "ML-03-DEEP-LEARNING-MLP"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

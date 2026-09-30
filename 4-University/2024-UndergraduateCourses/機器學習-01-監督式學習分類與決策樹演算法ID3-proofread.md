@@ -1,7 +1,7 @@
 ---
 title: "機器學習實務 Lesson 01：監督式學習分類問題定義、決策樹演算法 ID3 與資訊增益"
 event: "大學部機器學習與深度學習課程"
-date: "2024-10-28"
+date: "2026-03-02"
 talk_id: "ML-01-DECISION-TREE-ID3"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

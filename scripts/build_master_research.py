@@ -132,7 +132,7 @@ def build_thesis_seminar():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "中央資管實驗室專題研究進度研討會"',
-        'event: "中央資管實驗室專題研究進度研討會"\ndate: "2026-04-16"'
+        'event: "中央資管實驗室專題研究進度研討會"\ndate: "2026-02-26"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="single-talk")
@@ -221,7 +221,7 @@ def build_lab_meeting():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "中央資管實驗室新年度整合型計畫研討會"',
-        'event: "中央資管實驗室新年度整合型計畫研討會"\ndate: "2026-04-16"'
+        'event: "中央資管實驗室新年度整合型計畫研討會"\ndate: "2025-10-03"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="single-talk")

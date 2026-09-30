@@ -111,7 +111,7 @@ def build_lesson1():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "進階人工智慧與最佳化研究所課程"',
-        'event: "進階人工智慧與最佳化研究所課程"\ndate: "2025-02-20"'
+        'event: "進階人工智慧與最佳化研究所課程"\ndate: "2026-02-26"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -191,7 +191,7 @@ def build_lesson2():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "進階人工智慧與最佳化研究所課程"',
-        'event: "進階人工智慧與最佳化研究所課程"\ndate: "2025-02-20"'
+        'event: "進階人工智慧與最佳化研究所課程"\ndate: "2026-02-26"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -275,7 +275,7 @@ def build_lesson3():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "進階人工智慧與最佳化研究所課程"',
-        'event: "進階人工智慧與最佳化研究所課程"\ndate: "2025-02-20"'
+        'event: "進階人工智慧與最佳化研究所課程"\ndate: "2026-04-30"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

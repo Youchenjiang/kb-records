@@ -1,7 +1,7 @@
 ---
 title: "進階人工智慧與最佳化 Lesson 02：感測器資料模型、對抗性機器學習（Adversarial ML）與蒙特卡羅貝葉斯最佳化"
 event: "進階人工智慧與最佳化研究所課程"
-date: "2025-02-20"
+date: "2026-02-26"
 talk_id: "AI-OPT-02"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

@@ -113,7 +113,7 @@ def build_ncu_01():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"',
-        'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"\ndate: "2026-01-09"'
+        'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"\ndate: "2026-03-27"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="single-talk")
@@ -217,7 +217,7 @@ def build_ncu_02():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"',
-        'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"\ndate: "2026-01-09"'
+        'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"\ndate: "2026-03-27"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="single-talk")
@@ -314,7 +314,7 @@ def build_ncu_03():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"',
-        'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"\ndate: "2026-01-09"'
+        'event: "第十七屆國立中央大學資訊管理學系學術論文暨專題發表會"\ndate: "2026-03-27"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="single-talk")

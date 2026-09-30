@@ -1,7 +1,7 @@
 ---
 title: "資安實戰 Lesson 01：CTF 圖片隱寫術分析、十六進位結構竄改與 OSINT 地理定位解題實務"
 event: "大學部資訊安全競賽培訓課程"
-date: "2024-11-06"
+date: "2026-04-08"
 talk_id: "SEC-CTF-01-STEGANOGRAPHY-OSINT"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

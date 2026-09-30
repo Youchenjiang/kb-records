@@ -109,7 +109,7 @@ def build_part1():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "資訊管理研究所研究方法論課程"',
-        'event: "資訊管理研究所研究方法論課程"\ndate: "2025-03-12"'
+        'event: "資訊管理研究所研究方法論課程"\ndate: "2026-03-04"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -188,7 +188,7 @@ def build_part2():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "資訊管理研究所研究方法論課程"',
-        'event: "資訊管理研究所研究方法論課程"\ndate: "2025-03-12"'
+        'event: "資訊管理研究所研究方法論課程"\ndate: "2026-03-04"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

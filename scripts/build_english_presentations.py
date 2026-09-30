@@ -197,7 +197,7 @@ def build_english_presentation():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部人工智慧專題全英文發表會"',
-        'event: "大學部人工智慧專題全英文發表會"\ndate: "2024-12-18"'
+        'event: "大學部人工智慧專題全英文發表會"\ndate: "2026-03-18"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

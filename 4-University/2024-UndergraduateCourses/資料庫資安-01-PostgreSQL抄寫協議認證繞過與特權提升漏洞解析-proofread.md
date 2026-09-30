@@ -1,7 +1,7 @@
 ---
 title: "資料庫資安實務 Lesson 01：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析"
 event: "大學部資訊安全專題研究課程"
-date: "2024-11-04"
+date: "2026-09-14"
 talk_id: "DB-SEC-01-POSTGRES-PRIVILEGE-ESCALATION"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

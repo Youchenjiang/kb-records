@@ -1,7 +1,7 @@
 ---
 title: "機器學習實務 Lesson 04：特徵萃取、損失函數與梯度下降法模型最佳化"
 event: "大學部機器學習與深度學習課程"
-date: "2024-10-28"
+date: "2026-03-09"
 talk_id: "ML-04-LOSS-GRADIENT-DESCENT"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

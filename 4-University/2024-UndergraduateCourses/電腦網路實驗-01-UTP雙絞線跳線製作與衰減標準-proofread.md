@@ -1,7 +1,7 @@
 ---
 title: "電腦網路實習 Lesson 01：UTP 雙絞線製作、T568A/B 跳線標準與傳輸衰減量測"
 event: "大學部電腦網路實驗課程"
-date: "2024-10-15"
+date: "2025-12-09"
 talk_id: "NET-LAB-01"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"

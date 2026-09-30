@@ -120,7 +120,7 @@ def build_software_engineering():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "軟體工程課程期末專題發表審查會"',
-        'event: "軟體工程課程期末專題發表審查會"\ndate: "2025-06-18"'
+        'event: "軟體工程課程期末專題發表審查會"\ndate: "2025-12-17"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

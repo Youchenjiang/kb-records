@@ -111,7 +111,7 @@ def build_pm():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部專案管理實務課程"',
-        'event: "大學部專案管理實務課程"\ndate: "2024-10-15"'
+        'event: "大學部專案管理實務課程"\ndate: "2025-12-09"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -188,7 +188,7 @@ def build_cabling():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部電腦網路實驗課程"',
-        'event: "大學部電腦網路實驗課程"\ndate: "2024-10-15"'
+        'event: "大學部電腦網路實驗課程"\ndate: "2025-12-09"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

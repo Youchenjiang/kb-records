@@ -121,7 +121,7 @@ def build_keynote():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "中央資管碩士班產業前瞻專題演講"',
-        'event: "中央資管碩士班產業前瞻專題演講"\ndate: "2026-05-15"'
+        'event: "中央資管碩士班產業前瞻專題演講"\ndate: "2025-12-05"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="single-talk")

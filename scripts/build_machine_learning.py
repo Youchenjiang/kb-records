@@ -80,7 +80,7 @@ def build_ml_01():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部機器學習與深度學習課程"',
-        'event: "大學部機器學習與深度學習課程"\ndate: "2024-10-28"'
+        'event: "大學部機器學習與深度學習課程"\ndate: "2026-03-02"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -202,7 +202,7 @@ def build_ml_02():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部機器學習與深度學習課程"',
-        'event: "大學部機器學習與深度學習課程"\ndate: "2024-10-28"'
+        'event: "大學部機器學習與深度學習課程"\ndate: "2026-03-02"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -320,7 +320,7 @@ def build_ml_03():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部機器學習與深度學習課程"',
-        'event: "大學部機器學習與深度學習課程"\ndate: "2024-10-28"'
+        'event: "大學部機器學習與深度學習課程"\ndate: "2026-03-09"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")
@@ -443,7 +443,7 @@ def build_ml_04():
     rendered = builder.render()
     rendered = rendered.replace(
         'event: "大學部機器學習與深度學習課程"',
-        'event: "大學部機器學習與深度學習課程"\ndate: "2024-10-28"'
+        'event: "大學部機器學習與深度學習課程"\ndate: "2026-03-09"'
     )
 
     is_valid, errors = validate_transcript_structure(rendered, scenario="classroom-lecture")

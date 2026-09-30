@@ -1,7 +1,7 @@
 ---
 title: "資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證"
 event: "資訊管理研究所研究方法論課程"
-date: "2025-03-12"
+date: "2026-03-04"
 talk_id: "RES-METH-02"
 speakers: ["授課講師", "學員"]
 type: "verbatim-narrative-transcript"
