@@ -365,3 +365,69 @@ record-list/
 4. **代碼區塊**：關鍵指令、漏洞成因用 code block 呈現
 5. **Emoji 標題**：用 emoji 幫助視覺區分章節
 6. **不超過 proofread 的內容**：summary 是提煉，不是重新發明
+
+---
+
+## 八、多主題與混合場次拆分準則（Multi-Scenario Splitting Protocol）
+
+當單一原始錄音檔案或轉錄逐字稿內部收錄了多個相異主題、跨場合或跨議程之內容時，必須依本準則執行無損獨立拆分，確保目錄架構語意清晰、知識檢索精準。
+
+### 1. 拆分觸發判準（Trigger Criteria）
+
+遇到以下任一情況時，**強制執行獨立拆分**：
+1. **跨場合混合（Cross-Venue Mixing）**：
+   - 單一錄音前後段落分屬不同空間或組織活動。例如：前半段為課堂學生期末專案發表（`classroom-lecture`），後半段為跨校整合型計畫進度研討（`lab-meeting`）。
+2. **跨主題與發表人重大轉折（Unrelated Agendas & Distinct Presenters）**：
+   - 在實驗室會議或專案研討中，多位發表人依序報告完全獨立的研究方向（如：國際學員報告「對抗性模仿學習 AdMIL」 vs. 研究生發表「APK 免疫疫苗與自動修補」），且各有指導教授與外校評審之深度反饋。
+3. **場景適配模式相異（Scenario Mismatch）**：
+   - 錄音前後段之角色互動形態完全不同，無法以單一 `scenario` 模板貫徹全文。
+
+---
+
+### 2. 產物規範與命名命名法（Deliverable & Naming Standards）
+
+拆分後的每個子段落均視為獨立標準交付物，必須嚴格遵守以下要求：
+
+1. **Option 3-A 雙軌交付產物**：
+   - 每個拆分段落必須獨立產出雙文件：
+     - `{YYYYMMDD-序號-主題}.full.md`：100% 完整原話校對逐字稿。
+     - `{YYYYMMDD-序號-主題}.md`：高階摘要與核心技術重點筆記。
+2. **目錄歸位原則（True Home Directory）**：
+   - 拆分後的文件必須移至其真正所屬之領域目錄。課堂報告歸入課程專屬目錄（如 `AdvancedAI-Optimization/`），實驗室專案或產學研討歸入 `5-Master/Laboratory/Project-Meeting/`，資安新聞報告歸入 `5-Master/Laboratory/Security-News/`。
+3. **元資料繼承與精準修正（Frontmatter Specialization）**：
+   - 獨立設置 YAML Frontmatter：
+     - `title`：精準描述該段落之技術核心。
+     - `event`：所屬活動或會議名稱。
+     - `talk_id`：編訂明確序號（如 `20260226-01`、`20260226-02`）。
+     - `speakers`：僅列出該段落實際發言之講師、發表人與教授。
+     - `scenario`：套用該段落精確對應之場景代碼（如 `lab-meeting` 或 `classroom-lecture`）。
+4. **超連結導航一致性（Relative Link Integrity）**：
+   - 摘要筆記（`.md`）開頭之「關聯文件」連結，必須指向該段落新生成的 `.full.md`（如 `[📄 完整原話逐字稿 (20260430-動漫預測模型與偏誤緩解發表.full.md)](./20260430-動漫預測模型與偏誤緩解發表.full.md)`），嚴禁殘留拆分前的舊檔案路徑。
+
+---
+
+### 3. 工具化拆分標準流程（Tooling & SOP）
+
+專案已內建無損拆分引擎（`transcript_processor.splitter`）與 CLI 命令：
+
+1. **檢視段落切分點**：
+   ```bash
+   python -m transcript_processor split inspect <檔案路徑.full.md>
+   ```
+   工具將列出檔案內所有 `##` 章節標題及其對應行號，輔助定位精確切分範圍。
+
+2. **撰寫或指定 JSON 拆分規格並執行**：
+   ```bash
+   python -m transcript_processor split run <拆分配置.json>
+   ```
+   引擎將自動解析母檔 Frontmatter，截取指定行號之原話正文，產出具備標準標頭之雙軌交付檔。
+
+3. **清理原始混合母檔**：
+   確認拆分後檔案無損完整後，自 Git 工作區移除原始混雜之母檔。
+
+4. **全域索引更新與驗證**：
+   ```bash
+   python -m transcript_processor index
+   python -m unittest discover tests
+   ```
+   自動將新拆分之研討紀錄登錄至 `CATALOG.md` 與 `CATALOG.zh-TW.md`，並確保全套測試通過。
