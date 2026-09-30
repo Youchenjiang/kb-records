@@ -13,6 +13,7 @@ from .entity_guard import EntityGuard, EntityCandidate
 from .asr import SafeASREngine
 from .indexer import CatalogIndexer, CatalogItem
 from .audio_manager import AudioManager
+from .splitter import TranscriptSplitter, SplitSegmentConfig
 
 __all__ = [
     "clean_cjk_spaces",
@@ -33,6 +34,8 @@ __all__ = [
     "CatalogIndexer",
     "CatalogItem",
     "AudioManager",
+    "TranscriptSplitter",
+    "SplitSegmentConfig",
 ]
 
 

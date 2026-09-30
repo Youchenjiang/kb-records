@@ -6,6 +6,7 @@ Supports standalone commands for cleaning, correcting, and building transcripts.
 """
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -16,6 +17,7 @@ from .asr import SafeASREngine
 from .indexer import CatalogIndexer
 from .pipeline import TranscriptPipeline
 from .audio_manager import AudioManager
+from .splitter import TranscriptSplitter, SplitSegmentConfig
 
 
 def main():
@@ -48,6 +50,18 @@ def main():
     index_parser.add_argument("--root", type=str, default=".", help="Root directory to scan (default: current directory)")
     index_parser.add_argument("--out-en", type=str, default="CATALOG.md", help="English catalog output path (default: CATALOG.md)")
     index_parser.add_argument("--out-zh", type=str, default="CATALOG.zh-TW.md", help="Chinese catalog output path (default: CATALOG.zh-TW.md)")
+
+    # Command: split
+    split_parser = subparsers.add_parser("split", help="Inspect and split mixed transcripts into independent deliverables")
+    split_subparsers = split_parser.add_subparsers(dest="split_action", help="Split actions")
+
+    # split inspect <file>
+    inspect_parser = split_subparsers.add_parser("inspect", help="Inspect ## section boundaries in transcript")
+    inspect_parser.add_argument("file", type=str, help="Path to transcript file")
+
+    # split run <config_file>
+    split_run_parser = split_subparsers.add_parser("run", help="Execute transcript splitting from JSON config")
+    split_run_parser.add_argument("config", type=str, help="Path to split config JSON file")
 
     # Command: clean
     clean_parser = subparsers.add_parser("clean", help="Normalize CJK spacing and punctuation")
@@ -153,6 +167,38 @@ def main():
                     sys.exit(0)
             c, freed = manager.clean_processed(dry_run=False)
             print(f"🧹 Successfully cleaned {c} files, freed {freed} MB.")
+            sys.exit(0)
+
+    if args.command == "split":
+        splitter = TranscriptSplitter()
+        if not args.split_action or args.split_action == "inspect":
+            target_f = Path(args.file)
+            if not target_f.exists():
+                print(f"Error: File not found: {target_f}", file=sys.stderr)
+                sys.exit(1)
+            sections = splitter.inspect_sections(target_f)
+            print(f"=== Sections found in {target_f.name} ({len(sections)}) ===")
+            for s in sections:
+                print(f"Line {s['line']:4d}: {s['header']}")
+            sys.exit(0)
+        elif args.split_action == "run":
+            cfg_p = Path(args.config)
+            if not cfg_p.exists():
+                print(f"Error: Config file not found: {cfg_p}", file=sys.stderr)
+                sys.exit(1)
+            cfg_data = json.loads(cfg_p.read_text(encoding="utf-8"))
+            full_src = cfg_data["source_full_md"]
+            sum_src = cfg_data.get("source_summary_md")
+            segments = [
+                SplitSegmentConfig(**seg)
+                for seg in cfg_data["segments"]
+            ]
+            created = splitter.split_transcript(full_src, segments, summary_md_path=sum_src)
+            print(f"✅ Successfully split into {len(created)} segment deliverables:")
+            for full_p, sum_p in created:
+                print(f"   - Full: {full_p}")
+                if sum_p:
+                    print(f"     Summary: {sum_p}")
             sys.exit(0)
 
     input_path = Path(args.input_file)
