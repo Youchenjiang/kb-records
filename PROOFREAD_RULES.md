@@ -24,10 +24,12 @@ record-list/
 │   │   ├── Fall-Semester/               ← 上學期（如 IoTSecurity）
 │   │   ├── Spring-Semester/             ← 下學期課程
 │   │   └── Holiday/                     ← 寒暑假特殊培訓/活動（如 20250106-Cisco-CCNA1, 20250113-CompTIA-SecurityPlus）
-│   └── 4-Capstone/                      ← 大四（畢業專題、專案管理、成果發表）
-│       ├── Fall-Semester/               ← 上學期（如 ProjectManagement）
-│       ├── Spring-Semester/             ← 下學期
-│       └── Holiday/
+│   ├── 4-Capstone/                      ← 大四（畢業專題、專案管理、成果發表）
+│   │   ├── Fall-Semester/               ← 上學期（如 ProjectManagement）
+│   │   ├── Spring-Semester/             ← 下學期
+│   │   └── Holiday/
+│   ├── 5-Extracurricular/               ← 課外考察與實地調查（如 NatureEcologyClub）
+│   └── Archive/                         ← 大學部非學術常規與日常行政封存區
 │
 ├── 5-Master/                            ← 碩士班核心領域（2025 年 9 月入學，114 學年度起算）
 │   ├── 1-First-Year/                    ← 碩一（課程必選修、專案會議、學術發表、暑假研討）
@@ -38,15 +40,17 @@ record-list/
 │   │   ├── Fall-Semester/               ← 碩二上（活動：20260922-DevDaysAsia-2026, 20260927-Intro-to-OSINT-CTI）
 │   │   ├── Spring-Semester/             ← 碩二下
 │   │   └── Holiday/
-│   └── Laboratory/                      ← 實驗室專屬核心目錄
-│       ├── Degree-Defense/              ← 碩士學位口試（如 20260714 DRAVILaMA 論文簡報與審查質詢）
-│       ├── Project-Meeting/             ← 整合型/產學研究專案會議（如 20251003 研究計畫與平台規劃）
-│       ├── Security-News/               ← 資安與漏洞新聞研討（如 20260914 PostgreSQL 複寫協議提權漏洞）
-│       ├── Seminar/                     ← 專題討論（如 20260914 自動化漏洞修復 APR 報告）
-│       └── Thesis-Progress/             ← 碩士論文研究進度研討（如 20260226 Android 惡意程式行為子圖檢測）
-├── transcript_processor/                ← 核心處理器套件（Indexer, Linter, Structurer, Guard）
-├── tests/                               ← 單元測試與回歸驗證套件
-├── CATALOG.md / CATALOG.zh-TW.md        ← 全局自動化雙語目錄索引
+│   ├── Laboratory/                      ← 實驗室專屬核心目錄
+│   │   ├── Degree-Defense/              ← 碩士學位口試（如 20260714 DRAVILaMA 論文簡報與審查質詢）
+│   │   ├── Project-Meeting/             ← 整合型/產學研究專案會議（如 20251003 研究計畫與平台規劃）
+│   │   ├── Security-News/               ← 資安與漏洞新聞研討（如 20260914 PostgreSQL 複寫協議提權漏洞）
+│   │   ├── Seminar/                     ← 專題討論（如 20260914 自動化漏洞修復 APR 報告）
+│   │   └── Thesis-Progress/             ← 碩士論文研究進度研討（如 20260226 Android 惡意程式行為子圖檢測）
+│   └── Archive/                         ← 碩士班會前日常閒聊與生活雜務封存區
+├── audio/                               ← 音訊生命週期管理（pending: 待處理, processed: 已交付, preserved: 純音樂隔離）
+├── transcript_processor/                ← 核心處理器套件（Indexer, Linter, Structurer, Guard, Splitter）
+├── tests/                               ← 單元測試與回歸驗證套件（44 項測試）
+├── CATALOG.md / CATALOG.zh-TW.md        ← 全局自動化雙語目錄索引（172 場會議與課程）
 ├── PROOFREAD_RULES.md                   ← 本手冊（校對規範、命名手冊與字彙對照）
 └── README.md / README.zh-TW.md          ← 專案總體說明文件
 ```
