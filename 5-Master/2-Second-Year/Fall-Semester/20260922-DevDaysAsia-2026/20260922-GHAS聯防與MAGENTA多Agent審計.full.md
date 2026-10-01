@@ -2,9 +2,10 @@
 title: "GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理"
 event: "DevDays Asia 2026"
 talk_id: "123"
-speaker: "周祈和 (微軟 AI 解決方案工程師)"
+speakers: ["周祈和 (微軟 AI 解決方案工程師)"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "single-talk"
 ---
 
 # 🎙️ 123 GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理 (周祈和)

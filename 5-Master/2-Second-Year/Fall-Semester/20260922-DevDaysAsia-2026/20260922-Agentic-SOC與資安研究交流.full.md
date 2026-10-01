@@ -5,6 +5,7 @@ talk_id: "124"
 speakers: ["微軟雲端安全架構師", "Youchen (資安研究員)", "現場資安前輩"]
 type: "verbatim-narrative-transcript"
 verbatim: true
+scenario: "single-talk"
 ---
 
 # 🎙️ 124 Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談

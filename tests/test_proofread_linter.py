@@ -88,7 +88,9 @@ class TestProofreadLinter(unittest.TestCase):
         self.assertGreaterEqual(len(univ_files), 17, f"Expected at least 17 university proofread files, found {len(univ_files)}")
         for f in univ_files:
             content = f.read_text(encoding="utf-8")
-            is_valid, errors = validate_transcript_structure(content, scenario="classroom-lecture")
+            m = re.search(r'scenario:\s*["\']?([a-zA-Z0-9_-]+)["\']?', content)
+            scenario = m.group(1) if m else "classroom-lecture"
+            is_valid, errors = validate_transcript_structure(content, scenario=scenario)
             self.assertTrue(is_valid, f"{f.name} failed structure validation: {errors}")
 
 
