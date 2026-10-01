@@ -107,8 +107,9 @@ def check_catalogs():
     cat_zh = (REPO_ROOT / "CATALOG.zh-TW.md").read_text(encoding="utf-8")
     rows_en = re.findall(r"^\|\s*(\d+)\s*\|", cat_en, re.MULTILINE)
     rows_zh = re.findall(r"^\|\s*(\d+)\s*\|", cat_zh, re.MULTILINE)
-    assert len(rows_en) == 170, f"Expected 170 rows in CATALOG.md, got {len(rows_en)}"
-    assert len(rows_zh) == 170, f"Expected 170 rows in CATALOG.zh-TW.md, got {len(rows_zh)}"
+    total_sessions = len(list((REPO_ROOT / "4-University").glob("**/*.full.md"))) + len(list((REPO_ROOT / "5-Master").glob("**/*.full.md")))
+    assert len(rows_en) == total_sessions, f"Expected {total_sessions} rows in CATALOG.md, got {len(rows_en)}"
+    assert len(rows_zh) == total_sessions, f"Expected {total_sessions} rows in CATALOG.zh-TW.md, got {len(rows_zh)}"
 
     # Verify links in catalogs
     dead_links = []
