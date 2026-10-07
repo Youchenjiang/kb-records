@@ -35,6 +35,9 @@
 - [5-Master](#5-master)
   - [20260821-HITCON-2026](#20260821-hitcon-2026)
   - [20260927-Intro-to-OSINT-CTI](#20260927-intro-to-osint-cti)
+  - [雲端資安偵測工程與威脅狩獵專題研討](#雲端資安偵測工程與威脅狩獵專題研討)
+  - [硬體逆向工程與遊戲主機漏洞利用專題分享](#硬體逆向工程與遊戲主機漏洞利用專題分享)
+  - [管理溝通與專業表達 EMI 研究所課程](#管理溝通與專業表達-emi-研究所課程)
   - [DevDays Asia 2026](#devdays asia 2026)
   - [Microsoft DevDays Asia 2026 台北大會](#microsoft devdays asia 2026 台北大會)
   - [中央資管實驗室專題研究進度研討會](#中央資管實驗室專題研究進度研討會)
@@ -522,5 +525,26 @@
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 172 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260226-01-EMI英語課程導論與學術誠信.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260226-01-EMI英語課程導論與學術誠信.full.md) |
+
+### 📅 雲端資安偵測工程與威脅狩獵專題研討
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 173 | **AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵** | 講者, 大會司儀 | single-talk | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md) |
+
+### 📅 硬體逆向工程與遊戲主機漏洞利用專題分享
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 174 | **超級瑪利歐世界（SNES）任意代碼執行（ACE）硬體機制與精靈記憶體漏洞逆向解析** | 講者 | single-talk | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260912-SNES-Mario-ACE-Exploit/20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260912-SNES-Mario-ACE-Exploit/20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md) |
+
+### 📅 管理溝通與專業表達 EMI 研究所課程
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 175 | **管理溝通 Week 01：課程大綱導論與組織管理溝通核心架構** | 授課講師, 學員 | classroom-lecture | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260910-管理溝通-Week01-課程導論與組織管理溝通.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md) |
+| 176 | **管理溝通 Week 02：專業定位與學員英語自介發表（含 Youchen 資安風險轉化商務影響力發表）** | 授課講師, 全班學員, Jerry Youchen Zhang | classroom-lecture | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260917-管理溝通-Week02-專業定位與學員英語自介發表.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md) |
+| 177 | **管理溝通 Week 03：資訊科技、人工智慧與商務決策溝通架構** | 授課講師, 學員 | classroom-lecture | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260924-管理溝通-Week03-科技與商務決策溝通.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260924-管理溝通-Week03-科技與商務決策溝通.full.md) |
+| 178 | **管理溝通 Week 04：受眾心理分析、結構化簡報設計與常見溝通陷阱防範** | 授課講師, 學員 | classroom-lecture | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20261001-管理溝通-Week04-受眾分析與簡報結構設計.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md) |
 
 ---
