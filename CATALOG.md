@@ -552,5 +552,6 @@
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 179 | **資訊管理研究方法論 Week 01：課程導論、研究動機與 AI 時代下的學者競爭力** | 授課講師, 學員 | classroom-lecture | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260225-研究方法-01-課程導論與研究動機.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260225-研究方法-01-課程導論與研究動機.full.md) |
+| 180 | **進階人工智慧與最佳化 Lesson 02：Kaggle 競賽流程、團隊分組與機器學習實驗規劃** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260305-Kaggle競賽流程與團隊實驗規劃.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260305-Kaggle競賽流程與團隊實驗規劃.full.md) |
 
 ---
