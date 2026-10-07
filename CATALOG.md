@@ -556,5 +556,6 @@
 | 181 | **進階人工智慧與最佳化 Lesson 03：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260312-GitHub與Kaggle資料科學管線.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260312-GitHub與Kaggle資料科學管線.full.md) |
 | 182 | **進階人工智慧與最佳化 Lesson 04：專案提案全英語發表演練、限時控時與同儕評核** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-專案提案全英語發表與評審問答.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-專案提案全英語發表與評審問答.full.md) |
 | 183 | **進階人工智慧與最佳化 Lesson 05：K-Means 非監督式分群演算法原理、向量空間與質心迭代收斂** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260326-KMeans分群演算法與向量空間.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260326-KMeans分群演算法與向量空間.full.md) |
+| 184 | **進階人工智慧與最佳化 Lesson 06：自然語言處理（NLP）文本情感分類基準與評估指標設計** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260409-自然語言處理與情感分類基準.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260409-自然語言處理與情感分類基準.full.md) |
 
 ---
