@@ -20,9 +20,13 @@ Follow the mandatory rules and engineering constraints outlined below.
    - 嚴格比對上下文修正同音錯字（如 `打 E S E` / `打頁子一` → `.exe`；`機號` → `GitHub`；`B I T` → `Git`；`第二開發` → `IDE`；`科索` → `Cursor`；`博科會` → `國科會`；`數專班` → `碩專班`）。
    - 詳細模式與規範參照 [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md)。
 
-4. **逐字稿品質審核表維護鐵則（`VERBATIM_AUDIT.md` Gating Protocol）**：
-   - **建立時禁止勾選（No Pre-checking at Creation）**：新增或產出逐字稿檔案時，禁止直接在 `VERBATIM_AUDIT.md` 標記完成，預設狀態一律為 `[ ]` (⏳ 待回頭審核)。
-   - **回頭審核專屬（Post-Review Audit Only）**：只有在後續由人工或 AI 依據「100%原話無總結、150~300字自然分段、術語地毯式校正、角色加粗標註」四大標準「回頭逐行查驗合格」後，才允許修改此表勾選為 `[x]` (✅ 已審核通過)。
+4. **雙軌審核機制：建立登記表（`VERBATIM_QUEUE.md`）與審核表（`VERBATIM_AUDIT.md`）**：
+   - **建立階段（Creation Phase）**：
+     - 生產 Agent 產出任何新的 `.full.md` 逐字稿時，**必須立即登記於 [`VERBATIM_QUEUE.md`](VERBATIM_QUEUE.md)**，狀態填寫為 `📥 待審核接手`。
+     - **建立階段絕對禁止動用或修改 [`VERBATIM_AUDIT.md`](VERBATIM_AUDIT.md) 進行任何勾選！**
+   - **審核階段（Audit Phase）**：
+     - 審核 Agent 接手時，先讀取 `VERBATIM_QUEUE.md` 獲取新增送審清單，將新檔案以未勾選 `[ ]` (⏳ 待回頭審核) 登記至 `VERBATIM_AUDIT.md`。
+     - 審核 Agent 依據「100%原話無總結、150~300字自然分段、術語地毯式校正、角色加粗標註」四大標準「回頭逐行查驗合格」後，才將 `VERBATIM_QUEUE.md` 狀態更新為 `✅ 已通過審核`，並在 `VERBATIM_AUDIT.md` 正式勾選 `[x]` (✅ 已審核通過)。
 
 
 
