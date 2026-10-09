@@ -38,11 +38,11 @@
 | 013 | [20241107-02-被子植物花部構造與生殖發育.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-02-被子植物花部構造與生殖發育.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除碎裂句整合為 34 個自然對話段落；被子植物解剖術語校對 |
 | 014 | [20241025-01-圓周運動切線速率與庫侖定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-01-圓周運動切線速率與庫侖定律.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除 >350 字長段落重構為 150~280 字自然段落；物理術語校對 |
 | 015 | [20241025-02-磁場分佈與磁通量解析.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-02-磁場分佈與磁通量解析.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除 >350 字長段落重構為 150~280 字自然段落；磁學術語校對 |
-| 016 | [20241108-電磁感應與法拉第冷次定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241108-電磁感應與法拉第冷次定律.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 017 | [20241017-虛擬化架構與資料中心運算.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241017-虛擬化架構與資料中心運算.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 018 | [20241219-期末專案第七組RAG與模型微調架構分析.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241219-期末專案第七組RAG與模型微調架構分析.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 019 | [20241028-個人網路PAN與實體層傳輸架構.full.md](4-University\2-Curriculum\Fall-Semester\ComputerNetworks\20241028-個人網路PAN與實體層傳輸架構.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 020 | [20241223-期末總複習IPv4編址與網路安全.full.md](4-University\2-Curriculum\Fall-Semester\ComputerNetworks\20241223-期末總複習IPv4編址與網路安全.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 016 | [20241108-電磁感應與法拉第冷次定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241108-電磁感應與法拉第冷次定律.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除 900+ 碎裂行重構為 64 個自然對話段落；物理術語校對 |
+| 017 | [20241017-虛擬化架構與資料中心運算.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241017-虛擬化架構與資料中心運算.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除碎裂句合併為 150~280 字自然段落；雲端虛擬化術語校對 |
+| 018 | [20241219-期末專案第七組RAG與模型微調架構分析.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241219-期末專案第七組RAG與模型微調架構分析.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；重構簡報與教授講評段落至 150~280 字；RAG與LLM術語校對 |
+| 019 | [20241028-個人網路PAN與實體層傳輸架構.full.md](4-University\2-Curriculum\Fall-Semester\ComputerNetworks\20241028-個人網路PAN與實體層傳輸架構.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；重構為 13 個自然對話段落；PAN與網路通訊協定術語校對 |
+| 020 | [20241223-期末總複習IPv4編址與網路安全.full.md](4-University\2-Curriculum\Fall-Semester\ComputerNetworks\20241223-期末總複習IPv4編址與網路安全.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；重構為 10 個自然段落；IPv4、子網路遮罩與CIDR術語校對 |
 | 021 | [20240411-期中重點複習雲端運算與平台經濟.full.md](4-University\2-Curriculum\Spring-Semester\ManagementInformationSystems\20240411-期中重點複習雲端運算與平台經濟.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 022 | [20240516-資訊倫理辯論網路平台假新聞與霸凌責任.full.md](4-University\2-Curriculum\Spring-Semester\ManagementInformationSystems\20240516-資訊倫理辯論網路平台假新聞與霸凌責任.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 023 | [20240523-期末重點複習車聯網與RBV架構.full.md](4-University\2-Curriculum\Spring-Semester\ManagementInformationSystems\20240523-期末重點複習車聯網與RBV架構.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
