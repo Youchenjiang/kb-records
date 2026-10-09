@@ -20,6 +20,10 @@ Follow the mandatory rules and engineering constraints outlined below.
    - 嚴格比對上下文修正同音錯字（如 `打 E S E` / `打頁子一` → `.exe`；`機號` → `GitHub`；`B I T` → `Git`；`第二開發` → `IDE`；`科索` → `Cursor`；`博科會` → `國科會`；`數專班` → `碩專班`）。
    - 詳細模式與規範參照 [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md)。
 
+4. **逐字稿品質審核表維護鐵則（`VERBATIM_AUDIT.md` Gating Protocol）**：
+   - **建立時禁止勾選（No Pre-checking at Creation）**：新增或產出逐字稿檔案時，禁止直接在 `VERBATIM_AUDIT.md` 標記完成，預設狀態一律為 `[ ]` (⏳ 待回頭審核)。
+   - **回頭審核專屬（Post-Review Audit Only）**：只有在後續由人工或 AI 依據「100%原話無總結、150~300字自然分段、術語地毯式校正、角色加粗標註」四大標準「回頭逐行查驗合格」後，才允許修改此表勾選為 `[x]` (✅ 已審核通過)。
+
 
 
 ## 🛡️ Mandatory Authorization Gate & Safety Boundaries
