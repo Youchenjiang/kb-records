@@ -32,11 +32,11 @@
 | 008 | 2026-10-10 | [20241125-01-自我定位與海外求職防詐.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-01-自我定位與海外求職防詐.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 009 | 2026-10-10 | [20241125-02-人資篩選心理與履歷視覺.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-02-人資篩選心理與履歷視覺.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 010 | 2026-10-10 | [20241125-03-學經歷倒敘法與面試實戰.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-03-學經歷倒敘法與面試實戰.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 011 | 2026-10-10 | [20241024-顯微鏡細胞觀察與操作規範.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241024-顯微鏡細胞觀察與操作規範.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 012 | 2026-10-10 | [20241107-01-植物生理學與水分養分輸送機制.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-01-植物生理學與水分養分輸送機制.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 013 | 2026-10-10 | [20241107-02-被子植物花部構造與生殖發育.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-02-被子植物花部構造與生殖發育.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 014 | 2026-10-10 | [20241025-01-圓周運動切線速率與庫侖定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-01-圓周運動切線速率與庫侖定律.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 015 | 2026-10-10 | [20241025-02-磁場分佈與磁通量解析.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-02-磁場分佈與磁通量解析.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 011 | 2026-10-10 | [20241024-顯微鏡細胞觀察與操作規範.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241024-顯微鏡細胞觀察與操作規範.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、150~280字分段、生物術語校對 |
+| 012 | 2024-11-07 | [20241107-01-植物生理學與水分養分輸送機制.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-01-植物生理學與水分養分輸送機制.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、碎裂句整合對話段落、植物生理術語校對 |
+| 013 | 2024-11-07 | [20241107-02-被子植物花部構造與生殖發育.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-02-被子植物花部構造與生殖發育.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、碎裂句整合對話段落、被子植物構造術語校對 |
+| 014 | 2024-10-25 | [20241025-01-圓周運動切線速率與庫侖定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-01-圓周運動切線速率與庫侖定律.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、長段落拆解為 150~280 字自然段落、物理術語校對 |
+| 015 | 2024-10-25 | [20241025-02-磁場分佈與磁通量解析.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-02-磁場分佈與磁通量解析.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、長段落拆解為 150~280 字自然段落、磁學術語校對 |
 | 016 | 2026-10-10 | [20241108-電磁感應與法拉第冷次定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241108-電磁感應與法拉第冷次定律.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 017 | 2026-10-10 | [20241017-虛擬化架構與資料中心運算.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241017-虛擬化架構與資料中心運算.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 018 | 2026-10-10 | [20241219-期末專案第七組RAG與模型微調架構分析.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241219-期末專案第七組RAG與模型微調架構分析.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |

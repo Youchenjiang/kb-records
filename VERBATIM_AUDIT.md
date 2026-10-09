@@ -33,11 +33,11 @@
 | 008 | [20241125-01-自我定位與海外求職防詐.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-01-自我定位與海外求職防詐.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 009 | [20241125-02-人資篩選心理與履歷視覺.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-02-人資篩選心理與履歷視覺.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 010 | [20241125-03-學經歷倒敘法與面試實戰.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-03-學經歷倒敘法與面試實戰.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 011 | [20241024-顯微鏡細胞觀察與操作規範.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241024-顯微鏡細胞觀察與操作規範.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 012 | [20241107-01-植物生理學與水分養分輸送機制.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-01-植物生理學與水分養分輸送機制.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 013 | [20241107-02-被子植物花部構造與生殖發育.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-02-被子植物花部構造與生殖發育.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 014 | [20241025-01-圓周運動切線速率與庫侖定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-01-圓周運動切線速率與庫侖定律.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 015 | [20241025-02-磁場分佈與磁通量解析.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-02-磁場分佈與磁通量解析.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 011 | [20241024-顯微鏡細胞觀察與操作規範.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241024-顯微鏡細胞觀察與操作規範.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；合併碎裂發言為 150~280 字自然段落；校對生物實驗術語 |
+| 012 | [20241107-01-植物生理學與水分養分輸送機制.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-01-植物生理學與水分養分輸送機制.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除碎裂句整合為 34 個自然對話段落；植物生理術語校對 |
+| 013 | [20241107-02-被子植物花部構造與生殖發育.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-02-被子植物花部構造與生殖發育.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除碎裂句整合為 34 個自然對話段落；被子植物解剖術語校對 |
+| 014 | [20241025-01-圓周運動切線速率與庫侖定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-01-圓周運動切線速率與庫侖定律.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除 >350 字長段落重構為 150~280 字自然段落；物理術語校對 |
+| 015 | [20241025-02-磁場分佈與磁通量解析.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241025-02-磁場分佈與磁通量解析.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除 >350 字長段落重構為 150~280 字自然段落；磁學術語校對 |
 | 016 | [20241108-電磁感應與法拉第冷次定律.full.md](4-University\1-Studies\Fall-Semester\GeneralPhysics\20241108-電磁感應與法拉第冷次定律.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 017 | [20241017-虛擬化架構與資料中心運算.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241017-虛擬化架構與資料中心運算.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 018 | [20241219-期末專案第七組RAG與模型微調架構分析.full.md](4-University\2-Curriculum\Fall-Semester\CloudComputing\20241219-期末專案第七組RAG與模型微調架構分析.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
