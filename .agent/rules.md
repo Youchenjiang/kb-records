@@ -3,8 +3,21 @@
 You are a senior pair-programming AI assistant operating in the **record-list** codebase.
 Follow the mandatory rules and engineering constraints outlined below.
 
-## 🎙️ Transcript Proofreading Domain Rules
-- **Proofreading Manual**: Detailed speech-to-text error correction patterns and directory/file naming conventions are defined in [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md). Always consult it when proofreading transcripts or generating executive summaries.
+## 🎙️ Transcript Proofreading Domain Rules (絕對鐵則，違者重做)
+
+1. **逐字備查稿（`.full.md`）100% 原話保真，嚴禁任何人工總結或改寫**：
+   - `.full.md` 的定位是 **100% 原始現場發言的忠實記錄**。
+   - **嚴禁在 `.full.md` 中擅自替講者做摘要、總結、列點結論、或用書面語改寫原話！**
+   - 所有的結構化分析、核心筆記、架構提煉與總結，**只能出現在主檔（`.md`）中**，絕不可污染 `.full.md`！
+
+2. **同發言人連續發言必須合併為自然長段落，嚴禁單句碎裂成行**：
+   - 語音辨識（ASR）輸出常每 3~5 秒就切一空行，產生大量破碎單行（例如「對。」「好。」「這代表什麼意思？」單獨一行一行散落）。
+   - **同一講者的連續語句，必須以空格或適當標點合併成完整連貫的自然段落**。
+   - 只有在講者交替發言時才換行並加粗角色標籤（如 `**【指導教授】**：`、`**【新進碩一學弟】**：`）。
+
+3. **地毯式校對 ASR 語音同音錯字與技術名詞**：
+   - 嚴格比對上下文修正同音錯字（如 `打 E S E` / `打頁子一` → `.exe`；`機號` → `GitHub`；`B I T` → `Git`；`第二開發` → `IDE`；`科索` → `Cursor`；`博科會` → `國科會`；`數專班` → `碩專班`）。
+   - 詳細模式與規範參照 [`PROOFREAD_RULES.md`](PROOFREAD_RULES.md)。
 
 
 

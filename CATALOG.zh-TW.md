@@ -46,7 +46,7 @@
   - [中央大學軟體工程與資安實驗室學術論文研討](#中央大學軟體工程與資安實驗室學術論文研討)
   - [中央大學軟體工程與資安實驗室專案會議](#中央大學軟體工程與資安實驗室專案會議)
   - [中央大學軟體工程與資安實驗室暑期例會](#中央大學軟體工程與資安實驗室暑期例會)
-  - [中央大學軟體工程與資安實驗室資安新聞研討](#中央大學軟體工程與資安實驗室資安新聞研討)
+  - [中央大學軟體工程與資安實驗室資安前沿研討](#中央大學軟體工程與資安實驗室資安前沿研討)
   - [中央資管實驗室專題研究進度研討會](#中央資管實驗室專題研究進度研討會)
   - [中央資管實驗室新年度整合型計畫研討會](#中央資管實驗室新年度整合型計畫研討會)
   - [中央資管碩士班產業前瞻專題演講](#中央資管碩士班產業前瞻專題演講)
@@ -426,7 +426,7 @@
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 149 | **軟體工程論文研討：Kernel Multi-Hunk Features 與跨檔案程式修補（LLM 自動化漏洞修復與語意發散度評估）** | 論文報告研究生, 指導教授, 實驗室研究生 | `academic-seminar` | [📑 筆記](./5-Master/Laboratory/Seminar/20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.md) · [📄 全文](./5-Master/Laboratory/Seminar/20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md) |
+| 149 | **軟體工程論文研討：Kernel Multi-Hunk Features 與 AutoOracle 測試斷言生成（LLM 程式修復與採購報價）** | 研究生A (Multi-Hunk), 指導教授, 研究生B (AutoOracle), 實驗室研究生 | `academic-seminar` | [📑 筆記](./5-Master/Laboratory/Seminar/20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.md) · [📄 全文](./5-Master/Laboratory/Seminar/20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md) |
 
 ### 📅 中央大學軟體工程與資安實驗室專案會議
 
@@ -441,11 +441,11 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 152 | **實驗室暑期例會：新進碩一生 AI 代理工作流初報、畢業學長程式交接與課程助教規劃** | 指導教授, 新進碩一學弟, 實驗室研究生 | `lab-meeting` | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) |
 
-### 📅 中央大學軟體工程與資安實驗室資安新聞研討
+### 📅 中央大學軟體工程與資安實驗室資安前沿研討
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 153 | **資安前沿漏洞研討：Cursor IDE 惡意工作區 Windows 路徑搜尋劫持（git.exe 偽造與 RCE 漏洞實證）** | 資安報告研究生, 指導教授, 實驗室研究生 | `security-news` | [📑 筆記](./5-Master/Laboratory/Security-News/20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.md) · [📄 全文](./5-Master/Laboratory/Security-News/20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md) |
+| 153 | **資安前沿漏洞與威脅研討：Cursor IDE 惡意工作區 Windows 路徑搜尋劫持與北韓假求職供應鏈攻擊分析** | 資安報告同學 (Cursor漏洞), 指導教授, 資安報告同學 (北韓APT攻擊), 實驗室研究生 | `security-news` | [📑 筆記](./5-Master/Laboratory/Security-News/20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.md) · [📄 全文](./5-Master/Laboratory/Security-News/20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md) |
 
 ### 📅 中央資管實驗室專題研究進度研討會
 
