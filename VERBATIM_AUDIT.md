@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：175 篇
-- **待回頭審核 / 未合規**：38 篇
+- **已回頭嚴格審核通過**：180 篇
+- **待回頭審核 / 未合規**：33 篇
 
 ---
 
@@ -198,11 +198,11 @@
 | 173 | [20260924-管理溝通-Week03-科技與商務決策溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260924-管理溝通-Week03-科技與商務決策溝通.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 360 個自然段落；科技引進評估、商務決策溝通、高層說服與價值論述術語校對 |
 | 174 | [20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 319 個自然段落；受眾分析（Audience Analysis）、金字塔簡報結構設計術語校對 |
 | 175 | [20260912-01-全台大專資安社團企劃成果發表.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-01-全台大專資安社團企劃成果發表.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 99 個自然段落；AIS3 資安社團企劃發表、CTF 寒假營隊規劃、雲科大場地與業界交流校對 |
-| 176 | [20260912-02-CTF題目設計與競賽營運實務.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-02-CTF題目設計與競賽營運實務.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 177 | [20260912-03-CTF題目設計發表演練-Web安全.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-03-CTF題目設計發表演練-Web安全.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 178 | [20260912-04-教育部資安社團補助說明與經費核銷規範.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-04-教育部資安社團補助說明與經費核銷規範.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 179 | [20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AWS-CloudTrail-DuckDB-Detection\20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 180 | [20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-SNES-Mario-ACE-Exploit\20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 176 | [20260912-02-CTF題目設計與競賽營運實務.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-02-CTF題目設計與競賽營運實務.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 99 個自然段落；CTF 題目設計原則、動態靶機環境部署與競賽營運實務校對 |
+| 177 | [20260912-03-CTF題目設計發表演練-Web安全.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-03-CTF題目設計發表演練-Web安全.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 35 個自然段落；Web 安全出題演練、SQLi/XSS/SSRF 漏洞設計與防禦驗證校對 |
+| 178 | [20260912-04-教育部資安社團補助說明與經費核銷規範.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-04-教育部資安社團補助說明與經費核銷規範.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 18 個自然段落；教育部資安社團補助計畫、經費編列上限與單據核銷規範校對 |
+| 179 | [20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AWS-CloudTrail-DuckDB-Detection\20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 231 個自然段落；AWS CloudTrail 日誌工程、DuckDB 本地查詢與 SigmaHQ 威脅狩獵規則校對 |
+| 180 | [20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-SNES-Mario-ACE-Exploit\20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 58 個自然段落；SNES 超級任天堂硬體架構、記憶體精準覆寫與任意代碼執行 ACE 逆向解析校對 |
 | 181 | [20260916-01-何毅仁教授特邀演講-從資管思維到AI前沿研究.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-01-何毅仁教授特邀演講-從資管思維到AI前沿研究.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 182 | [20260916-02-資管專題與學位論文研究方法論.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-02-資管專題與學位論文研究方法論.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 183 | [20260916-03-大專資安社團成立大會與社員迎新說明.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-03-大專資安社團成立大會與社員迎新說明.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
