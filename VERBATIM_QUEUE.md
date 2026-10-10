@@ -217,11 +217,11 @@
 | 193 | 2026-10-10 | [20260713-01-DRAVILaMA口試前夕視聽設備與雙軌連線架設.full.md](5-Master\Laboratory\Degree-Defense\20260713-01-DRAVILaMA口試前夕視聽設備與雙軌連線架設.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 194 | 2026-10-10 | [20260713-02-DRAVILaMA口試行政評分表單與審查規範點交.full.md](5-Master\Laboratory\Degree-Defense\20260713-02-DRAVILaMA口試行政評分表單與審查規範點交.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 195 | 2026-10-10 | [20260713-03-DRAVILaMA口試全真預演與指導教授逐頁指導.full.md](5-Master\Laboratory\Degree-Defense\20260713-03-DRAVILaMA口試全真預演與指導教授逐頁指導.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 196 | 2026-10-10 | [20260714-01-DRAVILaMA正式學位論文口試與口委質詢攻防.full.md](5-Master\Laboratory\Degree-Defense\20260714-01-DRAVILaMA正式學位論文口試與口委質詢攻防.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 197 | 2026-10-10 | [20260714-02-DRAVILaMA口試通過閉門覆盤與論文修訂指示.full.md](5-Master\Laboratory\Degree-Defense\20260714-02-DRAVILaMA口試通過閉門覆盤與論文修訂指示.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 198 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part1.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part1.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 199 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part2.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part2.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 200 | 2026-10-10 | [20260714-DRAVILaMA論文簡報.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA論文簡報.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 196 | 2026-10-10 | [20260714-01-DRAVILaMA正式學位論文口試與口委質詢攻防.full.md](5-Master\Laboratory\Degree-Defense\20260714-01-DRAVILaMA正式學位論文口試與口委質詢攻防.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 197 | 2026-10-10 | [20260714-02-DRAVILaMA口試通過閉門覆盤與論文修訂指示.full.md](5-Master\Laboratory\Degree-Defense\20260714-02-DRAVILaMA口試通過閉門覆盤與論文修訂指示.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 198 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part1.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part1.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 199 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part2.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part2.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 200 | 2026-10-10 | [20260714-DRAVILaMA論文簡報.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA論文簡報.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 201 | 2026-10-10 | [20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md](5-Master\Laboratory\Lab-Meeting\20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
 | 202 | 2026-10-10 | [20251003-整合型研究計畫與平台架構規劃.full.md](5-Master\Laboratory\Project-Meeting\20251003-整合型研究計畫與平台架構規劃.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 203 | 2026-10-10 | [20260226-01-對抗性模仿學習與感測器模型防禦.full.md](5-Master\Laboratory\Project-Meeting\20260226-01-對抗性模仿學習與感測器模型防禦.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
