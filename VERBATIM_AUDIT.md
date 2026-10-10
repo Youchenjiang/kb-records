@@ -224,15 +224,15 @@
 | 199 | [20260714-DRAVILaMA審查質詢-Part2.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part2.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 100~250 字；DRAVILaMA 口試審查質詢 Part 2、泛化能力、少樣本混淆數據集與實驗復現校對 |
 | 200 | [20260714-DRAVILaMA論文簡報.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA論文簡報.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 86 個自然段落；DRAVILaMA 學位論文簡報全程原話、研究動機、FCG 提取與 GNN 嵌入校對 |
 | 201 | [20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md](5-Master\Laboratory\Lab-Meeting\20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
-| 202 | [20251003-整合型研究計畫與平台架構規劃.full.md](5-Master\Laboratory\Project-Meeting\20251003-整合型研究計畫與平台架構規劃.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 203 | [20260226-01-對抗性模仿學習與感測器模型防禦.full.md](5-Master\Laboratory\Project-Meeting\20260226-01-對抗性模仿學習與感測器模型防禦.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 204 | [20260226-02-APK免疫疫苗與程式碼自動修補.full.md](5-Master\Laboratory\Project-Meeting\20260226-02-APK免疫疫苗與程式碼自動修補.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 205 | [20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md](5-Master\Laboratory\Project-Meeting\20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 206 | [20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md](5-Master\Laboratory\Project-Meeting\20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 202 | [20251003-整合型研究計畫與平台架構規劃.full.md](5-Master\Laboratory\Project-Meeting\20251003-整合型研究計畫與平台架構規劃.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 353段自然語意分段，研究計畫與平台架構術語校對 |
+| 203 | [20260226-01-對抗性模仿學習與感測器模型防禦.full.md](5-Master\Laboratory\Project-Meeting\20260226-01-對抗性模仿學習與感測器模型防禦.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 210段自然語意分段，對抗模仿學習與感測器模型校對 |
+| 204 | [20260226-02-APK免疫疫苗與程式碼自動修補.full.md](5-Master\Laboratory\Project-Meeting\20260226-02-APK免疫疫苗與程式碼自動修補.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 30段自然語意分段，APK疫苗與自動修補術語校對 |
+| 205 | [20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md](5-Master\Laboratory\Project-Meeting\20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 27段自然語意分段，容錯系統與VPS架構校對 |
+| 206 | [20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md](5-Master\Laboratory\Project-Meeting\20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 消除700行碎裂行，合併重構為22個自然段落 |
 | 207 | [20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md](5-Master\Laboratory\Project-Meeting\20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
 | 208 | [20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md](5-Master\Laboratory\Project-Meeting\20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
 | 209 | [20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md](5-Master\Laboratory\Security-News\20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
-| 210 | [20260914-PostgreSQL複寫協議提權漏洞.full.md](5-Master\Laboratory\Security-News\20260914-PostgreSQL複寫協議提權漏洞.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 210 | [20260914-PostgreSQL複寫協議提權漏洞.full.md](5-Master\Laboratory\Security-News\20260914-PostgreSQL複寫協議提權漏洞.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 13段自然語意分段，PostgreSQL複寫與提權漏洞校對 |
 | 211 | [20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md](5-Master\Laboratory\Seminar\20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
-| 212 | [20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md](5-Master\Laboratory\Seminar\20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 213 | [20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md](5-Master\Laboratory\Thesis-Progress\20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 212 | [20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md](5-Master\Laboratory\Seminar\20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 100段自然語意分段，APR程式修復與Crash Site校對 |
+| 213 | [20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md](5-Master\Laboratory\Thesis-Progress\20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 114段自然語意分段，Android行為子圖與GNN術語校對 |

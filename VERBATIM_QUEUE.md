@@ -22,16 +22,16 @@
 
 | 編號 | 新增/登記日期 | 逐字稿檔案路徑 (.full.md) | 轉錄/音訊來源標記 | 建立者/產出方式 | 佇列狀態 | 備註 |
 | :---: | :---: | :--- | :--- | :---: | :---: | :--- |
-| 001 | 2026-10-10 | [20241019-多項式變數代換與試題檢討.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241019-多項式變數代換與試題檢討.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 002 | 2026-10-10 | [20241022-多項式因式定理與高次分解.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241022-多項式因式定理與高次分解.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 003 | 2026-10-10 | [20241029-數系擴張與複數運算.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241029-數系擴張與複數運算.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 004 | 2026-10-10 | [20241204-布林代數電腦邏輯與海島算經重差術.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241204-布林代數電腦邏輯與海島算經重差術.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 005 | 2026-10-10 | [20241012-科技產業鏈佈局與外商求職策略.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241012-科技產業鏈佈局與外商求職策略.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 006 | 2026-10-10 | [20241025-資訊專長自我介紹與技術履歷自述.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241025-資訊專長自我介紹與技術履歷自述.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 007 | 2026-10-10 | [20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 008 | 2026-10-10 | [20241125-01-自我定位與海外求職防詐.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-01-自我定位與海外求職防詐.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 009 | 2026-10-10 | [20241125-02-人資篩選心理與履歷視覺.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-02-人資篩選心理與履歷視覺.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 010 | 2026-10-10 | [20241125-03-學經歷倒敘法與面試實戰.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-03-學經歷倒敘法與面試實戰.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 001 | 2026-10-10 | [20241019-多項式變數代換與試題檢討.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241019-多項式變數代換與試題檢討.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 002 | 2026-10-10 | [20241022-多項式因式定理與高次分解.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241022-多項式因式定理與高次分解.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 003 | 2026-10-10 | [20241029-數系擴張與複數運算.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241029-數系擴張與複數運算.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 004 | 2026-10-10 | [20241204-布林代數電腦邏輯與海島算經重差術.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241204-布林代數電腦邏輯與海島算經重差術.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 005 | 2026-10-10 | [20241012-科技產業鏈佈局與外商求職策略.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241012-科技產業鏈佈局與外商求職策略.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 006 | 2026-10-10 | [20241025-資訊專長自我介紹與技術履歷自述.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241025-資訊專長自我介紹與技術履歷自述.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 007 | 2026-10-10 | [20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 008 | 2026-10-10 | [20241125-01-自我定位與海外求職防詐.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-01-自我定位與海外求職防詐.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 009 | 2026-10-10 | [20241125-02-人資篩選心理與履歷視覺.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-02-人資篩選心理與履歷視覺.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
+| 010 | 2026-10-10 | [20241125-03-學經歷倒敘法與面試實戰.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-03-學經歷倒敘法與面試實戰.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 四大標準全數稽核合格 |
 | 011 | 2026-10-10 | [20241024-顯微鏡細胞觀察與操作規範.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241024-顯微鏡細胞觀察與操作規範.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、150~280字分段、生物術語校對 |
 | 012 | 2024-11-07 | [20241107-01-植物生理學與水分養分輸送機制.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-01-植物生理學與水分養分輸送機制.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、碎裂句整合對話段落、植物生理術語校對 |
 | 013 | 2024-11-07 | [20241107-02-被子植物花部構造與生殖發育.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-02-被子植物花部構造與生殖發育.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成原話保真、碎裂句整合對話段落、被子植物構造術語校對 |
@@ -223,15 +223,15 @@
 | 199 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part2.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part2.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 200 | 2026-10-10 | [20260714-DRAVILaMA論文簡報.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA論文簡報.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 201 | 2026-10-10 | [20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md](5-Master\Laboratory\Lab-Meeting\20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
-| 202 | 2026-10-10 | [20251003-整合型研究計畫與平台架構規劃.full.md](5-Master\Laboratory\Project-Meeting\20251003-整合型研究計畫與平台架構規劃.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 203 | 2026-10-10 | [20260226-01-對抗性模仿學習與感測器模型防禦.full.md](5-Master\Laboratory\Project-Meeting\20260226-01-對抗性模仿學習與感測器模型防禦.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 204 | 2026-10-10 | [20260226-02-APK免疫疫苗與程式碼自動修補.full.md](5-Master\Laboratory\Project-Meeting\20260226-02-APK免疫疫苗與程式碼自動修補.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 205 | 2026-10-10 | [20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md](5-Master\Laboratory\Project-Meeting\20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 206 | 2026-10-10 | [20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md](5-Master\Laboratory\Project-Meeting\20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 202 | 2026-10-10 | [20251003-整合型研究計畫與平台架構規劃.full.md](5-Master\Laboratory\Project-Meeting\20251003-整合型研究計畫與平台架構規劃.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 353段自然語意分段，研究計畫與平台架構術語校對 |
+| 203 | 2026-10-10 | [20260226-01-對抗性模仿學習與感測器模型防禦.full.md](5-Master\Laboratory\Project-Meeting\20260226-01-對抗性模仿學習與感測器模型防禦.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 210段自然語意分段，對抗模仿學習與感測器模型校對 |
+| 204 | 2026-10-10 | [20260226-02-APK免疫疫苗與程式碼自動修補.full.md](5-Master\Laboratory\Project-Meeting\20260226-02-APK免疫疫苗與程式碼自動修補.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 30段自然語意分段，APK疫苗與自動修補術語校對 |
+| 205 | 2026-10-10 | [20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md](5-Master\Laboratory\Project-Meeting\20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 27段自然語意分段，容錯系統與VPS架構校對 |
+| 206 | 2026-10-10 | [20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md](5-Master\Laboratory\Project-Meeting\20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 消除700行碎裂行，合併重構為22個自然段落 |
 | 207 | 2026-10-10 | [20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md](5-Master\Laboratory\Project-Meeting\20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
 | 208 | 2026-10-10 | [20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md](5-Master\Laboratory\Project-Meeting\20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
 | 209 | 2026-10-10 | [20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md](5-Master\Laboratory\Security-News\20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
-| 210 | 2026-10-10 | [20260914-PostgreSQL複寫協議提權漏洞.full.md](5-Master\Laboratory\Security-News\20260914-PostgreSQL複寫協議提權漏洞.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 210 | 2026-10-10 | [20260914-PostgreSQL複寫協議提權漏洞.full.md](5-Master\Laboratory\Security-News\20260914-PostgreSQL複寫協議提權漏洞.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 13段自然語意分段，PostgreSQL複寫與提權漏洞校對 |
 | 211 | 2026-10-10 | [20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md](5-Master\Laboratory\Seminar\20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
-| 212 | 2026-10-10 | [20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md](5-Master\Laboratory\Seminar\20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 213 | 2026-10-10 | [20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md](5-Master\Laboratory\Thesis-Progress\20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 212 | 2026-10-10 | [20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md](5-Master\Laboratory\Seminar\20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 100段自然語意分段，APR程式修復與Crash Site校對 |
+| 213 | 2026-10-10 | [20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md](5-Master\Laboratory\Thesis-Progress\20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 114段自然語意分段，Android行為子圖與GNN術語校對 |
