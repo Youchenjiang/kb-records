@@ -212,11 +212,11 @@
 | 188 | 2026-10-10 | [20260922-GHAS聯防與MAGENTA多Agent審計.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-GHAS聯防與MAGENTA多Agent審計.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 189 | 2026-10-10 | [20260922-SQL容器化與Azure-Arc混合資料平台.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-SQL容器化與Azure-Arc混合資料平台.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 190 | 2026-10-10 | [20260922-Tokenomics與Foundry成本優化.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-Tokenomics與Foundry成本優化.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 191 | 2026-10-10 | [20260927-OSINT與網路威脅情報分享.full.md](5-Master\2-Second-Year\Fall-Semester\20260927-Intro-to-OSINT-CTI\20260927-OSINT與網路威脅情報分享.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 192 | 2026-10-10 | [20260617-實驗室會前日常閒聊.full.md](5-Master\Archive\20260617-實驗室會前日常閒聊.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 193 | 2026-10-10 | [20260713-01-DRAVILaMA口試前夕視聽設備與雙軌連線架設.full.md](5-Master\Laboratory\Degree-Defense\20260713-01-DRAVILaMA口試前夕視聽設備與雙軌連線架設.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 194 | 2026-10-10 | [20260713-02-DRAVILaMA口試行政評分表單與審查規範點交.full.md](5-Master\Laboratory\Degree-Defense\20260713-02-DRAVILaMA口試行政評分表單與審查規範點交.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 195 | 2026-10-10 | [20260713-03-DRAVILaMA口試全真預演與指導教授逐頁指導.full.md](5-Master\Laboratory\Degree-Defense\20260713-03-DRAVILaMA口試全真預演與指導教授逐頁指導.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 191 | 2026-10-10 | [20260927-OSINT與網路威脅情報分享.full.md](5-Master\2-Second-Year\Fall-Semester\20260927-Intro-to-OSINT-CTI\20260927-OSINT與網路威脅情報分享.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 192 | 2026-10-10 | [20260617-實驗室會前日常閒聊.full.md](5-Master\Archive\20260617-實驗室會前日常閒聊.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 193 | 2026-10-10 | [20260713-01-DRAVILaMA口試前夕視聽設備與雙軌連線架設.full.md](5-Master\Laboratory\Degree-Defense\20260713-01-DRAVILaMA口試前夕視聽設備與雙軌連線架設.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 194 | 2026-10-10 | [20260713-02-DRAVILaMA口試行政評分表單與審查規範點交.full.md](5-Master\Laboratory\Degree-Defense\20260713-02-DRAVILaMA口試行政評分表單與審查規範點交.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 195 | 2026-10-10 | [20260713-03-DRAVILaMA口試全真預演與指導教授逐頁指導.full.md](5-Master\Laboratory\Degree-Defense\20260713-03-DRAVILaMA口試全真預演與指導教授逐頁指導.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 196 | 2026-10-10 | [20260714-01-DRAVILaMA正式學位論文口試與口委質詢攻防.full.md](5-Master\Laboratory\Degree-Defense\20260714-01-DRAVILaMA正式學位論文口試與口委質詢攻防.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 197 | 2026-10-10 | [20260714-02-DRAVILaMA口試通過閉門覆盤與論文修訂指示.full.md](5-Master\Laboratory\Degree-Defense\20260714-02-DRAVILaMA口試通過閉門覆盤與論文修訂指示.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 198 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part1.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part1.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
