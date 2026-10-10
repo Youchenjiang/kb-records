@@ -138,11 +138,11 @@
 | 113 | [20241125-01-角色授權與權責矩陣.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-01-角色授權與權責矩陣.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 85 個自然段落；角色授權、RACI 權責矩陣指派術語校對 |
 | 114 | [20241125-02-團隊心理調適與成果驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-02-團隊心理調適與成果驗收.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 83 個自然段落；團隊心理安全感、專案驗收與交付準則術語校對 |
 | 115 | [20241127-01-衝突解決矩陣與EVM動態控制.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-01-衝突解決矩陣與EVM動態控制.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 97 個自然段落；衝突解決策略、掙值管理 EVM 動態控制術語校對 |
-| 116 | [20241127-02-品質度量指標與工程驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-02-品質度量指標與工程驗收.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 117 | [20241209-模擬退火最佳化與背包問題演算法研討.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241209-模擬退火最佳化與背包問題演算法研討.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 118 | [20240606-Android醫療互動遊戲App架構與關卡控制.full.md](4-University\4-Capstone\Spring-Semester\ProjectDemo\20240606-Android醫療互動遊戲App架構與關卡控制.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 119 | [20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md](4-University\5-Extracurricular\NatureEcologyClub\20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 120 | [20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md](4-University\5-Extracurricular\NatureEcologyClub\20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 116 | [20241127-02-品質度量指標與工程驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-02-品質度量指標與工程驗收.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 72 個自然段落；EV/PV 掙值指標、採購合約管理、專案終止程序術語校對 |
+| 117 | [20241209-模擬退火最佳化與背包問題演算法研討.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241209-模擬退火最佳化與背包問題演算法研討.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 150~250 字；模擬退火演算法 Simulated Annealing、背包問題最佳化術語校對 |
+| 118 | [20240606-Android醫療互動遊戲App架構與關卡控制.full.md](4-University\4-Capstone\Spring-Semester\ProjectDemo\20240606-Android醫療互動遊戲App架構與關卡控制.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 445 個自然段落；Android 醫療互動遊戲架構、關卡流程控制術語校對 |
+| 119 | [20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md](4-University\5-Extracurricular\NatureEcologyClub\20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除逐句碎裂重構為 109 個自然段落；陸蟹生態調查、道路熱障礙與路殺防護術語校對 |
+| 120 | [20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md](4-University\5-Extracurricular\NatureEcologyClub\20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除逐句碎裂重構為 51 個自然段落；黃灰澤蟹掘穴生活史、斑腿樹蛙辨識與生態調查術語校對 |
 | 121 | [20240608-01-社團評鑑與財務收支結算研討.full.md](4-University\Archive\20240608-01-社團評鑑與財務收支結算研討.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 122 | [20240608-02-幹部改選與野外活動執行檢討.full.md](4-University\Archive\20240608-02-幹部改選與野外活動執行檢討.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 123 | [20241019-班級常規提醒與運動會幹部投票.full.md](4-University\Archive\20241019-班級常規提醒與運動會幹部投票.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |

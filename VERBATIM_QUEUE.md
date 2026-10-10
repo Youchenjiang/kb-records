@@ -137,11 +137,11 @@
 | 113 | 2026-10-10 | [20241125-01-角色授權與權責矩陣.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-01-角色授權與權責矩陣.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 114 | 2026-10-10 | [20241125-02-團隊心理調適與成果驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-02-團隊心理調適與成果驗收.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 115 | 2026-10-10 | [20241127-01-衝突解決矩陣與EVM動態控制.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-01-衝突解決矩陣與EVM動態控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
-| 116 | 2026-10-10 | [20241127-02-品質度量指標與工程驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-02-品質度量指標與工程驗收.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 117 | 2026-10-10 | [20241209-模擬退火最佳化與背包問題演算法研討.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241209-模擬退火最佳化與背包問題演算法研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 118 | 2026-10-10 | [20240606-Android醫療互動遊戲App架構與關卡控制.full.md](4-University\4-Capstone\Spring-Semester\ProjectDemo\20240606-Android醫療互動遊戲App架構與關卡控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 119 | 2026-10-10 | [20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md](4-University\5-Extracurricular\NatureEcologyClub\20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 120 | 2026-10-10 | [20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md](4-University\5-Extracurricular\NatureEcologyClub\20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 116 | 2026-10-10 | [20241127-02-品質度量指標與工程驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-02-品質度量指標與工程驗收.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 117 | 2026-10-10 | [20241209-模擬退火最佳化與背包問題演算法研討.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241209-模擬退火最佳化與背包問題演算法研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
+| 118 | 2026-10-10 | [20240606-Android醫療互動遊戲App架構與關卡控制.full.md](4-University\4-Capstone\Spring-Semester\ProjectDemo\20240606-Android醫療互動遊戲App架構與關卡控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 119 | 2026-10-10 | [20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md](4-University\5-Extracurricular\NatureEcologyClub\20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與碎裂句重構 |
+| 120 | 2026-10-10 | [20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md](4-University\5-Extracurricular\NatureEcologyClub\20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與碎裂句重構 |
 | 121 | 2026-10-10 | [20240608-01-社團評鑑與財務收支結算研討.full.md](4-University\Archive\20240608-01-社團評鑑與財務收支結算研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 122 | 2026-10-10 | [20240608-02-幹部改選與野外活動執行檢討.full.md](4-University\Archive\20240608-02-幹部改選與野外活動執行檢討.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 123 | 2026-10-10 | [20241019-班級常規提醒與運動會幹部投票.full.md](4-University\Archive\20241019-班級常規提醒與運動會幹部投票.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
