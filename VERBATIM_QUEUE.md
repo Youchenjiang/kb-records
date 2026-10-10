@@ -167,11 +167,11 @@
 | 143 | 2026-10-10 | [20260821-供應鏈攻擊-黑吃黑.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-供應鏈攻擊-黑吃黑.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 144 | 2026-10-10 | [20260821-閃電秀6場合輯.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-閃電秀6場合輯.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 145 | 2026-10-10 | [20260318-AI教育表現特徵工程與過濾法預測.full.md](5-Master\1-First-Year\Spring-Semester\20260318-EnglishAI-Presentation\20260318-AI教育表現特徵工程與過濾法預測.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 146 | 2026-10-10 | [20260327-AI焦慮與語音偽造.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-AI焦慮與語音偽造.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 147 | 2026-10-10 | [20260327-aMCI語篇研究.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-aMCI語篇研究.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 148 | 2026-10-10 | [20260327-智慧醫療失智症預測.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧醫療失智症預測.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 149 | 2026-10-10 | [20260327-智慧金融量化選股策略.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧金融量化選股策略.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 150 | 2026-10-10 | [20260327-機器學習特徵精簡管線.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-機器學習特徵精簡管線.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 146 | 2026-10-10 | [20260327-AI焦慮與語音偽造.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-AI焦慮與語音偽造.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 147 | 2026-10-10 | [20260327-aMCI語篇研究.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-aMCI語篇研究.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 148 | 2026-10-10 | [20260327-智慧醫療失智症預測.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧醫療失智症預測.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 149 | 2026-10-10 | [20260327-智慧金融量化選股策略.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧金融量化選股策略.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 150 | 2026-10-10 | [20260327-機器學習特徵精簡管線.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-機器學習特徵精簡管線.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 151 | 2026-10-10 | [20260327-特邀專題與學生論文.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-特邀專題與學生論文.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 152 | 2026-10-10 | [20260226-01-EMI英語課程導論與學術誠信.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260226-01-EMI英語課程導論與學術誠信.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 153 | 2026-10-10 | [20260305-Kaggle競賽流程與團隊實驗規劃.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260305-Kaggle競賽流程與團隊實驗規劃.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |

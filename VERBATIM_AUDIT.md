@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：145 篇
-- **待回頭審核 / 未合規**：68 篇
+- **已回頭嚴格審核通過**：150 篇
+- **待回頭審核 / 未合規**：63 篇
 
 ---
 
@@ -168,11 +168,11 @@
 | 143 | [20260821-供應鏈攻擊-黑吃黑.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-供應鏈攻擊-黑吃黑.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 150~280 字；開源供應鏈投毒、惡意套件黑吃黑攻防術語校對 |
 | 144 | [20260821-閃電秀6場合輯.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-閃電秀6場合輯.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 100~250 字；HITCON 閃電秀 6 場技術合輯、身分切換與專有名詞校對 |
 | 145 | [20260318-AI教育表現特徵工程與過濾法預測.full.md](5-Master\1-First-Year\Spring-Semester\20260318-EnglishAI-Presentation\20260318-AI教育表現特徵工程與過濾法預測.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分英語長句為 79 個自然段落；修正 output 拼寫，Jaccard 相似度與特徵工程術語校對 |
-| 146 | [20260327-AI焦慮與語音偽造.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-AI焦慮與語音偽造.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 147 | [20260327-aMCI語篇研究.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-aMCI語篇研究.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 148 | [20260327-智慧醫療失智症預測.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧醫療失智症預測.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 149 | [20260327-智慧金融量化選股策略.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧金融量化選股策略.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 150 | [20260327-機器學習特徵精簡管線.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-機器學習特徵精簡管線.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 146 | [20260327-AI焦慮與語音偽造.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-AI焦慮與語音偽造.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 73 個自然段落；BERTopic、LIWC、語音偽造特徵歸因術語校對 |
+| 147 | [20260327-aMCI語篇研究.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-aMCI語篇研究.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 76 個自然段落；aMCI 語篇結構、Lattice GCN、NBGCL 原型分佈術語校對 |
+| 148 | [20260327-智慧醫療失智症預測.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧醫療失智症預測.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 126 個自然段落；智慧醫療失智症早期篩檢、多模態圖卷積與特徵融合術語校對 |
+| 149 | [20260327-智慧金融量化選股策略.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧金融量化選股策略.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 125 個自然段落；動態因子濾網、ROE、量化選股策略與資料探勘偏誤術語校對 |
+| 150 | [20260327-機器學習特徵精簡管線.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-機器學習特徵精簡管線.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 112 個自然段落；機器學習特徵精簡、APK 混淆子圖與注意力池化術語校對 |
 | 151 | [20260327-特邀專題與學生論文.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-特邀專題與學生論文.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 152 | [20260226-01-EMI英語課程導論與學術誠信.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260226-01-EMI英語課程導論與學術誠信.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 153 | [20260305-Kaggle競賽流程與團隊實驗規劃.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260305-Kaggle競賽流程與團隊實驗規劃.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
