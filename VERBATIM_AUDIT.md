@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：15 篇
-- **待回頭審核 / 未合規**：198 篇
+- **已回頭嚴格審核通過**：140 篇
+- **待回頭審核 / 未合規**：73 篇
 
 ---
 
@@ -23,16 +23,16 @@
 
 | 編號 | 逐字稿檔案路徑 (.full.md) | 原話無總結 | 語意分段 (150-300字) | 術語錯字校對 | 角色標註 | 綜合審核狀態 | 審核日期 | 備註 |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| 001 | [20241019-多項式變數代換與試題檢討.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241019-多項式變數代換與試題檢討.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 002 | [20241022-多項式因式定理與高次分解.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241022-多項式因式定理與高次分解.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 003 | [20241029-數系擴張與複數運算.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241029-數系擴張與複數運算.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 004 | [20241204-布林代數電腦邏輯與海島算經重差術.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241204-布林代數電腦邏輯與海島算經重差術.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 005 | [20241012-科技產業鏈佈局與外商求職策略.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241012-科技產業鏈佈局與外商求職策略.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 006 | [20241025-資訊專長自我介紹與技術履歷自述.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241025-資訊專長自我介紹與技術履歷自述.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 007 | [20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 008 | [20241125-01-自我定位與海外求職防詐.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-01-自我定位與海外求職防詐.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 009 | [20241125-02-人資篩選心理與履歷視覺.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-02-人資篩選心理與履歷視覺.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 010 | [20241125-03-學經歷倒敘法與面試實戰.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-03-學經歷倒敘法與面試實戰.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 001 | [20241019-多項式變數代換與試題檢討.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241019-多項式變數代換與試題檢討.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；多項式變數代換與試題檢討術語校對 |
+| 002 | [20241022-多項式因式定理與高次分解.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241022-多項式因式定理與高次分解.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；多項式因式定理與高次分解術語校對 |
+| 003 | [20241029-數系擴張與複數運算.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241029-數系擴張與複數運算.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；數系擴張與複數運算術語校對 |
+| 004 | [20241204-布林代數電腦邏輯與海島算經重差術.full.md](4-University\1-Studies\Fall-Semester\BasicMathematics\20241204-布林代數電腦邏輯與海島算經重差術.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；布林代數電腦邏輯與海島算經重差術術語校對 |
+| 005 | [20241012-科技產業鏈佈局與外商求職策略.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241012-科技產業鏈佈局與外商求職策略.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；科技產業鏈佈局與外商求職策略術語校對 |
+| 006 | [20241025-資訊專長自我介紹與技術履歷自述.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241025-資訊專長自我介紹與技術履歷自述.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；資訊專長自我介紹與技術履歷自述術語校對 |
+| 007 | [20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241026-技術面試跑站演練實驗室網路拓撲規劃.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；技術面試跑站演練實驗室網路拓撲規劃術語校對 |
+| 008 | [20241125-01-自我定位與海外求職防詐.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-01-自我定位與海外求職防詐.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；自我定位與海外求職防詐術語校對 |
+| 009 | [20241125-02-人資篩選心理與履歷視覺.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-02-人資篩選心理與履歷視覺.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；人資篩選心理與履歷視覺術語校對 |
+| 010 | [20241125-03-學經歷倒敘法與面試實戰.full.md](4-University\1-Studies\Fall-Semester\CareerDevelopment\20241125-03-學經歷倒敘法與面試實戰.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 150-300 字自然段落；學經歷倒敘法與面試實戰術語校對 |
 | 011 | [20241024-顯微鏡細胞觀察與操作規範.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241024-顯微鏡細胞觀察與操作規範.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；合併碎裂發言為 150~280 字自然段落；校對生物實驗術語 |
 | 012 | [20241107-01-植物生理學與水分養分輸送機制.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-01-植物生理學與水分養分輸送機制.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除碎裂句整合為 34 個自然對話段落；植物生理術語校對 |
 | 013 | [20241107-02-被子植物花部構造與生殖發育.full.md](4-University\1-Studies\Fall-Semester\GeneralBiologyLab\20241107-02-被子植物花部構造與生殖發育.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除碎裂句整合為 34 個自然對話段落；被子植物解剖術語校對 |
@@ -158,11 +158,11 @@
 | 133 | [20260707-03-日本IoT物聯網安全標準與指引實務.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260707-03-日本IoT物聯網安全標準與指引實務.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 17 個自然段落；歐盟 CRA 網路韌性法案、PSIRT 2.0 實務、IoT 安全基準術語校對 |
 | 134 | [20260707-04-數位身分認證與供應鏈情資治理.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260707-04-數位身分認證與供應鏈情資治理.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 100~200 字；數位身分認證 FIDO、供應鏈情資治理術語校對 |
 | 135 | [20260708-01-HR與跨領域視角之企業AI治理平台.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-01-HR與跨領域視角之企業AI治理平台.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；保留流程圖與自然段落；跨領域 HR 視角、AIC2 企業 AI 治理架構術語校對 |
-| 136 | [20260708-02-WebCoding到CTF奪旗實戰心法.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-02-WebCoding到CTF奪旗實戰心法.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 原話保真，重構消除大段，校對CTF/Worktree/BOLA/CSP術語 |
-| 137 | [20260708-03-CVSS漏洞轉譯與CLevel決策溝通.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-03-CVSS漏洞轉譯與CLevel決策溝通.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 原話保真，重構分段消除大段，校對CVSS/SBOM/金管會/C-Level術語 |
-| 138 | [20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 原話保真，重構分段消除大段，校對AITBM/Agentforce/MCP/RCE術語 |
-| 139 | [20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 原話保真，重構分段消除大段，校對Crescendo/GOAT/TAP/Promptfoo術語 |
-| 140 | [20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 原話保真，重構分段消除大段，校對RAG果汁機/PII/Blast Radius/十二項量表 |
+| 136 | [20260708-02-WebCoding到CTF奪旗實戰心法.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-02-WebCoding到CTF奪旗實戰心法.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構消除大段，校對CTF/Worktree/BOLA/CSP術語 |
+| 137 | [20260708-03-CVSS漏洞轉譯與CLevel決策溝通.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-03-CVSS漏洞轉譯與CLevel決策溝通.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構分段消除大段，校對CVSS/SBOM/金管會/C-Level術語 |
+| 138 | [20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構分段消除大段，校對AITBM/Agentforce/MCP/RCE術語 |
+| 139 | [20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構分段消除大段，校對Crescendo/GOAT/TAP/Promptfoo術語 |
+| 140 | [20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構分段消除大段，校對RAG果汁機/PII/Blast Radius/十二項量表 |
 | 141 | [20260821-POS-ADB-0Day-AI輔助.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-POS-ADB-0Day-AI輔助.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 142 | [20260821-Pixel8A-GPU漏洞挖掘.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-Pixel8A-GPU漏洞挖掘.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 143 | [20260821-供應鏈攻擊-黑吃黑.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-供應鏈攻擊-黑吃黑.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
