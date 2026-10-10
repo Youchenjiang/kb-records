@@ -127,11 +127,11 @@
 | 103 | 2026-10-10 | [20250124-05-16-08-安全控制評估與第三方供應商風險.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250124-05-16-08-安全控制評估與第三方供應商風險.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 104 | 2026-10-10 | [20250127-實作環境安裝與演練.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250127-實作環境安裝與演練.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
 | 105 | 2026-10-10 | [20250128-隱私法規與考試須知.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250128-隱私法規與考試須知.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
-| 106 | 2026-10-10 | [20241015-直接成本與預算編列.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241015-直接成本與預算編列.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 107 | 2026-10-10 | [20241021-生命週期與WBS工作分解.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241021-生命週期與WBS工作分解.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 108 | 2026-10-10 | [20241023-01-進度查核點與團隊溝通.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241023-01-進度查核點與團隊溝通.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 109 | 2026-10-10 | [20241023-02-CPM關鍵路徑與變更控制.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241023-02-CPM關鍵路徑與變更控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 110 | 2026-10-10 | [20241119-01-人力配置矩陣與外包採購.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-01-人力配置矩陣與外包採購.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 106 | 2026-10-10 | [20241015-直接成本與預算編列.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241015-直接成本與預算編列.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 107 | 2026-10-10 | [20241021-生命週期與WBS工作分解.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241021-生命週期與WBS工作分解.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 108 | 2026-10-10 | [20241023-01-進度查核點與團隊溝通.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241023-01-進度查核點與團隊溝通.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 109 | 2026-10-10 | [20241023-02-CPM關鍵路徑與變更控制.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241023-02-CPM關鍵路徑與變更控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 110 | 2026-10-10 | [20241119-01-人力配置矩陣與外包採購.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-01-人力配置矩陣與外包採購.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與段落長度控制 |
 | 111 | 2026-10-10 | [20241119-02-成本風險矩陣與利害關係人.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-02-成本風險矩陣與利害關係人.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 112 | 2026-10-10 | [20241119-03-跨世代研發團隊協作.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-03-跨世代研發團隊協作.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 113 | 2026-10-10 | [20241125-01-角色授權與權責矩陣.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-01-角色授權與權責矩陣.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
