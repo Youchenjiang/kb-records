@@ -132,11 +132,11 @@
 | 108 | 2026-10-10 | [20241023-01-進度查核點與團隊溝通.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241023-01-進度查核點與團隊溝通.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 109 | 2026-10-10 | [20241023-02-CPM關鍵路徑與變更控制.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241023-02-CPM關鍵路徑與變更控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 110 | 2026-10-10 | [20241119-01-人力配置矩陣與外包採購.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-01-人力配置矩陣與外包採購.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與段落長度控制 |
-| 111 | 2026-10-10 | [20241119-02-成本風險矩陣與利害關係人.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-02-成本風險矩陣與利害關係人.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 112 | 2026-10-10 | [20241119-03-跨世代研發團隊協作.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-03-跨世代研發團隊協作.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 113 | 2026-10-10 | [20241125-01-角色授權與權責矩陣.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-01-角色授權與權責矩陣.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 114 | 2026-10-10 | [20241125-02-團隊心理調適與成果驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-02-團隊心理調適與成果驗收.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 115 | 2026-10-10 | [20241127-01-衝突解決矩陣與EVM動態控制.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-01-衝突解決矩陣與EVM動態控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 111 | 2026-10-10 | [20241119-02-成本風險矩陣與利害關係人.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-02-成本風險矩陣與利害關係人.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 112 | 2026-10-10 | [20241119-03-跨世代研發團隊協作.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241119-03-跨世代研發團隊協作.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 113 | 2026-10-10 | [20241125-01-角色授權與權責矩陣.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-01-角色授權與權責矩陣.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 114 | 2026-10-10 | [20241125-02-團隊心理調適與成果驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241125-02-團隊心理調適與成果驗收.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 115 | 2026-10-10 | [20241127-01-衝突解決矩陣與EVM動態控制.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-01-衝突解決矩陣與EVM動態控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 116 | 2026-10-10 | [20241127-02-品質度量指標與工程驗收.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241127-02-品質度量指標與工程驗收.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 117 | 2026-10-10 | [20241209-模擬退火最佳化與背包問題演算法研討.full.md](4-University\4-Capstone\Fall-Semester\ProjectManagement\20241209-模擬退火最佳化與背包問題演算法研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 118 | 2026-10-10 | [20240606-Android醫療互動遊戲App架構與關卡控制.full.md](4-University\4-Capstone\Spring-Semester\ProjectDemo\20240606-Android醫療互動遊戲App架構與關卡控制.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
