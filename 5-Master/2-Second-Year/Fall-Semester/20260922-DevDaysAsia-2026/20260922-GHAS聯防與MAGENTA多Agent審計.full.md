@@ -20,13 +20,17 @@ scenario: "single-talk"
 
 進來之後我們還有叫 Secret Scanning，看你的金鑰有沒有被暴露了。那我們在寫 Code 用 AI 寫 Code 時，它輸入太快，有時候金鑰真的不小心被暴露了，那它可以幫你偵測到你金鑰暴露了。它還可以幫你跟另外一個廠商，比如說 AWS 聯動，跟他們講說金鑰洩漏了要直接 Revoke，它可以做到這樣的事情。
 
-那另外一個就是我們剛剛前面講說，我的程式碼越多，我的弱點就越多。這個地方的問題是什麼？不是只有我們自己公司的程式碼，是每一個開源專案的程式碼都有一樣的問題。在之前呢，寫 Linux 的作者 Linus Torvalds 就說，他以前是幾個禮拜才來幾個 Patch 單，那現在則是天天都有修補進來，那有的是真的、有的是假的，因為所有的 Open Source 不論是被攻擊或是被惡意提交不斷進來，所以它會有很多的問題。因此在整個流程裡面，Dependency Scanning 也非常重要，要不然你就是把炸彈綁在身上等著爆炸。那最後一個呢就是 Code Scanning，Code Scanning（CodeQL）在掃的時候會看到你程式碼中的弱點，它就可以直接幫你去做一個 Check，找到問題就直接解掉。
+那另外一個就是我們剛剛前面講說，我的程式碼越多，我的弱點就越多。這個地方的問題是什麼？不是只有我們自己公司的程式碼，是每一個開源專案的程式碼都有一樣的問題。在之前呢，寫 Linux 的作者 Linus Torvalds 就說，他以前是幾個禮拜才來幾個 Patch 單，那現在則是天天都有修補進來，那有的是真的、有的是假的，因為所有的 Open Source 不論是被攻擊或是被惡意提交不斷進來，所以它會有很多的問題。因此在整個流程裡面，Dependency Scanning 也非常重要，要不然你就是把炸彈綁在身上等著爆炸。
+
+那最後一個呢就是 Code Scanning，Code Scanning（CodeQL）在掃的時候會看到你程式碼中的弱點，它就可以直接幫你去做一個 Check，找到問題就直接解掉。
 
 那我們來看一個展示。這個展示呢就是我們現在有一段程式碼寫好了，把它 Commit 上去。Commit 上去的時候呢，我們前面在講這件事情，就是說雖然我們每一個人他都已經可以做到很大幅度 End-to-End 的開發了，但是我們其實還是需要有一個系統來幫忙做把關，要不然的話會亂掉。
 
 那我再分享一下微軟內部怎麼樣做這件事情。微軟的人也是蠻會用 AI 的嘛，他們怎麼樣去做到這樣子的流程？事實上就是說做 PM 的訪談完需求之後，就把需求變成一個規格版本；那前端工程師拿到需求，把它整合變成一個 Commit 的版本；再給到後端、再給到 DB 的同仁，每個人的交付都是程式碼的交付。程式碼交付雖然 AI 可以寫很多程式碼，但 PM、前端、後端在理解這些需求時都會把自己的專業放上去。
 
-好，那我們現在把程式碼丟上去之後，第一個動作要 Code Review。看到右上角這邊 Reviewer 呢，我們就用 AI 來幫忙做 Code Review。AI 在 Code Review 的時候事實上在後面會起一個 PR Review Agent 去掃，掃完之後跟你講說這邊有問題。有問題的話呢，下面就可以看到有個叫做『Fix with Copilot』，AI 找到的弱點就交給 AI 修復！展示給大家看這種有 UI 介面的，事實上沒有 UI 介面也可以直接跟 Copilot 對話直接把弱點全部修掉。Commit 上去自動由 AI 做 Review，綁定 Issue 單號，再透過雲端 Coding Agent 在乾淨環境極速修復，速度非常快。
+好，那我們現在把程式碼丟上去之後，第一個動作要 Code Review。看到右上角這邊 Reviewer 呢，我們就用 AI 來幫忙做 Code Review。AI 在 Code Review 的時候事實上在後面會起一個 PR Review Agent 去掃，掃完之後跟你講說這邊有問題。有問題的話呢，下面就可以看到有個叫做『Fix with Copilot』，AI 找到的弱點就交給 AI 修復！展示給大家看這種有 UI 介面的，事實上沒有 UI 介面也可以直接跟 Copilot 對話直接把弱點全部修掉。
+
+Commit 上去自動由 AI 做 Review，綁定 Issue 單號，再透過雲端 Coding Agent 在乾淨環境極速修復，速度非常快。
 
 以前我們拆專案任務要拆得很乾淨，10 個 Task 不能 Overlap，要不然 Merge 會很麻煩；現在不會有這個問題，因為 Agent 寫完之後即使 Conflict，它自己可以去 Resolve Conflict，非常方便。
 
@@ -44,7 +48,9 @@ scenario: "single-talk"
 
 來看實際演示：作為 Security Admin，在 Attack Path Analysis 中，看到一個潛在攻擊路徑：Zav Webshop 容器暴露於網際網路，有三條不同路由可以存取該容器，進而連向後端的 Storage Account，而儲存體內存放了敏感資料（如美國社會安全號碼 SSN）。管理者點擊建議，看到關聯的 CVE 弱點，直接在 Defender 內將這些 CodeQL Findings 關聯到對應的 GitHub Repository。
 
-現在切換成開發者視角：在 GitHub Packages 的 Linked Artifacts 中，開發者清楚看見 Webshop 容器 Registry、部署區域甚至是 Commit Signature 的完整映射。SecOps 管理者建立一個『Security Campaign』，透過 Runtime Risk 篩選器（如 Internet-exposed 與 Attack Path），將原本 114 個待修問題精準收斂至最致命的 9 個！發布 Campaign 後，每個風險項目都附帶 AI 建議修復方案（Copilot Autofix），開發者可以直接批次指派給 Copilot 自動修復並提交 PR！SecOps 掌握全貌開單，開發者迅速修復，形成完美的雲地聯防。
+現在切換成開發者視角：在 GitHub Packages 的 Linked Artifacts 中，開發者清楚看見 Webshop 容器 Registry、部署區域甚至是 Commit Signature 的完整映射。SecOps 管理者建立一個『Security Campaign』，透過 Runtime Risk 篩選器（如 Internet-exposed 與 Attack Path），將原本 114 個待修問題精準收斂至最致命的 9 個！
+
+發布 Campaign 後，每個風險項目都附帶 AI 建議修復方案（Copilot Autofix），開發者可以直接批次指派給 Copilot 自動修復並提交 PR！SecOps 掌握全貌開單，開發者迅速修復，形成完美的雲地聯防。
 
 ## 🧠 MAGENTA：100+ 多模型 Agent 自主弱點挖掘與 PoC 驗證框架
 
@@ -55,7 +61,9 @@ scenario: "single-talk"
 它的運作流程至關重要：
 1. 完整掃描整個數位資產（可能是 10 個關聯 Repository）並建立 Threat Modeling；
 2. 啟動 100+ 個專精 Agent，各自從不同維度進行弱點探測。每個 Agent 的視角不同、採用的模型不同，驗證完後模型之間還會互相對話辯論（Debate）！這極為關鍵，因為單一模型在訓練時天生帶有偏見與盲點，透過多模型交叉驗證才能消除冗餘；
-3. 最重要的一步：自動生成可執行的 PoC（Proof of Concept）去驗證弱點是否真的可以被 Exploit！確認能打穿之後再產出修復方案。它看的不是單一孤立點，而是整個攻擊面。
+3. 最重要的一步：自動生成可執行的 PoC（Proof of Concept）去驗證弱點是否真的可以被 Exploit！確認能打穿之後再產出修復方案。
+
+它看的不是單一孤立點，而是整個攻擊面。
 
 我們將過去五年微軟歷史測試案例拿來跑 MAGENTA，發現基準檢驗能力提升了 96.5%，121 個歷史重大缺陷 100% 全數抓出！這代表在防守團隊中，我們不再使用單一 Prompt，而是透過『Agent Harness』框架整合上百個 Agent 協同作戰，且掃描後一定有 PoC 驗證基礎。
 
@@ -89,7 +97,9 @@ scenario: "single-talk"
 1. **資產盤點**：內建查詢跨雲盤點模型與關聯資源；
 2. **攻擊路徑剖析**：一台對外開放且存在弱點的 VM，透過認證與權限連向另一朵雲的模型服務；
 3. **即時攻擊攔截**：訂房對話中，攻擊者從詢問付款方式，突變為冒充系統管理員索取信用卡的 Prompt Injection（提示詞注入越獄）。雖然提示防護即時擋下，但 Defender XDR 不會就此停止調查；
-4. **關聯活動還原**：將敏感資料暴露、憑證竊取、越獄嘗試串成單一 Incident，比對來源 IP、驗證方式與可疑 Prompt；
+4.
+
+**關聯活動還原**：將敏感資料暴露、憑證竊取、越獄嘗試串成單一 Incident，比對來源 IP、驗證方式與可疑 Prompt；
 5. **架構根因修復**：改用受控受限的受控識別碼（Managed Identity）、停用共用金鑰、限縮網路存取範圍，並對模型接觸個人金融資料的權限實施最小化授權。
 
 這就是完整的防護循環：看見資產 $\rightarrow$ 理解風險 $\rightarrow$ 調查事件 $\rightarrow$ 持續改善。

@@ -41,7 +41,9 @@ Project Perception 認為：我們的 SOC 不應該只是停留在被動防守�
 演講尾聲由微軟架構師與主持人進行有獎徵答：
 * **Q1：Security Copilot 在微軟產品中有哪兩種 AI 模式？**
   * 現場觀眾回答：『輔助式（Assistive）與 自助式／自主式（Autonomous）！』——答對獲獎！早期是輔助式（Human-in-the-loop），現在正加速朝向自主式發展，最大程度降低人工介入。
-* **Q2：Sentinel MCP Server 官方工具集合不包含下列哪一項？**
+* **Q2：Sentinel MCP Server 官方工具集合不包含下列哪一項？
+
+**
   * 選項：(A) Data Exploration (B) Security Copilot Agent Creation (C) Triage Agent (D) Firewall Provisioning。
   * 現場觀眾回答：『(D) Firewall Provisioning！』——答對獲獎！
 * **Q3：Agentic SOC 在威脅調查的情境當中，成效是什麼？**
