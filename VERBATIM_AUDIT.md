@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：170 篇
-- **待回頭審核 / 未合規**：43 篇
+- **已回頭嚴格審核通過**：175 篇
+- **待回頭審核 / 未合規**：38 篇
 
 ---
 
@@ -193,11 +193,11 @@
 | 168 | [20260225-研究方法-01-課程導論與研究動機.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260225-研究方法-01-課程導論與研究動機.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 145 個自然段落；研究方法導論、歸納法 vs 演繹法、研究動機與理論邊界校對 |
 | 169 | [20260304-01-概念操作化與變數定義.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-01-概念操作化與變數定義.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 102 個自然段落；概念操作化、構念效度、中介變數與調節變數定義術語校對 |
 | 170 | [20260304-02-假說建立與理論框架實證.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-02-假說建立與理論框架實證.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 76 個自然段落；研究假說建立、理論框架實證與薪資佣金制度案例術語校對 |
-| 171 | [20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 172 | [20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 173 | [20260924-管理溝通-Week03-科技與商務決策溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260924-管理溝通-Week03-科技與商務決策溝通.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 174 | [20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 175 | [20260912-01-全台大專資安社團企劃成果發表.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-01-全台大專資安社團企劃成果發表.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 171 | [20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 474 個自然段落；管理溝通導論、跨文化商務溝通、語氣情境與預算模擬術語校對 |
+| 172 | [20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 418 個自然段落；學員專業定位、英語自我介紹、核心職能與職業發展術語校對 |
+| 173 | [20260924-管理溝通-Week03-科技與商務決策溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260924-管理溝通-Week03-科技與商務決策溝通.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 360 個自然段落；科技引進評估、商務決策溝通、高層說服與價值論述術語校對 |
+| 174 | [20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 319 個自然段落；受眾分析（Audience Analysis）、金字塔簡報結構設計術語校對 |
+| 175 | [20260912-01-全台大專資安社團企劃成果發表.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-01-全台大專資安社團企劃成果發表.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 99 個自然段落；AIS3 資安社團企劃發表、CTF 寒假營隊規劃、雲科大場地與業界交流校對 |
 | 176 | [20260912-02-CTF題目設計與競賽營運實務.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-02-CTF題目設計與競賽營運實務.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 177 | [20260912-03-CTF題目設計發表演練-Web安全.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-03-CTF題目設計發表演練-Web安全.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 178 | [20260912-04-教育部資安社團補助說明與經費核銷規範.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-04-教育部資安社團補助說明與經費核銷規範.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
