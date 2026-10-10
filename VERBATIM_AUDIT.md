@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：165 篇
-- **待回頭審核 / 未合規**：48 篇
+- **已回頭嚴格審核通過**：170 篇
+- **待回頭審核 / 未合規**：43 篇
 
 ---
 
@@ -188,11 +188,11 @@
 | 163 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 102 個自然段落；決策樹 ID3 演算法、資訊增益 Information Gain 與剪枝策略校對 |
 | 164 | [20260302-02-單純貝氏與SVM原理.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-02-單純貝氏與SVM原理.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 97 個自然段落；單純貝氏 Naive Bayes、條件機率、SVM 支援向量機與超平面術語校對 |
 | 165 | [20260309-01-深度學習與多層感知機.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-01-深度學習與多層感知機.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 75 個自然段落；深度學習前饋神經網路、多層感知機 MLP、反向傳播與激活函數校對 |
-| 166 | [20260309-02-特徵萃取與梯度下降最佳化.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-02-特徵萃取與梯度下降最佳化.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 167 | [20260309-03-SVM最大間距與軟邊界.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-03-SVM最大間距與軟邊界.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 168 | [20260225-研究方法-01-課程導論與研究動機.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260225-研究方法-01-課程導論與研究動機.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 169 | [20260304-01-概念操作化與變數定義.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-01-概念操作化與變數定義.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 170 | [20260304-02-假說建立與理論框架實證.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-02-假說建立與理論框架實證.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 166 | [20260309-02-特徵萃取與梯度下降最佳化.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-02-特徵萃取與梯度下降最佳化.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 150~280 字；特徵萃取、損失函數凸性與梯度下降最佳化術語校對 |
+| 167 | [20260309-03-SVM最大間距與軟邊界.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-03-SVM最大間距與軟邊界.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 150~280 字；SVM 最大間距超平面、鬆弛變數與軟邊界最佳化術語校對 |
+| 168 | [20260225-研究方法-01-課程導論與研究動機.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260225-研究方法-01-課程導論與研究動機.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 145 個自然段落；研究方法導論、歸納法 vs 演繹法、研究動機與理論邊界校對 |
+| 169 | [20260304-01-概念操作化與變數定義.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-01-概念操作化與變數定義.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 102 個自然段落；概念操作化、構念效度、中介變數與調節變數定義術語校對 |
+| 170 | [20260304-02-假說建立與理論框架實證.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-02-假說建立與理論框架實證.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 76 個自然段落；研究假說建立、理論框架實證與薪資佣金制度案例術語校對 |
 | 171 | [20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 172 | [20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 173 | [20260924-管理溝通-Week03-科技與商務決策溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260924-管理溝通-Week03-科技與商務決策溝通.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |

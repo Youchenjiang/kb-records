@@ -187,11 +187,11 @@
 | 163 | 2026-10-10 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 164 | 2026-10-10 | [20260302-02-單純貝氏與SVM原理.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-02-單純貝氏與SVM原理.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 165 | 2026-10-10 | [20260309-01-深度學習與多層感知機.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-01-深度學習與多層感知機.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 166 | 2026-10-10 | [20260309-02-特徵萃取與梯度下降最佳化.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-02-特徵萃取與梯度下降最佳化.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 167 | 2026-10-10 | [20260309-03-SVM最大間距與軟邊界.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-03-SVM最大間距與軟邊界.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 168 | 2026-10-10 | [20260225-研究方法-01-課程導論與研究動機.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260225-研究方法-01-課程導論與研究動機.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 169 | 2026-10-10 | [20260304-01-概念操作化與變數定義.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-01-概念操作化與變數定義.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 170 | 2026-10-10 | [20260304-02-假說建立與理論框架實證.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-02-假說建立與理論框架實證.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 166 | 2026-10-10 | [20260309-02-特徵萃取與梯度下降最佳化.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-02-特徵萃取與梯度下降最佳化.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 167 | 2026-10-10 | [20260309-03-SVM最大間距與軟邊界.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-03-SVM最大間距與軟邊界.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 168 | 2026-10-10 | [20260225-研究方法-01-課程導論與研究動機.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260225-研究方法-01-課程導論與研究動機.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 169 | 2026-10-10 | [20260304-01-概念操作化與變數定義.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-01-概念操作化與變數定義.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 170 | 2026-10-10 | [20260304-02-假說建立與理論框架實證.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260304-02-假說建立與理論框架實證.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 171 | 2026-10-10 | [20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260910-管理溝通-Week01-課程導論與組織管理溝通.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 172 | 2026-10-10 | [20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260917-管理溝通-Week02-專業定位與學員英語自介發表.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 173 | 2026-10-10 | [20260924-管理溝通-Week03-科技與商務決策溝通.full.md](5-Master\2-Second-Year\Fall-Semester\2026-Managerial-Communication\20260924-管理溝通-Week03-科技與商務決策溝通.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
