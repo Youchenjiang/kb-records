@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：180 篇
-- **待回頭審核 / 未合規**：33 篇
+- **已回頭嚴格審核通過**：185 篇
+- **待回頭審核 / 未合規**：28 篇
 
 ---
 
@@ -203,11 +203,11 @@
 | 178 | [20260912-04-教育部資安社團補助說明與經費核銷規範.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AIS3-Club-Training\20260912-04-教育部資安社團補助說明與經費核銷規範.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 18 個自然段落；教育部資安社團補助計畫、經費編列上限與單據核銷規範校對 |
 | 179 | [20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-AWS-CloudTrail-DuckDB-Detection\20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 231 個自然段落；AWS CloudTrail 日誌工程、DuckDB 本地查詢與 SigmaHQ 威脅狩獵規則校對 |
 | 180 | [20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md](5-Master\2-Second-Year\Fall-Semester\20260912-SNES-Mario-ACE-Exploit\20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 58 個自然段落；SNES 超級任天堂硬體架構、記憶體精準覆寫與任意代碼執行 ACE 逆向解析校對 |
-| 181 | [20260916-01-何毅仁教授特邀演講-從資管思維到AI前沿研究.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-01-何毅仁教授特邀演講-從資管思維到AI前沿研究.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 182 | [20260916-02-資管專題與學位論文研究方法論.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-02-資管專題與學位論文研究方法論.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 183 | [20260916-03-大專資安社團成立大會與社員迎新說明.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-03-大專資安社團成立大會與社員迎新說明.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 184 | [20260919-ETF造市商機制與折溢價套利實務.full.md](5-Master\2-Second-Year\Fall-Semester\20260919-Financial-Trading\20260919-ETF造市商機制與折溢價套利實務.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 185 | [20260922-AI時代工程師定位與軟體民主化.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-AI時代工程師定位與軟體民主化.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 181 | [20260916-01-何毅仁教授特邀演講-從資管思維到AI前沿研究.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-01-何毅仁教授特邀演講-從資管思維到AI前沿研究.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除逐句碎裂重構為 118 個自然段落；何毅仁教授特邀演講、演算法司法量刑偏誤與資管思維校對 |
+| 182 | [20260916-02-資管專題與學位論文研究方法論.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-02-資管專題與學位論文研究方法論.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除逐句碎裂重構為 100 個自然段落；碩士學位論文選題、研究設計與方法論框架校對 |
+| 183 | [20260916-03-大專資安社團成立大會與社員迎新說明.full.md](5-Master\2-Second-Year\Fall-Semester\20260916-Special-Lecture\20260916-03-大專資安社團成立大會與社員迎新說明.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除逐句碎裂重構為 22 個自然段落；大專資安社團成立大會、社員培訓與活動規劃校對 |
+| 184 | [20260919-ETF造市商機制與折溢價套利實務.full.md](5-Master\2-Second-Year\Fall-Semester\20260919-Financial-Trading\20260919-ETF造市商機制與折溢價套利實務.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除逐句碎裂重構為 194 個自然段落；ETF 造市商報價機制、申贖清單 PCF、折溢價套利與高頻造市校對 |
+| 185 | [20260922-AI時代工程師定位與軟體民主化.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-AI時代工程師定位與軟體民主化.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 35 個自然段落；DevDays Asia 微軟研討會、AI Agent 實機演練、MCP Server 與軟體民主化校對 |
 | 186 | [20260922-AI評測與UL315治理.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-AI評測與UL315治理.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 187 | [20260922-Agentic-SOC與資安研究交流.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-Agentic-SOC與資安研究交流.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 188 | [20260922-GHAS聯防與MAGENTA多Agent審計.full.md](5-Master\2-Second-Year\Fall-Semester\20260922-DevDaysAsia-2026\20260922-GHAS聯防與MAGENTA多Agent審計.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
