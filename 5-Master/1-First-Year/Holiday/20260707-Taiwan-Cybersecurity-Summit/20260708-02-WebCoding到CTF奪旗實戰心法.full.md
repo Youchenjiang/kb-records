@@ -70,6 +70,7 @@ verbatim: true
 畫面上看起來很漂亮、UI 很完整，但在這座冰山底下，AI 寫出來的程式碼塞滿了不可思議的安全漏洞：
 1. **邏輯繞過（Business Logic Bypass）**：前端雖然擋住未通關的使用者，但底層 API 根本沒有驗證遊戲狀態！任何人不需要回答任何題目，只要自己對後端發送一個 API Request，就能直接取得通關 Flag 與大結局！
 2. **完全裸奔的 API 與越權存取（BOLA / IDOR）**：API 完全沒有做 Session 與角色權限管控（Authorization），任何人都能呼叫管理端介面。
+
 3. **過度放寬且危險的 CSP（Content Security Policy）**：AI 為了讓內嵌腳本能動，在 HTTP Header 裡設定了極其糟糕的 CSP，甚至直接開啟 `unsafe-inline` 與 `unsafe-eval`，把 XSS 防護門戶大開。
 4. **過度簡化且脆弱的認證機制**：密碼處理與 Token 機制漏洞百出。
 5. **程式碼過度設計（Over-engineering）與防禦失靈**：明明不需要的地方塞滿了層層無意義的 `try-catch` 和冗長的 `if-else`，真正關鍵的邊界條件卻完全漏掉。
