@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：150 篇
-- **待回頭審核 / 未合規**：63 篇
+- **已回頭嚴格審核通過**：155 篇
+- **待回頭審核 / 未合規**：58 篇
 
 ---
 
@@ -173,11 +173,11 @@
 | 148 | [20260327-智慧醫療失智症預測.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧醫療失智症預測.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 126 個自然段落；智慧醫療失智症早期篩檢、多模態圖卷積與特徵融合術語校對 |
 | 149 | [20260327-智慧金融量化選股策略.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧金融量化選股策略.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 125 個自然段落；動態因子濾網、ROE、量化選股策略與資料探勘偏誤術語校對 |
 | 150 | [20260327-機器學習特徵精簡管線.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-機器學習特徵精簡管線.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 112 個自然段落；機器學習特徵精簡、APK 混淆子圖與注意力池化術語校對 |
-| 151 | [20260327-特邀專題與學生論文.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-特邀專題與學生論文.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 152 | [20260226-01-EMI英語課程導論與學術誠信.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260226-01-EMI英語課程導論與學術誠信.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 153 | [20260305-Kaggle競賽流程與團隊實驗規劃.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260305-Kaggle競賽流程與團隊實驗規劃.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 154 | [20260312-GitHub與Kaggle資料科學管線.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260312-GitHub與Kaggle資料科學管線.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 155 | [20260319-專案提案全英語發表與評審問答.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260319-專案提案全英語發表與評審問答.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 151 | [20260327-特邀專題與學生論文.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-特邀專題與學生論文.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為自然段落；Obfuscapk/BSH、zk-SNARKs、格蘭傑因果 TGCN 術語校對 |
+| 152 | [20260226-01-EMI英語課程導論與學術誠信.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260226-01-EMI英語課程導論與學術誠信.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 273 個自然段落；EMI 英語授課導論、學術誠信與 Kaggle 競賽規範校對 |
+| 153 | [20260305-Kaggle競賽流程與團隊實驗規劃.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260305-Kaggle競賽流程與團隊實驗規劃.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 243 個自然段落；Kaggle 資料集前處理、團隊實驗分工與評估指標術語校對 |
+| 154 | [20260312-GitHub與Kaggle資料科學管線.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260312-GitHub與Kaggle資料科學管線.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 336 個自然段落；GitHub 版本控制、Kaggle API 管線自動化實作術語校對 |
+| 155 | [20260319-專案提案全英語發表與評審問答.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260319-專案提案全英語發表與評審問答.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 722 個自然段落；專案提案全英語發表、評審問答與 Random Forest 術語校對 |
 | 156 | [20260326-KMeans分群演算法與向量空間.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260326-KMeans分群演算法與向量空間.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 157 | [20260409-自然語言處理與情感分類基準.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260409-自然語言處理與情感分類基準.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 158 | [20260430-動漫預測模型與偏誤緩解發表.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260430-動漫預測模型與偏誤緩解發表.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
