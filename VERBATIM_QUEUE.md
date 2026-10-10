@@ -147,11 +147,11 @@
 | 123 | 2026-10-10 | [20241019-班級常規提醒與運動會幹部投票.full.md](4-University\Archive\20241019-班級常規提醒與運動會幹部投票.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 124 | 2026-10-10 | [20241030-德文山野外考察活動經費企劃與課活組諮詢.full.md](4-University\Archive\20241030-德文山野外考察活動經費企劃與課活組諮詢.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
 | 125 | 2026-10-10 | [20241224-期末專案互評與成果驗收準則.full.md](4-University\Archive\20241224-期末專案互評與成果驗收準則.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
-| 126 | 2026-10-10 | [20251205-生成式AI與企業資安治理.full.md](5-Master\1-First-Year\Fall-Semester\20251205-Deloitte-GenAI-Cybersecurity-Keynote\20251205-生成式AI與企業資安治理.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 127 | 2026-10-10 | [20251208-可解釋AI因果推論與反事實決策.full.md](5-Master\1-First-Year\Fall-Semester\20251208-UIC-XAI-Keynote\20251208-可解釋AI因果推論與反事實決策.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 128 | 2026-10-10 | [20251209-UTP雙絞線製作與衰減標準.full.md](5-Master\1-First-Year\Fall-Semester\ComputerNetworkLab\20251209-UTP雙絞線製作與衰減標準.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 129 | 2026-10-10 | [20251209-Ansible無代理架構與Playbook部署.full.md](5-Master\1-First-Year\Fall-Semester\DevOps\20251209-Ansible無代理架構與Playbook部署.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 130 | 2026-10-10 | [20251217-期末專題架構循序圖與高並發壓測.full.md](5-Master\1-First-Year\Fall-Semester\SoftwareEngineering\20251217-期末專題架構循序圖與高並發壓測.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 126 | 2026-10-10 | [20251205-生成式AI與企業資安治理.full.md](5-Master\1-First-Year\Fall-Semester\20251205-Deloitte-GenAI-Cybersecurity-Keynote\20251205-生成式AI與企業資安治理.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 127 | 2026-10-10 | [20251208-可解釋AI因果推論與反事實決策.full.md](5-Master\1-First-Year\Fall-Semester\20251208-UIC-XAI-Keynote\20251208-可解釋AI因果推論與反事實決策.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 128 | 2026-10-10 | [20251209-UTP雙絞線製作與衰減標準.full.md](5-Master\1-First-Year\Fall-Semester\ComputerNetworkLab\20251209-UTP雙絞線製作與衰減標準.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
+| 129 | 2026-10-10 | [20251209-Ansible無代理架構與Playbook部署.full.md](5-Master\1-First-Year\Fall-Semester\DevOps\20251209-Ansible無代理架構與Playbook部署.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
+| 130 | 2026-10-10 | [20251217-期末專題架構循序圖與高並發壓測.full.md](5-Master\1-First-Year\Fall-Semester\SoftwareEngineering\20251217-期末專題架構循序圖與高並發壓測.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 131 | 2026-10-10 | [20260707-01-敏捷資安共識行動與南一書局AI轉型.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260707-01-敏捷資安共識行動與南一書局AI轉型.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 132 | 2026-10-10 | [20260707-02-TIPa蜜罐誘捕到CVE漏洞威脅分析.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260707-02-TIPa蜜罐誘捕到CVE漏洞威脅分析.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 133 | 2026-10-10 | [20260707-03-日本IoT物聯網安全標準與指引實務.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260707-03-日本IoT物聯網安全標準與指引實務.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
