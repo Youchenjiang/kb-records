@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：160 篇
-- **待回頭審核 / 未合規**：53 篇
+- **已回頭嚴格審核通過**：165 篇
+- **待回頭審核 / 未合規**：48 篇
 
 ---
 
@@ -183,11 +183,11 @@
 | 158 | [20260430-動漫預測模型與偏誤緩解發表.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260430-動漫預測模型與偏誤緩解發表.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 36 個自然段落；動漫評分預測模型、特徵偏誤緩解與迴歸模型評估術語校對 |
 | 159 | [20260521-Word2Vec與Wav2Vec語音表徵學習.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除 3 個 6000 字超大區塊重構為 77 個自然段落；Word2Vec、Wav2Vec 2.0、聲學特徵與自監督學習術語校對 |
 | 160 | [20260408-OSINT與網路威脅情報分享.full.md](5-Master\1-First-Year\Spring-Semester\CTF-Security\20260408-OSINT與網路威脅情報分享.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 70 個自然段落；OSINT 開源情報、威脅情資共享與 CTF 競賽情境標註校對 |
-| 161 | [20260303-01-行為動機與人境互動模式.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-01-行為動機與人境互動模式.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 162 | [20260303-02-使用者經驗定義與產品易用性.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-02-使用者經驗定義與產品易用性.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 163 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 164 | [20260302-02-單純貝氏與SVM原理.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-02-單純貝氏與SVM原理.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 165 | [20260309-01-深度學習與多層感知機.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-01-深度學習與多層感知機.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 161 | [20260303-01-行為動機與人境互動模式.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-01-行為動機與人境互動模式.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 92 個自然段落；人機互動 HCI、行為動機、情境感知與人境互動模式術語校對 |
+| 162 | [20260303-02-使用者經驗定義與產品易用性.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-02-使用者經驗定義與產品易用性.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 79 個自然段落；使用者經驗 UX、產品易用性、服務接觸點與全方位整合經驗校對 |
+| 163 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 102 個自然段落；決策樹 ID3 演算法、資訊增益 Information Gain 與剪枝策略校對 |
+| 164 | [20260302-02-單純貝氏與SVM原理.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-02-單純貝氏與SVM原理.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 97 個自然段落；單純貝氏 Naive Bayes、條件機率、SVM 支援向量機與超平面術語校對 |
+| 165 | [20260309-01-深度學習與多層感知機.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-01-深度學習與多層感知機.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 75 個自然段落；深度學習前饋神經網路、多層感知機 MLP、反向傳播與激活函數校對 |
 | 166 | [20260309-02-特徵萃取與梯度下降最佳化.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-02-特徵萃取與梯度下降最佳化.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 167 | [20260309-03-SVM最大間距與軟邊界.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-03-SVM最大間距與軟邊界.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 168 | [20260225-研究方法-01-課程導論與研究動機.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260225-研究方法-01-課程導論與研究動機.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |

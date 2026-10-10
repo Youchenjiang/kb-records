@@ -182,11 +182,11 @@
 | 158 | 2026-10-10 | [20260430-動漫預測模型與偏誤緩解發表.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260430-動漫預測模型與偏誤緩解發表.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 159 | 2026-10-10 | [20260521-Word2Vec與Wav2Vec語音表徵學習.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 160 | 2026-10-10 | [20260408-OSINT與網路威脅情報分享.full.md](5-Master\1-First-Year\Spring-Semester\CTF-Security\20260408-OSINT與網路威脅情報分享.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 161 | 2026-10-10 | [20260303-01-行為動機與人境互動模式.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-01-行為動機與人境互動模式.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 162 | 2026-10-10 | [20260303-02-使用者經驗定義與產品易用性.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-02-使用者經驗定義與產品易用性.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 163 | 2026-10-10 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 164 | 2026-10-10 | [20260302-02-單純貝氏與SVM原理.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-02-單純貝氏與SVM原理.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 165 | 2026-10-10 | [20260309-01-深度學習與多層感知機.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-01-深度學習與多層感知機.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 161 | 2026-10-10 | [20260303-01-行為動機與人境互動模式.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-01-行為動機與人境互動模式.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 162 | 2026-10-10 | [20260303-02-使用者經驗定義與產品易用性.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-02-使用者經驗定義與產品易用性.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 163 | 2026-10-10 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 164 | 2026-10-10 | [20260302-02-單純貝氏與SVM原理.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-02-單純貝氏與SVM原理.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 165 | 2026-10-10 | [20260309-01-深度學習與多層感知機.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-01-深度學習與多層感知機.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 166 | 2026-10-10 | [20260309-02-特徵萃取與梯度下降最佳化.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-02-特徵萃取與梯度下降最佳化.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 167 | 2026-10-10 | [20260309-03-SVM最大間距與軟邊界.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260309-03-SVM最大間距與軟邊界.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 168 | 2026-10-10 | [20260225-研究方法-01-課程導論與研究動機.full.md](5-Master\1-First-Year\Spring-Semester\ResearchMethodology\20260225-研究方法-01-課程導論與研究動機.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
