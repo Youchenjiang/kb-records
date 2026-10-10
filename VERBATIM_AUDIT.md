@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：155 篇
-- **待回頭審核 / 未合規**：58 篇
+- **已回頭嚴格審核通過**：160 篇
+- **待回頭審核 / 未合規**：53 篇
 
 ---
 
@@ -178,11 +178,11 @@
 | 153 | [20260305-Kaggle競賽流程與團隊實驗規劃.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260305-Kaggle競賽流程與團隊實驗規劃.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 243 個自然段落；Kaggle 資料集前處理、團隊實驗分工與評估指標術語校對 |
 | 154 | [20260312-GitHub與Kaggle資料科學管線.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260312-GitHub與Kaggle資料科學管線.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 336 個自然段落；GitHub 版本控制、Kaggle API 管線自動化實作術語校對 |
 | 155 | [20260319-專案提案全英語發表與評審問答.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260319-專案提案全英語發表與評審問答.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 722 個自然段落；專案提案全英語發表、評審問答與 Random Forest 術語校對 |
-| 156 | [20260326-KMeans分群演算法與向量空間.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260326-KMeans分群演算法與向量空間.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 157 | [20260409-自然語言處理與情感分類基準.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260409-自然語言處理與情感分類基準.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 158 | [20260430-動漫預測模型與偏誤緩解發表.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260430-動漫預測模型與偏誤緩解發表.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 159 | [20260521-Word2Vec與Wav2Vec語音表徵學習.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 160 | [20260408-OSINT與網路威脅情報分享.full.md](5-Master\1-First-Year\Spring-Semester\CTF-Security\20260408-OSINT與網路威脅情報分享.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 156 | [20260326-KMeans分群演算法與向量空間.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260326-KMeans分群演算法與向量空間.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 44 個自然段落；K-Means 分群演算法、歐氏距離與特徵空間幾何對齊術語校對 |
+| 157 | [20260409-自然語言處理與情感分類基準.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260409-自然語言處理與情感分類基準.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 125 個自然段落；NLP 自然語言處理、TF-IDF/BERT 基準模型與情緒分類指標校對 |
+| 158 | [20260430-動漫預測模型與偏誤緩解發表.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260430-動漫預測模型與偏誤緩解發表.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 36 個自然段落；動漫評分預測模型、特徵偏誤緩解與迴歸模型評估術語校對 |
+| 159 | [20260521-Word2Vec與Wav2Vec語音表徵學習.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；消除 3 個 6000 字超大區塊重構為 77 個自然段落；Word2Vec、Wav2Vec 2.0、聲學特徵與自監督學習術語校對 |
+| 160 | [20260408-OSINT與網路威脅情報分享.full.md](5-Master\1-First-Year\Spring-Semester\CTF-Security\20260408-OSINT與網路威脅情報分享.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 70 個自然段落；OSINT 開源情報、威脅情資共享與 CTF 競賽情境標註校對 |
 | 161 | [20260303-01-行為動機與人境互動模式.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-01-行為動機與人境互動模式.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 162 | [20260303-02-使用者經驗定義與產品易用性.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-02-使用者經驗定義與產品易用性.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 163 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |

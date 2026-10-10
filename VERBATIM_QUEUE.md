@@ -177,11 +177,11 @@
 | 153 | 2026-10-10 | [20260305-Kaggle競賽流程與團隊實驗規劃.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260305-Kaggle競賽流程與團隊實驗規劃.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 154 | 2026-10-10 | [20260312-GitHub與Kaggle資料科學管線.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260312-GitHub與Kaggle資料科學管線.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 155 | 2026-10-10 | [20260319-專案提案全英語發表與評審問答.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260319-專案提案全英語發表與評審問答.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 156 | 2026-10-10 | [20260326-KMeans分群演算法與向量空間.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260326-KMeans分群演算法與向量空間.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 157 | 2026-10-10 | [20260409-自然語言處理與情感分類基準.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260409-自然語言處理與情感分類基準.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 158 | 2026-10-10 | [20260430-動漫預測模型與偏誤緩解發表.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260430-動漫預測模型與偏誤緩解發表.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 159 | 2026-10-10 | [20260521-Word2Vec與Wav2Vec語音表徵學習.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 160 | 2026-10-10 | [20260408-OSINT與網路威脅情報分享.full.md](5-Master\1-First-Year\Spring-Semester\CTF-Security\20260408-OSINT與網路威脅情報分享.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 156 | 2026-10-10 | [20260326-KMeans分群演算法與向量空間.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260326-KMeans分群演算法與向量空間.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 157 | 2026-10-10 | [20260409-自然語言處理與情感分類基準.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260409-自然語言處理與情感分類基準.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 158 | 2026-10-10 | [20260430-動漫預測模型與偏誤緩解發表.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260430-動漫預測模型與偏誤緩解發表.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 159 | 2026-10-10 | [20260521-Word2Vec與Wav2Vec語音表徵學習.full.md](5-Master\1-First-Year\Spring-Semester\AdvancedAI-Optimization\20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 160 | 2026-10-10 | [20260408-OSINT與網路威脅情報分享.full.md](5-Master\1-First-Year\Spring-Semester\CTF-Security\20260408-OSINT與網路威脅情報分享.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 161 | 2026-10-10 | [20260303-01-行為動機與人境互動模式.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-01-行為動機與人境互動模式.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 162 | 2026-10-10 | [20260303-02-使用者經驗定義與產品易用性.full.md](5-Master\1-First-Year\Spring-Semester\HCI-UX\20260303-02-使用者經驗定義與產品易用性.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 163 | 2026-10-10 | [20260302-01-決策樹與ID3演算法.full.md](5-Master\1-First-Year\Spring-Semester\MachineLearning\20260302-01-決策樹與ID3演算法.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
