@@ -162,11 +162,11 @@
 | 138 | 2026-10-10 | [20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 139 | 2026-10-10 | [20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 140 | 2026-10-10 | [20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 141 | 2026-10-10 | [20260821-POS-ADB-0Day-AI輔助.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-POS-ADB-0Day-AI輔助.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 142 | 2026-10-10 | [20260821-Pixel8A-GPU漏洞挖掘.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-Pixel8A-GPU漏洞挖掘.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 143 | 2026-10-10 | [20260821-供應鏈攻擊-黑吃黑.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-供應鏈攻擊-黑吃黑.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 144 | 2026-10-10 | [20260821-閃電秀6場合輯.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-閃電秀6場合輯.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
-| 145 | 2026-10-10 | [20260318-AI教育表現特徵工程與過濾法預測.full.md](5-Master\1-First-Year\Spring-Semester\20260318-EnglishAI-Presentation\20260318-AI教育表現特徵工程與過濾法預測.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
+| 141 | 2026-10-10 | [20260821-POS-ADB-0Day-AI輔助.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-POS-ADB-0Day-AI輔助.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 142 | 2026-10-10 | [20260821-Pixel8A-GPU漏洞挖掘.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-Pixel8A-GPU漏洞挖掘.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 143 | 2026-10-10 | [20260821-供應鏈攻擊-黑吃黑.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-供應鏈攻擊-黑吃黑.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 144 | 2026-10-10 | [20260821-閃電秀6場合輯.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-閃電秀6場合輯.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
+| 145 | 2026-10-10 | [20260318-AI教育表現特徵工程與過濾法預測.full.md](5-Master\1-First-Year\Spring-Semester\20260318-EnglishAI-Presentation\20260318-AI教育表現特徵工程與過濾法預測.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 146 | 2026-10-10 | [20260327-AI焦慮與語音偽造.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-AI焦慮與語音偽造.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 147 | 2026-10-10 | [20260327-aMCI語篇研究.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-aMCI語篇研究.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |
 | 148 | 2026-10-10 | [20260327-智慧醫療失智症預測.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧醫療失智症預測.full.md) | 會議/課程錄音 | ASR + 初期標註 | 📥 待審核接手 | 等待審核 Agent 回頭逐行稽核四大標準 |

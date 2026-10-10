@@ -14,8 +14,8 @@
 ## 📊 稽核概況統計
 
 - **逐字稿檔案總數**：213 篇
-- **已回頭嚴格審核通過**：140 篇
-- **待回頭審核 / 未合規**：73 篇
+- **已回頭嚴格審核通過**：145 篇
+- **待回頭審核 / 未合規**：68 篇
 
 ---
 
@@ -163,11 +163,11 @@
 | 138 | [20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-04-企業生成式AI落地鬼故事與AITBM評估框架.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構分段消除大段，校對AITBM/Agentforce/MCP/RCE術語 |
 | 139 | [20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-05-多輪對話越獄攻擊與Promptfoo紅隊實測.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構分段消除大段，校對Crescendo/GOAT/TAP/Promptfoo術語 |
 | 140 | [20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md](5-Master\1-First-Year\Holiday\20260707-Taiwan-Cybersecurity-Summit\20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 原話保真，重構分段消除大段，校對RAG果汁機/PII/Blast Radius/十二項量表 |
-| 141 | [20260821-POS-ADB-0Day-AI輔助.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-POS-ADB-0Day-AI輔助.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 142 | [20260821-Pixel8A-GPU漏洞挖掘.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-Pixel8A-GPU漏洞挖掘.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 143 | [20260821-供應鏈攻擊-黑吃黑.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-供應鏈攻擊-黑吃黑.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 144 | [20260821-閃電秀6場合輯.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-閃電秀6場合輯.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
-| 145 | [20260318-AI教育表現特徵工程與過濾法預測.full.md](5-Master\1-First-Year\Spring-Semester\20260318-EnglishAI-Presentation\20260318-AI教育表現特徵工程與過濾法預測.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
+| 141 | [20260821-POS-ADB-0Day-AI輔助.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-POS-ADB-0Day-AI輔助.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 150~250 字；HITCON POS 機與 ADB 零日漏洞、AI 輔助逆向術語校對 |
+| 142 | [20260821-Pixel8A-GPU漏洞挖掘.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-Pixel8A-GPU漏洞挖掘.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為自然段落；Pixel 8A GPU 漏洞、Race Condition 與 kfree 內核術語校對 |
+| 143 | [20260821-供應鏈攻擊-黑吃黑.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-供應鏈攻擊-黑吃黑.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 150~280 字；開源供應鏈投毒、惡意套件黑吃黑攻防術語校對 |
+| 144 | [20260821-閃電秀6場合輯.full.md](5-Master\1-First-Year\Holiday\20260821-HITCON-2026\20260821-閃電秀6場合輯.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 100~250 字；HITCON 閃電秀 6 場技術合輯、身分切換與專有名詞校對 |
+| 145 | [20260318-AI教育表現特徵工程與過濾法預測.full.md](5-Master\1-First-Year\Spring-Semester\20260318-EnglishAI-Presentation\20260318-AI教育表現特徵工程與過濾法預測.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分英語長句為 79 個自然段落；修正 output 拼寫，Jaccard 相似度與特徵工程術語校對 |
 | 146 | [20260327-AI焦慮與語音偽造.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-AI焦慮與語音偽造.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 147 | [20260327-aMCI語篇研究.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-aMCI語篇研究.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
 | 148 | [20260327-智慧醫療失智症預測.full.md](5-Master\1-First-Year\Spring-Semester\20260327-NCU-IM-AcademicConference\20260327-智慧醫療失智症預測.full.md) | [ ] | [ ] | [ ] | [ ] | ⏳ 待回頭審核 | - | 待按四大標準回頭逐行稽核 |
