@@ -179,7 +179,7 @@
 | 78 | **CompTIA Security+ Lesson 15/16：安全控制成效評估、內外部資源比例與供應鏈風險管理** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-05-16-08-安全控制評估與第三方供應商風險.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-05-16-08-安全控制評估與第三方供應商風險.full.md) |
 | 79 | **CompTIA Security+ Lesson 15：資安實驗環境安裝配置與實機實作排程** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250127-實作環境安裝與演練.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250127-實作環境安裝與演練.full.md) |
 | 80 | **CompTIA Security+ Lesson 16：隱私權法規、資料保護規範與認證考試須知** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250128-隱私法規與考試須知.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250128-隱私法規與考試須知.full.md) |
-| 81 | **CompTIA Security+ 專題延伸：開源資產管理工具、資訊資產生命週期與漏洞關聯分析** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-03-Lesson-開源資產管理工具與企業軟體盤點.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-03-Lesson-開源資產管理工具與企業軟體盤點.full.md) |
+| 81 | **CompTIA Security+ 專題延伸：開源資產管理工具、資訊資產生命週期與漏洞關聯分析** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-03-開源資產管理工具與企業軟體盤點.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-03-開源資產管理工具與企業軟體盤點.full.md) |
 
 ### 📅 大學部先修班班級常規與幹部投票
 

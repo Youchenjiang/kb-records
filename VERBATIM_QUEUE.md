@@ -122,7 +122,7 @@
 | 098 | 2026-10-10 | [20250123-05-13-資安工程師職涯發展與技能高原突破.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250123-05-13-資安工程師職涯發展與技能高原突破.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 099 | 2026-10-10 | [20250124-01-指令控制工具演練與攻擊防禦.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250124-01-指令控制工具演練與攻擊防禦.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與段落長度控制 |
 | 100 | 2026-10-10 | [20250124-02-遠端靶機連線與金鑰認證實務.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250124-02-遠端靶機連線與金鑰認證實務.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
-| 101 | 2026-10-10 | [20250124-03-Lesson-開源資產管理工具與企業軟體盤點.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250124-03-Lesson-開源資產管理工具與企業軟體盤點.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
+| 101 | 2026-10-10 | [20250124-03-開源資產管理工具與企業軟體盤點.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250124-03-開源資產管理工具與企業軟體盤點.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 102 | 2026-10-10 | [20250124-04-SIEM與SOC戰情室.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250124-04-SIEM與SOC戰情室.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與段落長度控制 |
 | 103 | 2026-10-10 | [20250124-05-16-08-安全控制評估與第三方供應商風險.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250124-05-16-08-安全控制評估與第三方供應商風險.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與長段落拆分 |
 | 104 | 2026-10-10 | [20250127-實作環境安裝與演練.full.md](4-University\3-Specialization\Holiday\20250113-CompTIA-SecurityPlus\20250127-實作環境安裝與演練.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成四大標準稽核與格式驗證 |
