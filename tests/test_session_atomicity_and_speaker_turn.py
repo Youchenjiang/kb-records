@@ -81,21 +81,22 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
                 if "右臣" in line:
                     typo_violations.append(f"{rel_path}:{idx+1} contains '右臣' (ASR typo for 侑宸)")
 
-            # 2. Check for vague roles in Thesis-Progress (for Youchen-led presentations)
+            # 2. Check Thesis-Progress: strictly reserved for Youchen's master thesis progress
             if "Thesis-Progress" in rel_path:
-                # If it's a peer presentation, speaker is explicitly 同儕研究生
-                is_peer_presentation = "同儕研究生" in text[:300] and "侑宸" not in text[:300]
-                if not is_peer_presentation:
-                    if "**【論文研究生】**：" in text or "**【發表研究生 (Youchen)】**：" in text:
-                        role_violations.append(
-                            f"{rel_path}: uses vague speaker tag instead of mandatory '**【侑宸】**：'"
-                        )
-                    # Frontmatter check
-                    fm_end = text.find("---", 3)
-                    if fm_end != -1:
-                        fm = text[3:fm_end]
-                        if "speakers:" in fm and "侑宸" not in fm:
-                            role_violations.append(f"{rel_path}: frontmatter 'speakers' missing '侑宸'")
+                if "**【侑宸】**：" not in text:
+                    role_violations.append(
+                        f"{rel_path}: Thesis-Progress is strictly reserved for Youchen's thesis progress! Must contain '**【侑宸】**：'"
+                    )
+                if "**【論文研究生】**：" in text or "**【發表研究生 (Youchen)】**：" in text:
+                    role_violations.append(
+                        f"{rel_path}: uses vague speaker tag instead of mandatory '**【侑宸】**：'"
+                    )
+                # Frontmatter check: speakers must contain 侑宸
+                fm_end = text.find("---", 3)
+                if fm_end != -1:
+                    fm = text[3:fm_end]
+                    if "speakers:" in fm and "侑宸" not in fm:
+                        role_violations.append(f"{rel_path}: Thesis-Progress frontmatter 'speakers' missing '侑宸'")
 
         self.assertEqual(typo_violations, [], "Found uncorrected ASR typos:\n" + "\n".join(typo_violations))
         self.assertEqual(role_violations, [], "Found Youchen entity role violations:\n" + "\n".join(role_violations))
