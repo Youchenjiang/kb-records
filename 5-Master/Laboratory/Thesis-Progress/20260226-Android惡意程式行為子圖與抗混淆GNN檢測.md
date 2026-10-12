@@ -1,11 +1,11 @@
 # 🛡️ MASTER-THESIS-ANDROID-GNN 碩士研究進度報告：基於敏感 API 行為子圖與 GNN/LLM 之 Android 抗混淆惡意程式檢測
 
 > **研究主題**：Android 惡意程式檢測、代碼混淆（Code Obfuscation）對抗防禦、敏感 API 行為子圖與 GNN/LLM 融合架構  
-> **發表報告者**：發表研究生 (Youchen)  
+> **發表報告者**：侑宸（Youchen）  
 > **指導教授**：實驗室指導教授群、陳教授  
 > **核心模組**：Android Static Analysis, Sensitive API Slicing, Graph Neural Networks (GNN), Large Language Models (LLM)  
 > **學習目標**：突破傳統防毒在面對 66.4% 混淆代碼時準確率暴跌之瓶頸，提出行為子圖與語意 Embedding 融合檢測模型  
-> **關聯文件**：[📄 完整原話逐字稿 (2026-02-26-Android惡意程式行為子圖與抗混淆GNN檢測-proofread.md)](./2026-02-26-Android惡意程式行為子圖與抗混淆GNN檢測-proofread.md)
+> **關聯文件**：[📄 完整原話逐字稿 (20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md)](./20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md)
 
 ---
 
