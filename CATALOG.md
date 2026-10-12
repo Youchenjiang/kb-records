@@ -347,7 +347,7 @@
 | 218 | **全英語三年期研究計畫 Proposal 提案發表與攻防答辯** | 指導教授, Proposal報告研究生 | cademic-lecture-meeting | [📑 Notes](./5-Master/Laboratory/Lab-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.md) · [📄 Full](./5-Master/Laboratory/Lab-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.full.md) |
 | 219 | **PNS 組黑箱測試白箱根因分析與 Web-API 越權繞過研討** | PNS組報告研究生, 指導教授 | cademic-lecture-meeting | [📑 Notes](./5-Master/Laboratory/Lab-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.md) · [📄 Full](./5-Master/Laboratory/Lab-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.full.md) |
 | 220 | **黑箱 API 漏洞探測策略與利用鏈前期偵查研討** | 侑宸, 指導教授, 審查委員/口委 | cademic-lecture-meeting | [📑 Notes](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.md) · [📄 Full](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) |
-| 221 | **惡意 Custom GPT 贊助廣告釣魚與多階段 RAT 木馬植入鏈** | 同儕研究生, 指導教授 | cademic-lecture-meeting | [📑 Notes](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.md) · [📄 Full](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) |
+| 221 | **惡意 Custom GPT 贊助廣告釣魚與多階段 RAT 木馬植入鏈** | 同儕研究生, 指導教授 | cademic-lecture-meeting | [📑 Notes](./5-Master/Laboratory/Security-News/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.md) · [📄 Full](./5-Master/Laboratory/Security-News/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) |
 | 222 | **Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證** | 侑宸, 指導教授, 同儕研究生 | cademic-lecture-meeting | [📑 Notes](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.md) · [📄 Full](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md) |
 
 ---

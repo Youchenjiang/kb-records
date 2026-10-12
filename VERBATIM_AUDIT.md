@@ -243,5 +243,5 @@
 | 218 | [20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.full.md](5-Master\Laboratory\Lab-Meeting\20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 112段雙語自然分段，全英語三年計畫Proposal彩排與答辯 |
 | 219 | [20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.full.md](5-Master\Laboratory\Lab-Meeting\20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 64段自然語意分段，PNS組教材網站越權下載與信任邊界校對 |
 | 220 | [20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md](5-Master\Laboratory\Thesis-Progress\20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 97段自然語意分段，侑宸論文覆盤楊老師質詢與回報值判定校對 |
-| 221 | [20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md](5-Master\Laboratory\Thesis-Progress\20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 23段自然分段，Custom GPT釣魚、AMSI/EDR脫鉤與RAT上線校對 |
+| 221 | [20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md](5-Master\Laboratory\Security-News\20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 23段自然分段，Custom GPT釣魚、AMSI/EDR脫鉤與RAT上線校對 |
 | 222 | [20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md](5-Master\Laboratory\Thesis-Progress\20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 128段自然分段，侑宸論文報告、H1/H2矩陣質詢與雙階狀態公式校對 |
