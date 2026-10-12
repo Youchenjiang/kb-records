@@ -677,6 +677,7 @@
 | 217 | **語言模型 Context 上下文學習與研究資料假設建立方法論** | 計畫主持教授, 核心研究生, 研究團隊成員 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Project-Meeting/20261007-語言模型Context上下文學習與研究資料假設建立.md) · [📄 全文](./5-Master/Laboratory/Project-Meeting/20261007-語言模型Context上下文學習與研究資料假設建立.full.md) |
 | 218 | **實驗室跨組別研究進度彙報與多專案時程覆盤** | 指導教授, 各組報告代表, 實驗室全體成員 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20261008-跨組別研究進度彙報與多專案時程覆盤.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20261008-跨組別研究進度彙報與多專案時程覆盤.full.md) |
 | 219 | **黑箱 API 漏洞探測策略與利用鏈前期偵查研討** | 論文研究生, 指導教授, 審查委員/口委 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) |
-| 220 | **Custom GPT 提示詞轉端控制與社工資源關聯標記研究** | 論文研究生, 指導教授, 研究團隊同儕 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261012-Custom-GPT提示詞轉端控制與社工資源關聯標記研究.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261012-Custom-GPT提示詞轉端控制與社工資源關聯標記研究.full.md) |
+| 220 | **惡意 Custom GPT 贊助廣告釣魚與多階段 RAT 木馬植入鏈** | 同儕研究生, 指導教授 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) |
+| 221 | **Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證** | 侑宸, 指導教授, 同儕研究生 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md) |
 
 ---

@@ -241,4 +241,5 @@
 | 217 | 2026-10-13 | [20261007-語言模型Context上下文學習與研究資料假設建立.full.md](5-Master\Laboratory\Project-Meeting\20261007-語言模型Context上下文學習與研究資料假設建立.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 98段自然語意分段，In-Context Learning與研究假設建立校對 |
 | 218 | 2026-10-13 | [20261008-跨組別研究進度彙報與多專案時程覆盤.full.md](5-Master\Laboratory\Lab-Meeting\20261008-跨組別研究進度彙報與多專案時程覆盤.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 176段雙語自然分段，各組研究進度與Proposal跨領域覆盤 |
 | 219 | 2026-10-13 | [20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md](5-Master\Laboratory\Thesis-Progress\20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 97段自然語意分段，黑箱API探測與漏洞利用鏈覆盤校對 |
-| 220 | 2026-10-13 | [20261012-Custom-GPT提示詞轉端控制與社工資源關聯標記研究.full.md](5-Master\Laboratory\Thesis-Progress\20261012-Custom-GPT提示詞轉端控制與社工資源關聯標記研究.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 127段自然語意分段，Custom GPT端控制與社工資源關聯校對 |
+| 220 | 2026-10-13 | [20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md](5-Master\Laboratory\Thesis-Progress\20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 23段自然分段，Custom GPT釣魚、AMSI/EDR脫鉤與RAT上線校對 |
+| 221 | 2026-10-13 | [20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md](5-Master\Laboratory\Thesis-Progress\20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 128段自然分段，侑宸論文報告、H1/H2矩陣質詢與雙階狀態公式校對 |
