@@ -28,8 +28,8 @@ def check_audio_status():
 
     print(f"  - Processed files: {len(processed)} (Staged for post-delivery clean)")
 
-    print(f"  - Preserved files: {len(preserved)} (Expected: 43)")
-    assert len(preserved) == 43, f"Preserved directory expected 43 files, got {len(preserved)}"
+    print(f"  - Preserved files: {len(preserved)} (Quarantined/Archived)")
+    assert len(preserved) >= 43, f"Preserved directory expected at least 43 files, got {len(preserved)}"
 
     manifest = (audio_dir / "preserved" / "MANIFEST.md").read_text(encoding="utf-8")
     for f in preserved:

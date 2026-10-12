@@ -78,15 +78,22 @@ def is_file_ready(file_path: Path) -> bool:
 
 def get_pending_queue() -> List[Path]:
     """
-    Find all audio files in PENDING_DIR recursively, sorted by modification time (FIFO).
+    Find all audio files in PENDING_DIR and any '* send' directories, sorted by modification time (FIFO).
     """
-    if not PENDING_DIR.exists():
-        return []
+    search_dirs = [PENDING_DIR]
+    # Also check any directories like '20261007 send', '20261012 send', etc.
+    for p in REPO_ROOT.glob("*send*"):
+        if p.is_dir() and p not in search_dirs:
+            search_dirs.append(p)
 
-    candidates = [
-        f for f in PENDING_DIR.rglob("*")
-        if f.is_file() and f.suffix.lower() in AUDIO_EXTENSIONS
-    ]
+    candidates = []
+    for d in search_dirs:
+        if d.exists():
+            candidates.extend([
+                f for f in d.rglob("*")
+                if f.is_file() and f.suffix.lower() in AUDIO_EXTENSIONS
+            ])
+
     # Sort by modification time ascending (earliest first)
     candidates.sort(key=lambda x: x.stat().st_mtime)
     return candidates

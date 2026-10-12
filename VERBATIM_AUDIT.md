@@ -236,3 +236,11 @@
 | 211 | [20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md](5-Master\Laboratory\Seminar\20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
 | 212 | [20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md](5-Master\Laboratory\Seminar\20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 100段自然語意分段，APR程式修復與Crash Site校對 |
 | 213 | [20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md](5-Master\Laboratory\Thesis-Progress\20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 114段自然語意分段，Android行為子圖與GNN術語校對 |
+| 214 | [20261002-Apache路徑穿越與遠端命令執行RCE實機攻防.full.md](5-Master\2-Second-Year\Fall-Semester\Security-Lab\20261002-Apache路徑穿越與遠端命令執行RCE實機攻防.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 73段自然語意分段，Apache 2.4.49路徑穿越與RCE攻防校對 |
+| 215 | [20261005-RAG檢索增強生成架構與LLM幻覺緩解論文研討.full.md](5-Master\Laboratory\Seminar\20261005-RAG檢索增強生成架構與LLM幻覺緩解論文研討.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 94段自然語意分段，RAG架構與LLM幻覺緩解術語校對 |
+| 216 | [20261006-無線網路協定分層限制與跨層感知架構研討.full.md](5-Master\2-Second-Year\Fall-Semester\Network-Architecture\20261006-無線網路協定分層限制與跨層感知架構研討.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 48段自然語意分段，無線網路分層限制與跨層架構校對 |
+| 217 | [20261007-語言模型Context上下文學習與研究資料假設建立.full.md](5-Master\Laboratory\Project-Meeting\20261007-語言模型Context上下文學習與研究資料假設建立.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 98段自然語意分段，In-Context Learning與研究假設建立校對 |
+| 218 | [20261008-跨組別研究進度彙報與多專案時程覆盤.full.md](5-Master\Laboratory\Lab-Meeting\20261008-跨組別研究進度彙報與多專案時程覆盤.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 176段雙語自然分段，各組研究進度與Proposal跨領域覆盤 |
+| 219 | [20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md](5-Master\Laboratory\Thesis-Progress\20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 97段自然語意分段，黑箱API探測與漏洞利用鏈覆盤校對 |
+| 220 | [20261012-Custom-GPT提示詞轉端控制與社工資源關聯標記研究.full.md](5-Master\Laboratory\Thesis-Progress\20261012-Custom-GPT提示詞轉端控制與社工資源關聯標記研究.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-13 | 127段自然語意分段，Custom GPT端控制與社工資源關聯校對 |
+
