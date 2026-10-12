@@ -5,9 +5,9 @@ echo "================================================================"
 echo "🔍 [Pre-Commit] 正在執行提交前自動守門測試與規則檢查..."
 echo "================================================================"
 
-# 1. 執行核心格式、主題原子性、講者多樣性與侑宸實體防護測試
-echo "▶ 步驟 1/2: 執行主題拆分、講者輪次與逐字稿規範測試 (pytest)..."
-python -m pytest tests/test_session_atomicity_and_speaker_turn.py tests/test_proofread_linter.py -q
+# 1. 執行核心格式、主題原子性、講者多樣性與全庫單元測試
+echo "▶ 步驟 1/2: 自動執行 tests/ 下的所有單元與規範測試 (pytest)..."
+python -m pytest tests/ -q
 PYTEST_EXIT=$?
 
 if [ $PYTEST_EXIT -ne 0 ]; then
