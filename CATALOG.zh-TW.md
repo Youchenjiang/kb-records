@@ -344,6 +344,11 @@
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
 | 125 | **自然生態觀察社：恆春墾丁海岸陸蟹生態調查與道路阻隔熱障礙分析** | 生態導師 / 社長, 社員學員 | `field-survey` | [📑 筆記](./4-University/5-Extracurricular/NatureEcologyClub/20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.md) · [📄 全文](./4-University/5-Extracurricular/NatureEcologyClub/20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md) |
+| 218 | **全英語三年期研究計畫 Proposal 提案發表與攻防答辯** | 指導教授, Proposal報告研究生 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.full.md) |
+| 219 | **PNS 組黑箱測試白箱根因分析與 Web-API 越權繞過研討** | PNS組報告研究生, 指導教授 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.full.md) |
+| 220 | **黑箱 API 漏洞探測策略與利用鏈前期偵查研討** | 侑宸, 指導教授, 審查委員/口委 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) |
+| 221 | **惡意 Custom GPT 贊助廣告釣魚與多階段 RAT 木馬植入鏈** | 同儕研究生, 指導教授 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) |
+| 222 | **Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證** | 侑宸, 指導教授, 同儕研究生 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md) |
 
 ---
 
@@ -675,9 +680,5 @@
 | 215 | **RAG 檢索增強生成架構與 LLM 幻覺緩解機制論文研討** | 報告研究生, 指導教授, 實驗室同儕 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Seminar/20261005-RAG檢索增強生成架構與LLM幻覺緩解論文研討.md) · [📄 全文](./5-Master/Laboratory/Seminar/20261005-RAG檢索增強生成架構與LLM幻覺緩解論文研討.full.md) |
 | 216 | **無線網路協定分層限制與跨層感知架構研討** | 授課教授, 報告學員, 課堂學員 | classroom-lecture | [📑 筆記](./5-Master/2-Second-Year/Fall-Semester/Network-Architecture/20261006-無線網路協定分層限制與跨層感知架構研討.md) · [📄 全文](./5-Master/2-Second-Year/Fall-Semester/Network-Architecture/20261006-無線網路協定分層限制與跨層感知架構研討.full.md) |
 | 217 | **語言模型 Context 上下文學習與研究資料假設建立方法論** | 計畫主持教授, 核心研究生, 研究團隊成員 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Project-Meeting/20261007-語言模型Context上下文學習與研究資料假設建立.md) · [📄 全文](./5-Master/Laboratory/Project-Meeting/20261007-語言模型Context上下文學習與研究資料假設建立.full.md) |
-| 218 | **實驗室跨組別研究進度彙報與多專案時程覆盤** | 指導教授, 各組報告代表, 實驗室全體成員 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20261008-跨組別研究進度彙報與多專案時程覆盤.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20261008-跨組別研究進度彙報與多專案時程覆盤.full.md) |
-| 219 | **黑箱 API 漏洞探測策略與利用鏈前期偵查研討** | 論文研究生, 指導教授, 審查委員/口委 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) |
-| 220 | **惡意 Custom GPT 贊助廣告釣魚與多階段 RAT 木馬植入鏈** | 同儕研究生, 指導教授 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261012-01-惡意Custom-GPT贊助廣告釣魚與多階段RAT木馬植入鏈.full.md) |
-| 221 | **Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證** | 侑宸, 指導教授, 同儕研究生 | cademic-lecture-meeting | [📑 筆記](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.md) · [📄 全文](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md) |
 
 ---
