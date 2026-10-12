@@ -82,16 +82,22 @@ class TestProofreadLinter(unittest.TestCase):
         )
         is_valid, errors = validate_transcript_structure(bad_heading, scenario="classroom-lecture")
         self.assertFalse(is_valid)
-    def test_all_university_proofread_files(self):
-        """Test that all university proofread deliverables pass structure validation."""
-        univ_files = list((REPO_ROOT / "4-University").glob("**/*.full.md")) + list((REPO_ROOT / "4-University").glob("**/*-proofread.md"))
-        self.assertGreaterEqual(len(univ_files), 17, f"Expected at least 17 university proofread files, found {len(univ_files)}")
-        for f in univ_files:
+    def test_all_proofread_deliverables_structure(self):
+        """Test that ALL proofread deliverables across University and Master pass structure validation."""
+        all_full_files = sorted(
+            list((REPO_ROOT / "4-University").glob("**/*.full.md")) +
+            list((REPO_ROOT / "5-Master").glob("**/*.full.md"))
+        )
+        self.assertGreaterEqual(len(all_full_files), 220, f"Expected at least 220 proofread files, found {len(all_full_files)}")
+        failed_files = []
+        for f in all_full_files:
             content = f.read_text(encoding="utf-8")
             m = re.search(r'scenario:\s*["\']?([a-zA-Z0-9_-]+)["\']?', content)
             scenario = m.group(1) if m else "classroom-lecture"
             is_valid, errors = validate_transcript_structure(content, scenario=scenario)
-            self.assertTrue(is_valid, f"{f.name} failed structure validation: {errors}")
+            if not is_valid:
+                failed_files.append((f.relative_to(REPO_ROOT), errors))
+        self.assertEqual(failed_files, [], f"Deliverables failed structure validation:\n" + "\n".join(f"{f}: {errs}" for f, errs in failed_files))
 
 
 if __name__ == "__main__":

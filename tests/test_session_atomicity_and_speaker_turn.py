@@ -146,5 +146,139 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
                 missing_summaries.append(str(f.relative_to(REPO_ROOT)))
         self.assertEqual(missing_summaries, [], f"Missing matching summary for:\n" + "\n".join(missing_summaries))
 
+    def test_filename_naming_conventions_and_banned_slugs(self):
+        """
+        Rule 0: Filename Naming Conventions & Banned Slugs.
+        1. Date prefix must be 8 digits (YYYYMMDD), strictly no hyphens like YYYY-MM-DD.
+        2. Strictly forbidden internal/hash slugs (e.g. Lesson-, NCU-IM-, Lab-Discovery).
+        """
+        banned_slugs = ["Lesson-", "NCU-IM-", "Lab-Discovery", "勤業眾信副總"]
+        violations = []
+        all_deliverables = self.full_files + self.summary_files
+
+        for f in all_deliverables:
+            name = f.name
+            rel_path = str(f.relative_to(REPO_ROOT))
+
+            # 1. Date format check: must start with 8 digits
+            if re.match(r"^\d{4}-\d{2}-\d{2}", name):
+                violations.append(f"{rel_path}: filename uses hyphenated date (YYYY-MM-DD), must use 8 digits (YYYYMMDD)")
+            elif not re.match(r"^\d{8}", name):
+                violations.append(f"{rel_path}: filename does not start with 8-digit date (YYYYMMDD)")
+
+            # 2. Banned slugs check
+            for slug in banned_slugs:
+                if slug in name:
+                    violations.append(f"{rel_path}: filename contains forbidden slug '{slug}'")
+
+        self.assertEqual(violations, [], "Found filename convention violations:\n" + "\n".join(violations))
+
+    def test_h2_heading_cleanliness(self):
+        """
+        Rule 3 & Structurer: Heading clean standards.
+        H2 headings must not use artificial numbering like '一、', '二、', etc.
+        """
+        violations = []
+        for f in self.full_files:
+            text = f.read_text(encoding="utf-8")
+            h2_matches = re.findall(r"^##\s+.*[一二三四五六七八九十]、", text, re.M)
+            if h2_matches:
+                rel_path = str(f.relative_to(REPO_ROOT))
+                violations.append(f"{rel_path}: H2 headings contain artificial numbering: {h2_matches}")
+
+        self.assertEqual(violations, [], "Found H2 artificial numbering violations:\n" + "\n".join(violations))
+
+    def test_discourse_paragraph_length_boundaries(self):
+        """
+        Rule 2: Discourse Paragraphing Protocol (150-300 words).
+        Strictly forbids huge unsegmented text blocks (>800 chars without newline) in body dialogue.
+        """
+        violations = []
+        for f in self.full_files:
+            text = f.read_text(encoding="utf-8")
+            parts = text.split("---", 2)
+            body = parts[2] if len(parts) >= 3 else text
+            paras = body.split("\n\n")
+
+            for idx, p in enumerate(paras):
+                p_strip = p.strip()
+                # Skip frontmatter, code blocks, tables, blockquotes, list blocks, headers
+                if (
+                    p_strip.startswith("```") or
+                    p_strip.startswith("|") or
+                    p_strip.startswith("- ") or
+                    p_strip.startswith("1. ") or
+                    p_strip.startswith(">") or
+                    p_strip.startswith("#")
+                ):
+                    continue
+                if len(p_strip) > 800:
+                    rel_path = str(f.relative_to(REPO_ROOT))
+                    violations.append(
+                        f"{rel_path}: huge paragraph block ({len(p_strip)} chars) exceeding 800-char boundary: '{p_strip[:40]}...'"
+                    )
+
+        self.assertEqual(violations, [], "Found excessive text blocks violating paragraph boundaries:\n" + "\n".join(violations))
+
+    def test_unsplit_transition_markers_in_single_topic_sessions(self):
+        """
+        Rule 11: Session Topic Atomicity in Academic Meetings.
+        In laboratory, thesis progress, seminar, and defense meetings,
+        inter-speaker transition markers (e.g. '謝謝上一位', '換下一組', '下一位換誰')
+        signal unsplit topics and must be partitioned into independent sessions.
+        """
+        transition_markers = [
+            "謝謝上一位",
+            "換下一組",
+            "下一位換",
+            "接下來請下一位",
+            "換下一個同學",
+        ]
+        violations = []
+        for f in self.full_files:
+            rel_path = str(f.relative_to(REPO_ROOT))
+            # Focus on dedicated single-topic research meetings
+            if any(k in rel_path for k in ["Laboratory", "Thesis-Progress", "Seminar", "Degree-Defense"]):
+                text = f.read_text(encoding="utf-8")
+                for marker in transition_markers:
+                    if marker in text:
+                        violations.append(f"{rel_path}: contains unsplit topic transition marker '{marker}'")
+
+        self.assertEqual(violations, [], "Found unsplit topic transition markers in single-topic meetings:\n" + "\n".join(violations))
+
+    def test_summary_structure_and_depth_gate(self):
+        """
+        Rule 15: Zero Generic Boilerplate and Substantive Depth in Summaries (.md).
+        1. Forbids generic boilerplate phrases ('深入檢視問題根源', '針對演算法提出系統性評估', etc.).
+        2. Non-archive summaries must have substantive length (>=150 chars) and either
+           a Mermaid diagram (```mermaid) or a structured overview table (| :---).
+        """
+        generic_boilerplate = [
+            "深入檢視問題根源",
+            "針對演算法提出系統性評估",
+            "提出具體可行之解決架構",
+        ]
+        violations = []
+        for s in self.summary_files:
+            rel_path = str(s.relative_to(REPO_ROOT))
+            text = s.read_text(encoding="utf-8")
+
+            # 1. Generic boilerplate check
+            for phrase in generic_boilerplate:
+                if phrase in text:
+                    violations.append(f"{rel_path}: contains generic boilerplate '{phrase}'")
+
+            # 2. Structural depth check (excluding archive chatter)
+            if "Archive" not in rel_path:
+                if len(text.strip()) < 150:
+                    violations.append(f"{rel_path}: summary too short (<150 chars, len={len(text.strip())})")
+                has_mermaid = "```mermaid" in text
+                has_table = "| :---" in text or "|:---" in text
+                if not (has_mermaid or has_table):
+                    violations.append(f"{rel_path}: lacks conceptual diagram (Mermaid) or structured overview table")
+
+        self.assertEqual(violations, [], "Found summary depth / structure violations:\n" + "\n".join(violations))
+
 if __name__ == "__main__":
     unittest.main()
+
