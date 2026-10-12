@@ -731,24 +731,26 @@
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 224 | **進階人工智慧與最佳化：學員專案發表（動漫人氣預測、評估指標偏誤緩解與Agent AI設計）** | 授課講師 (George), 發表學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260430-動漫預測模型與偏誤緩解發表.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260430-動漫預測模型與偏誤緩解發表.full.md) |
+| 224 | **進階人工智慧與最佳化：全英語專案提案規範與評分指標** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-01-全英語專案提案規範與評分指標.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-01-全英語專案提案規範與評分指標.full.md) |
+| 225 | **進階人工智慧與最佳化：各組研究提案實戰發表** | 發表學員, 授課講師 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-02-各組研究提案實戰發表.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-02-各組研究提案實戰發表.full.md) |
+| 226 | **進階人工智慧與最佳化：學員專案發表（動漫人氣預測、評估指標偏誤緩解與Agent AI設計）** | 授課講師 (George), 發表學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260430-動漫預測模型與偏誤緩解發表.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260430-動漫預測模型與偏誤緩解發表.full.md) |
+| 227 | **進階人工智慧與最佳化：教師講評與同儕深度問答** | 授課講師, 發表學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-03-教師講評與同儕深度問答.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-03-教師講評與同儕深度問答.full.md) |
 
 ### 📅 進階人工智慧與最佳化研究所課程
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 225 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260226-01-EMI英語課程導論與學術誠信.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260226-01-EMI英語課程導論與學術誠信.full.md) |
-| 226 | **進階人工智慧與最佳化 Lesson 02：Kaggle 競賽流程、團隊分組與機器學習實驗規劃** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260305-Kaggle競賽流程與團隊實驗規劃.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260305-Kaggle競賽流程與團隊實驗規劃.full.md) |
-| 227 | **進階人工智慧與最佳化 Lesson 03：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260312-GitHub與Kaggle資料科學管線.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260312-GitHub與Kaggle資料科學管線.full.md) |
-| 228 | **進階人工智慧與最佳化 Lesson 04：專案提案全英語發表演練、限時控時與同儕評核** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-專案提案全英語發表與評審問答.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260319-專案提案全英語發表與評審問答.full.md) |
-| 229 | **進階人工智慧與最佳化 Lesson 05：K-Means 非監督式分群演算法原理、向量空間與質心迭代收斂** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260326-KMeans分群演算法與向量空間.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260326-KMeans分群演算法與向量空間.full.md) |
-| 230 | **進階人工智慧與最佳化 Lesson 06：自然語言處理（NLP）文本情感分類基準與評估指標設計** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260409-自然語言處理與情感分類基準.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260409-自然語言處理與情感分類基準.full.md) |
-| 231 | **進階人工智慧與最佳化 Lesson 07：Word2Vec 與 Wav2Vec 2.0 深度表徵學習與特徵提取架構** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260521-Word2Vec與Wav2Vec語音表徵學習.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) |
+| 228 | **進階人工智慧與最佳化 Lesson 01：EMI 全英語課程導論、課堂行為準則與評量規範** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260226-01-EMI英語課程導論與學術誠信.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260226-01-EMI英語課程導論與學術誠信.full.md) |
+| 229 | **進階人工智慧與最佳化 Lesson 02：Kaggle 競賽流程、團隊分組與機器學習實驗規劃** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260305-Kaggle競賽流程與團隊實驗規劃.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260305-Kaggle競賽流程與團隊實驗規劃.full.md) |
+| 230 | **進階人工智慧與最佳化 Lesson 03：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260312-GitHub與Kaggle資料科學管線.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260312-GitHub與Kaggle資料科學管線.full.md) |
+| 231 | **進階人工智慧與最佳化 Lesson 05：K-Means 非監督式分群演算法原理、向量空間與質心迭代收斂** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260326-KMeans分群演算法與向量空間.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260326-KMeans分群演算法與向量空間.full.md) |
+| 232 | **進階人工智慧與最佳化 Lesson 06：自然語言處理（NLP）文本情感分類基準與評估指標設計** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260409-自然語言處理與情感分類基準.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260409-自然語言處理與情感分類基準.full.md) |
+| 233 | **進階人工智慧與最佳化 Lesson 07：Word2Vec 與 Wav2Vec 2.0 深度表徵學習與特徵提取架構** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260521-Word2Vec與Wav2Vec語音表徵學習.md) · [📄 全文](./5-Master/1-First-Year/Spring-Semester/AdvancedAI-Optimization/20260521-Word2Vec與Wav2Vec語音表徵學習.full.md) |
 
 ### 📅 雲端資安偵測工程與威脅狩獵專題研討
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 232 | **AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵** | 講者, 大會司儀 | `single-talk` | [📑 筆記](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.md) · [📄 全文](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md) |
+| 234 | **AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵** | 講者, 大會司儀 | `single-talk` | [📑 筆記](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.md) · [📄 全文](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md) |
 
 ---
