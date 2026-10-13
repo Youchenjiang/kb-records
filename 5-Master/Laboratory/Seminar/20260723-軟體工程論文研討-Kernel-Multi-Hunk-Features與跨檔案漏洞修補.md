@@ -4,7 +4,7 @@
 > **研討日期**：2026-07-23  
 > **與會人員**：論文導讀研究生、指導教授、實驗室全體研究團隊  
 > **研究核心**：現有自動化程式修復（APR）多假設修補為單一連續區塊（Single-Hunk），但真實大型系統（如 Linux Kernel、Android OS）中高達 60% 以上的關鍵修補散落於多個非連續區塊（Multi-Hunk）與跨檔案（Cross-File）；論文提出四大空間拓撲分類（Same-Method、Cluster、Cross-File、Scour）；設計新型評估指標「Hunk Divergence（詞彙嵌入、AST 結構、目錄階層差異）」；探討 LLM 在長上下文與語意發散環境下的修復衰減  
-> **完整逐字**：詳見 [完整原話逐字稿](20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md)
+> **完整逐字**：詳見 [完整原話逐字稿](./20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md)
 
 ---
 

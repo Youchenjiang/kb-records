@@ -5,6 +5,7 @@
 > **指導教授**：陳奕明博士  
 > **核心技術**：CodeLlama (LLM)、LoRA 參數高效微調、NT-Xent 對比學習、GIN (圖同構網路)、Mean Pooling、反射混淆 (Reflection Obfuscation) 韌性  
 > **研究成果**：在嚴苛的 Java Reflection 混淆下，F1-Score 達到 **92.7% ~ 97.9%**，超越基準方法約 4%~10%，大幅降低資安維運漏報率。
+> **完整逐字稿**：[📄 20260714-DRAVILaMA論文簡報.full.md](./20260714-DRAVILaMA論文簡報.full.md)
 
 ---
 

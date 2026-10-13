@@ -251,7 +251,9 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
     # Set environment variable STRICT_FULL_AUDIT=1 to bypass the ratchet and view all remaining items.
     PHASE_A_PENDING_PREFIXES = ()
     PHASE_B_PENDING_PREFIXES = (
-        "5-Master",
+        "5-Master\\2-Second-Year",
+        "5-Master\\1-First-Year",
+        "5-Master\\Archive",
         "4-University",
     )
 
@@ -412,7 +414,7 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
             if bad_ctrls:
                 violations.append(f"{rel_path}: contains unescaped ASCII control character(s) {bad_ctrls}")
 
-            if re.search(r"(?<!\\)rac\{|(?<!\\)floor\b", text):
+            if re.search(r"(?<!\\f)rac\{|(?<!\\[lr])floor\b", text):
                 violations.append(f"{rel_path}: contains corrupted LaTeX ('rac{{' or 'floor' missing backslash)")
 
             for m in re.finditer(r"```mermaid\s+(.*?)```", text, re.S):

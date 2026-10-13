@@ -1,4 +1,4 @@
-# 🛡️ LAB-NEWS-20260914 實驗室資安新聞研討：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析
+# 🛡️ 實驗室資安新聞研討：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析
 
 
 > **研討主題**：PostgreSQL 歷史漏洞成因剖析、Replication 複寫協議認證缺陷、C Interface 權限檢查缺失與提權利用鏈  

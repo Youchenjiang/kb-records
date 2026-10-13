@@ -1,4 +1,4 @@
-# 🛡️ MASTER-THESIS-ANDROID-GNN 碩士研究進度報告：基於敏感 API 行為子圖與 GNN/LLM 之 Android 抗混淆惡意程式檢測
+# 🛡️ 碩士研究進度報告：基於敏感 API 行為子圖與 GNN/LLM 之 Android 抗混淆惡意程式檢測
 
 > **研究主題**：Android 惡意程式檢測、代碼混淆（Code Obfuscation）對抗防禦、敏感 API 行為子圖與 GNN/LLM 融合架構  
 > **發表報告者**：侑宸（Youchen）  
@@ -31,3 +31,14 @@ flowchart TD
 1. **混淆對抗痛點**：Android 生態系高達 66.4% 的惡意軟體採用了進階混淆技術（如 ProGuard、Allatori、控制流混淆）。傳統依賴單純 Opcode 頻率或權限聲明的靜態檢測模型在遇到混淆樣本時檢測率大幅驟降。
 2. **敏感 API 錨點切分**：不依賴全局易被擾動的代碼結構，而是聚焦於 Android 框架底層無法被混淆的關鍵敏感 API（如收發簡訊、讀取 IMEI、動態載入 Dex），以此為核心向外擴展切分局部行為子圖。
 3. **結構與語意的雙重融合**：本研究創新結合行為子圖之拓撲連接關係（GNN）與指令上下文語意特徵（LLM Embedding），使模型能深刻洞察程式真實惡意意圖，具備極強的抗混淆魯棒性。
+
+---
+
+## 📊 現有代表性方法（MaMaDroid / MS-Droid）瓶頸與本研究雙模態架構對照
+
+| 對比方法 | 特徵擷取粒度與圖結構設計 | 面對 66.4% 混淆樣本（特別是 Java 反射與封裝）之致命弱點 | 本研究（GNN + LLM Embedding）之突破方案 |
+| :--- | :--- | :--- | :--- |
+| **MaMaDroid（Markov 狀態轉移）** | 將 API Call Sequence 抽象化至 Package / Family 層級，計算狀態轉移機率矩陣 | 當惡意軟體使用字串加密與 java.lang.reflect.Method.invoke 反射呼叫時，靜態呼叫邊斷裂，轉移機率徹底失真 | 以無法被更名的 Android 系統敏感 API 為錨點（Anchor），向上向下追蹤二至三層局部行為子圖（Behavior Subgraph） |
+| **MS-Droid（局部子圖 GNN + Opcode）** | 擷取敏感 API 周圍子圖，並以 Dalvik Opcode 頻率與權限作為節點初始特徵向量 | 控制流平坦化、垃圾指令插入與 AML 隨機 Wrapper 包裝會嚴重稀釋 Opcode 統計分佈，導致 GNN 訊息傳遞汙染 | 引入預訓練程式碼語言模型（CodeLLM）提取反編譯片段之深層語意向量，與 GIN 圖結構特徵進行跨模態串接融合 |
+| **指導教授與陳教授審查意見** | 關注子圖展開層數（Hop 數）過大引發之計算爆炸與良性程式碼雜訊混入問題 | 若展開超過 3 層，子圖將涵蓋大量通用 UI 與框架初始化函式，造成特徵過度平滑（Over-smoothing） | 鎖定 2 層局部敏感子圖搭配對比學習（Contrastive Learning），拉近混淆前後同源 APK 之表徵空間距離 |
+
