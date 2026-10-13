@@ -459,7 +459,7 @@
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 157 | **實驗室暑期例會：新進碩一生 AI 代理工作流初報、畢業學長程式交接與課程助教規劃** | 指導教授, 新進碩一學弟, 實驗室研究生 | `lab-meeting` | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) |
+| 157 | **實驗室暑期例會：新進碩一生 AI 代理工作流初報、畢業學長程式交接與課程助教規劃** | 指導教授, 新進碩一學弟, 實驗室研究生 | `lab-meeting` | [📑 筆記](./5-Master/Laboratory/Project-Meeting/20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.md) · [📄 全文](./5-Master/Laboratory/Project-Meeting/20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) |
 
 ### 📅 中央大學軟體工程與資安實驗室資安前沿研討
 
@@ -675,13 +675,13 @@
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 213 | **全英語三年期研究計畫 Proposal 提案發表與攻防答辯** | 指導教授, Proposal報告研究生 | `academic-lecture-meeting` | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.full.md) |
+| 213 | **全英語三年期研究計畫 Proposal 提案發表與攻防答辯** | 指導教授, Proposal報告研究生 | `academic-lecture-meeting` | [📑 筆記](./5-Master/Laboratory/Project-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.md) · [📄 全文](./5-Master/Laboratory/Project-Meeting/20261008-01-全英語三年期研究計畫Proposal提案發表與攻防答辯.full.md) |
 
 ### 📅 網路與系統實驗室 全體定期進度彙報大會 (場次 02)
 
 | 序號 | 演講主題 / 論文名稱 | 講者 / 發表人 | 場景規範 | 雙版本連結 |
 | :--- | :--- | :--- | :--- | :--- |
-| 214 | **PNS 組黑箱測試白箱根因分析與 Web-API 越權繞過研討** | PNS組報告研究生, 指導教授 | `academic-lecture-meeting` | [📑 筆記](./5-Master/Laboratory/Lab-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.md) · [📄 全文](./5-Master/Laboratory/Lab-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.full.md) |
+| 214 | **PNS 組黑箱測試白箱根因分析與 Web-API 越權繞過研討** | PNS組報告研究生, 指導教授 | `academic-lecture-meeting` | [📑 筆記](./5-Master/Laboratory/Project-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.md) · [📄 全文](./5-Master/Laboratory/Project-Meeting/20261008-02-PNS組黑箱測試白箱根因分析與Web-API越權繞過研討.full.md) |
 
 ### 📅 網路與系統實驗室 定期論文研討與研究進度會議
 

@@ -250,7 +250,6 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
     # Explicit ratchet lists for staged remediation (Phase A: .full.md first; Phase B: .md summaries second).
     # Set environment variable STRICT_FULL_AUDIT=1 to bypass the ratchet and view all remaining items.
     PHASE_A_PENDING_PREFIXES = (
-        "5-Master\\Laboratory",
         "5-Master\\2-Second-Year",
         "5-Master\\1-First-Year",
         "5-Master\\Archive",
