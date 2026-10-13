@@ -1,6 +1,6 @@
 ---
 title: "惡意 Custom GPT 贊助廣告釣魚與多階段 RAT 木馬植入鏈"
-event: "網路與系統實驗室 定期論文研討與研究進度會議"
+event: "實驗室資安前沿研討"
 date: "2026-10-12"
 talk_id: "LAB-20261012-01-CUSTOM-GPT-RAT-INFECTION"
 speakers: ['同儕研究生', '指導教授']

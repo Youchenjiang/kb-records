@@ -1,6 +1,6 @@
 ---
 title: "專題實作成果發表：Android 醫療互動遊戲 App 架構、關卡邏輯與UI事件控制"
-event: "大學部畢業專題實作期末成果發表"
+event: "畢業專題成果發表"
 date: "2024-06-06"
 talk_id: "CAPSTONE-01-ANDROID-HEALTH-APP-DEMO"
 speakers: ["專題開發者", "專案審查委員 / 同學"]

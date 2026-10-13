@@ -1,6 +1,6 @@
 ---
 title: "Cisco CCNA 1 Lesson 頁354~364：OSPF單區域配置指令與RouterID選任機制"
-event: "Cisco CCNA 1 認證培訓課程"
+event: "Cisco CCNA 1 認證培訓"
 date: "2025-01-07"
 talk_id: "CCNA-354-364"
 speakers: ["授課講師", "學員"]

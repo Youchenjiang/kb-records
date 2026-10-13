@@ -1,6 +1,6 @@
 ---
 title: "軟體工程論文研討：Kernel Multi-Hunk Features 與 AutoOracle 測試斷言生成（LLM 程式修復與採購報價）"
-event: "中央大學軟體工程與資安實驗室學術論文研討"
+event: "實驗室學術文獻研討（Seminar）"
 date: "2026-07-23"
 talk_id: "72"
 speakers: ["研究生A (Multi-Hunk)", "指導教授", "研究生B (AutoOracle)", "實驗室研究生"]

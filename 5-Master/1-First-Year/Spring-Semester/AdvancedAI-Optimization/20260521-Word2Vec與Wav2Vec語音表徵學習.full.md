@@ -1,6 +1,6 @@
 ---
 title: "進階人工智慧與最佳化 Lesson 07：Word2Vec 與 Wav2Vec 2.0 深度表徵學習與特徵提取架構"
-event: "進階人工智慧與最佳化研究所課程"
+event: "進階人工智慧與最佳化"
 date: "2026-05-21"
 talk_id: "AI-OPT-07-REPRESENTATION-LEARNING"
 speakers: ["授課講師", "學員"]

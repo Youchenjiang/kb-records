@@ -1,6 +1,6 @@
 ---
 title: "進階人工智慧與最佳化 Lesson 03：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作"
-event: "進階人工智慧與最佳化研究所課程"
+event: "進階人工智慧與最佳化"
 date: "2026-03-12"
 talk_id: "AI-OPT-03-GITHUB-KAGGLE-PIPELINE"
 speakers: ["授課講師", "學員"]

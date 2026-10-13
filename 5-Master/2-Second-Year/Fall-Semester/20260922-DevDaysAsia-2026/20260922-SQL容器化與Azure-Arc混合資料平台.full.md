@@ -1,6 +1,6 @@
 ---
 title: "現代化資料平台：SQL Server 容器化、Kubernetes 高可用部署、Azure Arc 混合雲與 Data API Builder"
-event: "Microsoft DevDays Asia 2026 台北大會"
+event: "DevDays Asia 2026 台北大會"
 date: "2026-09-22"
 talk_id: "DEV-06-SQL-CONTAINERS-AZURE-ARC-DAB"
 speakers: ["Amit Khandelwal (Microsoft Principal PM)", "Davidus / Tejas (Microsoft Product Manager)", "大會司儀 / 現場主持人"]
