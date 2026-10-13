@@ -9,7 +9,7 @@ verbatim: true
 scenario: "classroom-lecture"
 ---
 
-# 🎙️ AI-OPT-03-GITHUB-KAGGLE-PIPELINE 進階人工智慧與最佳化 Lesson 03：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作 (授課講師 / 學員)
+# 🎙️ 進階人工智慧與最佳化：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作 (授課講師 / 學員)
 
 > **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場授課教師原話講義解說、觀念剖析、實機操作與師生互動問答，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、同音別字、專業網路與資安術語與標點符號，明確標註發言角色（授課講師／學員），並依授課脈絡劃分流暢之主題章節。
 
@@ -107,6 +107,8 @@ scenario: "classroom-lecture"
 
 **【授課講師】**：So we have 8 teams already. He's good. The we are already achieving 86% accuracy which is not bad.
 
+## 🔑 Kaggle API Token 配置、CLI 自動化資料下載與環境變數安全防護
+
 > **繁中翻譯**：好的，如果你們參與進來的話。就在那裡有一個。好的。那麼，資本呢？我能看出來你們當中有些人已經提交了自己的結果了。這是公共排行榜，對吧？我還不確定。我不會向你展示私密內容，因為你現在還無法看到那些內容。所以我們已經有 8 支隊伍了。他很棒。我們目前的準確率已經達到 86%，這個成績還算不錯。
 
 **【授課講師】**：So keep working on it and also. Try to. Draw the experiments in a more organized way. Because like I said. You're standing on the leaderboard. Does not necessarily count towards your grave. OK, what I wanna see is you actually design valid experiments. OK.
@@ -155,6 +157,8 @@ scenario: "classroom-lecture"
 
 **【授課講師】**：Characteristic or even phenomenon being observed, something that we have seen OK and it has a value whether it's a, whether it's a number, whether it's text, whether it's a category, it doesn't matter.
 
+## 📂 專案資料夾結構標準化（data / src / notebooks）與 .gitignore 配置
+
 > **繁中翻譯**：但這兩個詞是可以互換使用的。但通常來說，一個特性是能夠被我們準確測量出來的。或者是某種痕跡或者游標。所觀察到的特徵或現象，我們已經看到過的東西，不管它是何種情況，都有其一定的價值。無論是數字、文字，還是類別，都無所謂。
 
 **【授課講師】**：So as long as we can measure that and we have observed that and it's part of our data and then we call that feature and more importantly it's an input, OK, it's an input to a machine learning model. A machine model here doesn't necessarily mean supervised learning.
@@ -196,6 +200,8 @@ scenario: "classroom-lecture"
 **【授課講師】**：With feature selection, usually they are two categories, filter and record. Embedded is basically basically the mixed version of filter and better.
 
 **【授課講師】**：So once you understood what future, what Future does, and what rapper does, you essentially understand what embedded does. With future extraction, there are several. Different techniques.
+
+## 🌿 Git 分支管理策略（Branching Workflow）、Pull Request 與團隊程式碼審查
 
 > **繁中翻譯**：在特徵選擇方面，通常分為兩類，即過濾式和記錄式。 “嵌入式”基本上就是濾波器與增強功能的混合體。所以一旦你明白了“未來”、“未來”樂隊以及說唱歌手分別代表著什麼，那麼你就基本上也就明白了“嵌入”這個詞的意思了。未來進行開採的話，會有幾種情況。不同的技術。
 
@@ -292,6 +298,8 @@ scenario: "classroom-lecture"
 **【授課講師】**：So this is where you want to use the validation set to figure out. Since that we already on this topic. Let's say you're doing this for the boy or girl. Yeah, I said. Right. So use your training set and then split it into train and validation.
 
 **【授課講師】**：I don't care what sort of ratio you split it into. Could be 70308020, doesn't matter.
+## 🧹 資料清理管線模組化設計：數值標準化、類別嵌入與管道封裝（Pipeline）
+
 
 > **繁中翻譯**：所以這就是你需要利用驗證集來確定的地方。既然我們已經談到了這個話題。比如說，你是為了這個男孩或者女孩而這樣做。是的，我說道。好的。所以先使用你的訓練集，然後將其分為訓練集和驗證集。我不在乎你把它分成什麼樣的比例。可能是 70308020 這個號碼，具體哪個號碼無所謂。
 
@@ -477,6 +485,8 @@ scenario: "classroom-lecture"
 
 > **繁中翻譯**：然後我們之後會訓練我們的模型。所以這裡的我們的學習模型，我們的學習模型，好的，我們的學習模型從未參與其中。在特徵選擇過程中，好的，那麼我們的學習模型就是…… 對於這些特徵是如何被選定的，他毫無瞭解，所以這是未來要採用的方法。所以我們可以申請越多越好。特徵選擇的謬論在此並未涉及我們的學習模型。
 
+## 🧪 本地端 K-Fold 交叉驗證實作與 Public/Private Leaderboard 分數落差分析
+
 **【授課講師】**：So we can have mutual information, have chi square information gain or even correlation. So there are so many different feature selection techniques, OK.
 
 **【授課講師】**：So with future model is very fast because we can feed our training set into several different feature selection methods. And then once we construct B prime and then we can feed B prime to the learning model.
@@ -592,6 +602,8 @@ scenario: "classroom-lecture"
 > **繁中翻譯**：各種文獻的參考資料，包括過往的考試試卷。所以這是我想要與你們分享的事情。到目前為止還有問題嗎？好的。很好。所以這就是特徵選擇。所以接下來我們要進行的是特徵提取這一環節。所以特徵提取就是這麼回事。我們學習如何對特徵進行轉換。進入。所列出的一系列問題概括得不夠清晰明確。
 
 **【授課講師】**：We're going to, we're going to show you what it means. Later. So with features collection OK, we pick a subset from the existing features, but we feature instruction OK. We create entirely new features. And we create entirely new features. By combining the originals.
+## 🚀 自動化基準模型訓練腳本、預測結果匯出與 Kaggle 平台提交實測
+
 
 **【授課講師】**：So. You can say BMI. Is actually feature instruction because we are creating a completely new feature out of.
 
@@ -646,6 +658,8 @@ scenario: "classroom-lecture"
 > **繁中翻譯**：二維空間就是這個子空間或者這條直線。它也是這個二維空間的一個子空間。所以在這個二維空間中，我可以畫出任何一條直線，而這條直線就是這個二維空間的一個子空間。你們在關注嗎？到目前為止。因為我們需要這個來解釋主成分分析。現在使用主成分分析法。使用主成分分析法。我們想要找到最合適的空間，同時也想要找到最合適的材料。
 
 **【授課講師】**：We can project our data points onto you. And then we still keep or maximize the variance. What does that mean? OK if I project these data points onto. This subspace right? Wait, you're gonna end up with? Then.
+
+## 🔍 特徵分布偏移（Covariate Shift）檢測與訓練/測試集一致性驗證
 
 **【授課講師】**：So this is the projection of this data point until you wave access which is the subspace, right? So I have projected these two dimensional data points onto A1 dimensional subspace.
 
@@ -812,6 +826,8 @@ scenario: "classroom-lecture"
 **【授課講師】**：Never include your validation and test it in feature selection or feature instruction process if you do that.
 
 > **繁中翻譯**：所以關鍵在於。關鍵在於我們僅透過訓練集就能找到這個子空間。好的，我們僅利用訓練集就找到了一個子空間。這與特徵選擇流程是相同的。好的，我們發現這些資料是僅透過訓練集來設定的。切勿在特徵選擇或特徵指令過程中包含驗證步驟，如果這樣做的話，請不要對其進行測試。
+## 📊 模型誤差診斷（Error Analysis）、特徵重要性檢視與迭代優化方向
+
 
 **【授課講師】**：Your experiment is invalid. Because you are introducing data leakage, you're introducing data leakage. So that's a very important. Tip. So that's feature extraction with PCA. And before I move on. I like to introduce you guys to this.
 
@@ -922,6 +938,8 @@ scenario: "classroom-lecture"
 > **繁中翻譯**：作為 PCA 視覺結構的一部分。所以這就是你所做的事情，就是你在那種情況下所採取的行動。當你進行特徵提取和特徵選擇時，是不是會使用到實驗流程呢？好的。有什麼問題嗎？好的，FS 的上限是 Fe 。魯國的《今言》中提到過。所以你的…… 特徵選擇樹。蘇怡她說：“孔蕭她的生日是 10 月 1 日但是她的星座是天蠍座她的生日是 10 月 1 日但是她的星座是天蠍座。”
 
 **【授課講師】**：The future engineering. So in the next feature instruction technique that we can that we're going to show you is autoencoded. This is deep learning. And why this is what is really. I'm is anyone here familiar with also encoded? Know it's not all encoded.
+## 📝 實驗日誌撰寫規範、GitHub Repository 結構檢查與課堂總結
+
 
 **【授課講師】**：Oh OK with auto encoder? Auto encoder is a encoder decoder architecture which is a very common and popular architecture for deep learning.
 
