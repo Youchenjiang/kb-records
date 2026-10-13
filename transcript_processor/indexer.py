@@ -28,6 +28,8 @@ class CatalogItem:
     proofread_path: Path
     summary_path: Optional[Path] = None
     tags: List[str] = field(default_factory=list)
+    folder_group: str = ""
+
 
 
 class CatalogIndexer:
@@ -93,6 +95,9 @@ class CatalogIndexer:
                 if cand.exists():
                     summary_path = cand.relative_to(self.root_dir)
 
+            rel_parts = rel_p.parts
+            folder_group = rel_parts[1] if len(rel_parts) > 1 else ""
+
             item = CatalogItem(
                 title=metadata["title"],
                 category=metadata["category"],
@@ -103,11 +108,12 @@ class CatalogIndexer:
                 proofread_path=rel_p,
                 summary_path=summary_path,
                 tags=metadata["tags"],
+                folder_group=folder_group,
             )
             items.append(item)
 
-        # Sort items by category, event, and title
-        items.sort(key=lambda x: (x.category, x.event, x.title))
+        # Sort items by category, folder_group, event, and title
+        items.sort(key=lambda x: (x.category, x.folder_group, x.event, x.title))
         return items
 
     def _parse_metadata(self, path: Path, content: str, rel_path: Path) -> Dict:
@@ -211,6 +217,38 @@ class CatalogIndexer:
         return data
 
 
+    FOLDER_GROUP_LABELS = {
+        "zh-TW": {
+            "1-Studies": "通識與基礎學科",
+            "2-Curriculum": "核心專業課程",
+            "3-Specialization": "專業證照培訓",
+            "4-Capstone": "畢業專題實作",
+            "5-Extracurricular": "社團與課外活動",
+            "1-First-Year": "碩一課程與學術論壇",
+            "2-Second-Year": "碩二進階研討與實務演練",
+            "Laboratory": "實驗室例會、文獻與學位口試",
+            "Archive": "歷史存檔紀錄",
+        },
+        "en": {
+            "1-Studies": "General Studies & Fundamentals",
+            "2-Curriculum": "Core Curriculum",
+            "3-Specialization": "Specialization & Certifications",
+            "4-Capstone": "Senior Project & Capstone",
+            "5-Extracurricular": "Extracurricular & Clubs",
+            "1-First-Year": "First-Year Courses & Academic Conferences",
+            "2-Second-Year": "Second-Year Advanced Seminars & Applied Labs",
+            "Laboratory": "Lab Meetings, Literature & Degree Defense",
+            "Archive": "Archived Records",
+        },
+    }
+
+    def _slugify(self, text: str) -> str:
+        s = re.sub(r"[\U00010000-\U0010ffff]", "", text)
+        s = re.sub(r"[^\w\s\-\u4e00-\u9fff]", "", s)
+        s = s.strip().lower()
+        s = re.sub(r"\s+", "-", s)
+        return s
+
     def generate_markdown(self, items: List[CatalogItem], lang: str = "zh-TW") -> str:
         """
         Render a structured markdown catalog document.
@@ -237,16 +275,22 @@ class CatalogIndexer:
             col_links = "Deliverable Links"
             toc_title = "## 🧭 Quick Category Navigation"
 
-        # Group by category then event
-        categories: Dict[str, Dict[str, List[CatalogItem]]] = {}
+        # Group by category -> folder_group -> event
+        hierarchy: Dict[str, Dict[str, Dict[str, List[CatalogItem]]]] = {}
         for item in items:
             cat = item.category
+            fg = item.folder_group
+            if not fg:
+                rel_parts = item.proofread_path.parts
+                fg = rel_parts[1] if len(rel_parts) > 1 else ""
             ev = item.event
-            if cat not in categories:
-                categories[cat] = {}
-            if ev not in categories[cat]:
-                categories[cat][ev] = []
-            categories[cat][ev].append(item)
+            if cat not in hierarchy:
+                hierarchy[cat] = {}
+            if fg not in hierarchy[cat]:
+                hierarchy[cat][fg] = {}
+            if ev not in hierarchy[cat][fg]:
+                hierarchy[cat][fg][ev] = []
+            hierarchy[cat][fg][ev].append(item)
 
         lines = [
             title,
@@ -257,47 +301,68 @@ class CatalogIndexer:
             "",
         ]
 
+        labels = self.FOLDER_GROUP_LABELS.get(lang, {})
+
         # TOC
-        for cat in categories.keys():
-            lines.append(f"- [{cat}](#{cat.lower()})")
-            for ev in categories[cat].keys():
-                lines.append(f"  - [{ev}](#{ev.lower()})")
+        for cat, folder_groups in hierarchy.items():
+            cat_anchor = self._slugify(cat)
+            lines.append(f"- [{cat}](#{cat_anchor})")
+            for fg, events in folder_groups.items():
+                if fg:
+                    fg_desc = labels.get(fg, "")
+                    fg_display = f"{fg} ({fg_desc})" if fg_desc else fg
+                    fg_anchor = self._slugify(f"{fg}-{fg_desc}") if fg_desc else self._slugify(fg)
+                    lines.append(f"  - [{fg_display}](#{fg_anchor})")
+                    indent = "    "
+                else:
+                    indent = "  "
+                for ev in events.keys():
+                    ev_anchor = self._slugify(ev)
+                    lines.append(f"{indent}- [{ev}](#{ev_anchor})")
         lines.append("")
         lines.append("---")
         lines.append("")
 
         # Content
         global_idx = 1
-        for cat, events in categories.items():
+        for cat, folder_groups in hierarchy.items():
             lines.append(f"## 🗂️ {cat}")
             lines.append("")
 
-            for ev, ev_items in events.items():
-                lines.append(f"### 📅 {ev}")
-                lines.append("")
-                lines.append(f"| {col_no} | {col_topic} | {col_speakers} | {col_scenario} | {col_links} |")
-                lines.append("| :--- | :--- | :--- | :--- | :--- |")
+            for fg, events in folder_groups.items():
+                if fg:
+                    fg_desc = labels.get(fg, "")
+                    fg_display = f"{fg} ({fg_desc})" if fg_desc else fg
+                    lines.append(f"### 📁 {fg_display}")
+                    lines.append("")
 
-                for it in ev_items:
-                    speakers_str = ", ".join(it.speakers)
-                    proofread_rel = str(it.proofread_path).replace("\\", "/")
-                    if is_zh:
-                        proof_lbl = "📄 全文" if ".full.md" in proofread_rel else "📄 Proofread"
-                        sum_lbl = "📑 筆記" if it.summary_path and not str(it.summary_path).endswith("-summary.md") else "📑 摘要"
-                    else:
-                        proof_lbl = "📄 Full" if ".full.md" in proofread_rel else "📄 Proofread"
-                        sum_lbl = "📑 Notes" if it.summary_path and not str(it.summary_path).endswith("-summary.md") else "📑 Summary"
+                for ev, ev_items in events.items():
+                    heading_prefix = "#### 📅" if fg else "### 📅"
+                    lines.append(f"{heading_prefix} {ev}")
+                    lines.append("")
+                    lines.append(f"| {col_no} | {col_topic} | {col_speakers} | {col_scenario} | {col_links} |")
+                    lines.append("| :--- | :--- | :--- | :--- | :--- |")
 
-                    if it.summary_path:
-                        sum_rel = str(it.summary_path).replace("\\", "/")
-                        links_col = f"[{sum_lbl}](./{sum_rel}) · [{proof_lbl}](./{proofread_rel})"
-                    else:
-                        links_col = f"[{proof_lbl}](./{proofread_rel})"
+                    for it in ev_items:
+                        speakers_str = ", ".join(it.speakers)
+                        proofread_rel = str(it.proofread_path).replace("\\", "/")
+                        if is_zh:
+                            proof_lbl = "📄 全文" if ".full.md" in proofread_rel else "📄 Proofread"
+                            sum_lbl = "📑 筆記" if it.summary_path and not str(it.summary_path).endswith("-summary.md") else "📑 摘要"
+                        else:
+                            proof_lbl = "📄 Full" if ".full.md" in proofread_rel else "📄 Proofread"
+                            sum_lbl = "📑 Notes" if it.summary_path and not str(it.summary_path).endswith("-summary.md") else "📑 Summary"
 
-                    lines.append(f"| {global_idx} | **{it.title}** | {speakers_str} | `{it.scenario}` | {links_col} |")
-                    global_idx += 1
+                        if it.summary_path:
+                            sum_rel = str(it.summary_path).replace("\\", "/")
+                            links_col = f"[{sum_lbl}](./{sum_rel}) · [{proof_lbl}](./{proofread_rel})"
+                        else:
+                            links_col = f"[{proof_lbl}](./{proofread_rel})"
 
-                lines.append("")
+                        lines.append(f"| {global_idx} | **{it.title}** | {speakers_str} | `{it.scenario}` | {links_col} |")
+                        global_idx += 1
+
+                    lines.append("")
 
             lines.append("---")
             lines.append("")
