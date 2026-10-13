@@ -1,9 +1,10 @@
-# 💰 122 Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry (Ash)
+# 💰 Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry (Ash)
 
 > **演講主題**：代幣經濟學（Tokenomics）：透過架構改造、三層快取與 Microsoft Foundry 工具鏈實現百萬級成本節省  
 > **講者**：Ash（微軟 Commercial / Go-to-Market 策略主管，前投資銀行股票研究分析師）  
 > **關鍵技術**：Context Layer (Microsoft IQ / M365 Profiler), Three-Tier Caching (Prompt/Semantic/Tool Caching), Agent Optimizer, Agent Traces, Spend Telemetry, Small Language Models (Phi-4)  
 > **標竿案例**：美國電信龍頭 AT&T 月處理 7,000 億 Tokens，以微軟輕量模型 Phi-4 取代大型 Frontier 模型，年節省超過 1,000 萬美元。
+> **完整逐字稿**：[📄 20260922-Tokenomics與Foundry成本優化.full.md](./20260922-Tokenomics與Foundry成本優化.full.md)
 
 ---
 

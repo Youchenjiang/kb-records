@@ -1,4 +1,4 @@
-# 🎙️ SEC-AWS-CLOUDTRAIL-DUCKDB-SIGMA AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵
+# 🎙️ AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵
 
 > **會議主題**：AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵  
 > **日期**：2026-09-12  

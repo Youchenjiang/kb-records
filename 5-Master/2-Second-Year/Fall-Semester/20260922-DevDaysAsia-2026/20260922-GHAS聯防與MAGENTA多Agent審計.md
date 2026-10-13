@@ -1,9 +1,10 @@
-# 🛡️ 123 GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理 (周祈和)
+# 🛡️ GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理 (周祈和)
 
 > **演講主題**：從 Code 到 Cloud：GHAS + Defender 雲地聯防、MAGENTA 多 Agent 弱點自動挖掘與 MCP / AI Gateway 治理  
 > **講者**：周祈和（微軟 AI 解決方案工程師）  
 > **關鍵技術**：GitHub Advanced Security (Secret/Dependency/Code Scanning), Copilot Autofix, Defender for Cloud (Attack Path / Security Campaign), MAGENTA (100+ Agent Harness), Model Context Protocol (MCP) Security, AI Gateway (Azure APIM), Defender XDR  
 > **核心突破**：打破 Dev 與 SecOps 壁壘，以 Security Campaign 聯防；利用 100+ Agent 框架 MAGENTA 實現 96.5% 歷史漏洞檢出並自動生成 PoC 驗證；透過 APIM AI Gateway 治理企業級 MCP 流量。
+> **完整逐字稿**：[📄 20260922-GHAS聯防與MAGENTA多Agent審計.full.md](./20260922-GHAS聯防與MAGENTA多Agent審計.full.md)
 
 ---
 
