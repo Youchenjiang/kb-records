@@ -8,7 +8,7 @@ verbatim: true
 scenario: "single-talk"
 ---
 
-# 🎙️ 122 Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry (Ash)
+# 🎙️ Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry (Ash)
 
 > **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。保留講者 Ash 所有原話演說、架構思維、生動問答互動與企業數據，**未做任何刪減或摘要縮寫**；全面修復英文語音轉錄之斷句、專業術語（如 Microsoft IQ, M365 Profiler, KV Caching, Agent Optimizer, Agent Traces, Spend Telemetry, Phi-4 等），並依演講邏輯劃分清晰結構與主題小標。
 

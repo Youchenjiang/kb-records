@@ -8,7 +8,7 @@ verbatim: true
 scenario: "single-talk"
 ---
 
-# 🎙️ 123 GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理 (周祈和)
+# 🎙️ GitHub Advanced Security 聯防、MAGENTA 多 Agent 弱點審計與 AI Gateway 治理 (周祈和)
 
 > **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整保留講者周祈和所有原話論述、架構拆解、現場實機展示、攻擊場景模擬與有獎徵答互動，**未做任何刪減或縮寫**；全面校正語音辨識錯字與專有名詞（如 GHAS、CodeQL、Copilot Autofix、Defender for Cloud、Security Campaign、MAGENTA、MCP Security、AI Gateway / APIM、Defender XDR 等），並依演講敘事邏輯完成精確段落劃分與主題標題標註。
 

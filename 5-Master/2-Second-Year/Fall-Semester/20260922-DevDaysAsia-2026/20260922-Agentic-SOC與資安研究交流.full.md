@@ -8,7 +8,7 @@ verbatim: true
 scenario: "single-talk"
 ---
 
-# 🎙️ 124 Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談
+# 🎙️ Agentic SOC 企業 AI Agent 安全營運中心與資安研究計畫閉環治理對談
 
 > **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。完整收錄前半場微軟雲端安全架構師之 **Agentic SOC 專業技術演講與有獎徵答**，以及後半場 **Youchen 與資深資安前輩針對『資安三年研究計畫（紅藍綠架構 / POC 專案對齊 / 頂層閉環治理）』的珍貴現場技術交流對話**，**未做任何刪減或縮寫**；全面修復語音辨識錯字與專有名詞（如 Security Copilot, KQL, Threat Hunting, Project Perception, MAGENTA, SUT 測試閉環等），並依對話邏輯完成清晰段落與角色標註。
 

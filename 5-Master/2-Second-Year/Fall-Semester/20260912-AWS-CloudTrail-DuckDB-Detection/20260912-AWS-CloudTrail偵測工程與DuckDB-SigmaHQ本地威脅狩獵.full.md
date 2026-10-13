@@ -9,7 +9,7 @@ verbatim: true
 scenario: "single-talk"
 ---
 
-# 🎙️ SEC-AWS-CLOUDTRAIL-DUCKDB-SIGMA AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵 (講者 / 大會司儀)
+# 🎙️ AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵 (講者 / 大會司儀)
 
 > **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與排版版**。保留講者所有原話發言、語意轉折、現場互動對話、幕後故事與問答，**未做任何刪減或摘要縮寫**；已全面修訂語音辨識錯字、同音字與專有名詞，並依演講敘事邏輯完成流暢的段落劃分與主題標題標註。
 
@@ -96,6 +96,8 @@ And our job was to make them. Vulnerable. Where does all of this come from? Cine
 **大會司儀**: Might have a heart use. Techniques they actually observe in real security incidents. In the cloud 12 event name attached to spherical 1\. Then go on Railway query isn't responsible. Playbooks open start dashboard.
 
 And adaptive things like, which we test every rule against. All old coverage, all free. Thank you to everyone of these closure.
+
+## 📊 AWS 帳號行為基線（Baseline）缺失與多來源 JSON 日誌正規化挑戰
 
 > **繁中翻譯**：可能有某種用途。他們在實際安全事件中實際觀察到的那些技術手段。在“雲 12”活動中，附帶的活動名稱為“球形 1”。然後繼續點選“鐵路查詢”按鈕，該功能不由本系統負責。點選“操作手冊”按鈕，進入主介面。還有那些具有適應性的內容，比如我們會將每一項規則都進行測試以加以驗證。所有過往的報道，全部免費提供。感謝每一位參與此次活動的人員。
 
@@ -256,6 +258,8 @@ Now the attacker causes real damage. They may still data is so malware or use th
 Get command invocation leaves the column result. This shows that someone learn the command and check its output.
 
 > **繁中翻譯**：例如，可以啟動新的 EC2 例項。攻擊者可能會將它們用於加密貨幣挖礦或其他惡意活動。使用系統管理器設定命令。能夠即時學習到已有的指令。它不需要促卵泡激素（FSH）或者開放式的收件箱埠。獲取命令呼叫會留下列結果。這表明有人學習了該命令並檢視了其輸出。
+
+## 🔑 雲端憑證濫用與 Bedrock AI 模型呼叫（InvokeModel）異常偵測
 
 **大會司儀**: Please also look at Invoke model. Crypto mining is not the only way to make money from a solar energy. Attacker can use solar credential to call another bedroom lock and learn AI models on the victims account. This type of attack is called LM jacking.
 
@@ -432,6 +436,8 @@ Then we propose the city of Fusion that live ctap the task streaming. And we eva
 > **繁中翻譯**：當然，統計資料也是相當可靠的。我們有一個研究問題。我們能否利用您的 CTF 任務來可靠地評估壓力下的進攻能力呢？所以現在我們揭示了這一風險、資料汙染等問題。然後我們提出了“融合之城”這一概念，它能夠實現任務的流式處理。我們使用這三種模型和兩個代理，在五條線路的 CTF 中進行了評估。
 
 **大會司儀**: And we released this all of the code for the further research at the GitHub. 1st we build decipherment. Approved for the potential cheating. The decipher web is considered with the base agent that is like and we add the tool the website.
+## 🤖 多代理威脅狩獵工作流（Multi-Agent Hunting）與資料汙染防範
+
 
 The decipher is the planner and executor and web. Website tourism mandatory. The first step.
 
@@ -616,6 +622,8 @@ So we can reconstruct 5 challenges and second one is the listing to occur. And s
 > **繁中翻譯**：這個裝置存在一些問題，所以我們採用了七層垂直排列的方式來解決。這種垂直的佈局方式意味著…… 他們有一些插入檔案或者構建檔案。這份檔案屬於一種特殊物品，但他們當時並不知曉這一點。因此，我們可以列出 5 個挑戰，第二個挑戰是列表的生成問題。並且有些挑戰會包含“駕駛員”這一角色，但並沒有關於“駕駛員”的任何描述。
 
 **大會司儀**: So we reconstruct 6 challenge about that nine challenge. And third one is the incomplete article. It means some challenge use the static URL in their artifact or binary. but you cannot access the binary access the URL anymore. So you cannot reconstruct that.
+
+## 📈 基準評測（Benchmark）效能對比、誤報率調校與現場聽眾 QA 問答
 
 You don't know what information is that you want. Which one is important?
 

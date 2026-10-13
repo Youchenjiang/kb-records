@@ -9,13 +9,13 @@ verbatim: true
 scenario: "keynote-technical-session"
 ---
 
-# 🎙️ DEV-06-SQL-CONTAINERS-AZURE-ARC-DAB 現代化資料平台：SQL Server 容器化、Kubernetes 高可用部署、Azure Arc 混合雲與 Data API Builder (Microsoft PM 團隊 / 大會司儀)
+# 🎙️ 現代化資料平台：SQL Server 容器化、Kubernetes 高可用部署、Azure Arc 混合雲與 Data API Builder (Microsoft PM 團隊 / 大會司儀)
 
 > **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄現場微軟總部產品主管發表 SQL Server 容器化架構、K8s Operator 自動化部署、跨混合雲 Always On 容錯移轉、Azure Arc 混合資料服務與 Data API Builder (DAB) 零程式碼資料發布之原話簡報與實機展示，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字、專有名詞與標點符號，明確標註發言角色，並依研討脈絡劃分流暢之主題章節。
 
 ---
 
-## 🚀 章節段落 01：SQL 容器化與混合雲資料平台展示
+## 🐳 SQL Server 容器化架構總覽與混合雲部署策略
 
 **【大會司儀 / 現場主持人】**：Hello folks, my name is Davidus and I'm a product manager for 41 years at Microsoft. Amen. Thank you. My name is Amit Kanwal and I'm the product manager at Microsoft. Been part of Microsoft for 15 years now. Thank you. All right, let's get started.
 
@@ -112,6 +112,8 @@ scenario: "keynote-technical-session"
 **【大會司儀 / 現場主持人】**：So if you just look at this, this is the new custom resource that got created.created the dx enterprise sql ags. now to deploy sql server, I'm going to deploy three sql server instances.
 
 **【大會司儀 / 現場主持人】**：to deploy sql server, all I have to do is run this one single command, which goes ahead starts deploying sql server. now what is this command doing in the backend? Let's just look while the deployment happens.
+## ☸️ Kubernetes 高可用部署（HA）、Operator 自動故障轉移（Failover）與持久儲存
+
 
 **【大會司儀 / 現場主持人】**：We are deploying three synchronous replica for sql server. These are three independent sql server instances. The name of my availability group is ag1. This is the port to which it is connected, and you would see this is an external port.
 
@@ -212,6 +214,8 @@ scenario: "keynote-technical-session"
 **【大會司儀 / 現場主持人】**：Let Dad come into the picture and do that for you.
 
 **【大會司儀 / 現場主持人】**：So basically, as a developer, all you got to define and tell Dad is I want the JSON configuration with the entities, with the database objects that you want to make available via the API, the endpoint configuration, the the overall setup of
+## 💻 Docker 本地容器實機演練、快速啟動與開發測試環境標準化
+
 
 **【大會司儀 / 現場主持人】**：the endpoint, the rules, all of that is taken care by Dad.
 
@@ -327,7 +331,7 @@ scenario: "keynote-technical-session"
 
 ---
 
-## 🚀 章節段落 02：SQL 容器化與混合雲資料平台展示
+## ☁️ Azure Arc 資料控制器與本地端叢集雙向連線納管
 
 **【Davidus / Tejas (Microsoft Product Manager)】**：好的。
 
@@ -371,7 +375,7 @@ scenario: "keynote-technical-session"
 
 ---
 
-## 🚀 章節段落 03：SQL 容器化與混合雲資料平台展示
+## 📊 跨環境資源監控、自動垂直擴展與本地端離線彈性治理
 
 **【Davidus / Tejas (Microsoft Product Manager)】**：收穫，剛剛收穫什麼？
 
@@ -415,7 +419,7 @@ scenario: "keynote-technical-session"
 
 ---
 
-## 🚀 章節段落 04：SQL 容器化與混合雲資料平台展示
+## ⚡ Data API Builder (DAB) 零程式碼轉換 REST/GraphQL 與權限驗證實機展示
 
 **【Davidus / Tejas (Microsoft Product Manager)】**：其實就跟著跟著。
 
