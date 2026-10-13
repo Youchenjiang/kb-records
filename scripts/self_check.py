@@ -63,16 +63,31 @@ def check_deliverable_pairs():
         for o in orphan_full:
             print(f"     {o.relative_to(REPO_ROOT)}")
 
-    # Check relative links in summaries
+    # Check that every summary has an exact relative link to its matching ./{stem}.full.md and no broken links
+    from tests.test_session_atomicity_and_speaker_turn import TestSessionAtomicityAndSpeakerTurn
     broken_links = []
     for s in all_summary:
+        rel_s = str(s.relative_to(REPO_ROOT))
         content = s.read_text(encoding="utf-8")
-        links = re.findall(r"\[.*?\]\((.*?\.full\.md)\)", content)
-        for l in links:
+        if TestSessionAtomicityAndSpeakerTurn._is_phase_b_pending(rel_s):
+            links = re.findall(r"\[.*?\]\((.*?\.full\.md)\)", content)
+            for l in links:
+                target = (s.parent / l).resolve()
+                if not target.exists():
+                    broken_links.append((rel_s, l))
+            continue
+        expected_full_name = s.name[:-3] + ".full.md"
+        expected_target = f"./{expected_full_name}"
+        all_md_links = re.findall(r"\[([^\]]+)\]\(([^)]+\.md)\)", content)
+        if not any(target == expected_target or target == expected_full_name for _, target in all_md_links):
+            broken_links.append((rel_s, f"missing link to {expected_target}"))
+        for _, l in all_md_links:
+            if l.startswith("http"):
+                continue
             target = (s.parent / l).resolve()
             if not target.exists():
-                broken_links.append((s, l))
-    assert len(broken_links) == 0, f"Broken links found in summaries: {broken_links}"
+                broken_links.append((rel_s, f"dead link -> {l}"))
+    assert len(broken_links) == 0, f"Broken or missing links in summaries ({len(broken_links)}): {broken_links[:10]}"
     print("  ✅ All deliverable links resolve correctly!")
 
 
@@ -95,6 +110,7 @@ def check_proofread_standards():
         print(f"  ❌ Found {len(issues)} files with structural issues:")
         for path, sc, errs in issues:
             print(f"     {path} (scenario: {sc}) -> {errs}")
+        assert len(issues) == 0, f"Found {len(issues)} transcripts failing structural validation!"
     else:
         print("  ✅ All deliverable transcripts comply with PROOFREAD_RULES.md!")
     return issues

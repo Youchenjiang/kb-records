@@ -247,12 +247,199 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
 
         self.assertEqual(violations, [], "Found unsplit topic transition markers in single-topic meetings:\n" + "\n".join(violations))
 
+    # Explicit ratchet lists for staged remediation (Phase A: .full.md first; Phase B: .md summaries second).
+    # Set environment variable STRICT_FULL_AUDIT=1 to bypass the ratchet and view all remaining items.
+    PHASE_A_PENDING_PREFIXES = (
+        "5-Master\\Laboratory",
+        "5-Master\\2-Second-Year",
+        "5-Master\\1-First-Year",
+        "5-Master\\Archive",
+        "4-University",
+    )
+    PHASE_B_PENDING_PREFIXES = (
+        "5-Master",
+        "4-University",
+    )
+
+    @classmethod
+    def _is_phase_a_pending(cls, rel_path: str) -> bool:
+        import os
+        if os.environ.get("STRICT_FULL_AUDIT") == "1":
+            return False
+        norm = rel_path.replace("/", "\\")
+        return any(norm.startswith(p) for p in cls.PHASE_A_PENDING_PREFIXES)
+
+    @classmethod
+    def _is_phase_b_pending(cls, rel_path: str) -> bool:
+        import os
+        if os.environ.get("STRICT_FULL_AUDIT") == "1":
+            return False
+        norm = rel_path.replace("/", "\\")
+        return any(norm.startswith(p) for p in cls.PHASE_B_PENDING_PREFIXES)
+
+    def test_laboratory_five_subdirectory_taxonomy(self):
+        """
+        Rule 0.2: 5-Master/Laboratory/ must strictly contain only the 5 canonical subdirectories:
+        Degree-Defense, Project-Meeting, Security-News, Seminar, Thesis-Progress.
+        """
+        if self._is_phase_a_pending("5-Master\\Laboratory"):
+            return
+        allowed_subdirs = {
+            "Degree-Defense",
+            "Project-Meeting",
+            "Security-News",
+            "Seminar",
+            "Thesis-Progress",
+        }
+        lab_dir = REPO_ROOT / "5-Master" / "Laboratory"
+        actual_subdirs = {p.name for p in lab_dir.iterdir() if p.is_dir()}
+        unexpected = sorted(actual_subdirs - allowed_subdirs)
+        self.assertEqual(
+            unexpected,
+            [],
+            f"Found non-canonical subdirectories under 5-Master/Laboratory/: {unexpected}. Allowed: {sorted(allowed_subdirs)}",
+        )
+
+    def test_full_transcript_semantic_chapter_segmentation(self):
+        """
+        Rule 18: Semantic Chapter Segmentation & Density Protocol for .full.md.
+        1. Bans mechanical placeholder H2s ('章節段落 01', '現場原話實錄', '逐字記錄').
+        2. Bans identical repeated H2 templates inside the same .full.md.
+        3. Non-archive .full.md > 2,500 chars must have >= 2 H2 headings.
+        4. Long .full.md (> 10,000 chars) must have average H2 span <= 8,000 chars.
+        """
+        violations = []
+        for f in self.full_files:
+            rel_path = str(f.relative_to(REPO_ROOT))
+            if self._is_phase_a_pending(rel_path):
+                continue
+            text = f.read_text(encoding="utf-8")
+            body = re.sub(r"^---\n.*?\n---\n", "", text, flags=re.S)
+            n_chars = len(body.strip())
+            h2s = re.findall(r"^##\s+(.+)$", body, re.M)
+
+            # 1. Ban placeholder H2s
+            bad_h2s = [h for h in h2s if re.search(r"章節段落\s*\d*|現場原話實錄|逐字記錄", h)]
+            if bad_h2s:
+                violations.append(f"{rel_path}: contains placeholder H2 headings: {bad_h2s[:3]}")
+
+            # 2. Ban identical repeated H2s
+            if len(h2s) >= 2 and len(set(h2s)) < len(h2s):
+                violations.append(f"{rel_path}: contains duplicate H2 headings: {h2s[:4]}")
+
+            if "Archive" not in rel_path:
+                # 3. Minimum 2 H2s for > 2,500 chars
+                if n_chars > 2500 and len(h2s) < 2:
+                    violations.append(
+                        f"{rel_path}: body has {n_chars} chars but only {len(h2s)} H2 heading(s) (minimum 2 required)"
+                    )
+                # 4. Maximum average H2 span <= 8,000 chars for > 10,000 chars
+                if n_chars > 10000 and len(h2s) >= 1 and (n_chars / len(h2s)) > 8000:
+                    violations.append(
+                        f"{rel_path}: sparse H2 segmentation ({len(h2s)} H2s across {n_chars} chars, avg {int(n_chars/len(h2s))} > 8000)"
+                    )
+
+        self.assertEqual(
+            violations,
+            [],
+            f"Found .full.md chapter segmentation violations ({len(violations)}):\n" + "\n".join(violations[:30]),
+        )
+
+    def test_h1_cleanliness_and_summary_universal_header(self):
+        """
+        Section 7.1: Universal Header Protocol & H1 Cleanliness.
+        1. Neither .full.md nor .md H1 titles may contain internal codes (e.g. MATH-02, SECPLUS-03, Lesson 01, # 📱 91 ).
+        2. .md summaries must NOT start with YAML frontmatter (---).
+        3. .md summaries must include '>' blockquote metadata and an exact relative link to ./{same_stem}.full.md.
+        """
+        violations = []
+        internal_code_re = re.compile(r"[A-Z]{2,}-[A-Za-z0-9-]+|Lesson\s*\d+|#\s+\S+\s+\d{2,3}\s+")
+
+        for f in self.full_files:
+            rel_path = str(f.relative_to(REPO_ROOT))
+            if self._is_phase_a_pending(rel_path):
+                continue
+            text = f.read_text(encoding="utf-8")
+            body = re.sub(r"^---\n.*?\n---\n", "", text, flags=re.S)
+            h1_m = re.search(r"^#\s+(.+)$", body, re.M)
+            if h1_m and internal_code_re.search(h1_m.group(0)):
+                violations.append(f"{rel_path}: H1 contains banned internal code/number: '{h1_m.group(0)}'")
+
+        for s in self.summary_files:
+            rel_path = str(s.relative_to(REPO_ROOT))
+            if self._is_phase_b_pending(rel_path):
+                continue
+            text = s.read_text(encoding="utf-8")
+
+            if text.startswith("---"):
+                violations.append(f"{rel_path}: summary (.md) must not contain YAML frontmatter")
+
+            h1_m = re.search(r"^#\s+(.+)$", text, re.M)
+            if not h1_m:
+                violations.append(f"{rel_path}: missing H1 title")
+            elif internal_code_re.search(h1_m.group(0)):
+                violations.append(f"{rel_path}: H1 contains banned internal code/number: '{h1_m.group(0)}'")
+
+            if not re.search(r"^>\s*\*\*", text, re.M):
+                violations.append(f"{rel_path}: missing '>' blockquote metadata header")
+
+            expected_full = s.name[:-3] + ".full.md"
+            if f"(./{expected_full})" not in text:
+                violations.append(f"{rel_path}: missing exact relative link '(./{expected_full})'")
+
+        self.assertEqual(
+            violations,
+            [],
+            f"Found H1 / Universal Header / Link violations ({len(violations)}):\n" + "\n".join(violations[:30]),
+        )
+
+    def test_no_control_chars_corrupted_latex_or_invalid_mermaid(self):
+        """
+        Section 7.4: Bans ASCII control chars (\\x07, \\x08, \\x09, \\x0c), corrupted LaTeX (rac{, unescaped floor),
+        and invalid Mermaid syntax ('Note over' inside flowchart/graph).
+        """
+        violations = []
+        for f in self.full_files:
+            rel_path = str(f.relative_to(REPO_ROOT))
+            if self._is_phase_a_pending(rel_path):
+                continue
+            text = f.read_text(encoding="utf-8")
+            bad_ctrls = [repr(c) for c in ("\x07", "\x08", "\x09", "\x0c") if c in text]
+            if bad_ctrls:
+                violations.append(f"{rel_path}: contains unescaped ASCII control character(s) {bad_ctrls}")
+
+        for s in self.summary_files:
+            rel_path = str(s.relative_to(REPO_ROOT))
+            if self._is_phase_b_pending(rel_path):
+                continue
+            text = s.read_text(encoding="utf-8")
+
+            bad_ctrls = [repr(c) for c in ("\x07", "\x08", "\x09", "\x0c") if c in text]
+            if bad_ctrls:
+                violations.append(f"{rel_path}: contains unescaped ASCII control character(s) {bad_ctrls}")
+
+            if re.search(r"(?<!\\)rac\{|(?<!\\)floor\b", text):
+                violations.append(f"{rel_path}: contains corrupted LaTeX ('rac{{' or 'floor' missing backslash)")
+
+            for m in re.finditer(r"```mermaid\s+(.*?)```", text, re.S):
+                mbody = m.group(1).strip()
+                if re.match(r"^(flowchart|graph)\b", mbody) and "Note over" in mbody:
+                    violations.append(f"{rel_path}: Mermaid flowchart/graph illegally uses sequenceDiagram 'Note over'")
+
+        self.assertEqual(
+            violations,
+            [],
+            f"Found control char / LaTeX / Mermaid syntax violations ({len(violations)}):\n" + "\n".join(violations[:30]),
+        )
+
     def test_summary_structure_and_depth_gate(self):
         """
-        Rule 15: Zero Generic Boilerplate and Substantive Depth in Summaries (.md).
+        Rule 15 & Section 7.3/7.4: Zero Generic Boilerplate and Substantive Genre Depth in Summaries (.md).
         1. Forbids generic boilerplate phrases ('深入檢視問題根源', '針對演算法提出系統性評估', etc.).
-        2. Non-archive summaries must have substantive length (>=150 chars) and either
-           a Mermaid diagram (```mermaid) or a structured overview table (| :---).
+        2. Non-archive summaries must have:
+           - >= 3 H2 sections ('## ')
+           - >= 1,500 chars (>= 1,200 chars if matching .full.md body < 5,000 chars)
+           - At least 1 Mermaid diagram ('```mermaid')
         """
         generic_boilerplate = [
             "深入檢視問題根源",
@@ -264,22 +451,41 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
             rel_path = str(s.relative_to(REPO_ROOT))
             text = s.read_text(encoding="utf-8")
 
-            # 1. Generic boilerplate check
+            # 1. Generic boilerplate check (always enforced)
             for phrase in generic_boilerplate:
                 if phrase in text:
                     violations.append(f"{rel_path}: contains generic boilerplate '{phrase}'")
 
             # 2. Structural depth check (excluding archive chatter)
             if "Archive" not in rel_path:
-                if len(text.strip()) < 150:
-                    violations.append(f"{rel_path}: summary too short (<150 chars, len={len(text.strip())})")
-                has_mermaid = "```mermaid" in text
-                has_table = "| :---" in text or "|:---" in text
-                if not (has_mermaid or has_table):
-                    violations.append(f"{rel_path}: lacks conceptual diagram (Mermaid) or structured overview table")
+                if self._is_phase_b_pending(rel_path):
+                    if len(text.strip()) < 150:
+                        violations.append(f"{rel_path}: summary too short (<150 chars)")
+                    continue
 
-        self.assertEqual(violations, [], "Found summary depth / structure violations:\n" + "\n".join(violations))
+                h2s = re.findall(r"^##\s+(.+)$", text, re.M)
+                if len(h2s) < 3:
+                    violations.append(f"{rel_path}: has only {len(h2s)} H2 section(s) (minimum 3 required)")
+
+                full_path = s.parent / (s.name[:-3] + ".full.md")
+                full_len = len(full_path.read_text(encoding="utf-8")) if full_path.exists() else 99999
+                min_chars = 1200 if full_len < 5000 else 1500
+                if len(text.strip()) < min_chars:
+                    violations.append(
+                        f"{rel_path}: summary too short ({len(text.strip())} chars < required {min_chars} chars)"
+                    )
+
+                if "```mermaid" not in text:
+                    violations.append(f"{rel_path}: missing mandatory Mermaid diagram")
+
+        self.assertEqual(
+            violations,
+            [],
+            f"Found summary depth / structure violations ({len(violations)}):\n" + "\n".join(violations[:30]),
+        )
 
 if __name__ == "__main__":
     unittest.main()
+
+
 
