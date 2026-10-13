@@ -1,10 +1,10 @@
-# 🛡️ CCNA-354-364 Cisco CCNA 1 Lesson 頁354~364：OSPF單區域配置指令與RouterID選任機制
+# 🎙️ Cisco CCNA 1 Lesson 頁354~364：OSPF單區域配置指令與RouterID選任機制 (授課講師 / 學員)
 
 > **課程主題**：Cisco IOS OSPFv2 單區域配置、Router ID 判定優先權與 Wildcard Mask 匹配實務  
 > **授課講師**：授課講師（資安與網路認證原廠認證講師）  
 > **核心模組**：Cisco CCNA 1 Chapter 9: OSPFv2 Configuration & Router ID  
 > **學習目標**：掌握 `router ospf` 程序 ID、`router-id` 指派優先順序、`network` 萬用遮罩宣告及狀態檢查  
-> **關聯文件**：[📄 完整原話逐字稿 (2025-01-07-Lesson-354-364-OSPF單區域配置指令與RouterID選任機制-proofread.md)](./2025-01-07-Lesson-354-364-OSPF單區域配置指令與RouterID選任機制-proofread.md)
+> **關聯文件**：[📄 完整原話逐字稿 (2025-01-07-Lesson-354-364-OSPF單區域配置指令與RouterID選任機制-proofread.md)](./20250107-03-OSPF單區域配置指令與RouterID選任機制.full.md)
 
 ---
 

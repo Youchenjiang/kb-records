@@ -1,10 +1,10 @@
-# 🛡️ CCNA-Lab-NAT01 Cisco CCNA 1 Lab NAT01：NAT轉換統計監控與InsideOutside介面驗證
+# 🎙️ Cisco CCNA 1 Lab NAT01：NAT轉換統計監控與InsideOutside介面驗證 (授課講師 / 學員)
 
 > **課程主題**：NAT 運作統計驗證、Hits/Misses 計數器判讀與 Inside/Outside 介面狀態診斷  
 > **授課講師**：授課講師（資安與網路認證原廠認證講師）  
 > **核心模組**：Cisco CCNA 1 Lab NAT01: Verifying NAT Statistics  
 > **學習目標**：掌握 `show ip nat statistics` 輸出、辨識活躍轉換條目及透過連續 ping 驗證 Hits 增加  
-> **關聯文件**：[📄 完整原話逐字稿 (2025-01-08-Lab-NAT01-NAT轉換統計監控與InsideOutside介面驗證-proofread.md)](./2025-01-08-Lab-NAT01-NAT轉換統計監控與InsideOutside介面驗證-proofread.md)
+> **關聯文件**：[📄 完整原話逐字稿 (2025-01-08-Lab-NAT01-NAT轉換統計監控與InsideOutside介面驗證-proofread.md)](./20250108-03-NAT轉換統計監控與InsideOutside介面驗證.full.md)
 
 ---
 

@@ -250,9 +250,7 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
     # Explicit ratchet lists for staged remediation (Phase A: .full.md first; Phase B: .md summaries second).
     # Set environment variable STRICT_FULL_AUDIT=1 to bypass the ratchet and view all remaining items.
     PHASE_A_PENDING_PREFIXES = ()
-    PHASE_B_PENDING_PREFIXES = (
-        "4-University",
-    )
+    PHASE_B_PENDING_PREFIXES = ()
 
     @classmethod
     def _is_phase_a_pending(cls, rel_path: str) -> bool:
