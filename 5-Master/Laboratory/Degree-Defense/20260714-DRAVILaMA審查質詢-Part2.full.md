@@ -1,6 +1,6 @@
 ---
 title: "碩士論文口試審查攻防 Part 2：Attention 機制辯論、子圖層數與口試通過決議 (沈柏寧)"
-event: "碩士學位論文口試"
+event: "學位論文口試 (Degree-Defense)"
 speakers: ["口試委員 (召集人)", "口試委員", "研究生 沈柏寧", "指導教授 陳奕明博士"]
 type: "verbatim-narrative-transcript"
 verbatim: true

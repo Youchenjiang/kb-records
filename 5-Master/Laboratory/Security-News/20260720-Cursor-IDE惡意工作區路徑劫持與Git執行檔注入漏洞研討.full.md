@@ -1,6 +1,6 @@
 ---
 title: "資安前沿漏洞與威脅研討：Cursor IDE 惡意工作區 Windows 路徑搜尋劫持與北韓假求職供應鏈攻擊分析"
-event: "實驗室資安前沿研討"
+event: "資安新聞研討 (Security-News)"
 date: "2026-07-20"
 talk_id: "71"
 speakers: ["資安報告同學 (Cursor漏洞)", "指導教授", "資安報告同學 (北韓APT攻擊)", "實驗室研究生"]

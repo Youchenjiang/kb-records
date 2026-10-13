@@ -1,6 +1,6 @@
 ---
 title: "實驗室資安新聞研討：PostgreSQL 抄寫協議認證繞過與特權提升漏洞解析"
-event: "實驗室資安前沿研討"
+event: "資安新聞研討 (Security-News)"
 date: "2026-09-14"
 talk_id: "LAB-NEWS-20260914-POSTGRES-PRIVILEGE-ESCALATION"
 speakers: ["報告學員", "指導教授"]

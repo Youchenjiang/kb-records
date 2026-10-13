@@ -1,6 +1,6 @@
 ---
 title: "碩士研究進度報告：基於敏感 API 行為子圖與 GNN/LLM 之 Android 抗混淆惡意程式檢測"
-event: "碩士學位論文進度研討"
+event: "論文進度研討 (Thesis-Progress)"
 date: "2026-02-26"
 talk_id: "MASTER-THESIS-ANDROID-GNN"
 speakers: ["侑宸", "指導教授", "陳教授 / 共同指導"]
