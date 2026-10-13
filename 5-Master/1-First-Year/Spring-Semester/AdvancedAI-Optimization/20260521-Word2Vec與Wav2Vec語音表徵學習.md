@@ -1,4 +1,4 @@
-# 🎙️ AI-OPT-07-REPRESENTATION-LEARNING 進階人工智慧與最佳化 Lesson 07：Word2Vec 與 Wav2Vec 2.0 深度表徵學習與特徵提取架構
+# 🎙️ 進階人工智慧與最佳化：Word2Vec 與 Wav2Vec 2.0 深度表徵學習與特徵提取架構 (授課講師 / 學員)
 
 > **課程主題**：自監督學習（Self-Supervised Learning）、Word2Vec 詞嵌入、Wav2Vec 2.0 語音表徵學習與隱藏向量提取  
 > **日期**：2026-05-21  

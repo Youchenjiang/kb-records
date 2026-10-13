@@ -1,11 +1,11 @@
-# 🛡️ DEVOPS-01-ANSIBLE-AUTOMATION DevOps 自動化維運實務 Lesson 01：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合
+# 🎙️ DevOps 自動化維運實務：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合 (授課講師 / 學員)
 
 
 > **課程主題**：Ansible 自動化組態管理、無代理架構（Agentless）、Playbook 語法、冪等性與容器化維運  
 > **授課教授**：授課講師（系統架構授課教授）  
 > **核心模組**：Ansible Architecture, Agentless SSH, Playbook YAML, Idempotency, Docker Deployment  
 > **學習目標**：掌握 Ansible 基礎架構原理，理解宣告式語法與冪等性對大規模基礎架構維運（IaC）之關鍵價值  
-> **關聯文件**：[📄 完整原話逐字稿 (2025-12-09-01-Ansible無代理架構與Playbook部署-proofread.md)](./2025-12-09-01-Ansible無代理架構與Playbook部署-proofread.md)
+> **關聯文件**：[📄 完整原話逐字稿 (2025-12-09-01-Ansible無代理架構與Playbook部署-proofread.md)](./20251209-Ansible無代理架構與Playbook部署.full.md)
 
 ---
 

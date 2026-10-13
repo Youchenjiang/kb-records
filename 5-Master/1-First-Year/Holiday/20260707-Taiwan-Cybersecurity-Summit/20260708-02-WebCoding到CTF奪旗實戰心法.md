@@ -1,13 +1,9 @@
----
-title: "從 Web Coding 到 CTF 奪旗實戰：AI 輔助開發的陷阱防範與 Git Worktree 隔離工作流"
-event: "InfoSec Taiwan 2026 臺灣資訊安全論壇 / 第二日社群高峰論壇"
-date: 2026-07-08
-speakers: ["Miss Tika (Cyber Security Consultant / Baselines 安全程式碼社群發起人)", "大會主持人"]
-scenario: "conference-speech"
-tags: ["SecureCoding", "AI輔助開發", "GitWorktree", "CTF", "一人開發", "安全審查", "反向提問法", "原子化提交"]
----
+# 🎙️ 從 Web Coding 到 CTF 奪旗實戰：AI 輔助開發的陷阱防範與 Git Worktree 隔離工作流
 
-# 從 Web Coding 到 CTF 奪旗實戰：AI 輔助開發的陷阱防範與 Git Worktree 隔離工作流
+> **會議／場合**：InfoSec Taiwan 2026 臺灣資訊安全論壇 / 第二日社群高峰論壇  
+> **日期**：2026-07-08  
+> **講者／參與者**：Miss Tika (Cyber Security Consultant / Baselines 安全程式碼社群發起人)、大會主持人  
+> **關聯文件**：[📄 完整逐字稿 (20260708-02-WebCoding到CTF奪旗實戰心法.full.md)](./20260708-02-WebCoding到CTF奪旗實戰心法.full.md)
 
 ## 📌 執行摘要 (Executive Summary)
 

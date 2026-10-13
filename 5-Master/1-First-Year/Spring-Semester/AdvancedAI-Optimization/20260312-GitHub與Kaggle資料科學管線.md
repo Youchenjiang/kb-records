@@ -1,4 +1,4 @@
-# 🎙️ AI-OPT-03-GITHUB-KAGGLE-PIPELINE 進階人工智慧與最佳化 Lesson 03：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作
+# 🎙️ 進階人工智慧與最佳化：GitHub 專案協作、Kaggle 認證與端到端特徵管線實作 (授課講師 / 學員)
 
 > **課程主題**：GitHub 團隊版本庫串接、Kaggle 實名帳號登錄、特徵工程管線與提交驗證  
 > **日期**：2026-03-12  
