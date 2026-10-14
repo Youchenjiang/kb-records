@@ -120,6 +120,21 @@ Here is the transcript without frontmatter...
             self.assertIn("Mock Talk", en_file.read_text(encoding="utf-8"))
             self.assertIn("Mock Talk", zh_file.read_text(encoding="utf-8"))
 
+    def test_catalog_toc_anchors_validity(self):
+        indexer = CatalogIndexer(root_dir=Path("."))
+        items = indexer.scan()
+        for lang in ("zh-TW", "en"):
+            md = indexer.generate_markdown(items, lang=lang)
+            import re
+            toc_matches = re.findall(r"\[.*?\]\(#(.*?)\)", md)
+            anchor_matches = re.findall(r'<a id="(.*?)"></a>', md)
+            self.assertGreater(len(toc_matches), 10)
+            self.assertEqual(len(anchor_matches), len(set(anchor_matches)), "Anchor IDs must be unique")
+            anchor_set = set(anchor_matches)
+            for link in toc_matches:
+                self.assertIn(link, anchor_set, f"TOC link #{link} has no matching anchor in {lang} catalog")
+
 
 if __name__ == "__main__":
     unittest.main()
+

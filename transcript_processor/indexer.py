@@ -112,8 +112,14 @@ class CatalogIndexer:
             )
             items.append(item)
 
-        # Sort items by category, folder_group, event, and title
-        items.sort(key=lambda x: (x.category, x.folder_group, x.event, x.title))
+        # Sort items by category, folder_group (Archive at the end), event, and title
+        items.sort(key=lambda x: (
+            x.category,
+            1 if x.folder_group == "Archive" else 0,
+            x.folder_group,
+            x.event,
+            x.title,
+        ))
         return items
 
     def _parse_metadata(self, path: Path, content: str, rel_path: Path) -> Dict:
@@ -222,7 +228,8 @@ class CatalogIndexer:
         s = re.sub(r"[^\w\s\-\u4e00-\u9fff]", "", s)
         s = s.strip().lower()
         s = re.sub(r"\s+", "-", s)
-        return s
+        s = re.sub(r"-+", "-", s)
+        return s.strip("-")
 
     def generate_markdown(self, items: List[CatalogItem], lang: str = "zh-TW") -> str:
         """
@@ -282,7 +289,7 @@ class CatalogIndexer:
             lines.append(f"- [{cat}](#{cat_anchor})")
             for fg, events in folder_groups.items():
                 if fg:
-                    fg_anchor = self._slugify(fg)
+                    fg_anchor = f"{cat_anchor}-{self._slugify(fg)}"
                     lines.append(f"  - [{fg}](#{fg_anchor})")
                     indent = "    "
                 else:
@@ -297,16 +304,22 @@ class CatalogIndexer:
         # Content
         global_idx = 1
         for cat, folder_groups in hierarchy.items():
+            cat_anchor = self._slugify(cat)
+            lines.append(f'<a id="{cat_anchor}"></a>')
             lines.append(f"## 🗂️ {cat}")
             lines.append("")
 
             for fg, events in folder_groups.items():
                 if fg:
+                    fg_anchor = f"{cat_anchor}-{self._slugify(fg)}"
+                    lines.append(f'<a id="{fg_anchor}"></a>')
                     lines.append(f"### 📁 {fg}")
                     lines.append("")
 
                 for ev, ev_items in events.items():
+                    ev_anchor = self._slugify(ev)
                     heading_prefix = "#### 📅" if fg else "### 📅"
+                    lines.append(f'<a id="{ev_anchor}"></a>')
                     lines.append(f"{heading_prefix} {ev}")
                     lines.append("")
                     lines.append(f"| {col_no} | {col_topic} | {col_speakers} | {col_scenario} | {col_links} |")
