@@ -81,22 +81,23 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
                 if "右臣" in line:
                     typo_violations.append(f"{rel_path}:{idx+1} contains '右臣' (ASR typo for 侑宸)")
 
-            # 2. Check Thesis-Progress: strictly reserved for Youchen's master thesis progress
+            # 2. Check Thesis-Progress: verified master thesis progress presenters (侑宸, 謝祐庭)
             if "Thesis-Progress" in rel_path:
-                if "**【侑宸】**：" not in text:
+                valid_presenters = ["侑宸", "謝祐庭"]
+                if not any(f"**【{p}】**：" in text for p in valid_presenters):
                     role_violations.append(
-                        f"{rel_path}: Thesis-Progress is strictly reserved for Youchen's thesis progress! Must contain '**【侑宸】**：'"
+                        f"{rel_path}: Thesis-Progress must contain verified thesis presenter ({valid_presenters})! Found neither."
                     )
                 if "**【論文研究生】**：" in text or "**【發表研究生 (Youchen)】**：" in text:
                     role_violations.append(
-                        f"{rel_path}: uses vague speaker tag instead of mandatory '**【侑宸】**：'"
+                        f"{rel_path}: uses vague speaker tag instead of verified presenter"
                     )
-                # Frontmatter check: speakers must contain 侑宸
+                # Frontmatter check: speakers must contain a verified presenter
                 fm_end = text.find("---", 3)
                 if fm_end != -1:
                     fm = text[3:fm_end]
-                    if "speakers:" in fm and "侑宸" not in fm:
-                        role_violations.append(f"{rel_path}: Thesis-Progress frontmatter 'speakers' missing '侑宸'")
+                    if "speakers:" in fm and not any(p in fm for p in valid_presenters):
+                        role_violations.append(f"{rel_path}: Thesis-Progress frontmatter 'speakers' missing verified presenter ({valid_presenters})")
 
         self.assertEqual(typo_violations, [], "Found uncorrected ASR typos:\n" + "\n".join(typo_violations))
         self.assertEqual(role_violations, [], "Found Youchen entity role violations:\n" + "\n".join(role_violations))
