@@ -576,7 +576,7 @@
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 228 | **Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證** | 侑宸, 指導教授, 同儕研究生 | `academic-lecture-meeting` | [📑 Notes](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.md) · [📄 Full](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md) |
+| 228 | **Android 商業邏輯漏洞探索** | 謝祐庭, 侑宸, 指導教授, 同儕研究生 | `academic-lecture-meeting` | [📑 Notes](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android商業邏輯漏洞探索.md) · [📄 Full](./5-Master/Laboratory/Thesis-Progress/20261012-02-Android商業邏輯漏洞探索.full.md) |
 | 229 | **碩士研究進度報告：基於敏感 API 行為子圖與 GNN/LLM 之 Android 抗混淆惡意程式檢測** | 侑宸, 指導教授, 陳教授 / 共同指導 | `single-talk` | [📑 Notes](./5-Master/Laboratory/Thesis-Progress/20260226-Android惡意程式行為子圖與抗混淆GNN檢測.md) · [📄 Full](./5-Master/Laboratory/Thesis-Progress/20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md) |
 | 230 | **黑箱 API 漏洞探測策略與利用鏈前期偵查研討** | 侑宸, 指導教授, 審查委員/口委 | `academic-lecture-meeting` | [📑 Notes](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.md) · [📄 Full](./5-Master/Laboratory/Thesis-Progress/20261008-黑箱API漏洞探測策略與利用鏈前期偵查研討.full.md) |
 
