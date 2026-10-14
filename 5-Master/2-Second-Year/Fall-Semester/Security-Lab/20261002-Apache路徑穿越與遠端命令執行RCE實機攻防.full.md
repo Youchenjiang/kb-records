@@ -1,6 +1,6 @@
 ---
 title: "Apache 2.4.49 路徑穿越與遠端命令執行 RCE 實機攻防演練"
-event: "資安攻防與系統安全實驗"
+event: "資安攻防實驗"
 date: "2026-10-02"
 talk_id: "SEC-LAB-APACHE-RCE-EXPLOIT"
 speakers: ['授課教師', '助教', '學員']

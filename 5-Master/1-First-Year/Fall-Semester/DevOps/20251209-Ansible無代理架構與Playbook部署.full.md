@@ -1,6 +1,6 @@
 ---
 title: "DevOps 自動化維運實務 Lesson 01：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合"
-event: "系統維運與自動化（DevOps）"
+event: "DevOps 系統維運"
 date: "2025-12-09"
 talk_id: "DEVOPS-01-ANSIBLE-AUTOMATION"
 speakers: ["授課講師", "學員"]

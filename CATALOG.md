@@ -6,54 +6,54 @@
 
 - [4-University](#4-university)
   - [1-Studies (General Studies & Fundamentals)](#1-studies-general-studies-fundamentals)
-    - [基礎數學與微積分](#基礎數學與微積分)
+    - [基礎數學](#基礎數學)
     - [普通物理學](#普通物理學)
     - [普通生物學實驗](#普通生物學實驗)
-    - [職涯發展與求職輔導](#職涯發展與求職輔導)
+    - [職涯發展](#職涯發展)
   - [2-Curriculum (Core Curriculum)](#2-curriculum-core-curriculum)
-    - [管理資訊系統（MIS）](#管理資訊系統mis)
-    - [雲端運算架構](#雲端運算架構)
+    - [管理資訊系統](#管理資訊系統)
+    - [雲端運算](#雲端運算)
     - [電腦網路](#電腦網路)
   - [3-Specialization (Specialization & Certifications)](#3-specialization-specialization-certifications)
-    - [20250106-Cisco CCNA 1 認證培訓](#20250106-cisco-ccna-1-認證培訓)
-    - [20250113-CompTIA Security+ 認證培訓](#20250113-comptia-security-認證培訓)
-    - [物聯網與網路安全實務](#物聯網與網路安全實務)
+    - [20250106-Cisco CCNA 1](#20250106-cisco-ccna-1)
+    - [20250113-CompTIA Security+](#20250113-comptia-security)
+    - [物聯網安全](#物聯網安全)
   - [4-Capstone (Senior Project & Capstone)](#4-capstone-senior-project-capstone)
-    - [專案管理實務](#專案管理實務)
-    - [畢業專題成果發表](#畢業專題成果發表)
+    - [專案管理](#專案管理)
+    - [畢業專題成果展](#畢業專題成果展)
   - [5-Extracurricular (Extracurricular & Clubs)](#5-extracurricular-extracurricular-clubs)
-    - [自然生態觀察社野外考察](#自然生態觀察社野外考察)
+    - [自然生態觀察社](#自然生態觀察社)
   - [Archive (Archived Records)](#archive-archived-records)
-    - [大學部歷史常規存檔](#大學部歷史常規存檔)
+    - [大學部歷史存檔](#大學部歷史存檔)
 - [5-Master](#5-master)
   - [1-First-Year (First-Year Courses & Academic Conferences)](#1-first-year-first-year-courses-academic-conferences)
-    - [20251205-Deloitte 生成式 AI 與資安專題演講](#20251205-deloitte-生成式-ai-與資安專題演講)
-    - [20251208-UIC 可解釋人工智慧（XAI）專題講座](#20251208-uic-可解釋人工智慧xai專題講座)
-    - [20260318-人工智慧專題全英文發表會](#20260318-人工智慧專題全英文發表會)
-    - [20260327-中央資管學術論文暨專題發表會](#20260327-中央資管學術論文暨專題發表會)
-    - [20260707-InfoSec Taiwan 2026 臺灣資訊安全論壇](#20260707-infosec-taiwan-2026-臺灣資訊安全論壇)
-    - [20260821-HITCON 2026 台灣駭客年會](#20260821-hitcon-2026-台灣駭客年會)
-    - [人機互動與使用者經驗設計（HCI/UX）](#人機互動與使用者經驗設計hciux)
-    - [機器學習與深度學習](#機器學習與深度學習)
-    - [系統維運與自動化（DevOps）](#系統維運與自動化devops)
-    - [資訊安全競賽培訓（CTF）](#資訊安全競賽培訓ctf)
-    - [資訊管理研究方法論](#資訊管理研究方法論)
-    - [軟體工程期末專題發表](#軟體工程期末專題發表)
+    - [20251205-Deloitte 專題演講](#20251205-deloitte-專題演講)
+    - [20251208-UIC 專題講座](#20251208-uic-專題講座)
+    - [20260318-AI 專題全英文發表會](#20260318-ai-專題全英文發表會)
+    - [20260327-資管系學術論文發表會](#20260327-資管系學術論文發表會)
+    - [20260707-InfoSec Taiwan 2026](#20260707-infosec-taiwan-2026)
+    - [20260821-HITCON 2026](#20260821-hitcon-2026)
+    - [DevOps 系統維運](#devops-系統維運)
+    - [人機互動 (HCI/UX)](#人機互動-hciux)
+    - [機器學習](#機器學習)
+    - [研究方法論](#研究方法論)
+    - [資安競賽培訓 (CTF)](#資安競賽培訓-ctf)
+    - [軟體工程](#軟體工程)
     - [進階人工智慧與最佳化](#進階人工智慧與最佳化)
     - [電腦網路實驗](#電腦網路實驗)
   - [2-Second-Year (Second-Year Advanced Seminars & Applied Labs)](#2-second-year-second-year-advanced-seminars-applied-labs)
-    - [20260912-教育部 AIS3 資安社團幹部研習營](#20260912-教育部-ais3-資安社團幹部研習營)
-    - [20260912-硬體逆向與漏洞利用專題](#20260912-硬體逆向與漏洞利用專題)
-    - [20260912-雲端資安偵測與威脅狩獵](#20260912-雲端資安偵測與威脅狩獵)
-    - [20260916-資管系大師專題講座與碩班研討](#20260916-資管系大師專題講座與碩班研討)
-    - [20260919-智慧金融與投資實務講座](#20260919-智慧金融與投資實務講座)
-    - [20260922-DevDays Asia 2026 台北大會](#20260922-devdays-asia-2026-台北大會)
-    - [20260927-開源網路情報與威脅情資（OSINT/CTI）](#20260927-開源網路情報與威脅情資osintcti)
-    - [管理溝通與專業表達（EMI）](#管理溝通與專業表達emi)
-    - [資安攻防與系統安全實驗](#資安攻防與系統安全實驗)
-    - [高等電腦網路與通訊架構](#高等電腦網路與通訊架構)
+    - [20260912-AIS3 資安社團研習營](#20260912-ais3-資安社團研習營)
+    - [20260912-硬體逆向與漏洞利用](#20260912-硬體逆向與漏洞利用)
+    - [20260912-雲端資安威脅狩獵](#20260912-雲端資安威脅狩獵)
+    - [20260916-資管系大師專題講座](#20260916-資管系大師專題講座)
+    - [20260919-智慧金融與投資講座](#20260919-智慧金融與投資講座)
+    - [20260922-DevDays Asia 2026](#20260922-devdays-asia-2026)
+    - [20260927-OSINT 與威脅情資](#20260927-osint-與威脅情資)
+    - [管理溝通](#管理溝通)
+    - [資安攻防實驗](#資安攻防實驗)
+    - [高等電腦網路](#高等電腦網路)
   - [Archive (Archived Records)](#archive-archived-records)
-    - [實驗室歷史日常存檔](#實驗室歷史日常存檔)
+    - [實驗室歷史存檔](#實驗室歷史存檔)
   - [Laboratory (Lab Meetings, Literature & Degree Defense)](#laboratory-lab-meetings-literature-degree-defense)
     - [學位論文口試 (Degree-Defense)](#學位論文口試-degree-defense)
     - [學術論文研討 (Seminar)](#學術論文研討-seminar)
@@ -67,7 +67,7 @@
 
 ### 📁 1-Studies (General Studies & Fundamentals)
 
-#### 📅 基礎數學與微積分
+#### 📅 基礎數學
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -92,7 +92,7 @@
 | 9 | **普通生物學：植物生理學、根部水分無機鹽吸收與維管束輸送機制** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/1-Studies/Fall-Semester/GeneralBiologyLab/20241107-01-植物生理學與水分養分輸送機制.md) · [📄 Full](./4-University/1-Studies/Fall-Semester/GeneralBiologyLab/20241107-01-植物生理學與水分養分輸送機制.full.md) |
 | 10 | **普通生物學：被子植物花部構造、雌雄配子體發育與雙重受精機制** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/1-Studies/Fall-Semester/GeneralBiologyLab/20241107-02-被子植物花部構造與生殖發育.md) · [📄 Full](./4-University/1-Studies/Fall-Semester/GeneralBiologyLab/20241107-02-被子植物花部構造與生殖發育.full.md) |
 
-#### 📅 職涯發展與求職輔導
+#### 📅 職涯發展
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -105,7 +105,7 @@
 
 ### 📁 2-Curriculum (Core Curriculum)
 
-#### 📅 管理資訊系統（MIS）
+#### 📅 管理資訊系統
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -113,7 +113,7 @@
 | 18 | **管理資訊系統 Lesson 02：期末重點總複習、車聯網 V2X 通訊、金融科技區塊鏈與資源基礎觀點 RBV** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/2-Curriculum/Spring-Semester/ManagementInformationSystems/20240523-期末重點複習車聯網與RBV架構.md) · [📄 Full](./4-University/2-Curriculum/Spring-Semester/ManagementInformationSystems/20240523-期末重點複習車聯網與RBV架構.full.md) |
 | 19 | **管理資訊系統：資訊倫理專題辯論——網路平台是否應對假新聞與霸凌言論承擔法律責任** | 授課教授, 辯論會主持人, 正方辯士（第三組）, 反方辯士（第五組）, 課堂發言 | `classroom-debate` | [📑 Notes](./4-University/2-Curriculum/Spring-Semester/ManagementInformationSystems/20240516-資訊倫理辯論網路平台假新聞與霸凌責任.md) · [📄 Full](./4-University/2-Curriculum/Spring-Semester/ManagementInformationSystems/20240516-資訊倫理辯論網路平台假新聞與霸凌責任.full.md) |
 
-#### 📅 雲端運算架構
+#### 📅 雲端運算
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -129,7 +129,7 @@
 
 ### 📁 3-Specialization (Specialization & Certifications)
 
-#### 📅 20250106-Cisco CCNA 1 認證培訓
+#### 📅 20250106-Cisco CCNA 1
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -166,7 +166,7 @@
 | 54 | **Cisco CCNA 1 認證報考流程、Pearson VUE 帳號註冊與 OnVUE 居家線上考試指南** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250106-Cisco-CCNA1/20250110-01-認證報考與OnVUE考試規則.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250106-Cisco-CCNA1/20250110-01-認證報考與OnVUE考試規則.full.md) |
 | 55 | **Cisco CCNA 1 認證衝刺：靜態 NAT、動態 NAT 與 PAT 連接埠位址轉換配置實務** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250106-Cisco-CCNA1/20250108-09-認證衝刺-靜態動態NAT與PAT位址轉換實務配置.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250106-Cisco-CCNA1/20250108-09-認證衝刺-靜態動態NAT與PAT位址轉換實務配置.full.md) |
 
-#### 📅 20250113-CompTIA Security+ 認證培訓
+#### 📅 20250113-CompTIA Security+
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -220,7 +220,7 @@
 | 103 | **CompTIA Security+ 專題延伸：開源資產管理工具、資訊資產生命週期與漏洞關聯分析** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-03-開源資產管理工具與企業軟體盤點.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250124-03-開源資產管理工具與企業軟體盤點.full.md) |
 | 104 | **CompTIA Security+ 考前衝刺：網路服務安全、DNS 防護、Cookie 機制與雲端沙箱分析** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250114-04-重點衝刺-網路服務安全DNS與雲端沙箱分析.md) · [📄 Full](./4-University/3-Specialization/Holiday/20250113-CompTIA-SecurityPlus/20250114-04-重點衝刺-網路服務安全DNS與雲端沙箱分析.full.md) |
 
-#### 📅 物聯網與網路安全實務
+#### 📅 物聯網安全
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -228,7 +228,7 @@
 
 ### 📁 4-Capstone (Senior Project & Capstone)
 
-#### 📅 專案管理實務
+#### 📅 專案管理
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -245,7 +245,7 @@
 | 116 | **專案管理實務 Lesson 11：專案品質度量、EVM 指標精確計算與大型工程驗收** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./4-University/4-Capstone/Fall-Semester/ProjectManagement/20241127-02-品質度量指標與工程驗收.md) · [📄 Full](./4-University/4-Capstone/Fall-Semester/ProjectManagement/20241127-02-品質度量指標與工程驗收.full.md) |
 | 117 | **專案管理與工程實作：模擬退火演算法、組合最佳化與背包問題求解** | 專案主講人, 提問 / 專案組員 | `team-discussion` | [📑 Notes](./4-University/4-Capstone/Fall-Semester/ProjectManagement/20241209-模擬退火最佳化與背包問題演算法研討.md) · [📄 Full](./4-University/4-Capstone/Fall-Semester/ProjectManagement/20241209-模擬退火最佳化與背包問題演算法研討.full.md) |
 
-#### 📅 畢業專題成果發表
+#### 📅 畢業專題成果展
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -253,7 +253,7 @@
 
 ### 📁 5-Extracurricular (Extracurricular & Clubs)
 
-#### 📅 自然生態觀察社野外考察
+#### 📅 自然生態觀察社
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -262,7 +262,7 @@
 
 ### 📁 Archive (Archived Records)
 
-#### 📅 大學部歷史常規存檔
+#### 📅 大學部歷史存檔
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -278,25 +278,25 @@
 
 ### 📁 1-First-Year (First-Year Courses & Academic Conferences)
 
-#### 📅 20251205-Deloitte 生成式 AI 與資安專題演講
+#### 📅 20251205-Deloitte 專題演講
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 126 | **產學大師講座：生成式 AI 產業浪潮、企業資安治理與職場數位競爭力** | 勤業眾信資安執行副總, 主持教授, 現場學員 | `single-talk` | [📑 Notes](./5-Master/1-First-Year/Fall-Semester/20251205-Deloitte-GenAI-Cybersecurity-Keynote/20251205-生成式AI與企業資安治理.md) · [📄 Full](./5-Master/1-First-Year/Fall-Semester/20251205-Deloitte-GenAI-Cybersecurity-Keynote/20251205-生成式AI與企業資安治理.full.md) |
 
-#### 📅 20251208-UIC 可解釋人工智慧（XAI）專題講座
+#### 📅 20251208-UIC 專題講座
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 127 | **國際頂尖學者講座：可解釋人工智慧 XAI、因果推論與反事實決策模型** | Prof. Ali (UIC), 主持人 | `single-talk` | [📑 Notes](./5-Master/1-First-Year/Fall-Semester/20251208-UIC-XAI-Keynote/20251208-可解釋AI因果推論與反事實決策.md) · [📄 Full](./5-Master/1-First-Year/Fall-Semester/20251208-UIC-XAI-Keynote/20251208-可解釋AI因果推論與反事實決策.full.md) |
 
-#### 📅 20260318-人工智慧專題全英文發表會
+#### 📅 20260318-AI 專題全英文發表會
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 128 | **英語專題發表：人工智慧教育表現預測、特徵工程與低成本過濾法模型** | 授課講師, 學員, Youchen | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/20260318-EnglishAI-Presentation/20260318-AI教育表現特徵工程與過濾法預測.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/20260318-EnglishAI-Presentation/20260318-AI教育表現特徵工程與過濾法預測.full.md) |
 
-#### 📅 20260327-中央資管學術論文暨專題發表會
+#### 📅 20260327-資管系學術論文發表會
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -307,7 +307,7 @@
 | 133 | **研討會 Session H 全程記錄：AI 焦慮社群分析、短影音推薦、量化回測、語音偽造 XAI 與動態 RAG 經營模式** | 大會司儀, 評審委員 (黃教授 / 李駿平教授 / 謝教授), 發表者 (AI 焦慮研究), 發表者 高一婷 (指導：陳任良/陳彥良), 發表者 (指導：徐志成), 發表者 鍾國 (指導教授群), 發表者 張子龍 (指導教授群) | `multi-paper` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/20260327-NCU-IM-AcademicConference/20260327-AI焦慮與語音偽造.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/20260327-NCU-IM-AcademicConference/20260327-AI焦慮與語音偽造.full.md) |
 | 134 | **研討會 Session I 全程記錄：DRAVILaMA、區塊鏈電力交易、多策略資料前處理、半監督多標籤影像與 Sequential TAG 股市預測** | 大會司儀, 特邀評審 歐陽長龍教授 (南洋大學/NTU), 發表者 沈柏寧 (DRAVILaMA), 發表者 張玉瑤 (指導：葉偉陽), 發表者 林玉慧 (指導：蔡志豐), 發表者 (指導：蔡志豐), 發表者 許紫薇 (Sequential TAG) | `multi-paper` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/20260327-NCU-IM-AcademicConference/20260327-特邀專題與學生論文.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/20260327-NCU-IM-AcademicConference/20260327-特邀專題與學生論文.full.md) |
 
-#### 📅 20260707-InfoSec Taiwan 2026 臺灣資訊安全論壇
+#### 📅 20260707-InfoSec Taiwan 2026
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -322,7 +322,7 @@
 | 143 | **日本 IoT 物聯網安全標準與 PSIRT 2.0 實務：歐盟 CRA 規範與松下製造業落地** | 大會主持人 (黃先生), 伊豆倉 憲 博士 (Dr. Ken Idokura / GMO Cybersecurity by Ierae), Jack Lee (日本松下 Panasonic 首席資安工程師) | `conference-speech` | [📑 Notes](./5-Master/1-First-Year/Holiday/20260707-Taiwan-Cybersecurity-Summit/20260707-03-日本IoT物聯網安全標準與指引實務.md) · [📄 Full](./5-Master/1-First-Year/Holiday/20260707-Taiwan-Cybersecurity-Summit/20260707-03-日本IoT物聯網安全標準與指引實務.full.md) |
 | 144 | **誰該守哪道線？企業 AI 系統上線的十二項能力缺口與技術債防禦體系** | 徐方毅 (FanJu / IBM 資安主管、GDG Taipei 核心幹部), 邱哲倫 (GDG Taipei 社長、Google Cloud AI GDE), 大會主持人 | `conference-speech` | [📑 Notes](./5-Master/1-First-Year/Holiday/20260707-Taiwan-Cybersecurity-Summit/20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.md) · [📄 Full](./5-Master/1-First-Year/Holiday/20260707-Taiwan-Cybersecurity-Summit/20260708-06-誰該守哪道線之AI落地十二項能力缺口與技術債.full.md) |
 
-#### 📅 20260821-HITCON 2026 台灣駭客年會
+#### 📅 20260821-HITCON 2026
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -336,44 +336,44 @@
 | 152 | **POS 刷卡機魔改 ADB 與 AI 輔助挖 0-Day 實戰** | 資安研究員 | `single-talk` | [📑 Notes](./5-Master/1-First-Year/Holiday/20260821-HITCON-2026/20260821-02-POS-ADB-0Day-AI輔助.md) · [📄 Full](./5-Master/1-First-Year/Holiday/20260821-HITCON-2026/20260821-02-POS-ADB-0Day-AI輔助.full.md) |
 | 153 | **黑吃黑：瞄準資安研究員與紅隊的供應鏈攻擊 (Jason & Sam)** | Jason, Sam | `single-talk` | [📑 Notes](./5-Master/1-First-Year/Holiday/20260821-HITCON-2026/20260821-03-供應鏈攻擊-黑吃黑.md) · [📄 Full](./5-Master/1-First-Year/Holiday/20260821-HITCON-2026/20260821-03-供應鏈攻擊-黑吃黑.full.md) |
 
-#### 📅 人機互動與使用者經驗設計（HCI/UX）
+#### 📅 DevOps 系統維運
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 154 | **人機互動與 UX 設計 Lesson 01：行為動機模型、人境互動模式與使用者心智模型** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-01-行為動機與人境互動模式.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-01-行為動機與人境互動模式.full.md) |
-| 155 | **人機互動與 UX 設計 Lesson 02：使用者經驗完整定義、智慧產品易用性與美學平衡** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-02-使用者經驗定義與產品易用性.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-02-使用者經驗定義與產品易用性.full.md) |
+| 154 | **DevOps 自動化維運實務 Lesson 01：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Fall-Semester/DevOps/20251209-Ansible無代理架構與Playbook部署.md) · [📄 Full](./5-Master/1-First-Year/Fall-Semester/DevOps/20251209-Ansible無代理架構與Playbook部署.full.md) |
 
-#### 📅 機器學習與深度學習
-
-| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
-| :--- | :--- | :--- | :--- | :--- |
-| 156 | **機器學習實務 Lesson 01：監督式學習分類問題定義、決策樹演算法 ID3 與資訊增益** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-01-決策樹與ID3演算法.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-01-決策樹與ID3演算法.full.md) |
-| 157 | **機器學習實務 Lesson 02：單純貝氏分類器 Naive Bayes 與支援向量機 SVM 原理** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-02-單純貝氏與SVM原理.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-02-單純貝氏與SVM原理.full.md) |
-| 158 | **機器學習實務 Lesson 03：深度學習導論、多層感知機 MLP 與神經網路架構設計** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-01-深度學習與多層感知機.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-01-深度學習與多層感知機.full.md) |
-| 159 | **機器學習實務 Lesson 04：特徵萃取、損失函數與梯度下降法模型最佳化** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-02-特徵萃取與梯度下降最佳化.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-02-特徵萃取與梯度下降最佳化.full.md) |
-| 160 | **機器學習實務 Lesson 05：貝氏信念網路、支援向量機 SVM 最大間距超平面與軟邊界最佳化** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-03-SVM最大間距與軟邊界.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-03-SVM最大間距與軟邊界.full.md) |
-
-#### 📅 系統維運與自動化（DevOps）
+#### 📅 人機互動 (HCI/UX)
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 161 | **DevOps 自動化維運實務 Lesson 01：Ansible 無代理架構、Playbook 宣告式部署與 Docker 容器整合** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Fall-Semester/DevOps/20251209-Ansible無代理架構與Playbook部署.md) · [📄 Full](./5-Master/1-First-Year/Fall-Semester/DevOps/20251209-Ansible無代理架構與Playbook部署.full.md) |
+| 155 | **人機互動與 UX 設計 Lesson 01：行為動機模型、人境互動模式與使用者心智模型** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-01-行為動機與人境互動模式.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-01-行為動機與人境互動模式.full.md) |
+| 156 | **人機互動與 UX 設計 Lesson 02：使用者經驗完整定義、智慧產品易用性與美學平衡** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-02-使用者經驗定義與產品易用性.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/HCI-UX/20260303-02-使用者經驗定義與產品易用性.full.md) |
 
-#### 📅 資訊安全競賽培訓（CTF）
-
-| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
-| :--- | :--- | :--- | :--- | :--- |
-| 162 | **資安實戰 Lesson 01：CTF 圖片隱寫術分析、十六進位結構竄改與 OSINT 地理定位解題實務** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.full.md) |
-
-#### 📅 資訊管理研究方法論
+#### 📅 機器學習
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
-| 163 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-01-概念操作化與變數定義.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-01-概念操作化與變數定義.full.md) |
-| 164 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-02-假說建立與理論框架實證.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-02-假說建立與理論框架實證.full.md) |
-| 165 | **資訊管理研究方法論 Week 01：課程導論、研究動機與 AI 時代下的學者競爭力** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260225-研究方法-01-課程導論與研究動機.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260225-研究方法-01-課程導論與研究動機.full.md) |
+| 157 | **機器學習實務 Lesson 01：監督式學習分類問題定義、決策樹演算法 ID3 與資訊增益** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-01-決策樹與ID3演算法.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-01-決策樹與ID3演算法.full.md) |
+| 158 | **機器學習實務 Lesson 02：單純貝氏分類器 Naive Bayes 與支援向量機 SVM 原理** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-02-單純貝氏與SVM原理.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260302-02-單純貝氏與SVM原理.full.md) |
+| 159 | **機器學習實務 Lesson 03：深度學習導論、多層感知機 MLP 與神經網路架構設計** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-01-深度學習與多層感知機.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-01-深度學習與多層感知機.full.md) |
+| 160 | **機器學習實務 Lesson 04：特徵萃取、損失函數與梯度下降法模型最佳化** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-02-特徵萃取與梯度下降最佳化.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-02-特徵萃取與梯度下降最佳化.full.md) |
+| 161 | **機器學習實務 Lesson 05：貝氏信念網路、支援向量機 SVM 最大間距超平面與軟邊界最佳化** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-03-SVM最大間距與軟邊界.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/MachineLearning/20260309-03-SVM最大間距與軟邊界.full.md) |
 
-#### 📅 軟體工程期末專題發表
+#### 📅 研究方法論
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 162 | **資訊管理研究方法論 Lesson 01：基礎研究 vs. 應用研究、概念層次與變數操作化** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-01-概念操作化與變數定義.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-01-概念操作化與變數定義.full.md) |
+| 163 | **資訊管理研究方法論 Lesson 02：概念界定、離散與連續變數、假說建立與理論架構檢證** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-02-假說建立與理論框架實證.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260304-02-假說建立與理論框架實證.full.md) |
+| 164 | **資訊管理研究方法論 Week 01：課程導論、研究動機與 AI 時代下的學者競爭力** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260225-研究方法-01-課程導論與研究動機.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/ResearchMethodology/20260225-研究方法-01-課程導論與研究動機.full.md) |
+
+#### 📅 資安競賽培訓 (CTF)
+
+| No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
+| :--- | :--- | :--- | :--- | :--- |
+| 165 | **資安實戰 Lesson 01：CTF 圖片隱寫術分析、十六進位結構竄改與 OSINT 地理定位解題實務** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.md) · [📄 Full](./5-Master/1-First-Year/Spring-Semester/CTF-Security/20260408-OSINT與網路威脅情報分享.full.md) |
+
+#### 📅 軟體工程
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -402,7 +402,7 @@
 
 ### 📁 2-Second-Year (Second-Year Advanced Seminars & Applied Labs)
 
-#### 📅 20260912-教育部 AIS3 資安社團幹部研習營
+#### 📅 20260912-AIS3 資安社團研習營
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -416,19 +416,19 @@
 | 185 | **輔大 NISRA「威脅研究人日常：APT 追蹤與逆向工程社課」** | 各組發表人 | `single-talk` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260912-AIS3-Club-Training/20260912-03-APT追蹤與逆向工程社課提案.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260912-AIS3-Club-Training/20260912-03-APT追蹤與逆向工程社課提案.full.md) |
 | 186 | **輔大與中山大學「資安新手入門地圖與跨校共筆傳承機制」** | 各組發表人, 大會司儀, 研習營導師 | `single-talk` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260912-AIS3-Club-Training/20260912-04-資安新手入門地圖與跨校共筆傳承.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260912-AIS3-Club-Training/20260912-04-資安新手入門地圖與跨校共筆傳承.full.md) |
 
-#### 📅 20260912-硬體逆向與漏洞利用專題
+#### 📅 20260912-硬體逆向與漏洞利用
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 187 | **超級瑪利歐世界（SNES）任意代碼執行（ACE）硬體機制與精靈記憶體漏洞逆向解析** | 講者 | `single-talk` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260912-SNES-Mario-ACE-Exploit/20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260912-SNES-Mario-ACE-Exploit/20260912-超級瑪利歐世界-SNES任意代碼執行ACE記憶體漏洞逆向解析.full.md) |
 
-#### 📅 20260912-雲端資安偵測與威脅狩獵
+#### 📅 20260912-雲端資安威脅狩獵
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 188 | **AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵** | 講者, 大會司儀 | `single-talk` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260912-AWS-CloudTrail-DuckDB-Detection/20260912-AWS-CloudTrail偵測工程與DuckDB-SigmaHQ本地威脅狩獵.full.md) |
 
-#### 📅 20260916-資管系大師專題講座與碩班研討
+#### 📅 20260916-資管系大師專題講座
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -436,13 +436,13 @@
 | 190 | **大專資安社團成立大會與社員迎新說明：從讀書會轉型正式社團、CTFd 靶場演練與學期規劃** | 社團社長, 社團幹部, 迎新學員 | `club-orientation` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260916-Special-Lecture/20260916-03-大專資安社團成立大會與社員迎新說明.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260916-Special-Lecture/20260916-03-大專資安社團成立大會與社員迎新說明.full.md) |
 | 191 | **資管專題與學位論文研究方法論：從系統組實作到學術研究、AI 代理工具與赴美學術生涯心法** | 李教授, 何毅仁教授, 碩士班研究生 | `academic-seminar` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260916-Special-Lecture/20260916-02-資管專題與學位論文研究方法論.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260916-Special-Lecture/20260916-02-資管專題與學位論文研究方法論.full.md) |
 
-#### 📅 20260919-智慧金融與投資實務講座
+#### 📅 20260919-智慧金融與投資講座
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 192 | **智慧金融與投資實務：ETF 造市商機制、初級二級市場折溢價套利、槓桿損耗與主動型 ETF 投資心法** | 套利交易業師, 證券投信副總, 研習學員 | `financial-masterclass` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260919-Financial-Trading/20260919-ETF造市商機制與折溢價套利實務.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260919-Financial-Trading/20260919-ETF造市商機制與折溢價套利實務.full.md) |
 
-#### 📅 20260922-DevDays Asia 2026 台北大會
+#### 📅 20260922-DevDays Asia 2026
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -453,13 +453,13 @@
 | 197 | **Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry** | Ash (Microsoft Commercial & GTM Strategy) | `single-talk` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260922-DevDaysAsia-2026/20260922-Tokenomics與Foundry成本優化.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260922-DevDaysAsia-2026/20260922-Tokenomics與Foundry成本優化.full.md) |
 | 198 | **現代化資料平台：SQL Server 容器化、Kubernetes 高可用部署、Azure Arc 混合雲與 Data API Builder** | Amit Khandelwal (Microsoft Principal PM), Davidus / Tejas (Microsoft Product Manager), 大會司儀 / 現場主持人 | `keynote-technical-session` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260922-DevDaysAsia-2026/20260922-SQL容器化與Azure-Arc混合資料平台.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260922-DevDaysAsia-2026/20260922-SQL容器化與Azure-Arc混合資料平台.full.md) |
 
-#### 📅 20260927-開源網路情報與威脅情資（OSINT/CTI）
+#### 📅 20260927-OSINT 與威脅情資
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 199 | **Introduction to OSINT & Cyber Threat Intelligence (CTI) Sharing Session** | Tunku Irfan, foxy | `single-talk` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/20260927-Intro-to-OSINT-CTI/20260927-OSINT與網路威脅情報分享.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/20260927-Intro-to-OSINT-CTI/20260927-OSINT與網路威脅情報分享.full.md) |
 
-#### 📅 管理溝通與專業表達（EMI）
+#### 📅 管理溝通
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -468,13 +468,13 @@
 | 202 | **管理溝通 Week 03：資訊科技、人工智慧與商務決策溝通架構** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260924-管理溝通-Week03-科技與商務決策溝通.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20260924-管理溝通-Week03-科技與商務決策溝通.full.md) |
 | 203 | **管理溝通 Week 04：受眾心理分析、結構化簡報設計與常見溝通陷阱防範** | 授課講師, 學員 | `classroom-lecture` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20261001-管理溝通-Week04-受眾分析與簡報結構設計.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/2026-Managerial-Communication/20261001-管理溝通-Week04-受眾分析與簡報結構設計.full.md) |
 
-#### 📅 資安攻防與系統安全實驗
+#### 📅 資安攻防實驗
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
 | 204 | **Apache 2.4.49 路徑穿越與遠端命令執行 RCE 實機攻防演練** | 授課教師, 助教, 學員 | `academic-lecture-meeting` | [📑 Notes](./5-Master/2-Second-Year/Fall-Semester/Security-Lab/20261002-Apache路徑穿越與遠端命令執行RCE實機攻防.md) · [📄 Full](./5-Master/2-Second-Year/Fall-Semester/Security-Lab/20261002-Apache路徑穿越與遠端命令執行RCE實機攻防.full.md) |
 
-#### 📅 高等電腦網路與通訊架構
+#### 📅 高等電腦網路
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -482,7 +482,7 @@
 
 ### 📁 Archive (Archived Records)
 
-#### 📅 實驗室歷史日常存檔
+#### 📅 實驗室歷史存檔
 
 | No. | Session Topic / Paper Title | Speaker(s) | Scenario | Deliverable Links |
 | :--- | :--- | :--- | :--- | :--- |

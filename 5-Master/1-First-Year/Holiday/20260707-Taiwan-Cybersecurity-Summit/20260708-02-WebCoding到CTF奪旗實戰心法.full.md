@@ -1,6 +1,6 @@
 ---
 title: "從 Web Coding 到 CTF 奪旗實戰：AI 輔助開發的陷阱防範與 Git Worktree 隔離工作流"
-event: "20260707-InfoSec Taiwan 2026 臺灣資訊安全論壇"
+event: "20260707-InfoSec Taiwan 2026"
 date: 2026-07-08
 speakers: ["Miss Tika (Cyber Security Consultant / Baselines 安全程式碼社群發起人)", "大會主持人"]
 scenario: "conference-speech"

@@ -1,6 +1,6 @@
 ---
 title: "Cisco CCNA 1 Lab NAT01：NAT轉換統計監控與InsideOutside介面驗證"
-event: "20250106-Cisco CCNA 1 認證培訓"
+event: "20250106-Cisco CCNA 1"
 date: "2025-01-08"
 talk_id: "CCNA-Lab-NAT01"
 speakers: ["授課講師", "學員"]

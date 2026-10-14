@@ -1,6 +1,6 @@
 ---
 title: "Tokenomics: Driving Cost & Outcome Efficiency with Microsoft Foundry"
-event: "20260922-DevDays Asia 2026 台北大會"
+event: "20260922-DevDays Asia 2026"
 talk_id: "122"
 speakers: ["Ash (Microsoft Commercial & GTM Strategy)"]
 type: "verbatim-narrative-transcript"
