@@ -287,6 +287,9 @@ def validate_transcript_structure(
     # 8. Speaker Semantic Consistency Guard
     errors.extend(validate_speaker_semantic_consistency(markdown_text, scenario_enum))
 
+    # 9. Heading Attribution Guard (Anti-Credit Confusion)
+    errors.extend(validate_heading_attribution(markdown_text))
+
     is_valid = len(errors) == 0
     return is_valid, errors
 
@@ -442,7 +445,10 @@ def validate_summary_document(
     # 4. Banned ASR garbles
     errors.extend(validate_banned_asr_garbles(markdown_text))
 
-    # 5. Thesis Progress comparison table check
+    # 5. Heading Attribution Guard (Anti-Credit Confusion)
+    errors.extend(validate_heading_attribution(markdown_text))
+
+    # 6. Thesis Progress comparison table check
     if file_path and "Thesis-Progress" in file_path:
         has_table = any(line.strip().startswith("|") for line in markdown_text.splitlines())
         if not has_table:
@@ -450,3 +456,20 @@ def validate_summary_document(
 
     is_valid = len(errors) == 0
     return is_valid, errors
+
+
+def validate_heading_attribution(markdown_text: str) -> List[str]:
+    """
+    Prevents misleading headings where external research datasets or baseline papers
+    are mentioned in a thesis progress report without clear attribution to external literature.
+    Ensures readers do not confuse external student annotators/benchmarks with the student author's deliverables.
+    """
+    errors: List[str] = []
+    headings = re.findall(r"^##\s+(.+)$", markdown_text, flags=re.MULTILINE)
+    for h in headings:
+        if re.search(r"(?:基準論文|標註\d+個|位學生.*標註)", h):
+            if not any(k in h for k in ["外部", "文獻", "借鑑", "對標", "參考"]):
+                errors.append(
+                    f"Heading '{h}' refers to external baseline research but lacks explicit literature attribution ('外部'/'文獻'/'借鑑'/'對標')"
+                )
+    return errors

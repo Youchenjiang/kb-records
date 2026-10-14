@@ -152,6 +152,18 @@ class TestProofreadLinter(unittest.TestCase):
         errs_good = validate_speaker_semantic_consistency(consistent_dialogue)
         self.assertEqual(errs_good, [])
 
+    def test_heading_attribution_validation(self):
+        """Test heading attribution guard: ensures external research datasets are explicitly attributed."""
+        from transcript_processor.structurer import validate_heading_attribution
+
+        bad_heading = "## 📊 基準論文資料集剖析：16 位學生手工標註 47 個真實商業邏輯漏洞案例"
+        errs = validate_heading_attribution(bad_heading)
+        self.assertTrue(len(errs) > 0, f"Expected attribution error, got: {errs}")
+
+        good_heading = "## 📊 外部基準文獻對標：借鑑經典研究（外部學者與 16 位學生標註之 47 個漏洞資料集）與消融實驗設計"
+        errs_good = validate_heading_attribution(good_heading)
+        self.assertEqual(errs_good, [])
+
     def test_all_proofread_deliverables_structure(self):
         """Test that ALL proofread deliverables across University and Master pass structure validation."""
         all_full_files = sorted(
