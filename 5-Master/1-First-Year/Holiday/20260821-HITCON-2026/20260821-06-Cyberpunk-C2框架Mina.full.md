@@ -1,6 +1,6 @@
 ---
 title: "HITCON 2026 閃電秀：極致 Cyberpunk 中二 C2 框架 Mina"
-event: "HITCON 2026 台灣駭客年會"
+event: "20260821-HITCON 2026 台灣駭客年會"
 date: "2026-08-21"
 talk_id: "HITCON-2026-LT-06"
 speakers: ["Ray"]

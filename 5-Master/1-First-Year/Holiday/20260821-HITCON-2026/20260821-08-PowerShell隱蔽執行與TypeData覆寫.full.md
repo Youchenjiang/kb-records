@@ -1,6 +1,6 @@
 ---
 title: "HITCON 2026 閃電秀：PowerShell 隱蔽執行與 TypeData 屬性覆寫奇技淫巧"
-event: "HITCON 2026 台灣駭客年會"
+event: "20260821-HITCON 2026 台灣駭客年會"
 date: "2026-08-21"
 talk_id: "HITCON-2026-LT-08"
 speakers: ["阿斯卡 (Aska)"]

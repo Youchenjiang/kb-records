@@ -1,6 +1,6 @@
 ---
 title: "AWS CloudTrail 偵測工程：基於 DuckDB 與 SigmaHQ 的本地日誌威脅狩獵"
-event: "雲端資安偵測與威脅狩獵"
+event: "20260912-雲端資安偵測與威脅狩獵"
 date: "2026-09-12"
 talk_id: "SEC-AWS-CLOUDTRAIL-DUCKDB-SIGMA"
 speakers: ["講者", "大會司儀"]
