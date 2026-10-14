@@ -20,7 +20,7 @@ flowchart TD
     Slicing --> Feat2["語意 Embedding (透過預訓練 LLM 提取上下文語意)"]
     Feat1 & Feat2 --> Concat["多模態特徵串接 (Feature Concatenation)"]
     Concat --> GNN["圖神經網路分類器 (GNN / GCN / GAT)"]
-    GNN --> Result惡意程式分類判定 (Malicious vs. Benign)
+    GNN --> Result["惡意程式分類判定 (Malicious vs. Benign)"]
     Result -.->|抗混淆評測| Test["面對 Identifiers 重命名、控制流平坦化仍維持高精確度"]
 ```
 

@@ -12,7 +12,11 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(REPO_ROOT))
 
-from transcript_processor.structurer import validate_transcript_structure, ScenarioType
+from transcript_processor.structurer import (
+    validate_transcript_structure,
+    validate_summary_document,
+    ScenarioType,
+)
 
 
 def check_audio_status():
@@ -116,8 +120,32 @@ def check_proofread_standards():
     return issues
 
 
+def check_summary_standards():
+    print("\n=== 4. Checking Executive Summaries (.md) Standards ===")
+    all_summaries = [
+        f for f in (list(REPO_ROOT.glob("4-University/**/*.md")) + list(REPO_ROOT.glob("5-Master/**/*.md")))
+        if not f.name.endswith(".full.md") and f.name != "README.md"
+    ]
+    print(f"  - Checking {len(all_summaries)} executive summaries...")
+    issues = []
+    for f in all_summaries:
+        content = f.read_text(encoding="utf-8")
+        is_valid, errors = validate_summary_document(content, file_path=str(f.relative_to(REPO_ROOT)))
+        if not is_valid:
+            issues.append((f.relative_to(REPO_ROOT), errors))
+
+    if issues:
+        print(f"  ❌ Found {len(issues)} summaries with structural/content issues:")
+        for path, errs in issues:
+            print(f"     {path} -> {errs}")
+        assert len(issues) == 0, f"Found {len(issues)} summaries failing validation!"
+    else:
+        print("  ✅ All executive summaries comply with formatting, Mermaid, and language rules!")
+    return issues
+
+
 def check_catalogs():
-    print("\n=== 4. Checking Catalog Sync ===")
+    print("\n=== 5. Checking Catalog Sync ===")
     cat_en = (REPO_ROOT / "CATALOG.md").read_text(encoding="utf-8")
     cat_zh = (REPO_ROOT / "CATALOG.zh-TW.md").read_text(encoding="utf-8")
     rows_en = re.findall(r"^\|\s*(\d+)\s*\|", cat_en, re.MULTILINE)
@@ -141,5 +169,6 @@ if __name__ == "__main__":
     check_audio_status()
     check_deliverable_pairs()
     issues = check_proofread_standards()
+    summary_issues = check_summary_standards()
     check_catalogs()
     print("\n🎉 Self-check script finished.")

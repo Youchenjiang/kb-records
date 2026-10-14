@@ -8,8 +8,44 @@ and scenario-specific structure validation.
 """
 
 from enum import Enum
+from pathlib import Path
 import re
 from typing import List, Optional, Tuple, Union
+
+try:
+    import opencc
+    _OPENCC_S2TW = opencc.OpenCC('s2tw')
+except Exception:
+    _OPENCC_S2TW = None
+
+BANNED_ASR_GARBLES = [
+    "巨就是巨無安",
+    "巨無安",
+    "局無安",
+    "推算兩百",
+    "A A P I推算兩百",
+    "我是黑俠",
+    "西萬",
+    "C萬",
+    "C庫",
+    "加洛妥",
+    "西派神",
+    "一日你十六字格",
+    "稀土伺服器",
+    "稀土中繼",
+]
+
+STRICT_SIMPLIFIED_CHARS = set(
+    "误进现说话样个为关时对应该经过题动机与双阶状态设验证测试简报决沟广图变点导实总数论专写历学网络软体资讯检规则权构结语义认识类记录单头长线条级别组织门闪电师训练项页码据库环节点标签优处错逻辑迟频谱传输协议连计弯让请谢"
+)
+
+ALLOWED_TRADITIONAL_VARIANTS = {
+    '里', '台', '后', '面', '么', '只', '准', '划', '干', '余', '板', '杰', '范', '谷', '松',
+    '钟', '周', '表', '志', '云', '胡', '适', '占', '采', '签', '姜', '借', '庄', '喂', '扣',
+    '并', '升', '系', '致', '别', '布', '帘', '沈', '党', '涂', '咸', '游', '筑', '秋', '仆',
+    '朴', '累', '辟', '脏', '摺', '巨', '覆', '愿', '据', '瞭', '克', '回', '托', '制',
+    '了', '注', '局', '卷', '念', '合', '杆', '欲', '才', '吃', '核', '羣', '群'
+}
 
 
 class ScenarioType(str, Enum):
@@ -238,6 +274,179 @@ def validate_transcript_structure(
         lightning_headings = [h for h in headings if "閃電秀" in h]
         if len(lightning_headings) < 2 and len(headings) < 2:
             errors.append("lightning-talks scenario requires multiple short talk sections")
+
+    # 5. Banned ASR Phonetic Garbles Guard
+    errors.extend(validate_banned_asr_garbles(markdown_text))
+
+    # 6. Traditional Chinese Guard
+    errors.extend(validate_traditional_chinese(markdown_text))
+
+    # 7. Mermaid Block Syntax Guard
+    errors.extend(validate_mermaid_blocks(markdown_text))
+
+    # 8. Speaker Semantic Consistency Guard
+    errors.extend(validate_speaker_semantic_consistency(markdown_text, scenario_enum))
+
+    is_valid = len(errors) == 0
+    return is_valid, errors
+
+
+def validate_mermaid_blocks(markdown_text: str) -> List[str]:
+    """
+    Validates Mermaid diagram blocks inside Markdown text.
+    Catches syntax errors such as:
+    1. Node ID colliding with Subgraph ID (fatal Mermaid syntax error).
+    2. Subgraph and 'end' balance.
+    3. Valid diagram type header.
+    """
+    errors: List[str] = []
+    blocks = re.findall(r"```mermaid\s*\n(.*?)\n```", markdown_text, flags=re.DOTALL)
+    valid_diagram_types = (
+        "flowchart", "graph", "sequenceDiagram", "classDiagram",
+        "stateDiagram", "stateDiagram-v2", "erDiagram", "journey",
+        "gantt", "pie", "quadrantChart", "gitGraph", "mindmap", "timeline"
+    )
+    for idx, block in enumerate(blocks, 1):
+        lines = [line.strip() for line in block.splitlines() if line.strip() and not line.strip().startswith("%%")]
+        if not lines:
+            errors.append(f"Mermaid block #{idx} is empty")
+            continue
+        first_line = lines[0]
+        if not any(first_line.startswith(t) for t in valid_diagram_types):
+            errors.append(f"Mermaid block #{idx} missing valid diagram type: '{first_line}'")
+            continue
+
+        is_flowchart = first_line.startswith("flowchart") or first_line.startswith("graph")
+        if is_flowchart:
+            subgraph_ids = set()
+            subgraph_count = 0
+            end_count = 0
+            for line in lines:
+                m_sub = re.match(r"^subgraph\s+([A-Za-z0-9_\-]+)", line)
+                if m_sub:
+                    subgraph_ids.add(m_sub.group(1))
+                    subgraph_count += 1
+                elif line == "end" or line.startswith("end "):
+                    end_count += 1
+
+            if subgraph_count != end_count:
+                errors.append(
+                    f"Mermaid block #{idx} has mismatched subgraph ({subgraph_count}) vs end ({end_count})"
+                )
+
+            # Check for node IDs colliding with subgraph IDs
+            for line in lines:
+                if re.match(r"^subgraph\s+", line):
+                    continue
+                node_refs = re.findall(r"\b([A-Za-z0-9_\-]+)(?=\s*(?:\[|\(|\{|\>))", line)
+                for node_id in node_refs:
+                    if node_id in subgraph_ids:
+                        errors.append(
+                            f"Mermaid block #{idx} syntax error: Node ID '{node_id}' collides with Subgraph ID"
+                        )
+    return errors
+
+
+def is_simplified_char(ch: str) -> bool:
+    """
+    Checks if a character is strictly Simplified Chinese.
+    """
+    return ch in STRICT_SIMPLIFIED_CHARS
+
+
+def validate_traditional_chinese(markdown_text: str) -> List[str]:
+    """
+    Validates that the markdown text is in Traditional Chinese (Taiwan standard)
+    and does not contain strictly Simplified Chinese characters.
+    """
+    errors: List[str] = []
+    # Strip code blocks, inline code, links
+    clean_text = re.sub(r"```.*?```", "", markdown_text, flags=re.DOTALL)
+    clean_text = re.sub(r"`.*?`", "", clean_text)
+    clean_text = re.sub(r"https?://\S+", "", clean_text)
+
+    for line_no, line in enumerate(clean_text.splitlines(), 1):
+        for ch in line:
+            if is_simplified_char(ch):
+                if ch == '据' and '拮据' in line:
+                    continue
+                errors.append(f"Line {line_no} contains Simplified Chinese character '{ch}'")
+    return errors
+
+
+def validate_banned_asr_garbles(markdown_text: str) -> List[str]:
+    """
+    Ensures known high-frequency ASR phonetic garble artifacts are eliminated.
+    """
+    errors: List[str] = []
+    for garble in BANNED_ASR_GARBLES:
+        if garble in markdown_text:
+            errors.append(f"Found banned ASR phonetic garble: '{garble}'")
+    return errors
+
+
+def validate_speaker_semantic_consistency(
+    markdown_text: str,
+    scenario: Union[str, ScenarioType] = ScenarioType.SINGLE_TALK,
+) -> List[str]:
+    """
+    Guards against speaker diarization inversion or role semantic contradiction.
+    """
+    errors: List[str] = []
+    turns = re.findall(r"\*\*【(.*?)】\*\*：(.*?)(?=\n\n\*\*【|\Z)", markdown_text, flags=re.DOTALL)
+    for speaker, speech in turns:
+        speaker = speaker.strip()
+        speech_snippet = speech[:80].strip().replace("\n", " ")
+        # Student speaking with professor addressing student
+        if "侑宸" in speaker or "研究生" in speaker:
+            if re.search(r"(?:好[，、\s]+侑宸|侑宸你的|侑宸你這|我是指導教授|作為指導教授|我先講評)", speech):
+                errors.append(
+                    f"Speaker '{speaker}' contains dialogue characteristic of professor addressing student: '{speech_snippet}'"
+                )
+        # Professor or committee claiming to be student defending
+        if any(role in speaker for role in ["指導教授", "口試委員", "評審委員"]):
+            if re.search(r"(?:我的碩士論文題目是|我是侑宸|接下來由我進行論文報告)", speech):
+                errors.append(
+                    f"Speaker '{speaker}' contains dialogue characteristic of student speaker: '{speech_snippet}'"
+                )
+    return errors
+
+
+def validate_summary_document(
+    markdown_text: str,
+    file_path: Optional[str] = None,
+) -> Tuple[bool, List[str]]:
+    """
+    Validates executive summary (.md) document structure, including:
+    - Presence of companion .full.md link.
+    - Valid Mermaid blocks.
+    - Traditional Chinese compliance.
+    - No banned ASR garbles.
+    - For Thesis-Progress summaries: presence of comparison matrix table.
+    """
+    errors: List[str] = []
+
+    # 1. Companion link check
+    if file_path and not file_path.endswith(".full.md") and not file_path.endswith("README.md"):
+        stem = Path(file_path).stem
+        full_name = f"{stem}.full.md"
+        if f"{full_name}" not in markdown_text and "pending" not in markdown_text.lower():
+            errors.append(f"Summary missing relative link to companion transcript '{full_name}'")
+
+    # 2. Mermaid validation
+    errors.extend(validate_mermaid_blocks(markdown_text))
+
+    # 3. Traditional Chinese
+    errors.extend(validate_traditional_chinese(markdown_text))
+
+    # 4. Banned ASR garbles
+    errors.extend(validate_banned_asr_garbles(markdown_text))
+
+    # 5. Thesis Progress comparison table check
+    if file_path and "Thesis-Progress" in file_path:
+        has_table = any(line.strip().startswith("|") for line in markdown_text.splitlines())
+        if not has_table:
+            errors.append("Thesis-Progress summary requires a comparison matrix table")
 
     is_valid = len(errors) == 0
     return is_valid, errors
