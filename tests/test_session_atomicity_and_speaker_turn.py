@@ -476,6 +476,63 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
             f"Found summary depth / structure violations ({len(violations)}):\n" + "\n".join(violations[:30]),
         )
 
+    def test_forbidden_honorifics_guard(self):
+        """
+        Anti-Honorific Inversion Guard:
+        Strictly forbids addressing Youchen as '學長' (e.g., '侑宸學長', '侑宸【學長】') in transcripts or summaries.
+        Youchen is the author/student presenter, never an artificially elevated external senior.
+        """
+        banned_phrases = ["侑宸學長", "侑宸【學長】", "【侑宸學長】"]
+        violations = []
+        for f in self.full_files + self.summary_files:
+            text = f.read_text(encoding="utf-8")
+            rel_path = str(f.relative_to(REPO_ROOT))
+            for phrase in banned_phrases:
+                if phrase in text:
+                    violations.append(f"{rel_path}: contains forbidden honorific '{phrase}'")
+        self.assertEqual(violations, [], "Found forbidden honorific violations:\n" + "\n".join(violations))
+
+    def test_thesis_progress_critique_matrix_depth(self):
+        """
+        Rigorous Thesis-Progress Review Matrix Guard:
+        In Thesis-Progress executive summaries, advisor critiques and research progress
+        must not be superficially summarized with 1-3 items.
+        Must contain a comprehensive review matrix table with >= 5 substantive rows,
+        explicitly covering critical dimensions like AI reliance/subjectivity or external benchmarks.
+        """
+        violations = []
+        for s in self.summary_files:
+            rel_path = str(s.relative_to(REPO_ROOT))
+            if "Thesis-Progress" in rel_path and "Archive" not in rel_path:
+                text = s.read_text(encoding="utf-8")
+                # Count table rows in the critique/revision table
+                table_lines = [l.strip() for l in text.splitlines() if l.strip().startswith("|")]
+                # At least header + separator + 5 data rows = 7 table lines
+                data_rows = [l for l in table_lines if not re.match(r"^\|\s*:?---", l) and "研討核心爭點" not in l and "議題維度" not in l]
+                if len(data_rows) < 5:
+                    violations.append(
+                        f"{rel_path}: Thesis-Progress critique matrix has only {len(data_rows)} data rows (minimum 5 required)"
+                    )
+        self.assertEqual(violations, [], "Found shallow Thesis-Progress review matrices:\n" + "\n".join(violations))
+
+    def test_no_stale_script_references_to_renamed_deliverables(self):
+        """
+        Script & Tooling Synchronization Guard:
+        Ensures utility scripts in `scripts/` do not reference deleted or overly long stale deliverable paths.
+        """
+        banned_stale_substrings = [
+            "Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證",
+        ]
+        violations = []
+        script_files = sorted((REPO_ROOT / "scripts").glob("*.py"))
+        for sc in script_files:
+            text = sc.read_text(encoding="utf-8")
+            rel_path = str(sc.relative_to(REPO_ROOT))
+            for stale in banned_stale_substrings:
+                if stale in text:
+                    violations.append(f"{rel_path}: references stale deleted/renamed deliverable substring '{stale}'")
+        self.assertEqual(violations, [], "Found stale deliverable references in scripts:\n" + "\n".join(violations))
+
 if __name__ == "__main__":
     unittest.main()
 

@@ -41,4 +41,6 @@ flowchart TD
 | **MaMaDroid（Markov 狀態轉移）** | 將 API Call Sequence 抽象化至 Package / Family 層級，計算狀態轉移機率矩陣 | 當惡意軟體使用字串加密與 java.lang.reflect.Method.invoke 反射呼叫時，靜態呼叫邊斷裂，轉移機率徹底失真 | 以無法被更名的 Android 系統敏感 API 為錨點（Anchor），向上向下追蹤二至三層局部行為子圖（Behavior Subgraph） |
 | **MS-Droid（局部子圖 GNN + Opcode）** | 擷取敏感 API 周圍子圖，並以 Dalvik Opcode 頻率與權限作為節點初始特徵向量 | 控制流平坦化、垃圾指令插入與 AML 隨機 Wrapper 包裝會嚴重稀釋 Opcode 統計分佈，導致 GNN 訊息傳遞汙染 | 引入預訓練程式碼語言模型（CodeLLM）提取反編譯片段之深層語意向量，與 GIN 圖結構特徵進行跨模態串接融合 |
 | **指導教授與陳教授審查意見** | 關注子圖展開層數（Hop 數）過大引發之計算爆炸與良性程式碼雜訊混入問題 | 若展開超過 3 層，子圖將涵蓋大量通用 UI 與框架初始化函式，造成特徵過度平滑（Over-smoothing） | 鎖定 2 層局部敏感子圖搭配對比學習（Contrastive Learning），拉近混淆前後同源 APK 之表徵空間距離 |
+| **圖拓撲不變性（Invariance）之理論證明** | 提出以 GNN 萃取混淆前後的行為子圖，宣稱模型能學到特徵不變性 | 陳教授與指導教授追問：「你如何證明模型真正學到的是對抗混淆的『不變性（Invariance）』，而非記住個別樣本標籤？」 | 設計消融實驗與注意力可視化：證明混淆後即使節點名稱重命名，GNN 聚合之敏感邊緣權重依舊保持穩定幾何拓撲 |
+| **Opcode 統計特徵之脆弱性論證** | 探討為何僅依賴 Dalvik Opcode 頻率不足以應對進階混淆 | 引用反編譯實例：字串加密搭配反射（Reflection）會將原有呼叫轉化為大量陣列賦值與通用調用，徹底扭曲 Opcode 分佈 | 論文第 3 章補齊混淆前後具體代碼片段對比（Code Snippets），具象化論證結合語意 Embedding 之不可替代性 |
 

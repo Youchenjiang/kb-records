@@ -203,19 +203,19 @@ print('Generated 20261012-01!')
 # Write Part 2 deliverables
 body2 = format_part2(part2_raw)
 full2_content = f'''---
-title: "Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證"
+title: "Android 商業邏輯漏洞探索"
 event: "網路與系統實驗室 碩士學位論文核心架構進度研討"
 date: "2026-10-12"
-talk_id: "LAB-20261012-02-YOUCHEN-THESIS-PROGRESS"
-speakers: ['侑宸', '指導教授', '同儕研究生']
+talk_id: "LAB-20261012-02-HSIEH-YOUCHEN-THESIS-PROGRESS"
+speakers: ['謝祐庭', '侑宸', '指導教授', '同儕研究生']
 type: "verbatim-narrative-transcript"
 verbatim: true
 scenario: "academic-lecture-meeting"
 ---
 
-# 🎙️ LAB-20261012-02 Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證 (侑宸 / 指導教授 / 同儕研究生)
+# 🎙️ LAB-20261012-02 Android 商業邏輯漏洞探索 (謝祐庭 / 侑宸 / 指導教授 / 同儕研究生)
 
-> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄**侑宸（Youchen）**碩士學位論文核心進度報告、指導教授現場針對「增量定義、H1/H2 優惠券測試矩陣、AI 產出幻覺、黑箱假設一致性」之深度質詢與同儕協助辨析，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字（將 ASR 誤識之「右耳」精準校對為「侑宸」）、專有名詞（Android GUI, API Fuzzing, EIG 期望資訊增益, S_t 狀態空間, 商業邏輯漏洞）與標點符號，明確標註發言角色，並維持每 150～300 字之自然語意分段。
+> **【排版與校對說明】**：本文件為 **100% 全篇原話逐字稿深度校對與角色對話標註版**。完整收錄研究生**謝祐庭**（前半段主講 Android 黑箱探索架構）與**侑宸**（後半段接續報告外部對標基準文獻與消融實驗）、指導教授現場針對「增量定義、H1/H2 優惠券測試矩陣、AI 產出幻覺、黑箱假設一致性」之深度質詢與同儕協助辨析，**未做任何刪減或摘要縮寫**；已依據專案校對手冊（`PROOFREAD_RULES.md`）地毯式修訂語音辨識錯字（第 22 行「右耳」精準校對為「祐庭」；第 221 行「謝謝侑宸」確實為侑宸接續報告）、專有名詞（Android GUI, API Fuzzing, EIG 期望資訊增益, S_t 狀態空間, 商業邏輯漏洞）與標點符號，明確標註發言角色，並維持每 150～300 字之自然語意分段。
 
 ---
 
@@ -224,12 +224,12 @@ scenario: "academic-lecture-meeting"
 {body2}
 '''
 
-summary2_content = '''# 📋 Android 黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證 — 執行摘要
+summary2_content = '''# 📋 Android 商業邏輯漏洞探索 — 執行摘要
 
 - **活動場次**：網路與系統實驗室 碩士學位論文核心架構進度研討 (場次 02)
 - **錄音日期**：2026-10-12
-- **發言講者**：侑宸 / 指導教授 / 同儕研究生
-- **對應完整逐字稿**：[`20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md`](./20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md)
+- **報告講者**：謝祐庭（前半段主講）、侑宸（後半段文獻對標報告）
+- **對應完整逐字稿**：[`20261012-02-Android商業邏輯漏洞探索.full.md`](./20261012-02-Android商業邏輯漏洞探索.full.md)
 
 ---
 
@@ -281,6 +281,6 @@ flowchart TD
 - **黑箱假設的一致性**：提醒研究從始至終不可假設擁有 Source Code，所有論證皆需立足於外部黑箱觀測。
 '''
 
-Path('5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.full.md').write_text(full2_content, encoding='utf-8')
-Path('5-Master/Laboratory/Thesis-Progress/20261012-02-Android黑箱商業邏輯漏洞自主探索與雙階狀態假設驗證.md').write_text(summary2_content, encoding='utf-8')
+Path('5-Master/Laboratory/Thesis-Progress/20261012-02-Android商業邏輯漏洞探索.full.md').write_text(full2_content, encoding='utf-8')
+Path('5-Master/Laboratory/Thesis-Progress/20261012-02-Android商業邏輯漏洞探索.md').write_text(summary2_content, encoding='utf-8')
 print('Generated 20261012-02!')
