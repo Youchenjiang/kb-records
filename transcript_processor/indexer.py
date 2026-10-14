@@ -217,31 +217,6 @@ class CatalogIndexer:
         return data
 
 
-    FOLDER_GROUP_LABELS = {
-        "zh-TW": {
-            "1-Studies": "通識與基礎學科",
-            "2-Curriculum": "核心專業課程",
-            "3-Specialization": "專業證照培訓",
-            "4-Capstone": "畢業專題實作",
-            "5-Extracurricular": "社團與課外活動",
-            "1-First-Year": "碩一課程與學術論壇",
-            "2-Second-Year": "碩二進階研討與實務演練",
-            "Laboratory": "實驗室例會、文獻與學位口試",
-            "Archive": "歷史存檔紀錄",
-        },
-        "en": {
-            "1-Studies": "General Studies & Fundamentals",
-            "2-Curriculum": "Core Curriculum",
-            "3-Specialization": "Specialization & Certifications",
-            "4-Capstone": "Senior Project & Capstone",
-            "5-Extracurricular": "Extracurricular & Clubs",
-            "1-First-Year": "First-Year Courses & Academic Conferences",
-            "2-Second-Year": "Second-Year Advanced Seminars & Applied Labs",
-            "Laboratory": "Lab Meetings, Literature & Degree Defense",
-            "Archive": "Archived Records",
-        },
-    }
-
     def _slugify(self, text: str) -> str:
         s = re.sub(r"[\U00010000-\U0010ffff]", "", text)
         s = re.sub(r"[^\w\s\-\u4e00-\u9fff]", "", s)
@@ -301,18 +276,14 @@ class CatalogIndexer:
             "",
         ]
 
-        labels = self.FOLDER_GROUP_LABELS.get(lang, {})
-
         # TOC
         for cat, folder_groups in hierarchy.items():
             cat_anchor = self._slugify(cat)
             lines.append(f"- [{cat}](#{cat_anchor})")
             for fg, events in folder_groups.items():
                 if fg:
-                    fg_desc = labels.get(fg, "")
-                    fg_display = f"{fg} ({fg_desc})" if fg_desc else fg
-                    fg_anchor = self._slugify(f"{fg}-{fg_desc}") if fg_desc else self._slugify(fg)
-                    lines.append(f"  - [{fg_display}](#{fg_anchor})")
+                    fg_anchor = self._slugify(fg)
+                    lines.append(f"  - [{fg}](#{fg_anchor})")
                     indent = "    "
                 else:
                     indent = "  "
@@ -331,9 +302,7 @@ class CatalogIndexer:
 
             for fg, events in folder_groups.items():
                 if fg:
-                    fg_desc = labels.get(fg, "")
-                    fg_display = f"{fg} ({fg_desc})" if fg_desc else fg
-                    lines.append(f"### 📁 {fg_display}")
+                    lines.append(f"### 📁 {fg}")
                     lines.append("")
 
                 for ev, ev_items in events.items():

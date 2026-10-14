@@ -5,28 +5,28 @@
 ## 🧭 分類快速導航
 
 - [4-University](#4-university)
-  - [1-Studies (通識與基礎學科)](#1-studies-通識與基礎學科)
+  - [1-Studies](#1-studies)
     - [基礎數學](#基礎數學)
     - [普通物理學](#普通物理學)
     - [普通生物學實驗](#普通生物學實驗)
     - [職涯發展](#職涯發展)
-  - [2-Curriculum (核心專業課程)](#2-curriculum-核心專業課程)
+  - [2-Curriculum](#2-curriculum)
     - [管理資訊系統](#管理資訊系統)
     - [雲端運算](#雲端運算)
     - [電腦網路](#電腦網路)
-  - [3-Specialization (專業證照培訓)](#3-specialization-專業證照培訓)
+  - [3-Specialization](#3-specialization)
     - [20250106-Cisco CCNA 1](#20250106-cisco-ccna-1)
     - [20250113-CompTIA Security+](#20250113-comptia-security)
     - [物聯網安全](#物聯網安全)
-  - [4-Capstone (畢業專題實作)](#4-capstone-畢業專題實作)
+  - [4-Capstone](#4-capstone)
     - [專案管理](#專案管理)
     - [畢業專題成果展](#畢業專題成果展)
-  - [5-Extracurricular (社團與課外活動)](#5-extracurricular-社團與課外活動)
+  - [5-Extracurricular](#5-extracurricular)
     - [自然生態觀察社](#自然生態觀察社)
-  - [Archive (歷史存檔紀錄)](#archive-歷史存檔紀錄)
+  - [Archive](#archive)
     - [大學部歷史存檔](#大學部歷史存檔)
 - [5-Master](#5-master)
-  - [1-First-Year (碩一課程與學術論壇)](#1-first-year-碩一課程與學術論壇)
+  - [1-First-Year](#1-first-year)
     - [20251205-Deloitte 專題演講](#20251205-deloitte-專題演講)
     - [20251208-UIC 專題講座](#20251208-uic-專題講座)
     - [20260318-AI 專題全英文發表會](#20260318-ai-專題全英文發表會)
@@ -41,7 +41,7 @@
     - [軟體工程](#軟體工程)
     - [進階人工智慧與最佳化](#進階人工智慧與最佳化)
     - [電腦網路實驗](#電腦網路實驗)
-  - [2-Second-Year (碩二進階研討與實務演練)](#2-second-year-碩二進階研討與實務演練)
+  - [2-Second-Year](#2-second-year)
     - [20260912-AIS3 資安社團研習營](#20260912-ais3-資安社團研習營)
     - [20260912-硬體逆向與漏洞利用](#20260912-硬體逆向與漏洞利用)
     - [20260912-雲端資安威脅狩獵](#20260912-雲端資安威脅狩獵)
@@ -52,9 +52,9 @@
     - [管理溝通](#管理溝通)
     - [資安攻防實驗](#資安攻防實驗)
     - [高等電腦網路](#高等電腦網路)
-  - [Archive (歷史存檔紀錄)](#archive-歷史存檔紀錄)
+  - [Archive](#archive)
     - [實驗室歷史存檔](#實驗室歷史存檔)
-  - [Laboratory (實驗室例會、文獻與學位口試)](#laboratory-實驗室例會文獻與學位口試)
+  - [Laboratory](#laboratory)
     - [學位論文口試 (Degree-Defense)](#學位論文口試-degree-defense)
     - [學術論文研討 (Seminar)](#學術論文研討-seminar)
     - [專案會議 (Project-Meeting)](#專案會議-project-meeting)
@@ -65,7 +65,7 @@
 
 ## 🗂️ 4-University
 
-### 📁 1-Studies (通識與基礎學科)
+### 📁 1-Studies
 
 #### 📅 基礎數學
 
@@ -103,7 +103,7 @@
 | 15 | **職涯發展與就業輔導 Lesson 02：人資篩選心理學、履歷投遞時機與版面視覺優化** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./4-University/1-Studies/Fall-Semester/CareerDevelopment/20241125-02-人資篩選心理與履歷視覺.md) · [📄 全文](./4-University/1-Studies/Fall-Semester/CareerDevelopment/20241125-02-人資篩選心理與履歷視覺.full.md) |
 | 16 | **職涯發展與就業輔導 Lesson 03：學經歷倒敘法撰寫規範與面試應對實戰技巧** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./4-University/1-Studies/Fall-Semester/CareerDevelopment/20241125-03-學經歷倒敘法與面試實戰.md) · [📄 全文](./4-University/1-Studies/Fall-Semester/CareerDevelopment/20241125-03-學經歷倒敘法與面試實戰.full.md) |
 
-### 📁 2-Curriculum (核心專業課程)
+### 📁 2-Curriculum
 
 #### 📅 管理資訊系統
 
@@ -127,7 +127,7 @@
 | 22 | **電腦網路期中總複習：個人網路PAN、OSI與SDN架構、實體層傳輸媒介與無線區域網路技術** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./4-University/2-Curriculum/Fall-Semester/ComputerNetworks/20241028-個人網路PAN與實體層傳輸架構.md) · [📄 全文](./4-University/2-Curriculum/Fall-Semester/ComputerNetworks/20241028-個人網路PAN與實體層傳輸架構.full.md) |
 | 23 | **電腦網路期末總複習：IPv4 分類編址、子網路遮罩切割運算與網路安全加解密** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./4-University/2-Curriculum/Fall-Semester/ComputerNetworks/20241223-期末總複習IPv4編址與網路安全.md) · [📄 全文](./4-University/2-Curriculum/Fall-Semester/ComputerNetworks/20241223-期末總複習IPv4編址與網路安全.full.md) |
 
-### 📁 3-Specialization (專業證照培訓)
+### 📁 3-Specialization
 
 #### 📅 20250106-Cisco CCNA 1
 
@@ -226,7 +226,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 105 | **物聯網資安實務 Lesson 01：去周邊化集體防禦、零信任持續身分驗證與 TPM 硬體信任根** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./4-University/3-Specialization/Fall-Semester/IoTSecurity/20241115-去周邊化防禦與零信任TPM.md) · [📄 全文](./4-University/3-Specialization/Fall-Semester/IoTSecurity/20241115-去周邊化防禦與零信任TPM.full.md) |
 
-### 📁 4-Capstone (畢業專題實作)
+### 📁 4-Capstone
 
 #### 📅 專案管理
 
@@ -251,7 +251,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 118 | **專題實作成果發表：Android 醫療互動遊戲 App 架構、關卡邏輯與UI事件控制** | 專題開發者, 專案審查委員 / 同學 | `project-demo` | [📑 筆記](./4-University/4-Capstone/Spring-Semester/ProjectDemo/20240606-Android醫療互動遊戲App架構與關卡控制.md) · [📄 全文](./4-University/4-Capstone/Spring-Semester/ProjectDemo/20240606-Android醫療互動遊戲App架構與關卡控制.full.md) |
 
-### 📁 5-Extracurricular (社團與課外活動)
+### 📁 5-Extracurricular
 
 #### 📅 自然生態觀察社
 
@@ -260,7 +260,7 @@
 | 119 | **自然生態觀察社：夜間野外生態觀察與黃灰澤蟹物種調查** | 生態導師 / 社長, 社員學員 | `field-survey` | [📑 筆記](./4-University/5-Extracurricular/NatureEcologyClub/20241002-夜間野外生態觀察與黃灰澤蟹物種調查.md) · [📄 全文](./4-University/5-Extracurricular/NatureEcologyClub/20241002-夜間野外生態觀察與黃灰澤蟹物種調查.full.md) |
 | 120 | **自然生態觀察社：恆春墾丁海岸陸蟹生態調查與道路阻隔熱障礙分析** | 生態導師 / 社長, 社員學員 | `field-survey` | [📑 筆記](./4-University/5-Extracurricular/NatureEcologyClub/20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.md) · [📄 全文](./4-University/5-Extracurricular/NatureEcologyClub/20240511-恆春墾丁海岸陸蟹生態調查與道路阻隔分析.full.md) |
 
-### 📁 Archive (歷史存檔紀錄)
+### 📁 Archive
 
 #### 📅 大學部歷史存檔
 
@@ -276,7 +276,7 @@
 
 ## 🗂️ 5-Master
 
-### 📁 1-First-Year (碩一課程與學術論壇)
+### 📁 1-First-Year
 
 #### 📅 20251205-Deloitte 專題演講
 
@@ -400,7 +400,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 177 | **電腦網路實習 Lesson 01：UTP 雙絞線製作、T568A/B 跳線標準與傳輸衰減量測** | 授課講師, 學員 | `classroom-lecture` | [📑 筆記](./5-Master/1-First-Year/Fall-Semester/ComputerNetworkLab/20251209-UTP雙絞線製作與衰減標準.md) · [📄 全文](./5-Master/1-First-Year/Fall-Semester/ComputerNetworkLab/20251209-UTP雙絞線製作與衰減標準.full.md) |
 
-### 📁 2-Second-Year (碩二進階研討與實務演練)
+### 📁 2-Second-Year
 
 #### 📅 20260912-AIS3 資安社團研習營
 
@@ -480,7 +480,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 205 | **無線網路協定分層限制與跨層感知架構研討** | 授課教授, 報告學員, 課堂學員 | `academic-lecture-meeting` | [📑 筆記](./5-Master/2-Second-Year/Fall-Semester/Network-Architecture/20261006-無線網路協定分層限制與跨層感知架構研討.md) · [📄 全文](./5-Master/2-Second-Year/Fall-Semester/Network-Architecture/20261006-無線網路協定分層限制與跨層感知架構研討.full.md) |
 
-### 📁 Archive (歷史存檔紀錄)
+### 📁 Archive
 
 #### 📅 實驗室歷史存檔
 
@@ -488,7 +488,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | 206 | **實驗室日常常規：會前日常閒聊與假期日本旅遊規劃** | 系統核心研究生 | `lab-project-meeting` | [📑 筆記](./5-Master/Archive/20260617-實驗室會前日常閒聊.md) · [📄 全文](./5-Master/Archive/20260617-實驗室會前日常閒聊.full.md) |
 
-### 📁 Laboratory (實驗室例會、文獻與學位口試)
+### 📁 Laboratory
 
 #### 📅 學位論文口試 (Degree-Defense)
 
