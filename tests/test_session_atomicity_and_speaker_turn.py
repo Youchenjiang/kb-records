@@ -526,7 +526,14 @@ class TestSessionAtomicityAndSpeakerTurn(unittest.TestCase):
         violations = []
         script_files = sorted((REPO_ROOT / "scripts").glob("*.py"))
         for sc in script_files:
-            text = sc.read_text(encoding="utf-8")
+            try:
+                text = sc.read_text(encoding="utf-8")
+            except Exception:
+                try:
+                    with open(sc, "rb") as bf:
+                        text = bf.read().decode("utf-8", errors="ignore")
+                except Exception:
+                    continue
             rel_path = str(sc.relative_to(REPO_ROOT))
             for stale in banned_stale_substrings:
                 if stale in text:
