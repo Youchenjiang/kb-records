@@ -175,5 +175,26 @@ class TestLanguageAgnosticQACoverage(unittest.TestCase):
             f"Summary covers only {ratio:.1%} of advisor critique turns! Missing: {uncovered}"
         )
 
+    def test_20261020_project_meeting_qa_coverage(self):
+        """
+        Targeted test on 20261020 R&D Administrative AI transformation matching:
+        Ensures the advisor's AI coding / routine workflow questions and interventions are faithfully recorded.
+        """
+        p_full = REPO_ROOT / "5-Master/Laboratory/Project-Meeting/20261020-研發處行政業務AI轉型媒合與出國報告自動回填需求研討.full.md"
+        p_sum = REPO_ROOT / "5-Master/Laboratory/Project-Meeting/20261020-研發處行政業務AI轉型媒合與出國報告自動回填需求研討.md"
+
+        ratio, uncovered = verify_critique_coverage(p_full, p_sum)
+        print(f"\n[Test Result] 20261020 Coverage Ratio: {ratio:.1%}")
+        if uncovered:
+            print("Uncovered QA interactions:")
+            for item in uncovered:
+                print(f"  - Turn #{item['turn']} [{item['speaker']}]: '{item['snippet']}...' (Expected concepts: {item['missing_concepts']})")
+
+        self.assertGreaterEqual(
+            ratio, 0.85,
+            f"Summary covers only {ratio:.1%} of advisor critique turns! Missing: {uncovered}"
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
