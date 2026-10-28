@@ -227,17 +227,17 @@
 | 198 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part1.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part1.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 199 | 2026-10-10 | [20260714-DRAVILaMA審查質詢-Part2.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part2.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
 | 200 | 2026-10-10 | [20260714-DRAVILaMA論文簡報.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA論文簡報.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 經嚴格逐行審核，100%符規合格發布 |
-| 201 | 2026-10-10 | [20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md](5-Master\Laboratory\Lab-Meeting\20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
+| 201 | 2026-10-10 | [20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md](5-Master\Laboratory\Project-Meeting\20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
 | 202 | 2026-10-10 | [20251003-整合型研究計畫與平台架構規劃.full.md](5-Master\Laboratory\Project-Meeting\20251003-整合型研究計畫與平台架構規劃.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 353段自然語意分段，研究計畫與平台架構術語校對 |
 | 203 | 2026-10-10 | [20260226-01-對抗性模仿學習與感測器模型防禦.full.md](5-Master\Laboratory\Project-Meeting\20260226-01-對抗性模仿學習與感測器模型防禦.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 210段自然語意分段，對抗模仿學習與感測器模型校對 |
 | 204 | 2026-10-10 | [20260226-02-APK免疫疫苗與程式碼自動修補.full.md](5-Master\Laboratory\Project-Meeting\20260226-02-APK免疫疫苗與程式碼自動修補.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 30段自然語意分段，APK疫苗與自動修補術語校對 |
 | 205 | 2026-10-10 | [20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md](5-Master\Laboratory\Project-Meeting\20260430-整合型計畫-容錯系統VPS評測與進度研討.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 27段自然語意分段，容錯系統與VPS架構校對 |
 | 206 | 2026-10-10 | [20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md](5-Master\Laboratory\Project-Meeting\20260617-平台前端資料庫整合與API錯誤處理測試研討.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 消除700行碎裂行，合併重構為22個自然段落 |
-| 207 | 2026-10-10 | [20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md](5-Master\Laboratory\Project-Meeting\20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
-| 208 | 2026-10-10 | [20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md](5-Master\Laboratory\Project-Meeting\20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
-| 209 | 2026-10-10 | [20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md](5-Master\Laboratory\Security-News\20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
+| 207 | 2026-10-10 | [20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md](5-Master\Laboratory\Project-Meeting\20260720-實驗室AI文獻管理與知識圖譜系統架構設計.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
+| 208 | 2026-10-10 | [20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md](5-Master\Laboratory\Project-Meeting\20260723-產學合作專案成本核銷與AI開發工具補助協調.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
+| 209 | 2026-10-10 | [20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md](5-Master\Laboratory\Security-News\20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
 | 210 | 2026-10-10 | [20260914-PostgreSQL複寫協議提權漏洞.full.md](5-Master\Laboratory\Security-News\20260914-PostgreSQL複寫協議提權漏洞.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 13段自然語意分段，PostgreSQL複寫與提權漏洞校對 |
-| 211 | 2026-10-10 | [20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md](5-Master\Laboratory\Seminar\20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md) | 會議/課程錄音 | ASR + 初期標註 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
+| 211 | 2026-10-10 | [20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md](5-Master\Laboratory\Seminar\20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 已完成回頭逐行查驗並同步至 VERBATIM_AUDIT.md |
 | 212 | 2026-10-10 | [20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md](5-Master\Laboratory\Seminar\20260914-自動化漏洞修復APR根因分析與兩階段驗證.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 100段自然語意分段，APR程式修復與Crash Site校對 |
 | 213 | 2026-10-10 | [20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md](5-Master\Laboratory\Thesis-Progress\20260226-Android惡意程式行為子圖與抗混淆GNN檢測.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 114段自然語意分段，Android行為子圖與GNN術語校對 |
 | 214 | 2026-10-13 | [20261002-Apache路徑穿越與遠端命令執行RCE實機攻防.full.md](5-Master\2-Second-Year\Fall-Semester\Security-Lab\20261002-Apache路徑穿越與遠端命令執行RCE實機攻防.full.md) | 會議/課程錄音 | 嚴格原話逐字稽核 | ✅ 已通過審核 | 73段自然語意分段，Apache 2.4.49路徑穿越與RCE攻防校對 |

@@ -195,6 +195,36 @@ class TestLanguageAgnosticQACoverage(unittest.TestCase):
             f"Summary covers only {ratio:.1%} of advisor critique turns! Missing: {uncovered}"
         )
 
+    def test_batch41_laboratory_sessions_critique_coverage(self):
+        """
+        Targeted regression test on audited Batch 41 laboratory sessions (201-213).
+        Validates that advisor critique coverage meets or exceeds 85% threshold.
+        """
+        audited_sessions = [
+            ("201", "5-Master/Laboratory/Project-Meeting/20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接"),
+            ("203", "5-Master/Laboratory/Project-Meeting/20260226-01-對抗性模仿學習與感測器模型防禦"),
+            ("204", "5-Master/Laboratory/Project-Meeting/20260226-02-APK免疫疫苗與程式碼自動修補"),
+            ("205", "5-Master/Laboratory/Project-Meeting/20260430-整合型計畫-容錯系統VPS評測與進度研討"),
+            ("206", "5-Master/Laboratory/Project-Meeting/20260617-平台前端資料庫整合與API錯誤處理測試研討"),
+            ("207", "5-Master/Laboratory/Project-Meeting/20260720-實驗室AI文獻管理與知識圖譜系統架構設計"),
+            ("208", "5-Master/Laboratory/Project-Meeting/20260723-產學合作專案成本核銷與AI開發工具補助協調"),
+            ("209", "5-Master/Laboratory/Security-News/20260720-Cursor-IDE惡意工作區路徑劫持與Git執行檔注入漏洞研討"),
+            ("210", "5-Master/Laboratory/Security-News/20260914-PostgreSQL複寫協議提權漏洞"),
+            ("211", "5-Master/Laboratory/Seminar/20260723-軟體工程論文研討-Kernel-Multi-Hunk-Features與跨檔案漏洞修補"),
+            ("212", "5-Master/Laboratory/Seminar/20260914-自動化漏洞修復APR根因分析與兩階段驗證"),
+            ("213", "5-Master/Laboratory/Thesis-Progress/20260226-Android惡意程式行為子圖與抗混淆GNN檢測"),
+        ]
+
+        for no, stem in audited_sessions:
+            p_full = REPO_ROOT / f"{stem}.full.md"
+            p_sum = REPO_ROOT / f"{stem}.md"
+            ratio, uncovered = verify_critique_coverage(p_full, p_sum)
+            print(f"\n[Test Result] Session #{no} Coverage Ratio: {ratio:.1%}")
+            self.assertGreaterEqual(
+                ratio, 0.85,
+                f"Session #{no} covers only {ratio:.1%} of advisor critique turns! Missing: {uncovered}"
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

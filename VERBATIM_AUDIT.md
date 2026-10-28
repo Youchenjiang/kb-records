@@ -228,7 +228,7 @@
 | 198 | [20260714-DRAVILaMA審查質詢-Part1.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part1.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 100~250 字；DRAVILaMA 口試審查質詢 Part 1、抗混淆架構與對比學習機制校對 |
 | 199 | [20260714-DRAVILaMA審查質詢-Part2.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA審查質詢-Part2.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；自然段落控制於 100~250 字；DRAVILaMA 口試審查質詢 Part 2、泛化能力、少樣本混淆數據集與實驗復現校對 |
 | 200 | [20260714-DRAVILaMA論文簡報.full.md](5-Master\Laboratory\Degree-Defense\20260714-DRAVILaMA論文簡報.full.md) | [x] | [x] | [x] | [x] | ✅ 已通過審核 | 2026-10-10 | 全篇原話零摘要；拆分長段落為 86 個自然段落；DRAVILaMA 學位論文簡報全程原話、研究動機、FCG 提取與 GNN 嵌入校對 |
-| 201 | [20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md](5-Master\Laboratory\Lab-Meeting\20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
+| 201 | [20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md](5-Master\Laboratory\Project-Meeting\20260716-實驗室暑期例會-新進碩一生AI開發實作與研究交接.full.md) | [x] | [x] | [x] | [x] | ✅ 已審核通過 | 2026-10-10 | 已完成 150-300 字語意分段、無人工總結、ASR 術語校對 |
 | 202 | [20251003-整合型研究計畫與平台架構規劃.full.md](5-Master\Laboratory\Project-Meeting\20251003-整合型研究計畫與平台架構規劃.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 353段自然語意分段，研究計畫與平台架構術語校對 |
 | 203 | [20260226-01-對抗性模仿學習與感測器模型防禦.full.md](5-Master\Laboratory\Project-Meeting\20260226-01-對抗性模仿學習與感測器模型防禦.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 210段自然語意分段，對抗模仿學習與感測器模型校對 |
 | 204 | [20260226-02-APK免疫疫苗與程式碼自動修補.full.md](5-Master\Laboratory\Project-Meeting\20260226-02-APK免疫疫苗與程式碼自動修補.full.md) | [x] | [x] | [x] | [x] | ✅ 審核通過 | 2026-10-10 | 30段自然語意分段，APK疫苗與自動修補術語校對 |
