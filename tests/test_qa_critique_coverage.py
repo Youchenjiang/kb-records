@@ -226,5 +226,11 @@ class TestLanguageAgnosticQACoverage(unittest.TestCase):
             )
 
 
+    def test_20261013_security_lab_critique_coverage(self):
+        full_path = REPO_ROOT / '5-Master' / '2-Second-Year' / 'Fall-Semester' / 'Security-Lab' / '20261013-SQL注入攻防與自動化測試驗證.full.md'
+        sum_path = REPO_ROOT / '5-Master' / '2-Second-Year' / 'Fall-Semester' / 'Security-Lab' / '20261013-SQL注入攻防與自動化測試驗證.md'
+        rate, uncovered = verify_critique_coverage(full_path, sum_path)
+        self.assertGreaterEqual(rate, 0.85, f'20261013 critique coverage too low: {rate:.1%}')
+
 if __name__ == "__main__":
     unittest.main()

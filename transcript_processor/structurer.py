@@ -33,6 +33,16 @@ BANNED_ASR_GARBLES = [
     "一日你十六字格",
     "稀土伺服器",
     "稀土中繼",
+    "被他買",
+    "歐文局",
+    "品嚐我們的攻擊",
+    "缺乏良性",
+    "我阿弟參考",
+    "放那麼多鍵盤",
+    "重版面",
+    "做派的時候",
+    "少少少",
+    "工具者",
 ]
 
 STRICT_SIMPLIFIED_CHARS = set(
@@ -249,9 +259,9 @@ def validate_transcript_structure(
             errors.append(f"Heading contains artificial numeric prefix: '{h}'")
 
     if scenario_enum == ScenarioType.CLASSROOM_LECTURE:
-        # Classroom lecture requires speaker attribution (授課講師)
-        if not re.search(r"\*\*【授課講師】\*\*：", markdown_text):
-            errors.append("classroom-lecture scenario requires mandatory '**【授課講師】**：' speaker attribution")
+        # Classroom lecture requires speaker attribution (授課講師 or 授課教師)
+        if not re.search(r"\*\*【(?:授課講師|授課教師)】\*\*：", markdown_text):
+            errors.append("classroom-lecture scenario requires mandatory '**【授課講師】**：' or '**【授課教師】**：' speaker attribution")
 
     elif scenario_enum == ScenarioType.MULTI_PAPER:
         # Check for multiple paper sections
@@ -278,16 +288,19 @@ def validate_transcript_structure(
     # 5. Banned ASR Phonetic Garbles Guard
     errors.extend(validate_banned_asr_garbles(markdown_text))
 
-    # 6. Traditional Chinese Guard
+    # 6. Repetition & Hallucination Loop Guard
+    errors.extend(validate_no_repetition_loops(markdown_text))
+
+    # 7. Traditional Chinese Guard
     errors.extend(validate_traditional_chinese(markdown_text))
 
-    # 7. Mermaid Block Syntax Guard
+    # 8. Mermaid Block Syntax Guard
     errors.extend(validate_mermaid_blocks(markdown_text))
 
-    # 8. Speaker Semantic Consistency Guard
+    # 9. Speaker Semantic Consistency Guard
     errors.extend(validate_speaker_semantic_consistency(markdown_text, scenario_enum))
 
-    # 9. Heading Attribution Guard (Anti-Credit Confusion)
+    # 10. Heading Attribution Guard (Anti-Credit Confusion)
     errors.extend(validate_heading_attribution(markdown_text))
 
     is_valid = len(errors) == 0
@@ -388,6 +401,51 @@ def validate_banned_asr_garbles(markdown_text: str) -> List[str]:
     return errors
 
 
+ALLOWED_CONVERSATIONAL_REPETITIONS = {
+    "對", "對啊", "對呀", "對對對", "好", "好的", "可以", "可以啊", "是", "是的",
+    "沒有", "謝謝", "不要", "冷靜", "然後", "這樣", "好了", "真的", "不是",
+    "沒關係", "快點", "這個", "我來", "算啊", "呵呵", "那個", "正常"
+}
+
+
+def validate_no_repetition_loops(markdown_text: str) -> List[str]:
+    """
+    Guards against ASR repetition loops, stutter artifacts, and duplicate sentence loops.
+    Catches:
+    1. Short repetitive phrase loops: e.g. non-conversational phrases repeating 4+ times consecutively.
+    2. Consecutive identical sentence segments (len >= 20) repeating 3+ times consecutively.
+    """
+    errors: List[str] = []
+
+    # 1. Consecutive identical sentence segments (len >= 20) repeating 3+ times
+    raw_sentences = re.split(r'[。！？\n]', markdown_text)
+    sentences = [
+        s.strip() for s in raw_sentences
+        if len(s.strip()) >= 20
+        and not s.strip().startswith(('#', '>', '|', '-', '*', '```', 'http', '+', ':', '_', '='))
+    ]
+    for i in range(len(sentences) - 2):
+        s1 = sentences[i]
+        s2 = sentences[i + 1]
+        s3 = sentences[i + 2]
+        if s1 == s2 == s3:
+            errors.append(f"Found consecutive identical sentences (ASR loop): '{s1[:40]}...'")
+
+    # 2. Short n-gram phrase repetition loops (4+ repetitions)
+    loop_matches = re.findall(r'((?:[\u4e00-\u9fa5]{2,8}[，、\s]*){4,})', markdown_text)
+    for match in loop_matches:
+        chunks = [c.strip() for c in re.split(r'[，、\s]+', match) if len(c.strip()) >= 2]
+        if len(chunks) >= 4 and len(set(chunks)) == 1:
+            garble = chunks[0]
+            if garble in ALLOWED_CONVERSATIONAL_REPETITIONS:
+                if len(chunks) >= 8:
+                    errors.append(f"Found excessive conversational repetition: '{garble}' repeated {len(chunks)} times")
+            else:
+                errors.append(f"Found repeating phrase loop: '{garble}' repeated {len(chunks)} times ('{match.strip()}')")
+
+    return errors
+
+
 def validate_speaker_semantic_consistency(
     markdown_text: str,
     scenario: Union[str, ScenarioType] = ScenarioType.SINGLE_TALK,
@@ -445,10 +503,13 @@ def validate_summary_document(
     # 4. Banned ASR garbles
     errors.extend(validate_banned_asr_garbles(markdown_text))
 
-    # 5. Heading Attribution Guard (Anti-Credit Confusion)
+    # 5. Repetition loops
+    errors.extend(validate_no_repetition_loops(markdown_text))
+
+    # 6. Heading Attribution Guard (Anti-Credit Confusion)
     errors.extend(validate_heading_attribution(markdown_text))
 
-    # 6. Thesis Progress comparison table check
+    # 7. Thesis Progress comparison table check
     if file_path and "Thesis-Progress" in file_path:
         has_table = any(line.strip().startswith("|") for line in markdown_text.splitlines())
         if not has_table:
